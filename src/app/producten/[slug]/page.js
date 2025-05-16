@@ -135,7 +135,7 @@ const productDetails = {
     ],
     gallery: [
       { src: "/Terrasoverkapping4.jpg", alt: "Moderne terrasoverkapping" },
-      { src: "/Terrasoverkapping2.jpeg", alt: "Terrasoverkapping met glazen schuifwanden" },
+      { src: "/Terrasoverkapping2.jpg", alt: "Terrasoverkapping met glazen schuifwanden" },
       { src: "/terrasoverkapping3.jpg", alt: "Terrasoverkapping met LED-verlichting" }
     ],
     faqs: [
@@ -229,9 +229,9 @@ const productDetails = {
       { label: "Garantie", value: "10 jaar op materiaal, 5 jaar op bewegende delen" }
     ],
     gallery: [
-      { src: "/Schuifpui2.jpg", alt: "Moderne schuifpui" },
+      { src: "/Schuifpui4.jpg", alt: "Hoekschuifpui" },
       { src: "/Schuifpui3.jpg", alt: "Schuifpui met meerdere panelen" },
-      { src: "/Schuifpui4.jpg", alt: "Hoekschuifpui" }
+      { src: "/Schuifpui2.jpg", alt: "Moderne schuifpui" }
     ],
     faqs: [
       {
