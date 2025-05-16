@@ -155,7 +155,7 @@ const productDetails = {
   },
   "kozijnen": {
     title: "Kozijnen",
-    image: "/Kozijnen1.png",
+    image: "/Kozijnen4.jpg",
     description: "Hoogwaardige kozijnen voor optimale isolatie en een stijlvolle afwerking. Onze kozijnen combineren functionaliteit met esthetiek voor elke woning.",
     longDescription: [
       "Kozijnen spelen een cruciale rol in de uitstraling, isolatie en veiligheid van uw woning. Onze hoogwaardige kozijnen bieden niet alleen een prachtige afwerking, maar dragen ook bij aan energiebesparing en comfort in uw woning.",
@@ -202,8 +202,8 @@ const productDetails = {
   },
   "schuifpuien": {
     title: "Schuifpuien",
-    image: "/Schuifpui1.png",
-    description: "Moderne schuifpuien die uw woonruimte vergroten en maximaal daglicht binnenlaten. De perfecte verbinding tussen binnen en buiten.",
+    image: "/Schuifpui2.jpg",
+    description: "Moderne schuifpuien die uw woning transformeren met een stijlvolle en functionele oplossing. Geniet van maximale lichtinval en een naadloze verbinding tussen binnen en buiten.",
     longDescription: [
       "Schuifpuien creëren een naadloze overgang tussen binnen en buiten, zorgen voor maximale lichtinval en geven uw woning een ruimtelijk gevoel. Met onze hoogwaardige schuifpuisystemen transformeert u uw woonruimte en tuin tot één harmonieus geheel.",
       "Onze schuifpuien zijn verkrijgbaar in verschillende materialen en uitvoeringen, van hef-schuifpuien tot minimalistische panoramische systemen met ultradunne profielen. Alle systemen bieden uitstekende isolatie, veiligheid en bedieningsgemak."
