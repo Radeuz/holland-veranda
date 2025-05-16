@@ -226,7 +226,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
-                        src="/Kozijnen1.png"
+                        src="/Kozijnen3.jpg"
                         alt="Kozijnen"
                         fill
                         loading="lazy"
@@ -254,8 +254,8 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
-                        src="/Schuifpui1.png"
-                        alt="Schuifpuien"
+                        src="/Schuifpui3.jpg"
+                        alt="Schuifpuien Project"
                         fill
                         loading="lazy"
                         quality={75}
@@ -612,7 +612,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
               <div className="relative h-[320px] overflow-hidden">
                 <Image 
-                  src="/Schuifpui1.png"
+                  src="/Schuifpui4.jpg"
                   alt="Project in Düsseldorf"
                   fill
                   loading="lazy"
