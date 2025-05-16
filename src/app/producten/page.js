@@ -13,7 +13,7 @@ export default function Producten() {
     {
       id: 1,
       title: "Veranda",
-      image: "/6.jpg",
+      image: "/Veranda6.jpg",
       description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
       features: ["Maatwerk ontwerp", "Diverse dakopties", "LED-verlichting mogelijk", "Verschillende kleuropties"],
       objectFit: "cover",
