@@ -1,0 +1,130 @@
+{
+  "navigation": {
+    "home": "Home",
+    "products": "Producten",
+    "about": "Over Ons",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Holland Veranda",
+    "subtitle": "Veranda's, carports, frames en meer - voor uw perfecte tuin",
+    "cta": "Vraag een gratis offerte aan"
+  },
+  "products": {
+    "title": "Onze Producten",
+    "subtitle": "Ontdek ons assortiment hoogwaardige veranda's en overkappingen, perfect voor uw buitenruimte",
+    "modern": {
+      "title": "Moderne Veranda",
+      "description": "Strakke lijnen en minimalistisch design voor een eigentijdse uitstraling."
+    },
+    "classic": {
+      "title": "Klassieke Veranda",
+      "description": "Tijdloze elegantie met traditionele details en warme uitstraling."
+    },
+    "glass": {
+      "title": "Glazen Schuifwanden",
+      "description": "Maximale lichtinval en flexibiliteit voor uw veranda."
+    },
+    "moreInfo": "Meer informatie",
+    "cta": {
+      "title": "Interesse in een veranda?",
+      "description": "Neem contact met ons op voor een vrijblijvend gesprek over de mogelijkheden voor uw tuin.",
+      "button": "Contact opnemen"
+    }
+  },
+  "about": {
+    "title": "Over Holland Veranda",
+    "description": "",
+    "history": {
+      "title": "Onze Geschiedenis",
+      "description1": "Uw comfort is onze prioriteit",
+      "description2": "Onze missie is het leveren van hoogwaardige veranda's die niet alleen functioneel zijn, maar ook een esthetische toevoeging aan uw woning vormen. Wij geloven dat een veranda meer is dan alleen een overkapping - het is een uitbreiding van uw woonruimte naar buiten."
+    },
+    "values": {
+      "title": "Onze Waarden",
+      "quality": {
+        "title": "Kwaliteit",
+        "description": "Wij gebruiken alleen de beste materialen en werken met de grootste precisie."
+      },
+      "service": {
+        "title": "Service",
+        "description": "Persoonlijk advies en uitstekende klantenservice staan bij ons voorop."
+      },
+      "sustainability": {
+        "title": "Duurzaamheid",
+        "description": "Wij streven naar duurzame producten en verantwoorde productiemethoden."
+      }
+    },
+    "team": {
+      "title": "Ons Team",
+      "description1": "Ons team bestaat uit ervaren vakmensen die met passie en toewijding aan uw veranda werken. Van ontwerp tot installatie zorgen wij ervoor dat alles tot in de kleinste details wordt verzorgd.",
+      "description2": "Wilt u meer weten over onze veranda's of heeft u specifieke wensen? Neem gerust contact met ons op. Wij helpen u graag verder!"
+    },
+    "cta": "Meer over ons"
+  },
+  "footer": {
+    "company": {
+      "title": "Over Holland Veranda",
+      "description": "De specialist in kwaliteitsveranda's voor uw tuin. Wij bieden een breed assortiment moderne en klassieke veranda's, perfect voor het uitbreiden van uw woonruimte.",
+      "learnMore": "Meer over ons"
+    },
+    "quickLinks": {
+      "title": "Snelle Links"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Andorrastraat 3",
+      "city": "5171 PC Kaatsheuvel",
+      "country": "Nederland",
+      "phone": "Tel",
+      "email": "Email"
+    },
+    "hours": {
+      "title": "Openingstijden",
+      "weekdays": "Maandag t/m vrijdag: 9:00 - 17:00",
+      "saturday": "Zaterdag: 10:00 - 16:00",
+      "sunday": "Zondag: Gesloten"
+    },
+    "copyright": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene Voorwaarden"
+  },
+  "contact": {
+    "title": "Contact",
+    "info": {
+      "title": "Contactgegevens",
+      "email": "info@hollandveranda.nl",
+      "phone": "+31 (0) 6186 121 90",
+      "address": "Andorrastraat 3",
+      "city": "5171 PC Kaatsheuvel"
+    },
+    "hours": {
+      "title": "Openingstijden",
+      "weekdays": "Maandag t/m vrijdag: 9:00 - 17:00",
+      "saturday": "Zaterdag: 10:00 - 16:00",
+      "sunday": "Zondag: Gesloten"
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "name": "Naam",
+      "email": "E-mailadres",
+      "message": "Uw bericht",
+      "submit": "Versturen"
+    },
+    "location": {
+      "title": "Onze Locatie",
+      "description": "Bezoek onze showroom om onze veranda's in het echt te bekijken.",
+      "directions": "Routebeschrijving"
+    }
+  },
+  "projects": {
+    "subtitle": "Ontdek onze nieuwste projecten in verschillende delen van Europa en raak geïnspireerd door onze kwaliteitsveranda's",
+    "description": "Een prachtig voorbeeld van onze expertise in veranda's en overkappingen",
+    "cta": {
+      "title": "Interesse in een vergelijkbaar project?",
+      "description": "Neem contact met ons op voor een vrijblijvend gesprek over de mogelijkheden voor uw tuin",
+      "button": "Contact opnemen"
+    }
+  }
+} 
