@@ -13,7 +13,7 @@ export default function Producten() {
     {
       id: 1,
       title: "Veranda",
-      image: "/Veranda6.jpg",
+      image: "/Veranda1.jpg",
       description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
       features: ["Maatwerk ontwerp", "Diverse dakopties", "LED-verlichting mogelijk", "Verschillende kleuropties"],
       objectFit: "cover",
@@ -32,7 +32,7 @@ export default function Producten() {
     {
       id: 3,
       title: "Terrasoverkapping",
-      image: "/Terrasoverkapping5.jpg",
+      image: "/Terrasoverkapping1.jpg",
       description: "Een terrasoverkapping biedt beschutting tegen regen en zon, zodat u optimaal kunt genieten van uw buitenruimte. Onze terrasoverkappingen zijn verkrijgbaar in verschillende materialen en stijlen, passend bij uw woning en wensen.",
       features: ["Waterdicht dak", "Optionele glazen schuifwanden", "Geïntegreerde zonwering mogelijk", "Diverse uitvoeringen"],
       objectFit: "cover",
@@ -41,7 +41,7 @@ export default function Producten() {
     {
       id: 4,
       title: "Kozijnen",
-      image: "/Kozijnen5.jpg",
+      image: "/Kozijnen1.jpg",
       description: "Onze kozijnen zijn van hoogwaardige kwaliteit en verkrijgbaar in verschillende materialen zoals hout, kunststof en aluminium. Ze bieden uitstekende isolatie en zijn verkrijgbaar in diverse kleuren en afwerkingen.",
       features: ["Uitstekende isolatiewaarden", "Inbraakwerend", "Geluidsisolerend", "Onderhoudsvriendelijk"],
       objectFit: "cover",
@@ -50,7 +50,7 @@ export default function Producten() {
     {
       id: 5,
       title: "Schuifpuien",
-      image: "/Schuifpui5.jpg",
+      image: "/Schuifpui1.jpg",
       description: "Een schuifpui is een elegante oplossing om uw woonkamer te verbinden met de tuin. Onze schuifpuien zijn verkrijgbaar in verschillende materialen en stijlen, met uitstekende isolatiewaarden en een soepele bediening.",
       features: ["Soepel schuifsysteem", "Hoge isolatiewaarde", "Inbraakwerend", "Diverse indelingen mogelijk"],
       objectFit: "cover",
