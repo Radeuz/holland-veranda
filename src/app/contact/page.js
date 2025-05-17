@@ -97,7 +97,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-orange-600 mb-2">Naam</label>
+                      <label htmlFor="name" className="block text-sm font-medium text-white mb-2">Naam</label>
                       <input
                         type="text"
                         id="name"
@@ -109,7 +109,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-orange-600 mb-2">E-mail</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-white mb-2">E-mail</label>
                       <input
                         type="email"
                         id="email"
@@ -122,7 +122,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-orange-600 mb-2">Onderwerp</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">Onderwerp</label>
                     <input
                       type="text"
                       id="subject"
@@ -134,7 +134,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-orange-600 mb-2">Bericht</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">Bericht</label>
                     <textarea
                       id="message"
                       name="message"
