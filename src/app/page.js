@@ -154,7 +154,7 @@ export default function Home() {
       </div>
 
       {/* Product Categories */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50">
+      <section className="py-10 bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{t('products.title')}</h2>
           <div className="relative">
