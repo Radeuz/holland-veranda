@@ -473,31 +473,29 @@ export default function Home() {
                   Wat klanten over ons zeggen
                 </h3>
                 
-                <div className="mb-4 flex items-center bg-white/10 p-2 rounded-lg shadow-inner">
-                  <div className="mr-2">
-                    <div className="flex text-yellow-400">
-                      {/* First 4 full stars */}
-                      {[1, 2, 3, 4].map((star) => (
-                        <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                      {/* Half star for 4.5 rating */}
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                        <defs>
-                          <linearGradient id="halfStar" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="50%" stopColor="currentColor" />
-                            <stop offset="50%" stopColor="#D1D5DB" stopOpacity="0.3" />
-                          </linearGradient>
-                        </defs>
-                        <path fill="url(#halfStar)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    </div>
-                  </div>
+                <div className="mb-4 flex items-center justify-between bg-white/10 p-2 rounded-lg shadow-inner">
                   <div>
                     <span className="text-2xl font-bold text-white">4.5</span>
                     <span className="text-gray-300 text-base">/5</span>
                     <p className="text-gray-300 text-sm">Gebaseerd op 90+ beoordelingen</p>
+                  </div>
+                  <div className="flex text-yellow-400">
+                    {/* First 4 full stars */}
+                    {[1, 2, 3, 4].map((star) => (
+                      <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                    {/* Half star for 4.5 rating */}
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                      <defs>
+                        <linearGradient id="halfStar" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="50%" stopColor="currentColor" />
+                          <stop offset="50%" stopColor="#D1D5DB" stopOpacity="0.3" />
+                        </linearGradient>
+                      </defs>
+                      <path fill="url(#halfStar)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
                   </div>
                 </div>
                 
