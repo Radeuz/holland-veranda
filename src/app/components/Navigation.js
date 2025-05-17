@@ -69,7 +69,7 @@ export default function Navigation() {
             aria-label="Holland Veranda Home"
           >
             <Image
-              src="/hollandveranda-logo.jpg"
+              src="/hollandveranda-logo.png"
               alt="Holland Veranda Logo"
               width={200}
               height={64}
