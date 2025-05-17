@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useTranslation } from '../i18n';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navigation() {
   const { t } = useTranslation();
@@ -64,10 +65,17 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link 
             href="/" 
-            className="text-2xl font-bold text-orange-600 hover:text-orange-700 transition-colors duration-200"
+            className="flex items-center"
             aria-label="Holland Veranda Home"
           >
-            Holland Veranda
+            <Image
+              src="/hollandveranda-logo.png"
+              alt="Holland Veranda Logo"
+              width={150}
+              height={50}
+              priority
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
