@@ -474,7 +474,7 @@ export default function Home() {
                     Ervaringen Van Onze Klanten
                   </h3>
                   <div className="flex items-center space-x-1">
-                    <span className="text-2xl font-bold text-white">4.5</span>
+                    <span className="text-xl md:text-2xl font-bold text-white">4.5</span>
                     <div className="flex flex-col">
                       <div className="flex text-yellow-400">
                         {[1, 2, 3, 4].map((star) => (
