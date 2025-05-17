@@ -164,9 +164,9 @@ export default function Home() {
                 scrollBehavior: 'smooth'
               }}
             >
-              <div className="flex space-x-6 min-w-max" style={{ WebkitOverflowScrolling: 'touch' }}>
+              <div className="flex space-x-6 min-w-max px-4 md:px-0" style={{ WebkitOverflowScrolling: 'touch' }}>
                 {/* Veranda */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -194,7 +194,7 @@ export default function Home() {
                 </div>
 
                 {/* Carport */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -222,7 +222,7 @@ export default function Home() {
                 </div>
 
                 {/* Kozijnen */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -250,7 +250,7 @@ export default function Home() {
                 </div>
 
                 {/* Schuifpuien */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -278,7 +278,7 @@ export default function Home() {
                 </div>
 
                 {/* Zonweringen */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -306,7 +306,7 @@ export default function Home() {
                 </div>
 
                 {/* Rolluiken */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image
@@ -334,7 +334,7 @@ export default function Home() {
                 </div>
 
                 {/* Keramische Tegels */}
-                <div className="w-[400px] flex-shrink-0">
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
                     <div className="relative h-[320px] overflow-hidden">
                       <Image 
@@ -368,7 +368,8 @@ export default function Home() {
               className={`absolute left-4 md:left-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showLeftButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
-                container.scrollLeft -= 400;
+                const cardWidth = window.innerWidth < 768 ? 330 : 400;
+                container.scrollLeft -= cardWidth;
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:brightness-110 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -379,31 +380,14 @@ export default function Home() {
               className={`absolute right-4 md:right-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showRightButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
-                container.scrollLeft += 400;
+                const cardWidth = window.innerWidth < 768 ? 330 : 400;
+                container.scrollLeft += cardWidth;
               }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:brightness-110 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
-
-            {/* Dot Navigation */}
-            <div className="flex justify-center space-x-2 mt-6">
-              {[0, 1, 2, 3, 4].map((index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    const container = scrollContainerRef.current;
-                    container.scrollLeft = index * 400;
-                  }}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    Math.floor(scrollContainerRef.current?.scrollLeft / 400) === index
-                      ? 'bg-orange-600 w-6'
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
-                />
-              ))}
-            </div>
           </div>
         </div>
       </section>
