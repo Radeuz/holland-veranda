@@ -440,11 +440,11 @@ export default function ProductDetail() {
             </div>
             
             {/* Product Info - Mobile First */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center px-4 py-12 md:py-24 md:px-8 text-center md:text-left">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
+            <div className="w-full md:w-1/2 flex flex-col justify-center px-6 py-16 md:py-32 md:px-12 text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 text-white">
                 {product.title}
               </h1>
-              <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-xl mx-auto md:mx-0">
+              <p className="text-base md:text-xl lg:text-2xl mb-8 md:mb-10 text-white/90 max-w-xl mx-auto md:mx-0">
                 {product.description}
               </p>
               <div className="flex justify-center md:justify-start">
