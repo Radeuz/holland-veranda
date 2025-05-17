@@ -65,16 +65,16 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link 
             href="/" 
-            className="flex items-center h-16 md:h-20"
+            className="flex items-center h-20 md:h-24"
             aria-label="Holland Veranda Home"
           >
             <Image
               src="/hollandveranda-logo.png"
               alt="Holland Veranda Logo"
-              width={300}
-              height={96}
+              width={400}
+              height={128}
               priority
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </Link>
 
