@@ -399,7 +399,21 @@ export default function ProductDetail() {
   const [showModal, setShowModal] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
   const [imageError, setImageError] = useState({});
-  const product = productDetails[params.slug];
+
+  // Get product details or use fallback
+  const product = productDetails[params?.slug] || {
+    title: 'Product',
+    image: '/placeholder.jpg',
+    description: 'No description available',
+    longDescription: ['No detailed information available.'],
+    features: ['No features available'],
+    specifications: [
+      { label: 'Material', value: 'Not specified' },
+      { label: 'Warranty', value: 'Not specified' }
+    ],
+    gallery: [],
+    faqs: []
+  };
 
   return (
     <main>
@@ -449,205 +463,118 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* Product Description and Features - Side by Side for all products */}
-      <section className="py-16 bg-white">
+      {/* Features Section */}
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Left side - Product Description */}
-            <div className="w-full md:w-1/2">
-              <div className="px-4 md:px-10 max-w-[85%] mx-auto">
-                <h2 className="text-3xl font-bold mb-8 text-gray-800">Over {product.title}</h2>
-                {product.longDescription.map((paragraph, index) => (
-                  paragraph ? (
-                    <p key={index} className="text-gray-600 mb-7 text-lg leading-relaxed">
-                      {paragraph}
-                    </p>
-                  ) : (
-                    <div key={index} className="h-6"></div>
-                  )
-                ))}
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Long Description */}
+            <div className="space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Over {product.title}</h2>
+              {product.longDescription.map((paragraph, index) => (
+                <p key={index} className="text-gray-700 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
             </div>
             
-            {/* Right side - Features */}
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-8 text-gray-800">Kenmerken</h2>
-              <div className="grid grid-cols-1 gap-5">
+            {/* Features List */}
+            <div className="bg-gray-50 rounded-lg p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Kenmerken</h3>
+              <ul className="space-y-3">
                 {product.features.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="flex-shrink-0 w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mt-1">
-                      <svg className="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <p className="ml-3 text-gray-600">{feature}</p>
-                  </div>
+                  <li key={index} className="flex items-start">
+                    <svg className="w-5 h-5 text-orange-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">{feature}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Specifications and Gallery Side by Side for all products */}
-      <section className="py-16 bg-gray-50">
+      {/* Specifications Section */}
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Left side - Specifications */}
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-8 text-gray-800">Specificaties</h2>
-              <div ref={specsBoxRef} className="bg-white rounded-lg p-6 shadow-sm">
-                {product.specifications.map((spec, index) => (
-                  <div key={index} className={`flex py-3 ${index !== product.specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
-                    <span className="w-1/3 font-semibold text-gray-700">{spec.label}</span>
-                    <span className="w-2/3 text-gray-600">{spec.value}</span>
-                  </div>
-                ))}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Specificaties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {product.specifications.map((spec, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{spec.label}</h3>
+                <p className="text-gray-700">{spec.value}</p>
               </div>
-            </div>
-            
-            {/* Right side - Gallery (just one image) */}
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-8 text-gray-800" id="gallery">Voorbeelden</h2>
-              <div 
-                className="rounded-lg overflow-hidden shadow-md cursor-pointer" 
-                style={{ height: `${specsHeight}px` }}
-                onClick={() => {
-                  if (product.gallery.length > 0) {
-                    setSelectedImage({
-                      src: product.gallery[currentGalleryIndex].src,
-                      alt: product.gallery[currentGalleryIndex].alt,
-                      index: currentGalleryIndex
-                    });
-                  }
-                }}
-              >
-                {product.gallery.length > 0 && (
-                  <div className="relative h-full w-full">
-                    {imageError['gallery-first'] ? (
-                      <Placeholder />
-                    ) : (
-                      <>
-                        <Image
-                          src={product.gallery[currentGalleryIndex].src}
-                          alt={product.gallery[currentGalleryIndex].alt}
-                          fill
-                          className="object-cover hover:scale-105 transition-transform duration-300"
-                          onError={() => handleImageError('gallery-first')}
-                        />
-                        {/* Gallery navigation buttons */}
-                        {product.gallery.length > 1 && (
-                          <>
-                            {currentGalleryIndex > 0 && (
-                              <button 
-                                onClick={prevGalleryImage} 
-                                className="absolute left-2 top-1/2 -translate-y-1/2 bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full shadow-md z-10 transition-colors duration-200"
-                                aria-label="Previous image"
-                              >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                                </svg>
-                              </button>
-                            )}
-                            
-                            {currentGalleryIndex < product.gallery.length - 1 && (
-                              <button 
-                                onClick={nextGalleryImage} 
-                                className="absolute right-2 top-1/2 -translate-y-1/2 bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full shadow-md z-10 transition-colors duration-200"
-                                aria-label="Next image"
-                              >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                              </button>
-                            )}
-                          </>
-                        )}
-                        {/* Gallery indicator dots */}
-                        {product.gallery.length > 1 && (
-                          <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
-                            {product.gallery.map((_, index) => (
-                              <button 
-                                key={index} 
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setCurrentGalleryIndex(index);
-                                }}
-                                className={`h-2 w-2 rounded-full ${currentGalleryIndex === index ? 'bg-orange-600' : 'bg-white/50'}`}
-                                aria-label={`Go to image ${index + 1}`}
-                              />
-                            ))}
-                          </div>
-                        )}
-                      </>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Image Modal */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative w-full max-w-6xl max-h-[90vh]">
-            <Image
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              width={1920}
-              height={1080}
-              style={{
-                objectFit: 'contain',
-                objectPosition: 'center'
-              }}
-              className="rounded-lg"
-            />
-            <button
-              className="absolute top-4 right-4 text-white bg-orange-600 rounded-full p-2 hover:bg-orange-700 transition-colors duration-200 shadow-md"
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedImage(null);
-              }}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            
-            {/* Navigation Arrows */}
-            {product.gallery.length > 1 && (
-              <>
-                {selectedImage.index > 0 && (
-                  <button
-                    className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-orange-600 rounded-full p-3 hover:bg-orange-700 transition-colors duration-200 shadow-md"
-                    onClick={handlePrevModalImage}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                  </button>
-                )}
-                
-                {selectedImage.index < product.gallery.length - 1 && (
-                  <button
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-orange-600 rounded-full p-3 hover:bg-orange-700 transition-colors duration-200 shadow-md"
-                    onClick={handleNextModalImage}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                )}
-              </>
-            )}
+      {/* Gallery Section */}
+      {product.gallery.length > 0 && (
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Projectfoto's</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {product.gallery.map((image, index) => (
+                <div 
+                  key={index} 
+                  className="relative h-[250px] md:h-[300px] rounded-lg overflow-hidden cursor-pointer group"
+                  onClick={() => {
+                    setModalImageIndex(index);
+                    setShowModal(true);
+                  }}
+                >
+                  <Image 
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{objectFit: 'cover'}}
+                    className="transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
       )}
+
+      {/* FAQ Section */}
+      {product.faqs.length > 0 && (
+        <section className="py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Veelgestelde vragen</h2>
+            <div className="max-w-3xl mx-auto space-y-6">
+              {product.faqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                  <p className="text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA Section */}
+      <section className="py-12 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Klaar om uw {product.title.toLowerCase()} te realiseren?</h2>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90">
+            Neem contact met ons op voor een vrijblijvende offerte of advies op maat.
+          </p>
+          <Link 
+            href="/offerte"
+            className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+          >
+            Vraag een gratis offerte aan
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </main>
