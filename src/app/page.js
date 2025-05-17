@@ -109,33 +109,33 @@ export default function Home() {
       <Navigation />
 
       {/* Main Banner */}
-      <div className="relative min-h-[600px] bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+      <div className="relative min-h-[500px] md:min-h-[600px] bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
         {/* Dynamic Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
         {/* Blur Effect */}
         <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
         {/* Content */}
-        <div className="relative container mx-auto px-4 h-[600px]">
+        <div className="relative container mx-auto px-4 h-[500px] md:h-[600px]">
           <div className="flex flex-col md:flex-row h-full items-center w-full">
             {/* Text Content */}
-            <div className="text-center md:text-left md:w-1/2 z-20 flex flex-col justify-center h-full">
-              <h1 className="text-[2.4rem] md:text-[3.5rem] lg:text-[4rem] font-bold mb-6 text-white">
+            <div className="text-center md:text-left md:w-1/2 z-20 flex flex-col justify-center h-full pt-8 md:pt-0">
+              <h1 className="text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-bold mb-4 md:mb-6 text-white">
                 Holland Veranda
               </h1>
-              <p className="text-xl md:text-2xl mb-12 text-white/90">
+              <p className="text-lg md:text-2xl mb-8 md:mb-12 text-white/90">
                 {t('hero.subtitle')}
               </p>
               <div className="flex justify-center md:justify-start">
                 <Link 
                   href="/offerte"
-                  className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  className="inline-block px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Vraag een gratis offerte aan
                 </Link>
               </div>
             </div>
             {/* Banner Image */}
-            <div className="md:absolute md:right-4 md:bottom-0 md:w-1/2 relative h-[300px] md:h-[550px] mt-8 md:mt-0">
+            <div className="md:absolute md:right-4 md:bottom-0 md:w-1/2 relative h-[250px] md:h-[550px] mt-4 md:mt-0">
               <Image 
                 src="/Veranda1.jpg"
                 alt="Holland Veranda"
