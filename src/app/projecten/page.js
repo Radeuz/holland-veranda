@@ -294,7 +294,7 @@ export default function Projecten() {
             
             {/* Navigation Arrows */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-orange-600 rounded-full p-3 hover:bg-orange-700 transition-colors duration-200 shadow-md"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-orange-600/80 hover:bg-orange-700/90 rounded-full p-3 transition-all duration-200 shadow-md"
               onClick={handlePrevious}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -302,7 +302,7 @@ export default function Projecten() {
               </svg>
             </button>
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-orange-600 rounded-full p-3 hover:bg-orange-700 transition-colors duration-200 shadow-md"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-orange-600/80 hover:bg-orange-700/90 rounded-full p-3 transition-all duration-200 shadow-md"
               onClick={handleNext}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
