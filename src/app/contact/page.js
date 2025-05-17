@@ -13,6 +13,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
   const [status, setStatus] = useState({
@@ -44,7 +45,7 @@ export default function Contact() {
           error: false,
           message: 'Bedankt voor uw bericht. We nemen zo spoedig mogelijk contact met u op.'
         });
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         throw new Error(data.message);
       }
@@ -126,8 +127,10 @@ export default function Contact() {
                       type="text"
                       id="subject"
                       name="subject"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      value={formData.subject}
+                      onChange={handleChange}
                       required
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
                     />
                   </div>
                   <div>
