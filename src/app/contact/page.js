@@ -85,77 +85,17 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Contact Section */}
-      <section className="py-16 md:py-24">
+      {/* Contact Form Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Information */}
-              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold mb-8 text-white">{t('contact.info.title')}</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <EnvelopeIcon className="w-6 h-6 text-orange-500 mt-1" />
-                    <div>
-                      <p className="text-gray-300">Email</p>
-                      <a 
-                        href={`mailto:${t('contact.info.email')}`}
-                        className="text-white hover:text-orange-500 transition-colors"
-                      >
-                        {t('contact.info.email')}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <PhoneIcon className="w-6 h-6 text-orange-500 mt-1" />
-                    <div>
-                      <p className="text-gray-300">Telefoon</p>
-                      <a 
-                        href={`tel:${t('contact.info.phone')}`}
-                        className="text-white hover:text-orange-500 transition-colors"
-                      >
-                        {t('contact.info.phone')}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <MapPinIcon className="w-6 h-6 text-orange-500 mt-1" />
-                    <div>
-                      <p className="text-gray-300">Adres</p>
-                      <p className="text-white">{t('contact.info.address')}</p>
-                      <p className="text-white">{t('contact.info.city')}</p>
-                      <p className="text-white">Nederland</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-12">
-                  <h3 className="text-xl font-bold mb-6 text-white">{t('contact.hours.title')}</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-4">
-                      <ClockIcon className="w-6 h-6 text-orange-500" />
-                      <p className="text-white">{t('contact.hours.weekdays')}</p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <ClockIcon className="w-6 h-6 text-orange-500" />
-                      <p className="text-white">{t('contact.hours.saturday')}</p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <ClockIcon className="w-6 h-6 text-orange-500" />
-                      <p className="text-white">{t('contact.hours.sunday')}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contact Form */}
-              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold mb-8 text-white">{t('contact.form.title')}</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Contact Form */}
+            <div className="order-1 lg:order-1">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Stuur Ons Een Bericht</h2>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-                      {t('contact.form.name')}
-                    </label>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Naam</label>
                     <input
                       type="text"
                       id="name"
@@ -163,13 +103,11 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                      {t('contact.form.email')}
-                    </label>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
                     <input
                       type="email"
                       id="email"
@@ -177,42 +115,80 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                     />
                   </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-                      {t('contact.form.message')}
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows="4"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
-                    ></textarea>
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">Onderwerp</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Bericht</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows="6"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                  ></textarea>
+                </div>
+                {status.message && (
+                  <div className={`p-4 rounded-lg ${
+                    status.success ? 'bg-green-900/50 text-green-200' : 
+                    status.error ? 'bg-red-900/50 text-red-200' : 
+                    'bg-blue-900/50 text-blue-200'
+                  }`}>
+                    {status.message}
                   </div>
-                  {status.message && (
-                    <div className={`p-4 rounded-lg ${
-                      status.success ? 'bg-green-900/50 text-green-200' : 
-                      status.error ? 'bg-red-900/50 text-red-200' : 
-                      'bg-blue-900/50 text-blue-200'
-                    }`}>
-                      {status.message}
-                    </div>
-                  )}
-                  <button
-                    type="submit"
-                    disabled={status.loading}
-                    className={`w-full bg-orange-600 text-white py-3 px-6 rounded-lg hover:bg-orange-700 transition-colors duration-200 font-semibold ${
-                      status.loading ? 'opacity-75 cursor-not-allowed' : ''
-                    }`}
-                  >
-                    {status.loading ? 'Verzenden...' : t('contact.form.submit')}
-                  </button>
-                </form>
+                )}
+                <button
+                  type="submit"
+                  disabled={status.loading}
+                  className={`w-full md:w-auto px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105 ${
+                    status.loading ? 'opacity-75 cursor-not-allowed' : ''
+                  }`}
+                >
+                  {status.loading ? 'Verzenden...' : 'Verstuur bericht'}
+                </button>
+              </form>
+            </div>
+
+            {/* Contact Details */}
+            <div className="order-2 lg:order-2">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Contactgegevens</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Adres</h3>
+                  <p className="text-gray-700">
+                    Holland Veranda<br />
+                    Industrieweg 1<br />
+                    1234 AB Amsterdam
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact</h3>
+                  <p className="text-gray-700">
+                    Tel: +31 (0)20 123 4567<br />
+                    E-mail: info@hollandveranda.nl
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Openingstijden</h3>
+                  <p className="text-gray-700">
+                    Maandag - Vrijdag: 09:00 - 17:00<br />
+                    Zaterdag: 10:00 - 15:00<br />
+                    Zondag: Gesloten
+                  </p>
+                </div>
               </div>
             </div>
           </div>
