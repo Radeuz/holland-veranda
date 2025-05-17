@@ -504,27 +504,27 @@ export default function ProductDetail() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Specificaties</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Materiaal</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Materiaal</h3>
               <p className="text-gray-300">Hoogwaardig aluminium met 10 jaar garantie</p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Afmetingen</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Afmetingen</h3>
               <p className="text-gray-300">Op maat gemaakt, standaard 3m x 6m</p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Kleur</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Kleur</h3>
               <p className="text-gray-300">RAL 9016 (zwart) of naar keuze</p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Dak</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Dak</h3>
               <p className="text-gray-300">Glas of polycarbonaat, naar keuze</p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Montage</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Montage</h3>
               <p className="text-gray-300">Professionele montage door ervaren team</p>
             </div>
             <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-white mb-4">Garantie</h3>
+              <h3 className="text-xl font-semibold text-orange-500 mb-4">Garantie</h3>
               <p className="text-gray-300">10 jaar garantie op constructie</p>
             </div>
           </div>
