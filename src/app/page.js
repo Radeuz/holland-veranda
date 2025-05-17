@@ -109,40 +109,43 @@ export default function Home() {
       <Navigation />
 
       {/* Main Banner */}
-      <div className="relative min-h-[500px] md:min-h-[600px] bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+      <div className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
         {/* Dynamic Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
         {/* Blur Effect */}
         <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
         {/* Content */}
-        <div className="relative container mx-auto px-4 h-[500px] md:h-[600px]">
-          <div className="flex flex-col md:flex-row h-full items-center w-full">
+        <div className="relative container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
             {/* Text Content */}
-            <div className="text-center md:text-left md:w-1/2 z-20 flex flex-col justify-center h-full pt-8 md:pt-0">
-              <h1 className="text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-bold mb-4 md:mb-6 text-white">
+            <div className="w-full md:w-1/2 py-12 md:py-24 text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
                 Holland Veranda
               </h1>
-              <p className="text-lg md:text-2xl mb-8 md:mb-12 text-white/90">
+              <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-xl mx-auto md:mx-0">
                 {t('hero.subtitle')}
               </p>
               <div className="flex justify-center md:justify-start">
                 <Link 
                   href="/offerte"
-                  className="inline-block px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Vraag een gratis offerte aan
+                  <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </Link>
               </div>
             </div>
             {/* Banner Image */}
-            <div className="md:absolute md:right-4 md:bottom-0 md:w-1/2 relative h-[250px] md:h-[550px] mt-4 md:mt-0">
+            <div className="w-full md:w-1/2 relative h-[250px] md:h-[600px]">
               <Image 
                 src="/Veranda1.jpg"
                 alt="Holland Veranda"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{objectFit: 'cover', objectPosition: 'right top'}}
+                style={{objectFit: 'cover', objectPosition: 'center'}}
                 className="shadow-2xl"
               />
             </div>
