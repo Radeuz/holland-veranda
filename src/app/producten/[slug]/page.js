@@ -499,16 +499,34 @@ export default function ProductDetail() {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Specificaties</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Specificaties</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {product.specifications.map((spec, index) => (
-              <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
-                <h3 className="text-lg md:text-xl font-semibold text-orange-500 mb-3 md:mb-4">{spec.label}</h3>
-                <p className="text-gray-300 md:text-lg">{spec.value}</p>
-              </div>
-            ))}
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Materiaal</h3>
+              <p className="text-gray-300">Hoogwaardig aluminium met 10 jaar garantie</p>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Afmetingen</h3>
+              <p className="text-gray-300">Op maat gemaakt, standaard 3m x 6m</p>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Kleur</h3>
+              <p className="text-gray-300">RAL 9016 (zwart) of naar keuze</p>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Dak</h3>
+              <p className="text-gray-300">Glas of polycarbonaat, naar keuze</p>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Montage</h3>
+              <p className="text-gray-300">Professionele montage door ervaren team</p>
+            </div>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4">Garantie</h3>
+              <p className="text-gray-300">10 jaar garantie op constructie</p>
+            </div>
           </div>
         </div>
       </section>
@@ -566,21 +584,20 @@ export default function ProductDetail() {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Klaar om uw {product.title.toLowerCase()} te realiseren?</h2>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90">
-            Neem contact met ons op voor een vrijblijvende offerte of advies op maat.
-          </p>
-          <Link 
-            href="/offerte"
-            className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
-          >
-            Vraag een gratis offerte aan
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+      <section className="py-16 md:py-24 bg-[#FFF8F5]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Klaar om uw carport te realiseren?</h2>
+            <p className="text-lg md:text-xl text-gray-700 mb-12">
+              Neem contact met ons op voor een vrijblijvende offerte en ontdek de mogelijkheden voor uw droomcarport.
+            </p>
+            <Link 
+              href="/contact"
+              className="inline-block px-8 py-4 bg-orange-600 text-white rounded-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105 hover:bg-orange-700"
+            >
+              Vraag een offerte aan
+            </Link>
+          </div>
         </div>
       </section>
 
