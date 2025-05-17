@@ -363,9 +363,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Navigation Buttons */}
+            {/* Navigation Buttons - Updated positioning */}
             <button 
-              className={`absolute left-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showLeftButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+              className={`absolute left-4 md:left-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showLeftButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
                 container.scrollLeft -= 400;
@@ -376,7 +376,7 @@ export default function Home() {
               </svg>
             </button>
             <button 
-              className={`absolute right-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showRightButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+              className={`absolute right-4 md:right-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showRightButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
                 container.scrollLeft += 400;
@@ -386,6 +386,24 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
+
+            {/* Dot Navigation */}
+            <div className="flex justify-center space-x-2 mt-6">
+              {[0, 1, 2, 3, 4].map((index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    const container = scrollContainerRef.current;
+                    container.scrollLeft = index * 400;
+                  }}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    Math.floor(scrollContainerRef.current?.scrollLeft / 400) === index
+                      ? 'bg-orange-600 w-6'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
