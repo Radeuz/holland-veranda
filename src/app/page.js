@@ -448,7 +448,7 @@ export default function Home() {
         <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
         
         <div className="container mx-auto px-4 relative">
-          <h2 className="text-4xl font-bold text-center mb-10 text-white">Voordelen van Holland Veranda</h2>
+          <h2 className="text-4xl font-bold text-center mb-10 text-white">Waarom Kiezen Voor Holland Veranda</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Left Column with 4 cards stacked in 2x2 grid */}
@@ -463,7 +463,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Maatwerk & vakmanschap</h3>
                 </div>
-                <p className="text-gray-300 text-base">Elke aluminium veranda of overkapping wordt op maat gemaakt door ervaren vakmensen.</p>
+                <p className="text-gray-300 text-base">Elke veranda of overkapping wordt exact op maat gemaakt door ervaren specialisten – met oog voor detail én afwerking.</p>
               </div>
               
               {/* Voordeel 2 */}
@@ -476,7 +476,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Snelle levering & montage</h3>
                 </div>
-                <p className="text-gray-300 text-base">Snelle levering en vakkundige montage van veranda's, carports en schuifpuien.</p>
+                <p className="text-gray-300 text-base">Binnen enkele dagen geleverd én geplaatst – strak gemonteerd door ons vaste team. Zo bent u snel klaar voor het buitenleven.</p>
               </div>
               
               {/* Voordeel 3 */}
@@ -489,7 +489,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Hoogwaardige materialen</h3>
                 </div>
-                <p className="text-gray-300 text-base">Wij gebruiken alleen duurzame en weerbestendige materialen voor langdurig resultaat.</p>
+                <p className="text-gray-300 text-base">Wij gebruiken alleen A-kwaliteit aluminium en glas van Europese makelij – weerbestendig, stevig en onderhoudsarm.</p>
               </div>
               
               {/* Voordeel 4 */}
@@ -502,7 +502,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Tevreden klanten</h3>
                 </div>
-                <p className="text-gray-300 text-base">Meer dan 500 tevreden klanten in Nederland, België en Duitsland kozen voor onze veranda's en rolluiken.</p>
+                <p className="text-gray-300 text-base">Meer dan 1500+ tevreden klanten in Nederland, België en Duitsland kozen voor onze veranda's en rolluiken.</p>
               </div>
             </div>
             
