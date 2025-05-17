@@ -92,7 +92,7 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="order-1 lg:order-1">
               <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Stuur Ons Een Bericht</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Stuur Ons Een Bericht</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -167,7 +167,7 @@ export default function Contact() {
             {/* Contact Details */}
             <div className="order-2 lg:order-2">
               <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Contactgegevens</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-lg font-semibold text-orange-600 mb-4">Adres</h3>
