@@ -464,29 +464,31 @@ export default function ProductDetail() {
       </div>
 
       {/* Features Section */}
-      <section className="py-12 bg-white">
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Long Description */}
-            <div className="space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Over {product.title}</h2>
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Over {product.title}</h2>
               {product.longDescription.map((paragraph, index) => (
-                <p key={index} className="text-gray-700 leading-relaxed">
+                <p key={index} className="text-gray-700 leading-relaxed text-lg">
                   {paragraph}
                 </p>
               ))}
             </div>
             
             {/* Features List */}
-            <div className="bg-gray-50 rounded-lg p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Kenmerken</h3>
-              <ul className="space-y-3">
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Kenmerken</h3>
+              <ul className="space-y-4">
                 {product.features.map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <svg className="w-5 h-5 text-orange-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">{feature}</span>
+                  <li key={index} className="flex items-start group">
+                    <div className="flex-shrink-0 w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mt-1 mr-4 group-hover:bg-orange-600 transition-colors duration-200">
+                      <svg className="w-5 h-5 text-orange-600 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700 text-lg">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -496,14 +498,14 @@ export default function ProductDetail() {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Specificaties</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Specificaties</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {product.specifications.map((spec, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{spec.label}</h3>
-                <p className="text-gray-700">{spec.value}</p>
+              <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
+                <h3 className="text-lg font-semibold text-orange-500 mb-3">{spec.label}</h3>
+                <p className="text-gray-300">{spec.value}</p>
               </div>
             ))}
           </div>
@@ -512,9 +514,9 @@ export default function ProductDetail() {
 
       {/* Gallery Section */}
       {product.gallery.length > 0 && (
-        <section className="py-12 bg-white">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Projectfoto's</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-12 text-center">Projectfoto's</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {product.gallery.map((image, index) => (
                 <div 
@@ -542,14 +544,19 @@ export default function ProductDetail() {
 
       {/* FAQ Section */}
       {product.faqs.length > 0 && (
-        <section className="py-12 bg-gray-50">
+        <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Veelgestelde vragen</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-12 text-center">Veelgestelde vragen</h2>
             <div className="max-w-3xl mx-auto space-y-6">
               {product.faqs.map((faq, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
-                  <p className="text-gray-700">{faq.answer}</p>
+                <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-orange-500/50 transition-colors duration-200">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                    <span className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-orange-600 font-bold">{index + 1}</span>
+                    </span>
+                    {faq.question}
+                  </h3>
+                  <p className="text-gray-700 pl-12">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -558,7 +565,7 @@ export default function ProductDetail() {
       )}
 
       {/* CTA Section */}
-      <section className="py-12 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
+      <section className="py-16 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Klaar om uw {product.title.toLowerCase()} te realiseren?</h2>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90">
