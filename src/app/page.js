@@ -368,7 +368,7 @@ export default function Home() {
 
             {/* Navigation Buttons - Updated positioning */}
             <button 
-              className={`absolute left-0 md:left-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showLeftButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+              className={`absolute left-2 md:left-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showLeftButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
                 const cardWidth = window.innerWidth < 768 ? 330 : 400;
@@ -380,7 +380,7 @@ export default function Home() {
               </svg>
             </button>
             <button 
-              className={`absolute right-0 md:right-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showRightButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+              className={`absolute right-2 md:right-[-50px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600 hover:bg-orange-700 rounded-full shadow-md transition-all duration-200 ${!showRightButton ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
               onClick={() => {
                 const container = scrollContainerRef.current;
                 const cardWidth = window.innerWidth < 768 ? 330 : 400;
