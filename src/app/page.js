@@ -247,7 +247,7 @@ export default function Home() {
                       </div>
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
-                        <p className="text-gray-700 mb-4">Creëer een comfortabele buitenruimte met een stijlvolle terrasoverkapping. Bescherming tegen weer en extra woonruimte.</p>
+                        <p className="text-gray-700 mb-4">Zorg voor extra leefruimte en comfort met een stijlvolle, weerbestendige terrasoverkapping.</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk terrasoverkappingen
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
