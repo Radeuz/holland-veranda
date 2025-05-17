@@ -170,198 +170,212 @@ export default function Home() {
               <div className="flex space-x-6 min-w-max px-4 md:px-0" style={{ WebkitOverflowScrolling: 'touch' }}>
                 {/* Veranda */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/Veranda6.jpg"
-                        alt="Veranda"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/veranda" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Veranda6.jpg"
+                          alt="Veranda"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Veranda</h3>
+                        <p className="text-gray-700 mb-4">Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk veranda's
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Veranda</h3>
-                      <p className="text-gray-700 mb-4">Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.</p>
-                      <Link href="/producten/veranda" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk veranda's
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Carport */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/Carport2.jpg"
-                        alt="Carport"
-                        fill
-                        loading="lazy"
-                        quality={100}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/carport" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Carport2.jpg"
+                          alt="Carport"
+                          fill
+                          loading="lazy"
+                          quality={100}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Carport</h3>
+                        <p className="text-gray-700 mb-4">Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk carports
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Carport</h3>
-                      <p className="text-gray-700 mb-4">Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.</p>
-                      <Link href="/producten/carport" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk carports
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Kozijnen */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/Kozijnen3.jpg"
-                        alt="Kozijnen"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/kozijnen" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Kozijnen3.jpg"
+                          alt="Kozijnen"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Kozijnen</h3>
+                        <p className="text-gray-700 mb-4">Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk kozijnen
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Kozijnen</h3>
-                      <p className="text-gray-700 mb-4">Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.</p>
-                      <Link href="/producten/kozijnen" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk kozijnen
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Schuifpuien */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/Schuifpui3.jpg"
-                        alt="Schuifpuien Project"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/schuifpuien" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Schuifpui3.jpg"
+                          alt="Schuifpuien Project"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Schuifpuien</h3>
+                        <p className="text-gray-700 mb-4">Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk schuifpuien
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Schuifpuien</h3>
-                      <p className="text-gray-700 mb-4">Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.</p>
-                      <Link href="/producten/schuifpuien" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk schuifpuien
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Zonweringen */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/Zonweringen1.jpg"
-                        alt="Zonweringen"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/zonweringen" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Zonweringen1.jpg"
+                          alt="Zonweringen"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Zonweringen</h3>
+                        <p className="text-gray-700 mb-4">Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk zonweringen
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Zonweringen</h3>
-                      <p className="text-gray-700 mb-4">Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.</p>
-                      <Link href="/producten/zonweringen" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk zonweringen
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Rolluiken */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image
-                        src="/Rolluiken1.jpg"
-                        alt="Rolluiken"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/rolluiken" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image
+                          src="/Rolluiken1.jpg"
+                          alt="Rolluiken"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Rolluiken</h3>
+                        <p className="text-gray-700 mb-4">Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk rolluiken
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Rolluiken</h3>
-                      <p className="text-gray-700 mb-4">Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.</p>
-                      <Link href="/producten/rolluiken" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk rolluiken
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Keramische Tegels */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
-                  <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
-                    <div className="relative h-[320px] overflow-hidden">
-                      <Image 
-                        src="/KeramischeTegels1.jpg"
-                        alt="Keramische Tegels"
-                        fill
-                        loading="lazy"
-                        quality={75}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{objectFit: 'cover', objectPosition: 'center center'}}
-                        className="transition-transform duration-300 hover:scale-105"
-                      />
+                  <Link href="/producten/keramische-tegels" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/KeramischeTegels1.jpg"
+                          alt="Keramische Tegels"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Keramische Tegels</h3>
+                        <p className="text-gray-700 mb-4">Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk keramische tegels
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold mb-2 text-gray-800">Keramische Tegels</h3>
-                      <p className="text-gray-700 mb-4">Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.</p>
-                      <Link href="/producten/keramische-tegels" className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                        Bekijk keramische tegels
-                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
