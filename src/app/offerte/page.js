@@ -63,11 +63,11 @@ function OffertePageContent() {
     <main>
       <Navigation />
       
-      {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden h-[300px]">
+      {/* Page Header */}
+      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-24 md:pt-12 pb-8">
         <div className="absolute inset-0 bg-black/10" />
-        <div className="container mx-auto px-4 h-full flex items-end justify-center pb-16">
-          <div className="text-center">
+        <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
+          <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Vraag Direct Uw Gratis Offerte Aan
             </h1>
