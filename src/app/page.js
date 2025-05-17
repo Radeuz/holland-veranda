@@ -118,7 +118,7 @@ export default function Home() {
         <div className="relative container mx-auto px-0 md:px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Content */}
-            <div className="w-full md:w-1/2 py-16 md:py-24 px-4 md:px-0 text-center md:text-left">
+            <div className="w-full md:w-1/2 py-24 md:py-24 px-4 md:px-0 text-center md:text-left">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
                 Holland Veranda
               </h1>
