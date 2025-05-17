@@ -116,9 +116,9 @@ export default function Home() {
         <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
         {/* Content */}
         <div className="relative container mx-auto px-4 h-[600px]">
-          <div className="flex flex-col md:flex-row h-full items-center justify-center w-full">
+          <div className="flex flex-col md:flex-row h-full items-center w-full">
             {/* Text Content */}
-            <div className="text-center md:text-left md:w-1/2 z-20 mt-20 md:mt-0">
+            <div className="text-center md:text-left md:w-1/2 z-20 flex flex-col justify-center h-full">
               <h1 className="text-[2.4rem] md:text-[3.5rem] lg:text-[4rem] font-bold mb-6 text-white">
                 Holland Veranda
               </h1>
