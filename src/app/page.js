@@ -144,6 +144,7 @@ export default function Home() {
                 alt="Holland Veranda"
                 fill
                 priority
+                quality={75}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{objectFit: 'cover', objectPosition: 'center 30%'}}
                 className="shadow-2xl"
@@ -208,7 +209,7 @@ export default function Home() {
                           alt="Carport"
                           fill
                           loading="lazy"
-                          quality={100}
+                          quality={75}
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           style={{objectFit: 'cover', objectPosition: 'center center'}}
                           className="transition-transform duration-300 hover:scale-105"
@@ -607,7 +608,7 @@ export default function Home() {
                   alt="Project in Amsterdam"
                   fill
                   loading="lazy"
-                  quality={80}
+                  quality={75}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{objectFit: 'cover', objectPosition: 'center center'}}
                   className="transition-transform duration-300 hover:scale-105"
@@ -634,7 +635,7 @@ export default function Home() {
                   alt="Project in Rotterdam"
                   fill
                   loading="lazy"
-                  quality={80}
+                  quality={75}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{objectFit: 'cover', objectPosition: 'center center'}}
                   className="transition-transform duration-300 hover:scale-105"
@@ -661,7 +662,7 @@ export default function Home() {
                   alt="Project in Düsseldorf"
                   fill
                   loading="lazy"
-                  quality={80}
+                  quality={75}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{objectFit: 'cover', objectPosition: 'center center'}}
                   className="transition-transform duration-300 hover:scale-105"
@@ -704,7 +705,7 @@ export default function Home() {
                   alt="Over Holland Veranda"
                   fill
                   loading="lazy"
-                  quality={90}
+                  quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{objectFit: 'cover'}}
                   className="transition-transform duration-500 hover:scale-105"
