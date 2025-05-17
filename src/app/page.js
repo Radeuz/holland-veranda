@@ -650,12 +650,12 @@ export default function Home() {
       </section>
 
       {/* Over Ons Section */}
-      <section className="py-24 bg-white">
+      <section className="py-8 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Image */}
-            <div className="md:w-1/2">
-              <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+            <div className="w-full md:w-1/2">
+              <div className="relative h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <Image 
                   src="/about.jpg"
                   alt="Over Holland Veranda"
@@ -670,19 +670,19 @@ export default function Home() {
             </div>
             
             {/* Content */}
-            <div className="md:w-1/2 space-y-8">
-              <h2 className="text-4xl font-bold text-gray-900">Over Holland Veranda</h2>
-              <div className="w-20 h-1.5 bg-orange-600 rounded-full"></div>
-              <p className="text-xl text-gray-700 leading-relaxed">
-                Holland Veranda is specialist in aluminium veranda's, carports, terrasoverkappingen, schuifpuien, rolluiken, kozijnen en zonwering op maat. Met meer dan 20 jaar ervaring leveren wij duurzame buitenoplossingen in Nederland, België en Duitsland. Onze maatwerk veranda's en overkappingen worden vakkundig ontworpen en geplaatst voor maximaal comfort en stijl.
+            <div className="w-full md:w-1/2 space-y-6 md:space-y-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Over Holland Veranda</h2>
+              <div className="w-16 md:w-20 h-1.5 bg-orange-600 rounded-full"></div>
+              <p className="text-base md:text-xl text-gray-700 leading-relaxed">
+                Holland Veranda is specialist in aluminium veranda's, carports, terrasoverkappingen, schuifpuien, rolluiken, kozijnen en zonwering op maat. Met meer dan 20 jaar ervaring leveren wij duurzame buitenoplossingen in Nederland, België en Duitsland.
               </p>
-              <div className="pt-4">
+              <div className="pt-2 md:pt-4">
                 <Link 
                   href="/over-ons" 
-                  className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Meer over ons
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
