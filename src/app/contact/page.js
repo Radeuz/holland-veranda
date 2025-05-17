@@ -92,11 +92,11 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="order-1 lg:order-1">
               <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Stuur Ons Een Bericht</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Stuur Ons Een Bericht</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Naam</label>
+                      <label htmlFor="name" className="block text-sm font-medium text-orange-600 mb-2">Naam</label>
                       <input
                         type="text"
                         id="name"
@@ -108,7 +108,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">E-mail</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-orange-600 mb-2">E-mail</label>
                       <input
                         type="email"
                         id="email"
@@ -121,7 +121,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">Onderwerp</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-orange-600 mb-2">Onderwerp</label>
                     <input
                       type="text"
                       id="subject"
@@ -131,7 +131,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Bericht</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-orange-600 mb-2">Bericht</label>
                     <textarea
                       id="message"
                       name="message"
@@ -167,10 +167,10 @@ export default function Contact() {
             {/* Contact Details */}
             <div className="order-2 lg:order-2">
               <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-600 mb-8">Contactgegevens</h2>
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Adres</h3>
+                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Adres</h3>
                     <p className="text-gray-300">
                       Holland Veranda<br />
                       Industrieweg 1<br />
@@ -178,14 +178,14 @@ export default function Contact() {
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Contact</h3>
                     <p className="text-gray-300">
                       Tel: +31 (0)20 123 4567<br />
                       E-mail: info@hollandveranda.nl
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
+                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Openingstijden</h3>
                     <p className="text-gray-300">
                       Maandag - Vrijdag: 09:00 - 17:00<br />
                       Zaterdag: 10:00 - 15:00<br />
