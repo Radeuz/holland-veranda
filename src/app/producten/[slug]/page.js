@@ -393,155 +393,57 @@ const productDetails = {
 };
 
 export default function ProductDetail() {
+  const params = useParams();
   const { t } = useTranslation();
-  const { slug } = useParams();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
   const [imageError, setImageError] = useState({});
-  const specsBoxRef = useRef(null);
-  const [specsHeight, setSpecsHeight] = useState(400);
-  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
-  
-  // Gallery navigation functions
-  const nextGalleryImage = (e) => {
-    e.stopPropagation();
-    const product = productDetails[slug] || defaultProduct;
-    setCurrentGalleryIndex((prev) => 
-      prev === product.gallery.length - 1 ? 0 : prev + 1
-    );
-  };
-  
-  const prevGalleryImage = (e) => {
-    e.stopPropagation();
-    const product = productDetails[slug] || defaultProduct;
-    setCurrentGalleryIndex((prev) => 
-      prev === 0 ? product.gallery.length - 1 : prev - 1
-    );
-  };
-
-  // Modal navigation functions
-  const handlePrevModalImage = (e) => {
-    e.stopPropagation();
-    const product = productDetails[slug] || defaultProduct;
-    const currentIndex = parseInt(selectedImage.index);
-    const previousIndex = (currentIndex - 1 + product.gallery.length) % product.gallery.length;
-    setSelectedImage({
-      src: product.gallery[previousIndex].src,
-      alt: product.gallery[previousIndex].alt,
-      index: previousIndex
-    });
-  };
-
-  const handleNextModalImage = (e) => {
-    e.stopPropagation();
-    const product = productDetails[slug] || defaultProduct;
-    const currentIndex = parseInt(selectedImage.index);
-    const nextIndex = (currentIndex + 1) % product.gallery.length;
-    setSelectedImage({
-      src: product.gallery[nextIndex].src,
-      alt: product.gallery[nextIndex].alt,
-      index: nextIndex
-    });
-  };
-  
-  useEffect(() => {
-    if (specsBoxRef.current) {
-      // Set height after render to match specs box
-      const updateHeight = () => {
-        const height = specsBoxRef.current.offsetHeight;
-        if (height > 0) {
-          setSpecsHeight(height);
-        }
-      };
-      
-      updateHeight();
-      // Also update on window resize
-      window.addEventListener('resize', updateHeight);
-      
-      return () => window.removeEventListener('resize', updateHeight);
-    }
-  }, [slug]);
-  
-  // Fallback for products without detailed information yet
-  const defaultProduct = {
-    title: slug.charAt(0).toUpperCase() + slug.slice(1).replace('-', ' '),
-    image: "/placeholder.jpg",
-    description: "Gedetailleerde informatie over dit product wordt binnenkort toegevoegd.",
-    longDescription: ["Neem contact met ons op voor meer informatie over dit product."],
-    features: ["Maatwerk mogelijk", "Hoge kwaliteit", "Professionele installatie", "Uitstekende service"],
-    specifications: [
-      { label: "Materiaal", value: "Hoogwaardige materialen" },
-      { label: "Garantie", value: "10 jaar garantie" }
-    ],
-    gallery: [],
-    faqs: []
-  };
-  
-  // Get product details or use fallback
-  const product = productDetails[slug] || defaultProduct;
-
-  const handleImageError = (imageKey) => {
-    setImageError(prev => ({...prev, [imageKey]: true}));
-  };
+  const product = productDetails[params.slug];
 
   return (
     <main>
       <Navigation />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-0 pb-0 overflow-hidden">
-        <div className="absolute inset-0 bg-black/10" />
-        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="w-full md:w-1/2 mb-8 md:mb-0 py-12 z-10">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <div className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+        <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
+        <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
+        
+        <div className="relative container mx-auto">
+          <div className="flex flex-col-reverse md:flex-row items-stretch">
+            {/* Product Image - Mobile First */}
+            <div className="w-full md:w-1/2 relative h-[300px] md:h-[600px]">
+              <Image 
+                src={product.image}
+                alt={product.title}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{objectFit: 'cover', objectPosition: 'center'}}
+                className="shadow-2xl"
+              />
+            </div>
+            
+            {/* Product Info - Mobile First */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center px-4 py-12 md:py-24 md:px-8 text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
                 {product.title}
               </h1>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-xl mx-auto md:mx-0">
                 {product.description}
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex justify-center md:justify-start">
                 <Link 
-                  href={`/offerte?product=${product.title}`}
-                  className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  href="/offerte"
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
-                  Vraag offerte aan
+                  Vraag een gratis offerte aan
+                  <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </Link>
-                {product.gallery.length > 0 && (
-                  <Link 
-                    href="#gallery" 
-                    className="inline-flex items-center px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-colors duration-200"
-                  >
-                    Bekijk voorbeelden
-                  </Link>
-                )}
               </div>
-            </div>
-            <div className="w-full md:w-1/2 relative h-[550px] md:h-[650px]">
-              {imageError['hero'] ? (
-                <div className="absolute inset-0 rounded-lg overflow-hidden">
-                  <Placeholder title={product.title} />
-                </div>
-              ) : (
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  className="object-cover"
-                  style={{ 
-                    objectPosition: 
-                      slug === 'veranda' ? 'center top' : 
-                      slug === 'carport' ? 'center 30%' :
-                      slug === 'terrasoverkapping' ? 'center 20%' :
-                      slug === 'kozijnen' ? 'center 30%' :
-                      slug === 'schuifpuien' ? 'center 40%' :
-                      slug === 'zonweringen' ? 'center 20%' :
-                      slug === 'rolluiken' ? 'center 35%' :
-                      slug === 'keramische-tegels' ? 'center 40%' : 'center'
-                  }}
-                  priority
-                  onError={() => handleImageError('hero')}
-                />
-              )}
             </div>
           </div>
         </div>
