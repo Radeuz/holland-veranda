@@ -71,8 +71,8 @@ export default function Navigation() {
             <Image
               src="/hollandveranda-logo.png"
               alt="Holland Veranda Logo"
-              width={400}
-              height={128}
+              width={600}
+              height={192}
               priority
               className="h-16 md:h-20 w-auto object-contain"
             />
