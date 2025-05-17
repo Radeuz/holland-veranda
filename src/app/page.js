@@ -128,7 +128,7 @@ export default function Home() {
               <div className="flex justify-center md:justify-start">
                 <Link 
                   href="/offerte"
-                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600/80 hover:bg-orange-700/90 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Vraag een gratis offerte aan
                   <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,7 +187,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Veranda</h3>
                         <p className="text-gray-700 mb-4">Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk veranda's
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -217,7 +217,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Carport</h3>
                         <p className="text-gray-700 mb-4">Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk carports
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -247,7 +247,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
                         <p className="text-gray-700 mb-4">Creëer een comfortabele buitenruimte met een stijlvolle terrasoverkapping. Bescherming tegen weer en extra woonruimte.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk terrasoverkappingen
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -277,7 +277,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Kozijnen</h3>
                         <p className="text-gray-700 mb-4">Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk kozijnen
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -307,7 +307,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Schuifpuien</h3>
                         <p className="text-gray-700 mb-4">Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk schuifpuien
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -337,7 +337,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Zonweringen</h3>
                         <p className="text-gray-700 mb-4">Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk zonweringen
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -367,7 +367,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Rolluiken</h3>
                         <p className="text-gray-700 mb-4">Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk rolluiken
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -397,7 +397,7 @@ export default function Home() {
                       <div className="p-6">
                         <h3 className="text-2xl font-bold mb-2 text-gray-800">Keramische Tegels</h3>
                         <p className="text-gray-700 mb-4">Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.</p>
-                        <div className="inline-flex items-center text-orange-600/80 hover:text-orange-700/90 font-medium">
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                           Bekijk keramische tegels
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -576,7 +576,7 @@ export default function Home() {
                     href="https://g.co/kgs/TeS7GGm" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="group flex items-center justify-center text-white bg-orange-600/80 hover:bg-orange-700/90 px-4 py-2.5 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/20 text-sm"
+                    className="group flex items-center justify-center text-white bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 px-4 py-2.5 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/20 text-sm"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -684,7 +684,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link 
               href="/projecten" 
-              className="inline-block px-8 py-4 bg-orange-600/80 hover:bg-orange-700/90 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+              className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
             >
               Bekijk alle projecten
             </Link>
@@ -722,7 +722,7 @@ export default function Home() {
               <div className="pt-2 md:pt-4">
                 <Link 
                   href="/over-ons" 
-                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600/80 hover:bg-orange-700/90 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Meer over ons
                   <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
