@@ -86,108 +86,112 @@ export default function Contact() {
       </div>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
             <div className="order-1 lg:order-1">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Stuur Ons Een Bericht</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Stuur Ons Een Bericht</h2>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Naam</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">E-mail</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      />
+                    </div>
+                  </div>
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Naam</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">Onderwerp</label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
+                      id="subject"
+                      name="subject"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Bericht</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                    />
+                      rows="6"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                    ></textarea>
                   </div>
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">Onderwerp</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Bericht</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows="6"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                  ></textarea>
-                </div>
-                {status.message && (
-                  <div className={`p-4 rounded-lg ${
-                    status.success ? 'bg-green-900/50 text-green-200' : 
-                    status.error ? 'bg-red-900/50 text-red-200' : 
-                    'bg-blue-900/50 text-blue-200'
-                  }`}>
-                    {status.message}
-                  </div>
-                )}
-                <button
-                  type="submit"
-                  disabled={status.loading}
-                  className={`w-full md:w-auto px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105 ${
-                    status.loading ? 'opacity-75 cursor-not-allowed' : ''
-                  }`}
-                >
-                  {status.loading ? 'Verzenden...' : 'Verstuur bericht'}
-                </button>
-              </form>
+                  {status.message && (
+                    <div className={`p-4 rounded-lg ${
+                      status.success ? 'bg-green-900/50 text-green-200' : 
+                      status.error ? 'bg-red-900/50 text-red-200' : 
+                      'bg-blue-900/50 text-blue-200'
+                    }`}>
+                      {status.message}
+                    </div>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={status.loading}
+                    className={`w-full md:w-auto px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105 ${
+                      status.loading ? 'opacity-75 cursor-not-allowed' : ''
+                    }`}
+                  >
+                    {status.loading ? 'Verzenden...' : 'Verstuur bericht'}
+                  </button>
+                </form>
+              </div>
             </div>
 
             {/* Contact Details */}
             <div className="order-2 lg:order-2">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Contactgegevens</h2>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Adres</h3>
-                  <p className="text-gray-700">
-                    Holland Veranda<br />
-                    Industrieweg 1<br />
-                    1234 AB Amsterdam
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact</h3>
-                  <p className="text-gray-700">
-                    Tel: +31 (0)20 123 4567<br />
-                    E-mail: info@hollandveranda.nl
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">Openingstijden</h3>
-                  <p className="text-gray-700">
-                    Maandag - Vrijdag: 09:00 - 17:00<br />
-                    Zaterdag: 10:00 - 15:00<br />
-                    Zondag: Gesloten
-                  </p>
+              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl shadow-lg p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-4">Adres</h3>
+                    <p className="text-gray-300">
+                      Holland Veranda<br />
+                      Industrieweg 1<br />
+                      1234 AB Amsterdam
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <p className="text-gray-300">
+                      Tel: +31 (0)20 123 4567<br />
+                      E-mail: info@hollandveranda.nl
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
+                    <p className="text-gray-300">
+                      Maandag - Vrijdag: 09:00 - 17:00<br />
+                      Zaterdag: 10:00 - 15:00<br />
+                      Zondag: Gesloten
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
