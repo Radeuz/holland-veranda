@@ -74,7 +74,7 @@ export default function Navigation() {
               width={600}
               height={150}
               priority
-              className="h-16 md:h-16 w-auto object-contain"
+              className="h-[100px] w-auto object-contain"
             />
           </Link>
 
