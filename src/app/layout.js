@@ -1,9 +1,13 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { LanguageProvider } from './i18n'
 import SchemaOrg from './components/SchemaOrg'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Veranda\'s, carports, frames en meer - voor uw perfecte tuin",
@@ -38,7 +42,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="nl">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <LanguageProvider>
           <SchemaOrg />
           {children}
