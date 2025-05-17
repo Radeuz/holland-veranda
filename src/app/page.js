@@ -228,6 +228,36 @@ export default function Home() {
                   </Link>
                 </div>
 
+                {/* Terrasoverkapping */}
+                <div className="w-[330px] md:w-[400px] flex-shrink-0">
+                  <Link href="/producten/terrasoverkapping" className="block">
+                    <div className="bg-gradient-to-br from-orange-50 via-orange-100/50 to-orange-50 rounded-lg shadow-lg overflow-hidden transition-all duration-200 hover:shadow-xl">
+                      <div className="relative h-[320px] overflow-hidden">
+                        <Image 
+                          src="/Terrasoverkapping3.jpg"
+                          alt="Terrasoverkapping"
+                          fill
+                          loading="lazy"
+                          quality={75}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{objectFit: 'cover', objectPosition: 'center center'}}
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
+                        <p className="text-gray-700 mb-4">Creëer een comfortabele buitenruimte met een stijlvolle terrasoverkapping. Bescherming tegen weer en extra woonruimte.</p>
+                        <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                          Bekijk terrasoverkappingen
+                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
                 {/* Kozijnen */}
                 <div className="w-[330px] md:w-[400px] flex-shrink-0">
                   <Link href="/producten/kozijnen" className="block">
@@ -601,25 +631,25 @@ export default function Home() {
               <div className="relative h-[320px] overflow-hidden">
                 <Image 
                   src="/Terrasoverkapping3.jpg"
-                  alt="Project in Antwerpen"
+                  alt="Project in Rotterdam"
                   fill
                   loading="lazy"
                   quality={80}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{objectFit: 'cover', objectPosition: 'left center', transform: 'scale(1.2)'}}
+                  style={{objectFit: 'cover', objectPosition: 'center center'}}
                   className="transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">Klassieke Overkapping</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
                 <div className="flex items-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-600">Antwerpen, België</span>
+                  <span className="text-gray-600">Rotterdam, Nederland</span>
                 </div>
-                <p className="text-gray-700">Klassieke houten overkapping in Antwerpen. Tijdloos ontwerp met duurzame materialen, perfect voor elke tuin.</p>
+                <p className="text-gray-700">Moderne terrasoverkapping in Rotterdam met aluminium structuur. Perfect voor het creëren van een extra woonruimte buiten.</p>
               </div>
             </div>
             
