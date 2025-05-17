@@ -464,32 +464,32 @@ export default function ProductDetail() {
       </div>
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             {/* Long Description */}
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Over {product.title}</h2>
+            <div className="space-y-6 md:space-y-8">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">Over {product.title}</h2>
               {product.longDescription.map((paragraph, index) => (
-                <p key={index} className="text-gray-700 leading-relaxed text-lg">
+                <p key={index} className="text-gray-700 leading-relaxed text-lg md:text-xl">
                   {paragraph}
                 </p>
               ))}
             </div>
             
             {/* Features List */}
-            <div className="relative">
-              <div className="absolute -left-4 top-0 bottom-0 w-1 bg-orange-600 rounded-full"></div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 pl-4">Kenmerken</h3>
-              <ul className="space-y-6">
+            <div className="relative md:pl-8">
+              <div className="absolute -left-4 md:left-0 top-0 bottom-0 w-1 bg-orange-600 rounded-full"></div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 pl-4">Kenmerken</h3>
+              <ul className="space-y-6 md:space-y-8">
                 {product.features.map((feature, index) => (
                   <li key={index} className="flex items-start group pl-4">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center mr-4 group-hover:bg-orange-600 transition-colors duration-200">
-                      <svg className="w-4 h-4 text-orange-600 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-orange-100 flex items-center justify-center mr-4 group-hover:bg-orange-600 transition-colors duration-200">
+                      <svg className="w-4 h-4 md:w-5 md:h-5 text-orange-600 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-gray-700 text-lg group-hover:text-orange-600 transition-colors duration-200">{feature}</span>
+                    <span className="text-gray-700 text-lg md:text-xl group-hover:text-orange-600 transition-colors duration-200">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -499,14 +499,14 @@ export default function ProductDetail() {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Specificaties</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Specificaties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {product.specifications.map((spec, index) => (
-              <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
-                <h3 className="text-lg font-semibold text-orange-500 mb-3">{spec.label}</h3>
-                <p className="text-gray-300">{spec.value}</p>
+              <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
+                <h3 className="text-lg md:text-xl font-semibold text-orange-500 mb-3 md:mb-4">{spec.label}</h3>
+                <p className="text-gray-300 md:text-lg">{spec.value}</p>
               </div>
             ))}
           </div>
@@ -515,14 +515,14 @@ export default function ProductDetail() {
 
       {/* Gallery Section */}
       {product.gallery.length > 0 && (
-        <section className="py-16 bg-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-12 text-center">Projectfoto's</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-12 md:mb-16 text-center">Projectfoto's</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {product.gallery.map((image, index) => (
                 <div 
                   key={index} 
-                  className="relative h-[250px] md:h-[300px] rounded-lg overflow-hidden cursor-pointer group"
+                  className="relative h-[250px] md:h-[350px] rounded-lg overflow-hidden cursor-pointer group"
                   onClick={() => {
                     setModalImageIndex(index);
                     setShowModal(true);
@@ -545,19 +545,19 @@ export default function ProductDetail() {
 
       {/* FAQ Section */}
       {product.faqs.length > 0 && (
-        <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Veelgestelde Vragen</h2>
-            <div className="max-w-3xl mx-auto space-y-6">
+            <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Veelgestelde Vragen</h2>
+            <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
               {product.faqs.map((faq, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center">
-                    <span className="w-8 h-8 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex items-center">
+                    <span className="w-8 h-8 md:w-10 md:h-10 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
                       <span className="text-orange-500 font-bold">{index + 1}</span>
                     </span>
                     {faq.question}
                   </h3>
-                  <p className="text-gray-300 pl-12">{faq.answer}</p>
+                  <p className="text-gray-300 md:text-lg pl-12 md:pl-14">{faq.answer}</p>
                 </div>
               ))}
             </div>
