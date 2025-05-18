@@ -47,14 +47,15 @@ export default function Contact() {
         });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        throw new Error(data.message);
+        throw new Error(data.error || data.message);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setStatus({
         loading: false,
         success: false,
         error: true,
-        message: 'Er is een fout opgetreden. Probeer het later opnieuw.'
+        message: `Er is een fout opgetreden. Probeer het later opnieuw. (${error.message})`
       });
     }
   };
