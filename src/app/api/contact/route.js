@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Şirket e-posta adresleri
-const SENDER_EMAIL = 'noreply@hollandveranda.nl';
+const SENDER_EMAIL = 'noreply@hollandveranda.com';
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'info@hollandveranda.nl';
 
 export async function POST(request) {
