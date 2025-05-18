@@ -3,12 +3,9 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Resend'in test domainini kullanıyoruz
-const SENDER_EMAIL = 'onboarding@resend.dev';
-
-// Test için Resend'in doğrulanmış e-posta adresini kullanıyoruz
-// Bu e-posta adresini kendi doğrulanmış e-posta adresinizle değiştirin
-const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'test@resend.dev';
+// Şirket e-posta adresleri
+const SENDER_EMAIL = 'noreply@hollandveranda.nl';
+const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'info@hollandveranda.nl';
 
 export async function POST(request) {
   try {
@@ -29,10 +26,6 @@ export async function POST(request) {
       throw new Error('RESEND_API_KEY is not configured');
     }
 
-    if (!process.env.CONTACT_EMAIL) {
-      throw new Error('CONTACT_EMAIL is not configured');
-    }
-
     const { name, email } = formData;
 
     // Determine if this is a contact or offerte form submission
@@ -43,9 +36,9 @@ export async function POST(request) {
 
     console.log('Attempting to send email with Resend...');
     const { data, error } = await resend.emails.send({
-      from: 'Holland Veranda <onboarding@resend.dev>',
+      from: `Holland Veranda <${SENDER_EMAIL}>`,
       to: [CONTACT_EMAIL],
-      reply_to: email, // Müşterinin e-posta adresini reply_to olarak ekliyoruz
+      reply_to: email,
       subject: isOfferte 
         ? `Nieuwe offerte aanvraag van ${name} voor ${formData.product}`
         : `Nieuw contactformulier bericht van ${name}`,
