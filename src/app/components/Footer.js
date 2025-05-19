@@ -23,7 +23,7 @@ export default function Footer() {
                 info@hollandveranda.nl
               </div>
               <p className="text-orange-200 mb-2">
-                <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline">+31 (0) 618 612 190</a> & <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
+                <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
               </p>
               <div className="text-white font-medium">
                 Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
@@ -111,7 +111,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
+        <div className="h-px bg-white/20 mt-8 mb-2"></div>
+        <div className="pt-4 text-center">
           <p className="text-orange-900 font-medium">
             &copy; {currentYear} Holland Veranda. {t('footer.copyright')}
           </p>
