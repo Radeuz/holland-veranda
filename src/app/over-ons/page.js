@@ -50,7 +50,7 @@ export default function OverOns() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-semibold text-white border-b border-orange-500/60 pb-2">Onze Visie</h3>
-                  <p className="text-base leading-relaxed text-gray-300">
+                  <p className="text-base leading-relaxed text-orange-900 font-medium">
                     Bij Holland Veranda geloven we dat een aluminium veranda of terrasoverkapping op maat een echte meerwaarde is voor elke woning. Het biedt extra leefruimte, beschutting tegen weer en een stijlvolle uitbreiding van uw huis. Met aandacht voor comfort en duurzaamheid creëren we buitenoplossingen die uw levenskwaliteit verhogen.
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export default function OverOns() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-semibold text-white border-b border-orange-500/60 pb-2">Expertise & Kwaliteit</h3>
-                  <p className="text-base leading-relaxed text-gray-300">
+                  <p className="text-base leading-relaxed text-orange-900 font-medium">
                     Met meer dan 20 jaar ervaring in het plaatsen van veranda's, carports, schuifpuien en rolluiken, combineren wij vakmanschap met moderne technieken. Wij gebruiken alleen hoogwaardige materialen voor duurzame buitenoplossingen die bestand zijn tegen elk seizoen.
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function OverOns() {
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-2xl font-semibold text-white border-b border-orange-500/60 pb-2">Persoonlijke Service</h3>
-                  <p className="text-base leading-relaxed text-gray-300">
+                  <p className="text-base leading-relaxed text-orange-900 font-medium">
                     Vanaf het eerste contact tot de volledige montage van uw veranda, overkapping of kozijnen begeleiden wij u met persoonlijke service. Wij denken mee in oplossingen en zorgen voor een vlotte installatie. Uw tevredenheid staat altijd centraal bij Holland Veranda.
                   </p>
                 </div>

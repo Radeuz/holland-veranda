@@ -106,7 +106,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
                       />
                     </div>
                     <div>
@@ -118,7 +118,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
                       />
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
                     />
                   </div>
                   <div>
@@ -143,7 +143,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows="6"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
                     ></textarea>
                   </div>
                   {status.message && (
@@ -174,23 +174,23 @@ export default function Contact() {
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Adres</h3>
-                    <p className="text-gray-300">
+                    <h3 className="text-lg font-semibold text-white mb-4">Adres</h3>
+                    <p className="text-orange-900 font-medium">
                       Andorrastraat 3<br />
                       5171 PC Kaatsheuvel<br />
                       Nederland
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Contact</h3>
-                    <p className="text-gray-300">
+                    <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <p className="text-orange-900 font-medium">
                       Tel: +31 (0)20 123 4567<br />
                       E-mail: info@hollandveranda.nl
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-orange-600 mb-4">Openingstijden</h3>
-                    <p className="text-gray-300">
+                    <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
+                    <p className="text-orange-900 font-medium">
                       Maandag - Vrijdag: 09:00 - 17:00<br />
                       Zaterdag: 10:00 - 15:00<br />
                       Zondag: Gesloten
