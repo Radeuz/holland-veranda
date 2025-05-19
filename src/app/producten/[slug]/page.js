@@ -443,7 +443,7 @@ export default function ProductDetail() {
             </div>
             
             {/* Product Info - Mobile First */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center px-6 pt-24 pb-12 md:py-32 md:px-12 text-center md:text-left">
+            <div className="w-full md:w-1/2 flex flex-col justify-center px-6 pt-24 pb-8 md:py-24 md:px-12 text-center md:text-left">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 text-white">
                 {product.title}
               </h1>
