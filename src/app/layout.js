@@ -43,10 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="/hollandveranda-logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/hollandveranda-logo.png" />
         <link rel="icon" href="/hollandveranda-logo.png" type="image/png" />
-        <link rel="shortcut icon" href="/hollandveranda-logo.png" type="image/png" />
       </head>
       <body className={montserrat.className}>
         <LanguageProvider>
