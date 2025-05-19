@@ -454,7 +454,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Maatwerk & vakmanschap</h3>
                 </div>
-                <p className="text-gray-300 text-base">Elke veranda of overkapping wordt exact op maat gemaakt door ervaren specialisten – met oog voor detail én afwerking.</p>
+                <p className="text-orange-900 text-base font-medium">Elke veranda of overkapping wordt exact op maat gemaakt door ervaren specialisten – met oog voor detail én afwerking.</p>
               </div>
               
               {/* Voordeel 2 */}
@@ -467,7 +467,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Snelle levering & montage</h3>
                 </div>
-                <p className="text-gray-300 text-base">Binnen enkele dagen geleverd én geplaatst – strak gemonteerd door ons vaste team. Zo bent u snel klaar voor het buitenleven.</p>
+                <p className="text-orange-900 text-base font-medium">Binnen enkele dagen geleverd én geplaatst – strak gemonteerd door ons vaste team. Zo bent u snel klaar voor het buitenleven.</p>
               </div>
               
               {/* Voordeel 3 */}
@@ -480,7 +480,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Hoogwaardige materialen</h3>
                 </div>
-                <p className="text-gray-300 text-base">Wij gebruiken alleen A-kwaliteit aluminium en glas van Europese makelij – weerbestendig, stevig en onderhoudsarm.</p>
+                <p className="text-orange-900 text-base font-medium">Wij gebruiken alleen A-kwaliteit aluminium en glas van Europese makelij – weerbestendig, stevig en onderhoudsarm.</p>
               </div>
               
               {/* Voordeel 4 */}
@@ -493,7 +493,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-white">Tevreden klanten</h3>
                 </div>
-                <p className="text-gray-300 text-base">Meer dan 1500+ tevreden klanten in Nederland, België en Duitsland kozen voor onze veranda's en rolluiken.</p>
+                <p className="text-orange-900 text-base font-medium">Meer dan 1500+ tevreden klanten in Nederland, België en Duitsland kozen voor onze veranda's en rolluiken.</p>
               </div>
             </div>
             
@@ -540,7 +540,7 @@ export default function Home() {
                       <svg className="h-6 w-6 text-orange-500 mb-3 opacity-50" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                       </svg>
-                      <p className="text-gray-200 italic mb-4 leading-relaxed text-base min-h-[80px]">"{testimonials[currentTestimonial].text}"</p>
+                      <p className="text-white italic mb-4 leading-relaxed text-base min-h-[80px]">"{testimonials[currentTestimonial].text}"</p>
                       <div className="flex items-center">
                         <div className={`h-10 w-10 rounded-full ${getAvatarColor(testimonials[currentTestimonial].initial)} flex items-center justify-center mr-3`}>
                           <span className="text-white font-bold text-sm">{testimonials[currentTestimonial].initial}</span>
