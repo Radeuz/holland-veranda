@@ -17,7 +17,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-2">
               <p className="text-orange-900 font-medium">info@hollandveranda.nl</p>
-              <p className="text-orange-900 font-medium">+31 6 12345678</p>
+              <p className="text-orange-900 font-medium">+31 6 18 61 21 90 & 013-2340905</p>
             </div>
           </div>
 
@@ -35,6 +35,15 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Sociale Media</h3>
             <div className="flex space-x-4">
+              <a 
+                href="https://www.facebook.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-colors duration-200"
+                aria-label="Facebook"
+              >
+                <img src="/facebook.jpg" alt="Facebook" className="h-6 w-6 rounded-lg" />
+              </a>
               <a 
                 href="https://www.instagram.com/hollandveranda.nl/" 
                 target="_blank" 
