@@ -176,9 +176,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-orange-600 mb-4">Adres</h3>
                     <p className="text-gray-300">
-                      Holland Veranda<br />
-                      Industrieweg 1<br />
-                      1234 AB Amsterdam
+                      Andorrastraat 3<br />
+                      5171 PC Kaatsheuvel<br />
+                      Nederland
                     </p>
                   </div>
                   <div>
