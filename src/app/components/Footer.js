@@ -43,17 +43,16 @@ export default function Footer() {
                 className="transition-colors duration-200"
                 aria-label="Instagram"
               >
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
-                  <radialGradient id="ig-gradient" cx="50%" cy="50%" r="75%">
-                    <stop offset="0%" stopColor="#fdf497" />
-                    <stop offset="45%" stopColor="#fdf497" />
-                    <stop offset="60%" stopColor="#fd5949" />
-                    <stop offset="90%" stopColor="#d6249f" />
-                    <stop offset="100%" stopColor="#285AEB" />
-                  </radialGradient>
-                  <rect width="24" height="24" rx="6" fill="url(#ig-gradient)" />
-                  <path d="M12 7.2A4.8 4.8 0 1 0 12 16.8A4.8 4.8 0 1 0 12 7.2Z" fill="#fff"/>
-                  <circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/>
+                <svg className="h-6 w-6" viewBox="0 0 448 512" fill="none">
+                  <defs>
+                    <linearGradient id="ig-gradient2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#f9ce34" />
+                      <stop offset="50%" stop-color="#ee2a7b" />
+                      <stop offset="100%" stop-color="#6228d7" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="448" height="512" rx="90" fill="url(#ig-gradient2)" />
+                  <path d="M224 144c-44.1 0-80 35.9-80 80s35.9 80 80 80 80-35.9 80-80-35.9-80-80-80zm0 128c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm88-80c0 8.8-7.2 16-16 16s-16-7.2-16-16 7.2-16 16-16 16 7.2 16 16zm76 16c-1.7-35.3-9.9-66.7-36.2-92.9C370.7 73.9 339.3 65.7 304 64c-35.3-1.7-141.3-1.7-176.6 0C77.3 65.7 46 73.9 19.8 100.1 7.1 112.8 0 128.6 0 144c-1.7 35.3-1.7 141.3 0 176.6 1.7 35.3 9.9 66.7 36.2 92.9 26.2 26.2 57.6 34.4 92.9 36.2 35.3 1.7 141.3 1.7 176.6 0 35.3-1.7 66.7-9.9 92.9-36.2 26.2-26.2 34.4-57.6 36.2-92.9 1.7-35.3 1.7-141.3 0-176.6zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z" fill="#fff"/>
                 </svg>
               </a>
               <a 
@@ -75,11 +74,12 @@ export default function Footer() {
                 className="transition-colors duration-200"
                 aria-label="TikTok"
               >
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
-                  <path d="M12.5 2c0 .828.672 1.5 1.5 1.5h1.5v2.5c0 2.485 2.015 4.5 4.5 4.5V13c0 3.59-2.91 6.5-6.5 6.5S7 16.59 7 13s2.91-6.5 6.5-6.5V2z" fill="#000"/>
-                  <path d="M15.5 3.5V7c0 2.485 2.015 4.5 4.5 4.5" stroke="#25F4EE" strokeWidth="1.5"/>
-                  <path d="M12.5 2v11a2.5 2.5 0 1 1-2.5-2.5" stroke="#FE2C55" strokeWidth="1.5"/>
-                  <circle cx="12.5" cy="13.5" r="1.5" fill="#25F4EE"/>
+                <svg className="h-6 w-6" viewBox="0 0 48 48" fill="none">
+                  <g>
+                    <path d="M41.5 17.5c-4.7 0-8.5-3.8-8.5-8.5h-5.5v27.5c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4c.5 0 1 .1 1.5.3v-5.2c-.5-.1-1-.1-1.5-.1-5.2 0-9.5 4.3-9.5 9.5s4.3 9.5 9.5 9.5 9.5-4.3 9.5-9.5V22.7c2.5 1.7 5.5 2.8 8.5 2.8v-8z" fill="#25F4EE"/>
+                    <path d="M33 9c0 4.7 3.8 8.5 8.5 8.5v-4c-2.5 0-4.5-2-4.5-4.5h-4z" fill="#FE2C55"/>
+                    <path d="M33 9v27.5c0 5.2-4.3 9.5-9.5 9.5s-9.5-4.3-9.5-9.5 4.3-9.5 9.5-9.5c.5 0 1 .1 1.5.3v-5.2c-.5-.1-1-.1-1.5-.1-5.2 0-9.5 4.3-9.5 9.5s4.3 9.5 9.5 9.5 9.5-4.3 9.5-9.5V9h-4z" fill="#000"/>
+                  </g>
                 </svg>
               </a>
             </div>
@@ -89,10 +89,18 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Snelle Links</h3>
             <div className="space-y-2">
-              <Link href="/over-ons" className="text-orange-900 hover:text-white transition-colors block font-medium">Over Ons</Link>
-              <Link href="/producten" className="text-orange-900 hover:text-white transition-colors block font-medium">Producten</Link>
-              <Link href="/projecten" className="text-orange-900 hover:text-white transition-colors block font-medium">Projecten</Link>
-              <Link href="/contact" className="text-orange-900 hover:text-white transition-colors block font-medium">Contact</Link>
+              <Link href="/over-ons" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+                <span className="mr-2">&gt;</span> Over Ons
+              </Link>
+              <Link href="/producten" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+                <span className="mr-2">&gt;</span> Producten
+              </Link>
+              <Link href="/projecten" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+                <span className="mr-2">&gt;</span> Projecten
+              </Link>
+              <Link href="/contact" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+                <span className="mr-2">&gt;</span> Contact
+              </Link>
             </div>
           </div>
         </div>
