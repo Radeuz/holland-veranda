@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'holland': {
+          orange: '#FF6B00', // Ana turuncu renk
+          'orange-light': '#FF8533', // Açık turuncu
+          'orange-dark': '#CC5500', // Koyu turuncu
+          white: '#FFFFFF', // Beyaz
+          'off-white': '#F8F8F8', // Off-white
+        },
+      },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
       },
