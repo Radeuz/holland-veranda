@@ -18,12 +18,12 @@ export default function Footer() {
               <h3 className="text-lg font-semibold text-white mb-2">Contact</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-2">
               <div className="flex items-center text-white font-medium">
                 <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-200" />
                 info@hollandveranda.nl
               </div>
-              <div className="flex items-center text-orange-200 mb-2">
+              <div className="flex items-center text-orange-200">
                 <PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />
                 <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
               </div>
