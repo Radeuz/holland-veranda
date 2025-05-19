@@ -53,15 +53,6 @@ export default function Footer() {
               >
                 <img src="/TikTok-Logo.jpg" alt="TikTok" className="h-6 w-6 rounded-lg" />
               </a>
-              <a 
-                href="https://facebook.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="transition-colors duration-200"
-                aria-label="Facebook"
-              >
-                <img src="/facebook.jpg" alt="Facebook" className="h-6 w-6 rounded-lg" />
-              </a>
             </div>
           </div>
 

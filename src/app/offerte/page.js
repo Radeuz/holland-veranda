@@ -92,7 +92,7 @@ function OffertePageContent() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700 overflow-hidden">
+              <form onSubmit={handleSubmit(onSubmit)} className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-2xl shadow-xl p-8 border border-gray-700 overflow-hidden">
                 {/* Dynamic Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20 rounded-2xl"></div>
                 {/* Blur Effect */}

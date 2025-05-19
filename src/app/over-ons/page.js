@@ -35,7 +35,7 @@ export default function OverOns() {
           <div className="max-w-7xl mx-auto">
             {/* Vision Box - Centered */}
             <div className="max-w-3xl mx-auto mb-16">
-              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg">
+              <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-2xl p-8 shadow-lg">
                 <div className="relative h-[400px] rounded-xl overflow-hidden mb-6">
                   <Image
                     src="/Veranda6.jpg"
@@ -60,7 +60,7 @@ export default function OverOns() {
             {/* Other Boxes */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Quality */}
-              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg">
+              <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-2xl p-8 shadow-lg">
                 <div className="relative h-[400px] rounded-xl overflow-hidden mb-6">
                   <Image
                     src="/GespecialiseerdeMonteurs1.jpg"
@@ -82,7 +82,7 @@ export default function OverOns() {
               </div>
 
               {/* Service */}
-              <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg">
+              <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-2xl p-8 shadow-lg">
                 <div className="relative h-[400px] rounded-xl overflow-hidden mb-6">
                   <Image 
                     src="/Veranda7.jpg"
