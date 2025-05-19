@@ -109,11 +109,7 @@ export default function Home() {
       <Navigation />
 
       {/* Main Banner */}
-      <div className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
-        {/* Dynamic Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
-        {/* Blur Effect */}
-        <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
+      <div className="relative bg-gradient-to-br from-orange-500 via-orange-200 to-white">
         {/* Content */}
         <div className="relative container mx-auto px-0 md:px-4">
           <div className="flex flex-col md:flex-row items-center">
