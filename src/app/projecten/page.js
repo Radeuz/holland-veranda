@@ -320,7 +320,7 @@ export default function Projecten() {
                   {project.product && (
                     <div className="mt-4">
                       <Link 
-                        href={`/offerte?product=${products.find(p => p.name === project.product)?.id || ''}`}
+                        href="/offerte"
                         className="inline-block w-full px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-sm font-semibold transition-colors duration-200 text-center"
                       >
                         Vraag een gratis offerte aan
