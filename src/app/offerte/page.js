@@ -27,7 +27,7 @@ function OffertePageContent() {
 
   useEffect(() => {
     if (productParam) {
-      let product = products.find(p => p.name.toLowerCase() === productParam.toLowerCase() || p.id === productParam.toLowerCase());
+      const product = products.find(p => p.name === productParam);
       if (product) {
         setValue('product', product.id);
       }
