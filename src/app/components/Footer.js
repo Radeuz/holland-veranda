@@ -19,6 +19,11 @@ export default function Footer() {
               <p className="text-orange-900 font-medium">info@hollandveranda.nl</p>
               <p className="text-orange-900 font-medium">+31 6 18 61 21 90 & 013-2340905</p>
             </div>
+            <div className="space-y-2 mt-4">
+              <p className="text-orange-900 font-medium">Andorrastraat 3</p>
+              <p className="text-orange-900 font-medium">5171 PC Kaatsheuvel</p>
+              <p className="text-orange-900 font-medium">Nederland</p>
+            </div>
           </div>
 
           {/* Opening Hours */}
@@ -42,7 +47,7 @@ export default function Footer() {
                 className="transition-colors duration-200"
                 aria-label="Facebook"
               >
-                <img src="/facebook.jpg" alt="Facebook" className="h-6 w-6 rounded-lg" />
+                <img src="/Facebook_logo.png" alt="Facebook" className="h-6 w-6 rounded-lg" />
               </a>
               <a 
                 href="https://www.instagram.com/hollandveranda.nl/" 

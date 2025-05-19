@@ -93,7 +93,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
             <div className="order-1 lg:order-1">
-              <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8">
+              <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8 group focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-orange-100 transition-all">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Stuur Ons Een Bericht</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -106,7 +106,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
+                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg transition-colors text-orange-900 placeholder-orange-300"
                       />
                     </div>
                     <div>
@@ -118,7 +118,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
+                        className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg transition-colors text-orange-900 placeholder-orange-300"
                       />
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg transition-colors text-orange-900 placeholder-orange-300"
                     />
                   </div>
                   <div>
@@ -143,7 +143,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       rows="6"
-                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-orange-900 placeholder-orange-300"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg transition-colors text-orange-900 placeholder-orange-300"
                     ></textarea>
                   </div>
                   {status.message && (
