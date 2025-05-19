@@ -502,33 +502,33 @@ export default function ProductDetail() {
       </section>
 
       {/* Specifications Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Specificaties</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Materiaal</h3>
-              <p className="text-gray-300">Hoogwaardig aluminium met 10 jaar garantie</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Materiaal</h3>
+              <p className="text-orange-900 font-medium">Hoogwaardig aluminium met 10 jaar garantie</p>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Afmetingen</h3>
-              <p className="text-gray-300">Op maat gemaakt, standaard 3m x 6m</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Afmetingen</h3>
+              <p className="text-orange-900 font-medium">Op maat gemaakt, standaard 3m x 6m</p>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Kleur</h3>
-              <p className="text-gray-300">RAL 9016 (zwart) of naar keuze</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Kleur</h3>
+              <p className="text-orange-900 font-medium">RAL 9016 (zwart) of naar keuze</p>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Dak</h3>
-              <p className="text-gray-300">Glas of polycarbonaat, naar keuze</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Dak</h3>
+              <p className="text-orange-900 font-medium">Glas of polycarbonaat, naar keuze</p>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Montage</h3>
-              <p className="text-gray-300">Professionele montage door ervaren team</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Montage</h3>
+              <p className="text-orange-900 font-medium">Professionele montage door ervaren team</p>
             </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-orange-500/50 transition-all duration-300">
-              <h3 className="text-xl font-semibold text-orange-500 mb-4">Garantie</h3>
-              <p className="text-gray-300">10 jaar garantie op constructie</p>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Garantie</h3>
+              <p className="text-orange-900 font-medium">10 jaar garantie op constructie</p>
             </div>
           </div>
         </div>
@@ -566,19 +566,19 @@ export default function ProductDetail() {
 
       {/* FAQ Section */}
       {product.faqs.length > 0 && (
-        <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-950 text-white">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center">Veelgestelde Vragen</h2>
+            <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center text-white">Veelgestelde Vragen</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {product.faqs.map((faq, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-700/50 hover:border-orange-500/50 transition-colors duration-200">
-                  <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex items-center">
+                <div key={index} className="bg-white/70 rounded-xl p-6 md:p-8 shadow-lg">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex items-center text-orange-700">
                     <span className="w-8 h-8 md:w-10 md:h-10 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
-                      <span className="text-orange-500 font-bold">{index + 1}</span>
+                      <span className="text-orange-700 font-bold">{index + 1}</span>
                     </span>
                     {faq.question}
                   </h3>
-                  <p className="text-gray-300 md:text-lg pl-12 md:pl-14">{faq.answer}</p>
+                  <p className="text-orange-900 font-medium md:text-lg pl-12 md:pl-14">{faq.answer}</p>
                 </div>
               ))}
             </div>

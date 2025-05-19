@@ -92,7 +92,7 @@ function OffertePageContent() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit(onSubmit)} className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-2xl shadow-xl p-8 border border-gray-700 overflow-hidden">
+              <form onSubmit={handleSubmit(onSubmit)} className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8 overflow-hidden">
                 {/* Dynamic Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20 rounded-2xl"></div>
                 {/* Blur Effect */}
@@ -101,14 +101,14 @@ function OffertePageContent() {
                 <div className="relative z-10 space-y-6">
                   {/* Naam */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
                       Naam *
                     </label>
                     <input
                       type="text"
                       id="name"
                       {...register('name', { required: 'Naam is verplicht' })}
-                      className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-800/50 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                       placeholder="Uw naam"
                     />
                     {errors.name && (
@@ -118,7 +118,7 @@ function OffertePageContent() {
 
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
                       Email *
                     </label>
                     <input
@@ -131,7 +131,7 @@ function OffertePageContent() {
                           message: 'Ongeldig email adres'
                         }
                       })}
-                      className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-800/50 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                       placeholder="Uw e-mailadres"
                     />
                     {errors.email && (
@@ -141,14 +141,14 @@ function OffertePageContent() {
 
                   {/* Telefoon */}
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">
                       Telefoonnummer *
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       {...register('phone', { required: 'Telefoonnummer is verplicht' })}
-                      className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-800/50 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                       placeholder="Uw telefoonnummer"
                     />
                     {errors.phone && (
@@ -158,13 +158,13 @@ function OffertePageContent() {
 
                   {/* Product */}
                   <div>
-                    <label htmlFor="product" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="product" className="block text-sm font-medium text-white mb-1">
                       Product *
                     </label>
                     <select
                       id="product"
                       {...register('product', { required: 'Selecteer een product' })}
-                      className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-800/50 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                     >
                       <option value="">Selecteer een product</option>
                       {products.map((product) => (
@@ -180,14 +180,14 @@ function OffertePageContent() {
 
                   {/* Beschrijving */}
                   <div>
-                    <label htmlFor="description" className="block text-sm font-medium text-gray-300 mb-1">
+                    <label htmlFor="description" className="block text-sm font-medium text-white mb-1">
                       Beschrijving van uw aanvraag *
                     </label>
                     <textarea
                       id="description"
                       rows="4"
                       {...register('description', { required: 'Beschrijving is verplicht' })}
-                      className="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-800/50 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                       placeholder="Beschrijf uw wensen en vragen"
                     ></textarea>
                     {errors.description && (
