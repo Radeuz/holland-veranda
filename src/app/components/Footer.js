@@ -16,13 +16,20 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-2">
-              <p className="text-orange-900 font-medium">info@hollandveranda.nl</p>
-              <p className="text-orange-900 font-medium">+31 6 18 61 21 90 & 013-2340905</p>
+              <div className="flex items-center text-orange-900 font-medium">
+                <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-600" />
+                info@hollandveranda.nl
+              </div>
+              <div className="flex items-center text-orange-900 font-medium">
+                <PhoneIcon className="w-5 h-5 mr-2 text-orange-600" />
+                +31 6 18 61 21 90 & 013-2340905
+              </div>
             </div>
-            <div className="space-y-2 mt-4">
-              <p className="text-orange-900 font-medium">Andorrastraat 3</p>
-              <p className="text-orange-900 font-medium">5171 PC Kaatsheuvel</p>
-              <p className="text-orange-900 font-medium">Nederland</p>
+            <div className="space-y-2 mt-2">
+              <div className="flex items-center text-orange-900 font-medium">
+                <MapPinIcon className="w-5 h-5 mr-2 text-orange-600" />
+                Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
+              </div>
             </div>
           </div>
 
