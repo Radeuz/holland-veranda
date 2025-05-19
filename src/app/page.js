@@ -109,7 +109,7 @@ export default function Home() {
       <Navigation />
 
       {/* Main Banner */}
-      <div className="relative bg-gradient-to-br from-orange-500 via-orange-200 to-white">
+      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
         {/* Content */}
         <div className="relative container mx-auto px-0 md:px-4">
           <div className="flex flex-col md:flex-row items-center">
