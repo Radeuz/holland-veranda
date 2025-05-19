@@ -424,7 +424,7 @@ export default function ProductDetail() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute inset-0 backdrop-blur-sm"></div>
         
-        <div className="relative container mx-auto">
+        <div className="relative container mx-auto overflow-hidden">
           <div className="flex flex-col-reverse md:flex-row items-stretch">
             {/* Product Image - Mobile First */}
             <div className="w-full md:w-1/2 relative h-[300px] md:h-[600px]">
@@ -436,9 +436,7 @@ export default function ProductDetail() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{
                   objectFit: 'cover',
-                  objectPosition: 'center',
-                  height: '100%',
-                  width: '100%'
+                  objectPosition: 'center center'
                 }}
                 className="shadow-2xl"
               />
