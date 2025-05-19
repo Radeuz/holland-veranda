@@ -46,6 +46,15 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/hollandveranda-logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/hollandveranda-logo.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S36QBC7C7R"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-S36QBC7C7R');
+          `,
+        }} />
       </head>
       <body className={montserrat.className}>
         <LanguageProvider>
