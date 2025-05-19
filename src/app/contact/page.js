@@ -78,10 +78,10 @@ export default function Contact() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              {t('contact.title')}
+              Contact
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              Neem contact op voor advies en een offerte voor duurzame aluminium veranda's en buitenoplossingen op maat.
+            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
+              Neem contact met ons op voor meer informatie of een vrijblijvende offerte.
             </p>
           </div>
         </div>

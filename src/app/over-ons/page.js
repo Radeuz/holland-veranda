@@ -19,10 +19,10 @@ export default function OverOns() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8 w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              {t('about.title')}
+              Over Ons
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              Wij creëren duurzame oplossingen die esthetiek, comfort en functionaliteit combineren.
+            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
+              Leer meer over ons bedrijf, onze missie en onze toewijding aan kwaliteit en klanttevredenheid.
             </p>
           </div>
         </div>

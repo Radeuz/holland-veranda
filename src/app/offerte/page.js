@@ -69,10 +69,10 @@ function OffertePageContent() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Vraag Direct Uw Gratis Offerte Aan
+              Offerte Aanvragen
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              Laat uw gegevens achter en wij nemen spoedig contact met u op voor een persoonlijk advies en een offerte op maat.
+            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
+              Vraag een vrijblijvende offerte aan voor uw project. Wij nemen binnen 24 uur contact met u op.
             </p>
           </div>
         </div>

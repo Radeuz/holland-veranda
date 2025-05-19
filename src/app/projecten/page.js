@@ -229,10 +229,10 @@ export default function Projecten() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Onze Projecten
+              {t('projects.title')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              Bekijk onze nieuwste hoogwaardige terrasprojecten in Europa en laat je inspireren door het vakmanschap en het ontwerp.
+            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
+              Bekijk onze voltooide projecten en laat u inspireren door onze vakmanschap en kwaliteit.
             </p>
           </div>
         </div>
