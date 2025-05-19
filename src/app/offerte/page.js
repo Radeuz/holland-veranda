@@ -27,7 +27,11 @@ function OffertePageContent() {
 
   useEffect(() => {
     if (productParam) {
-      const product = products.find(p => p.name === productParam);
+      // Normalize param for comparison
+      const normalizedParam = productParam.trim().toLowerCase();
+      const product = products.find(
+        p => p.name.toLowerCase() === normalizedParam || p.id.toLowerCase() === normalizedParam
+      );
       if (product) {
         setValue('product', product.id);
       }

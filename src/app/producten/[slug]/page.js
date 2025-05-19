@@ -452,7 +452,7 @@ export default function ProductDetail() {
               </p>
               <div className="flex justify-center md:justify-start">
                 <Link 
-                  href="/offerte"
+                  href={`/offerte?product=${product.title}`}
                   className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Vraag een gratis offerte aan
