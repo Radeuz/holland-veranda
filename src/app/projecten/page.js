@@ -15,147 +15,176 @@ export default function Projecten() {
     { 
       id: 5, 
       image: '/Veranda5.jpg',
-      location: 'Eindhoven, Nederland'
+      location: 'Eindhoven, Nederland',
+      product: 'Veranda'
     },
     { 
       id: 6, 
       image: '/Veranda6.jpg',
-      location: 'Antwerpen, België'
+      location: 'Antwerpen, België',
+      product: 'Veranda'
     },
     { 
       id: 7, 
       image: '/Veranda7.jpg',
-      location: 'Brugge, België'
+      location: 'Brugge, België',
+      product: 'Veranda'
     },
     { 
       id: 8, 
       image: '/Veranda8.jpg',
-      location: 'Gent, België'
+      location: 'Gent, België',
+      product: 'Veranda'
     },
     {
       id: 9,
       image: '/Veranda9.jpg',
-      location: 'Brussel, België'
+      location: 'Brussel, België',
+      product: 'Veranda'
     },
     {
       id: 10,
       image: '/Terrasoverkapping5.jpg',
-      location: 'Groningen, Nederland'
+      location: 'Groningen, Nederland',
+      product: 'Terrasoverkapping'
     },
     {
       id: 11,
       image: '/Terrasoverkapping3.jpg',
-      location: 'Leeuwarden, Nederland'
+      location: 'Leeuwarden, Nederland',
+      product: 'Terrasoverkapping'
     },
     {
       id: 12,
       image: '/Terrasoverkapping4.jpg',
-      location: 'Arnhem, Nederland'
+      location: 'Arnhem, Nederland',
+      product: 'Terrasoverkapping'
     },
     { 
       id: 13, 
       image: '/Carport3.jpg',
-      location: 'Tilburg, Nederland'
+      location: 'Tilburg, Nederland',
+      product: 'Carport'
     },
     { 
       id: 14, 
       image: '/Carport5.jpg',
-      location: 'Enschede, Nederland'
+      location: 'Enschede, Nederland',
+      product: 'Carport'
     },
     { 
       id: 15, 
       image: '/Kozijnen5.jpg',
-      location: 'Haarlem, Nederland'
+      location: 'Haarlem, Nederland',
+      product: 'Kozijnen'
     },
     { 
       id: 16, 
       image: '/Kozijnen2.jpg',
-      location: 'Alkmaar, Nederland'
+      location: 'Alkmaar, Nederland',
+      product: 'Kozijnen'
     },
     { 
       id: 17, 
       image: '/Kozijnen4.jpg',
-      location: 'Delft, Nederland'
+      location: 'Delft, Nederland',
+      product: 'Kozijnen'
     },
     { 
       id: 18, 
       image: '/Schuifpui5.jpg',
-      location: 'Zwolle, Nederland'
+      location: 'Zwolle, Nederland',
+      product: 'Schuifpuien'
     },
     { 
       id: 19, 
       image: '/Schuifpui2.jpg',
-      location: 'Apeldoorn, Nederland'
+      location: 'Apeldoorn, Nederland',
+      product: 'Schuifpuien'
     },
     { 
       id: 20, 
       image: '/Schuifpui3.jpg',
-      location: 'Amersfoort, Nederland'
+      location: 'Amersfoort, Nederland',
+      product: 'Schuifpuien'
     },
     { 
       id: 21, 
       image: '/Schuifpui4.jpg',
-      location: 'Dordrecht, Nederland'
+      location: 'Dordrecht, Nederland',
+      product: 'Schuifpuien'
     },
     { 
       id: 22, 
       image: '/Zonweringen1.jpg',
-      location: 'Venlo, Nederland'
+      location: 'Venlo, Nederland',
+      product: 'Zonweringen'
     },
     { 
       id: 23, 
       image: '/Zonweringen2.jpg',
-      location: 'Deventer, Nederland'
+      location: 'Deventer, Nederland',
+      product: 'Zonweringen'
     },
     { 
       id: 24, 
       image: '/Zonweringen3.jpg',
-      location: 'Zaanstad, Nederland'
+      location: 'Zaanstad, Nederland',
+      product: 'Zonweringen'
     },
     { 
       id: 25, 
       image: '/Zonweringen4.jpg',
-      location: 'Almere, Nederland'
+      location: 'Almere, Nederland',
+      product: 'Zonweringen'
     },
     { 
       id: 26, 
       image: '/Rolluiken1.jpg',
-      location: 'Hoorn, Nederland'
+      location: 'Hoorn, Nederland',
+      product: 'Rolluiken'
     },
     { 
       id: 27, 
       image: '/Rolluiken2.jpg',
-      location: 'Den Bosch, Nederland'
+      location: 'Den Bosch, Nederland',
+      product: 'Rolluiken'
     },
     { 
       id: 28, 
       image: '/Rolluiken3.jpg',
-      location: 'Lelystad, Nederland'
+      location: 'Lelystad, Nederland',
+      product: 'Rolluiken'
     },
     { 
       id: 29, 
       image: '/Rolluiken4.jpg',
-      location: 'Hilversum, Nederland'
+      location: 'Hilversum, Nederland',
+      product: 'Rolluiken'
     },
     { 
       id: 30, 
       image: '/KeramischeTegels1.jpg',
-      location: 'Purmerend, Nederland'
+      location: 'Purmerend, Nederland',
+      product: 'Keramische Tegels'
     },
     { 
       id: 31, 
       image: '/KeramischeTegels2.jpg',
-      location: 'Roosendaal, Nederland'
+      location: 'Roosendaal, Nederland',
+      product: 'Keramische Tegels'
     },
     { 
       id: 32, 
       image: '/KeramischeTegels3.jpg',
-      location: 'Middelburg, Nederland'
+      location: 'Middelburg, Nederland',
+      product: 'Keramische Tegels'
     },
     { 
       id: 33, 
       image: '/KeramischeTegels4.jpg',
-      location: 'Emmen, Nederland'
+      location: 'Emmen, Nederland',
+      product: 'Keramische Tegels'
     },
     {
       id: 34,
@@ -165,22 +194,26 @@ export default function Projecten() {
     { 
       id: 1, 
       image: '/Veranda1.jpg',
-      location: 'Rotterdam, Nederland'
+      location: 'Rotterdam, Nederland',
+      product: 'Veranda'
     },
     { 
       id: 2, 
       image: '/Veranda13.jpg',
-      location: 'Amsterdam, Nederland'
+      location: 'Amsterdam, Nederland',
+      product: 'Veranda'
     },
     { 
       id: 3, 
       image: '/Veranda12.jpg',
-      location: 'Utrecht, Nederland'
+      location: 'Utrecht, Nederland',
+      product: 'Veranda'
     },
     { 
       id: 4, 
       image: '/Veranda4.jpg',
       location: 'Den Haag, Nederland',
+      product: 'Veranda',
       objectPosition: 'center 30%'
     }
   ]
@@ -259,6 +292,30 @@ export default function Projecten() {
                     }}
                     className="rounded-lg"
                   />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span className="text-gray-600">{project.location}</span>
+                    </div>
+                    {project.product && (
+                      <span className="text-orange-600 font-medium">{project.product}</span>
+                    )}
+                  </div>
+                  {project.product && (
+                    <div className="mt-4">
+                      <Link 
+                        href={`/offerte?product=${project.product}`}
+                        className="inline-block w-full px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-sm font-semibold transition-colors duration-200 text-center"
+                      >
+                        Vraag een gratis offerte aan
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
