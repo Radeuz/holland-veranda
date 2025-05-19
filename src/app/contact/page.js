@@ -174,7 +174,7 @@ export default function Contact() {
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Adres</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />Adres</h3>
                     <p className="text-orange-900 font-medium">
                       Andorrastraat 3<br />
                       5171 PC Kaatsheuvel<br />
@@ -182,14 +182,14 @@ export default function Contact() {
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />Contact</h3>
                     <p className="text-orange-900 font-medium">
                       Tel: <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-white transition-colors underline">+31 (0) 132 340 905</a><br />
                       E-mail: info@hollandveranda.nl
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><ClockIcon className="w-5 h-5 mr-2 text-orange-200" />Openingstijden</h3>
                     <p className="text-orange-900 font-medium">
                       Maandag - Vrijdag: 09:00 - 17:00<br />
                       Zaterdag: 10:00 - 15:00<br />
