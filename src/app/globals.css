@@ -1,54 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
+  --background: #ffffff;
   --foreground: #171717;
-  --primary: #FF6B00;
-  --primary-light: #FF8533;
-  --primary-dark: #CC5500;
-  --secondary: #F8F8F8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-light: var(--primary-light);
-  --color-primary-dark: var(--primary-dark);
-  --color-secondary: var(--secondary);
   --font-sans: var(--font-montserrat);
   --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Montserrat', sans-serif;
-}
-
-/* Minimalistic button styles */
-.btn-primary {
-  @apply bg-holland-orange text-white px-6 py-2 rounded-md hover:bg-holland-orange-dark transition-colors duration-200;
-}
-
-.btn-secondary {
-  @apply bg-holland-off-white text-holland-orange px-6 py-2 rounded-md hover:bg-holland-orange-light hover:text-white transition-colors duration-200;
-}
-
-/* Minimalistic card styles */
-.card {
-  @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
-}
-
-/* Minimalistic navigation styles */
-.nav-link {
-  @apply text-holland-orange hover:text-holland-orange-dark transition-colors duration-200;
-}
-
-/* Remove dark mode as we're using light theme only */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #FFFFFF;
-    --foreground: #171717;
-  }
 }
