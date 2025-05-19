@@ -316,4 +316,8 @@ export default function Projecten() {
       <Footer />
     </main>
   )
-} 
+}
+
+export const metadata = {
+  title: 'Holland Veranda - Projecten',
+}; 

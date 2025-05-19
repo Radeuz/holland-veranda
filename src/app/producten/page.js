@@ -175,3 +175,7 @@ export default function Producten() {
     </main>
   )
 }
+
+export const metadata = {
+  title: 'Holland Veranda - Producten',
+};
