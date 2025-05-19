@@ -502,8 +502,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-400/40 via-transparent to-orange-200/30"></div>
               
               <div className="relative z-10">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 text-center md:text-left gap-2 md:gap-0">
-                  <h3 className="text-xl font-bold text-white flex items-center">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 text-left gap-2 md:gap-0">
+                  <h3 className="text-lg md:text-xl font-bold text-white flex items-center whitespace-nowrap">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
                     </svg>
