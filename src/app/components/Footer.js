@@ -23,7 +23,7 @@ export default function Footer() {
                 info@hollandveranda.nl
               </div>
               <div className="text-white font-medium">
-                +31 6 18 61 21 90 & 013-2340905
+                <a href="tel:+31618612190" className="hover:text-orange-200 transition-colors">+31 (0) 618 612 190</a> & <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors">+31 (0) 132 340 905</a>
               </div>
               <div className="text-white font-medium">
                 Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland

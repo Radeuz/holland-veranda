@@ -184,7 +184,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
                     <p className="text-orange-900 font-medium">
-                      Tel: +31 (0)20 123 4567<br />
+                      Tel: <a href="tel:+31618612190" className="hover:text-white transition-colors">+31 (0) 618 612 190</a><br />
                       E-mail: info@hollandveranda.nl
                     </p>
                   </div>

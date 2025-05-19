@@ -93,11 +93,6 @@ function OffertePageContent() {
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8 overflow-hidden">
-                {/* Dynamic Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20 rounded-2xl"></div>
-                {/* Blur Effect */}
-                <div className="absolute inset-0 backdrop-blur-3xl bg-white/5 rounded-2xl"></div>
-                
                 <div className="relative z-10 space-y-6">
                   {/* Naam */}
                   <div>
