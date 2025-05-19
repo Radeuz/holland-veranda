@@ -437,13 +437,8 @@ export default function Home() {
       </section>
 
       {/* Voordelen Section */}
-      <section className="py-12 relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white">
-        {/* Dynamic Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
-        {/* Blur Effect */}
-        <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
-        
-        <div className="container mx-auto px-4 relative">
+      <section className="py-12 relative bg-gradient-to-br from-orange-100 via-orange-50 to-white text-gray-900">
+        <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-10 text-white">Waarom Kiezen Voor Holland Veranda</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -503,8 +498,8 @@ export default function Home() {
             </div>
             
             {/* Right Column with Reviews */}
-            <div className="relative bg-gradient-to-br from-gray-900/80 via-gray-800/90 to-gray-900/80 p-6 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10">
-              <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-transparent to-orange-500/10"></div>
+            <div className="relative bg-gradient-to-br from-orange-200/80 via-white/90 to-orange-100/80 p-6 rounded-xl overflow-hidden border border-orange-100">
+              <div className="absolute inset-0 bg-gradient-to-tr from-orange-300/20 via-transparent to-orange-200/20"></div>
               
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-6">
