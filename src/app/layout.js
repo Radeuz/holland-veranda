@@ -10,11 +10,11 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: "Veranda\'s, carports, frames en meer - voor uw perfecte tuin",
+  title: "Holland Veranda",
   description: 'Ontdek ons assortiment hoogwaardige veranda\'s en overkappingen, perfect voor uw buitenruimte. Specialist in moderne en klassieke veranda\'s.',
   keywords: 'veranda, overkapping, tuin, buitenruimte, holland veranda, moderne veranda, klassieke veranda, carports, frames',
   openGraph: {
-    title: "Veranda\'s, carports, frames en meer - voor uw perfecte tuin",
+    title: "Holland Veranda",
     description: 'Ontdek ons assortiment hoogwaardige veranda\'s en overkappingen, perfect voor uw buitenruimte.',
     url: 'https://hollandveranda.nl',
     siteName: 'Holland Veranda',
