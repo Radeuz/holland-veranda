@@ -109,7 +109,6 @@ function OffertePageContent() {
                       id="name"
                       {...register('name', { required: 'Naam is verplicht' })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
-                      placeholder="Uw naam"
                     />
                     {errors.name && (
                       <p className="mt-1 text-sm text-red-400">{errors.name.message}</p>
@@ -132,7 +131,6 @@ function OffertePageContent() {
                         }
                       })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
-                      placeholder="Uw e-mailadres"
                     />
                     {errors.email && (
                       <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>
@@ -149,7 +147,6 @@ function OffertePageContent() {
                       id="phone"
                       {...register('phone', { required: 'Telefoonnummer is verplicht' })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
-                      placeholder="Uw telefoonnummer"
                     />
                     {errors.phone && (
                       <p className="mt-1 text-sm text-red-400">{errors.phone.message}</p>
@@ -188,7 +185,6 @@ function OffertePageContent() {
                       rows="4"
                       {...register('description', { required: 'Beschrijving is verplicht' })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
-                      placeholder="Beschrijf uw wensen en vragen"
                     ></textarea>
                     {errors.description && (
                       <p className="mt-1 text-sm text-red-400">{errors.description.message}</p>
