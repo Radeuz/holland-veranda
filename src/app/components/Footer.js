@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-            <div className="space-y-2">
+            <div className="space-y-4">
               <div className="flex items-center text-orange-900 font-medium">
                 <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-600" />
                 info@hollandveranda.nl
@@ -24,8 +24,6 @@ export default function Footer() {
                 <PhoneIcon className="w-5 h-5 mr-2 text-orange-600" />
                 +31 6 18 61 21 90 & 013-2340905
               </div>
-            </div>
-            <div className="space-y-2 mt-2">
               <div className="flex items-center text-orange-900 font-medium">
                 <MapPinIcon className="w-5 h-5 mr-2 text-orange-600" />
                 Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
