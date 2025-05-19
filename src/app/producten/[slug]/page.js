@@ -434,7 +434,12 @@ export default function ProductDetail() {
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{objectFit: 'cover', objectPosition: 'center'}}
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                  height: '100%',
+                  width: '100%'
+                }}
                 className="shadow-2xl"
               />
             </div>
