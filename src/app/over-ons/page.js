@@ -14,7 +14,7 @@ export default function OverOns() {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
+      <div className="relative bg-gradient-to-r from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8 w-full">
