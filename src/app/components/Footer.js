@@ -17,15 +17,15 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-center text-orange-900 font-medium">
-                <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-600" />
+                <EnvelopeIcon className="w-5 h-5 mr-2 text-white" />
                 info@hollandveranda.nl
               </div>
               <div className="flex items-center text-orange-900 font-medium">
-                <PhoneIcon className="w-5 h-5 mr-2 text-orange-600" />
+                <PhoneIcon className="w-5 h-5 mr-2 text-white" />
                 +31 6 18 61 21 90 & 013-2340905
               </div>
               <div className="flex items-center text-orange-900 font-medium">
-                <MapPinIcon className="w-5 h-5 mr-2 text-orange-600" />
+                <MapPinIcon className="w-5 h-5 mr-2 text-white" />
                 Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
               </div>
             </div>
@@ -34,10 +34,19 @@ export default function Footer() {
           {/* Opening Hours */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
-            <div className="space-y-2">
-              <p className="text-orange-900 font-medium">Maandag - Vrijdag: 9:00 - 17:00</p>
-              <p className="text-orange-900 font-medium">Zaterdag: 10:00 - 15:00</p>
-              <p className="text-orange-900 font-medium">Zondag: Gesloten</p>
+            <div className="space-y-4">
+              <div className="flex items-center text-orange-900 font-medium">
+                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+                Maandag - Vrijdag: 9:00 - 17:00
+              </div>
+              <div className="flex items-center text-orange-900 font-medium">
+                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+                Zaterdag: 10:00 - 15:00
+              </div>
+              <div className="flex items-center text-orange-900 font-medium">
+                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+                Zondag: Gesloten
+              </div>
             </div>
           </div>
 

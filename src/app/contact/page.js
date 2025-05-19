@@ -77,7 +77,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-600 mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               Contact
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
