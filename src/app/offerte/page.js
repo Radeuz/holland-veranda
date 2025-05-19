@@ -224,8 +224,4 @@ export default function OffertePage() {
       <OffertePageContent />
     </Suspense>
   );
-}
-
-export const metadata = {
-  title: 'Holland Veranda - Offerte',
-}; 
+} 

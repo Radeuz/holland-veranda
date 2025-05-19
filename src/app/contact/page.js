@@ -239,7 +239,3 @@ export default function Contact() {
     </main>
   );
 }
-
-export const metadata = {
-  title: 'Holland Veranda - Contact',
-};

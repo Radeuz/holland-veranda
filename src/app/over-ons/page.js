@@ -111,7 +111,3 @@ export default function OverOns() {
     </main>
   )
 }
-
-export const metadata = {
-  title: 'Holland Veranda - Over Ons',
-};
