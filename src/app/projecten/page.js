@@ -7,6 +7,17 @@ import Footer from '../components/Footer'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
+const products = [
+  { id: 'veranda', name: 'Veranda' },
+  { id: 'carport', name: 'Carport' },
+  { id: 'terrasoverkapping', name: 'Terrasoverkapping' },
+  { id: 'kozijnen', name: 'Kozijnen' },
+  { id: 'schuifpuien', name: 'Schuifpuien' },
+  { id: 'zonweringen', name: 'Zonweringen' },
+  { id: 'rolluiken', name: 'Rolluiken' },
+  { id: 'keramische-tegels', name: 'Keramische Tegels' }
+];
+
 export default function Projecten() {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
@@ -309,7 +320,7 @@ export default function Projecten() {
                   {project.product && (
                     <div className="mt-4">
                       <Link 
-                        href={`/offerte?product=${project.product}`}
+                        href={`/offerte?product=${products.find(p => p.name === project.product)?.id || ''}`}
                         className="inline-block w-full px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-sm font-semibold transition-colors duration-200 text-center"
                       >
                         Vraag een gratis offerte aan
