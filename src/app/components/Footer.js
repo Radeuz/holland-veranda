@@ -19,14 +19,21 @@ export default function Footer() {
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="space-y-4">
-              <div className="text-white font-medium">
+              <div className="flex items-center text-white font-medium">
+                <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-200" />
                 info@hollandveranda.nl
               </div>
-              <p className="text-orange-200 mb-2">
+              <div className="flex items-center text-orange-200 mb-2">
+                <PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />
                 <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
-              </p>
-              <div className="text-white font-medium">
-                Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
+              </div>
+              <div className="flex items-start text-white font-medium">
+                <MapPinIcon className="w-5 h-5 mr-2 text-orange-200 mt-0.5" />
+                <span>
+                  Andorrastraat 3<br />
+                  5171 PC Kaatsheuvel<br />
+                  Nederland
+                </span>
               </div>
             </div>
           </div>
