@@ -420,9 +420,9 @@ export default function ProductDetail() {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
-        <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 via-gray-800/25 to-gray-700/20"></div>
-        <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
+      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
         
         <div className="relative container mx-auto">
           <div className="flex flex-col-reverse md:flex-row items-stretch">

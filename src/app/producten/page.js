@@ -92,14 +92,14 @@ export default function Producten() {
       <Navigation />
 
       {/* Page Header */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-12 pb-8">
+      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               {t('products.title')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
               Ontdek onze ruime collectie aluminium veranda's, terrasoverkappingen en maatwerk buitenoplossingen.
             </p>
           </div>
