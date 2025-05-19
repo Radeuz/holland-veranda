@@ -437,7 +437,7 @@ export default function Home() {
       </section>
 
       {/* Voordelen Section */}
-      <section className="py-12 relative bg-gradient-to-br from-orange-100 via-orange-50 to-white text-gray-900">
+      <section className="py-12 relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-10 text-white">Waarom Kiezen Voor Holland Veranda</h2>
           
@@ -445,7 +445,7 @@ export default function Home() {
             {/* Left Column with 4 cards stacked in 2x2 grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Voordeel 1 */}
-              <div className="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-white/30 text-orange-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-2">
                   <div className="bg-orange-600 rounded-full p-1.5 mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -458,7 +458,7 @@ export default function Home() {
               </div>
               
               {/* Voordeel 2 */}
-              <div className="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-white/30 text-orange-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-2">
                   <div className="bg-orange-600 rounded-full p-1.5 mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -471,7 +471,7 @@ export default function Home() {
               </div>
               
               {/* Voordeel 3 */}
-              <div className="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-white/30 text-orange-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-2">
                   <div className="bg-orange-600 rounded-full p-1.5 mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -484,7 +484,7 @@ export default function Home() {
               </div>
               
               {/* Voordeel 4 */}
-              <div className="bg-white/10 backdrop-blur-md p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="bg-white/30 text-orange-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="flex items-center mb-2">
                   <div className="bg-orange-600 rounded-full p-1.5 mr-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -498,8 +498,8 @@ export default function Home() {
             </div>
             
             {/* Right Column with Reviews */}
-            <div className="relative bg-gradient-to-br from-orange-200/80 via-white/90 to-orange-100/80 p-6 rounded-xl overflow-hidden border border-orange-100">
-              <div className="absolute inset-0 bg-gradient-to-tr from-orange-300/20 via-transparent to-orange-200/20"></div>
+            <div className="relative bg-white/40 p-6 rounded-xl overflow-hidden border border-orange-200">
+              <div className="absolute inset-0 bg-gradient-to-tr from-orange-100/30 via-transparent to-orange-200/20"></div>
               
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-6">
