@@ -14,18 +14,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">Contact</h3>
+              <div className="h-px bg-white/20 mb-4"></div>
+            </div>
             <div className="space-y-4">
-              <div className="flex items-center text-orange-900 font-medium">
-                <EnvelopeIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 info@hollandveranda.nl
               </div>
-              <div className="flex items-center text-orange-900 font-medium">
-                <PhoneIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 +31 6 18 61 21 90 & 013-2340905
               </div>
-              <div className="flex items-center text-orange-900 font-medium">
-                <MapPinIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland
               </div>
             </div>
@@ -33,18 +33,18 @@ export default function Footer() {
 
           {/* Opening Hours */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Openingstijden</h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">Openingstijden</h3>
+              <div className="h-px bg-white/20 mb-4"></div>
+            </div>
             <div className="space-y-4">
-              <div className="flex items-center text-orange-900 font-medium">
-                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 Maandag - Vrijdag: 9:00 - 17:00
               </div>
-              <div className="flex items-center text-orange-900 font-medium">
-                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 Zaterdag: 10:00 - 15:00
               </div>
-              <div className="flex items-center text-orange-900 font-medium">
-                <ClockIcon className="w-5 h-5 mr-2 text-white" />
+              <div className="text-white font-medium">
                 Zondag: Gesloten
               </div>
             </div>
@@ -52,7 +52,10 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Sociale Media</h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">Sociale Media</h3>
+              <div className="h-px bg-white/20 mb-4"></div>
+            </div>
             <div className="flex space-x-4">
               <a 
                 href="https://www.facebook.com/" 
@@ -86,18 +89,21 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white mb-4">Snelle Links</h3>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">Snelle Links</h3>
+              <div className="h-px bg-white/20 mb-4"></div>
+            </div>
             <div className="space-y-2">
-              <Link href="/over-ons" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+              <Link href="/over-ons" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
                 <span className="mr-2">&gt;</span> Over Ons
               </Link>
-              <Link href="/producten" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+              <Link href="/producten" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
                 <span className="mr-2">&gt;</span> Producten
               </Link>
-              <Link href="/projecten" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+              <Link href="/projecten" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
                 <span className="mr-2">&gt;</span> Projecten
               </Link>
-              <Link href="/contact" className="flex items-center text-orange-900 hover:text-white transition-colors font-medium">
+              <Link href="/contact" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
                 <span className="mr-2">&gt;</span> Contact
               </Link>
             </div>
