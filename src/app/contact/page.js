@@ -183,10 +183,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />Contact</h3>
-                    <div>
-                      <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline block">+31 (0) 618 612 190</a>
-                      <a href="tel:+31132340905" className="hover:text-white transition-colors underline block">+31 (0) 132 340 905</a>
-                      <div className="mt-2 text-orange-900 font-medium">info@hollandveranda.nl</div>
+                    <div className="text-orange-900 font-medium space-y-1">
+                      <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition-colors underline block">+31 (0) 618 612 190</a>
+                      <a href="tel:+31132340905" className="hover:text-orange-600 transition-colors underline block">+31 (0) 132 340 905</a>
+                      <div className="mt-2">info@hollandveranda.nl</div>
                     </div>
                   </div>
                   <div>
