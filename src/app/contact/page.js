@@ -184,15 +184,17 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />Contact</h3>
                     <div>
-                      <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-white transition-colors underline">+31 (0) 132 340 905</a>
+                      <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline block">+31 (0) 618 612 190</a>
+                      <a href="tel:+31132340905" className="hover:text-white transition-colors underline block">+31 (0) 132 340 905</a>
+                      <div className="mt-2 text-orange-900 font-medium">info@hollandveranda.nl</div>
                     </div>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><ClockIcon className="w-5 h-5 mr-2 text-orange-200" />Openingstijden</h3>
                     <div>
-                      <span className="contact-details-label">Maandag - Vrijdag:</span> <span>09:00 - 17:00</span><br />
-                      <span className="contact-details-label">Zaterdag:</span> <span>10:00 - 15:00</span><br />
-                      <span className="contact-details-label">Zondag:</span> <span>Gesloten</span>
+                      <span className="contact-details-label">Maandag - Vrijdag:</span> <span className="text-orange-900 font-medium">09:00 - 17:00</span><br />
+                      <span className="contact-details-label">Zaterdag:</span> <span className="text-orange-900 font-medium">10:00 - 15:00</span><br />
+                      <span className="contact-details-label">Zondag:</span> <span className="text-orange-900 font-medium">Gesloten</span>
                     </div>
                   </div>
                 </div>
