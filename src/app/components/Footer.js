@@ -29,8 +29,8 @@ export default function Footer() {
                 <span className="text-white mx-2">&amp;</span>
                 <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
               </div>
-              <div className="flex items-center text-white font-medium">
-                <MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />
+              <div className="flex text-white font-medium">
+                <span className="flex-shrink-0"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" /></span>
                 <span>
                   Andorrastraat 3<br />
                   5171 PC Kaatsheuvel<br />
