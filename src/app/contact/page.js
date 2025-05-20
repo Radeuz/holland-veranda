@@ -186,7 +186,7 @@ export default function Contact() {
                     <div className="text-orange-900 font-medium space-y-1">
                       <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition-colors underline block">+31 (0) 618 612 190</a>
                       <a href="tel:+31132340905" className="hover:text-orange-600 transition-colors underline block">+31 (0) 132 340 905</a>
-                      <a href="mailto:info@hollandveranda.nl" className="hover:text-orange-600 transition-colors underline block">info@hollandveranda.nl</a>
+                      <span>info@hollandveranda.nl</span>
                     </div>
                   </div>
                   <div>

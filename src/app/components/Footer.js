@@ -26,6 +26,7 @@ export default function Footer() {
               <div className="flex items-center text-orange-200">
                 <PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />
                 <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline mr-1">+31 (0) 618 612 190</a>
+                <span className="mx-1 text-white">&amp;</span>
                 <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
               </div>
               <div className="flex items-start text-white font-medium">
