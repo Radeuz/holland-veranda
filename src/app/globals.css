@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Custom styles for Contactgegevens box */
+.contact-details-label {
+  color: #fff !important;
+}
+.contact-details-info {
+  color: #fff !important;
+}
+@media (max-width: 640px) {
+  .contact-details-phones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    word-break: break-all;
+  }
+}

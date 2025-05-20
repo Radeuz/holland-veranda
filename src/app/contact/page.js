@@ -183,18 +183,20 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />Contact</h3>
-                    <p className="text-orange-900 font-medium">
-                      Tel: <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-white transition-colors underline">+31 (0) 132 340 905</a><br />
-                      E-mail: info@hollandveranda.nl
-                    </p>
+                    <div className="contact-details-phones">
+                      <span className="contact-details-label">Tel:</span> <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline contact-details-info">+31 (0) 618 612 190</a> <span className="text-white">&amp;</span> <a href="tel:+31132340905" className="hover:text-white transition-colors underline contact-details-info">+31 (0) 132 340 905</a>
+                    </div>
+                    <div>
+                      <span className="contact-details-label">E-mail:</span> <span className="contact-details-info">info@hollandveranda.nl</span>
+                    </div>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><ClockIcon className="w-5 h-5 mr-2 text-orange-200" />Openingstijden</h3>
-                    <p className="text-orange-900 font-medium">
-                      Maandag - Vrijdag: 09:00 - 17:00<br />
-                      Zaterdag: 10:00 - 15:00<br />
-                      Zondag: Gesloten
-                    </p>
+                    <div>
+                      <span className="contact-details-label">Maandag - Vrijdag:</span> <span className="contact-details-info">09:00 - 17:00</span><br />
+                      <span className="contact-details-label">Zaterdag:</span> <span className="contact-details-info">10:00 - 15:00</span><br />
+                      <span className="contact-details-label">Zondag:</span> <span className="contact-details-info">Gesloten</span>
+                    </div>
                   </div>
                 </div>
               </div>
