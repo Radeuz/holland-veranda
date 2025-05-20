@@ -31,7 +31,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center text-white font-medium">
                 <MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />
-                <span>Andorrastraat 3, 5171 PC Kaatsheuvel, Nederland</span>
+                <span>
+                  Andorrastraat 3<br />
+                  5171 PC Kaatsheuvel<br />
+                  Nederland
+                </span>
               </div>
             </div>
           </div>
@@ -42,7 +46,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold text-white mb-2">Openingstijden</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-2">
               <div className="text-white font-medium">
                 Maandag - Vrijdag: 9:00 - 17:00
               </div>
