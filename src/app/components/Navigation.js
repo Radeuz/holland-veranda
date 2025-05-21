@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 export default function Navigation() {
-  const { t } = useTranslation();
+  const { t, language, handleLanguageChange } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
@@ -176,6 +176,19 @@ export default function Navigation() {
             >
               {t('navigation.contact')}
             </Link>
+            {/* Language Selector */}
+            <div className="ml-4">
+              <select
+                value={language}
+                onChange={e => handleLanguageChange(e.target.value)}
+                className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                aria-label="Select language"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+              </select>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -290,6 +303,19 @@ export default function Navigation() {
             >
               {t('navigation.contact')}
             </Link>
+            {/* Mobile Language Selector */}
+            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'}`}>
+              <select
+                value={language}
+                onChange={e => handleLanguageChange(e.target.value)}
+                className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                aria-label="Select language"
+              >
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
