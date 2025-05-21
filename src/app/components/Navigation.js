@@ -243,36 +243,93 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-gray-800 hover:text-orange-600 focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+          <div className="flex items-center">
+            {/* Mobile Language Selector (hamburger'ın solu) */}
+            <div className="md:hidden mr-2 relative"
+              onMouseEnter={() => setLanguageDropdownOpen(true)}
+              onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <button
+                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-700' : 'border-orange-600'} hover:border-orange-700`}
+                aria-haspopup="true"
+                aria-expanded={languageDropdownOpen}
+                type="button"
+              >
+                <span style={{ display: 'inline-block', width: 32, height: 24 }}>
+                  <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                </span>
+                <svg
+                  className={`ml-2 h-4 w-4 transition-transform duration-200 ${languageDropdownOpen ? 'rotate-180' : ''}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill={languageDropdownOpen ? '#c2410c' : '#ea580c'}
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              {/* Dropdown */}
+              <div
+                className={`absolute mt-2 bg-white border border-gray-200 rounded shadow-lg z-20 transition-all duration-200 ${languageDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                style={{ minWidth: 140, left: '50%', transform: languageDropdownOpen ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(-8px)' }}
+                role="menu"
+                aria-orientation="vertical"
+              >
+                <ul className="py-1">
+                  {languageOptions.filter(opt => opt.value !== language).map(opt => (
+                    <li key={opt.value}>
+                      <button
+                        onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
+                        className="flex items-center w-full px-3 py-2 hover:bg-gray-100 transition-colors text-left"
+                        role="menuitem"
+                        type="button"
+                      >
+                        <span style={{ display: 'inline-block', width: 28, height: 21, marginRight: 8 }}>
+                          <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                        </span>
+                        <span className="text-gray-800 hover:text-orange-600 transition-colors whitespace-nowrap" style={{ marginRight: 0 }}>{opt.label}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 text-gray-800 hover:text-orange-600 focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -354,25 +411,6 @@ export default function Navigation() {
             >
               {t('navigation.contact')}
             </Link>
-            {/* Mobile Language Selector */}
-            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'}`}>
-              <div className="flex items-center space-x-2">
-                {languageOptions.map(opt => (
-                  <button
-                    key={opt.value}
-                    onClick={() => handleLanguageChange(opt.value)}
-                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
-                    aria-label={opt.label}
-                    style={{ background: 'none' }}
-                    type="button"
-                  >
-                    <span style={{ display: 'inline-block', width: 32, height: 24 }}>
-                      <Image src={opt.icon} alt={opt.label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
