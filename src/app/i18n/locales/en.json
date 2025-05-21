@@ -153,8 +153,8 @@
     },
     "openingHours": {
       "title": "Opening Hours",
-      "weekdays": "Mon - Fri: 9:00 AM - 5:00 PM",
-      "saturday": "Sat: 10:00 AM - 3:00 PM",
+      "weekdays": "Mon - Fri: 9:00 - 17:00",
+      "saturday": "Sat: 10:00 - 15:00",
       "sunday": "Sun: Closed"
     },
     "social": {

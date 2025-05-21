@@ -170,7 +170,7 @@
       "home": "Accueil",
       "products": "Produits",
       "projects": "Projets",
-      "about": "À propos",
+      "about": "À Propos",
       "contact": "Contact"
     },
     "contact": {
@@ -181,8 +181,8 @@
     },
     "openingHours": {
       "title": "Heures d'Ouverture",
-      "weekdays": "Lun - Ven: 9:00 - 17:00",
-      "saturday": "Sam: 10:00 - 15:00",
+      "weekdays": "Lun - Ven: 9h00 - 17h00",
+      "saturday": "Sam: 10h00 - 15h00",
       "sunday": "Dim: Fermé"
     },
     "social": {
@@ -224,7 +224,7 @@
       "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nPays-Bas",
       "directions": "Itinéraire",
       "openingHours": {
-        "title": "Heures d'ouverture",
+        "title": "Heures d'Ouverture",
         "weekdays": "Lun - Ven: 9h00 - 17h00",
         "saturday": "Sam: 10h00 - 15h00",
         "sunday": "Dim: Fermé"
