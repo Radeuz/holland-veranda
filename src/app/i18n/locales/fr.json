@@ -14,7 +14,47 @@
   },
   "products": {
     "title": "Nos Produits",
-    "subtitle": "Découvrez notre gamme de vérandas et d'auvents de haute qualité, parfaits pour votre espace extérieur",
+    "subtitle": "Découvrez notre gamme de vérandas et de couvertures de haute qualité, parfaites pour votre espace extérieur",
+    "veranda": {
+      "title": "Véranda",
+      "description": "Améliorez votre confort de vie avec une véranda élégante sur mesure. Espace supplémentaire et protection contre les intempéries.",
+      "viewMore": "Voir les vérandas"
+    },
+    "carport": {
+      "title": "Carport",
+      "description": "Protégez votre voiture de la pluie et du soleil avec un carport moderne. Design élégant et longue durée de vie.",
+      "viewMore": "Voir les carports"
+    },
+    "terrace": {
+      "title": "Couverture de Terrasse",
+      "description": "Créez un espace de vie supplémentaire et du confort avec une couverture de terrasse élégante et résistante aux intempéries.",
+      "viewMore": "Voir les couvertures de terrasse"
+    },
+    "frames": {
+      "title": "Cadres",
+      "description": "Améliorez l'isolation et l'apparence avec des cadres de haute qualité. Durable, élégant et nécessitant peu d'entretien.",
+      "viewMore": "Voir les cadres"
+    },
+    "sliding": {
+      "title": "Murs Coulissants",
+      "description": "Faites fusionner les espaces intérieurs et extérieurs. Plus de lumière et d'espace avec nos murs coulissants.",
+      "viewMore": "Voir les murs coulissants"
+    },
+    "sunshade": {
+      "title": "Protection Solaire",
+      "description": "Profitez de l'ombre et du confort sur votre terrasse. Protection élégante contre la chaleur et les UV.",
+      "viewMore": "Voir les protections solaires"
+    },
+    "roller": {
+      "title": "Volets Roulants",
+      "description": "Choisissez des volets roulants anti-effraction au design moderne. Protection et confort en un.",
+      "viewMore": "Voir les volets roulants"
+    },
+    "tiles": {
+      "title": "Carrelage Céramique",
+      "description": "Donnez un aspect durable à votre terrasse ou allée. Résistant à l'usure, couleur stable et facile d'entretien.",
+      "viewMore": "Voir les carrelages"
+    },
     "modern": {
       "title": "Véranda Moderne",
       "description": "Lignes épurées et design minimaliste pour un look contemporain."

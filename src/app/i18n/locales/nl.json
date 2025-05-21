@@ -70,6 +70,46 @@
   "products": {
     "title": "Onze Producten",
     "subtitle": "Ontdek ons assortiment hoogwaardige veranda's en overkappingen, perfect voor uw buitenruimte",
+    "veranda": {
+      "title": "Veranda",
+      "description": "Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.",
+      "viewMore": "Bekijk veranda's"
+    },
+    "carport": {
+      "title": "Carport",
+      "description": "Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.",
+      "viewMore": "Bekijk carports"
+    },
+    "terrace": {
+      "title": "Terrasoverkapping",
+      "description": "Zorg voor extra leefruimte en comfort met een stijlvolle, weerbestendige terrasoverkapping.",
+      "viewMore": "Bekijk terrasoverkappingen"
+    },
+    "frames": {
+      "title": "Kozijnen",
+      "description": "Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.",
+      "viewMore": "Bekijk kozijnen"
+    },
+    "sliding": {
+      "title": "Schuifpuien",
+      "description": "Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.",
+      "viewMore": "Bekijk schuifpuien"
+    },
+    "sunshade": {
+      "title": "Zonweringen",
+      "description": "Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.",
+      "viewMore": "Bekijk zonweringen"
+    },
+    "roller": {
+      "title": "Rolluiken",
+      "description": "Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.",
+      "viewMore": "Bekijk rolluiken"
+    },
+    "tiles": {
+      "title": "Keramische Tegels",
+      "description": "Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.",
+      "viewMore": "Bekijk keramische tegels"
+    },
     "modernVeranda": {
       "title": "Moderne Veranda",
       "description": "Een moderne veranda met strakke lijnen en eigentijds design, perfect voor moderne woningen."

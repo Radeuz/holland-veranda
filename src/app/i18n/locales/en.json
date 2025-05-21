@@ -70,6 +70,46 @@
   "products": {
     "title": "Our Products",
     "subtitle": "Discover our range of high-quality verandas and canopies, perfect for your outdoor space",
+    "veranda": {
+      "title": "Veranda",
+      "description": "Enhance your living comfort with a stylish custom-made veranda. Extra space and protection against weather.",
+      "viewMore": "View verandas"
+    },
+    "carport": {
+      "title": "Carport",
+      "description": "Protect your car from rain and sun with a modern carport. Sleek design and long lifespan.",
+      "viewMore": "View carports"
+    },
+    "terrace": {
+      "title": "Terrace Cover",
+      "description": "Create additional living space and comfort with a stylish, weather-resistant terrace cover.",
+      "viewMore": "View terrace covers"
+    },
+    "frames": {
+      "title": "Window Frames",
+      "description": "Improve insulation and appearance with high-quality frames. Durable, stylish, and low-maintenance.",
+      "viewMore": "View frames"
+    },
+    "sliding": {
+      "title": "Sliding Walls",
+      "description": "Let indoor and outdoor spaces flow seamlessly. More light and space with our sliding walls.",
+      "viewMore": "View sliding walls"
+    },
+    "sunshade": {
+      "title": "Sun Protection",
+      "description": "Enjoy shade and comfort on your terrace. Stylish protection against heat and UV radiation.",
+      "viewMore": "View sun protection"
+    },
+    "roller": {
+      "title": "Roller Shutters",
+      "description": "Choose burglar-resistant roller shutters with modern design. Protection and comfort in one.",
+      "viewMore": "View roller shutters"
+    },
+    "tiles": {
+      "title": "Ceramic Tiles",
+      "description": "Give your terrace or driveway a sustainable upgrade. Wear-resistant, colorfast, and low-maintenance.",
+      "viewMore": "View ceramic tiles"
+    },
     "modernVeranda": {
       "title": "Modern Veranda",
       "description": "A modern veranda with clean lines and contemporary design, perfect for modern homes."

@@ -70,6 +70,46 @@
   "products": {
     "title": "Unsere Produkte",
     "subtitle": "Entdecken Sie unser Sortiment an hochwertigen Verandas und Überdachungen, perfekt für Ihren Außenbereich",
+    "veranda": {
+      "title": "Veranda",
+      "description": "Steigern Sie Ihren Wohnkomfort mit einer stilvollen, maßgeschneiderten Veranda. Zusätzlicher Raum und Schutz vor Witterung.",
+      "viewMore": "Verandas ansehen"
+    },
+    "carport": {
+      "title": "Carport",
+      "description": "Schützen Sie Ihr Auto vor Regen und Sonne mit einem modernen Carport. Schickes Design und lange Lebensdauer.",
+      "viewMore": "Carports ansehen"
+    },
+    "terrace": {
+      "title": "Terrassenüberdachung",
+      "description": "Schaffen Sie zusätzlichen Wohnraum und Komfort mit einer stilvollen, witterungsbeständigen Terrassenüberdachung.",
+      "viewMore": "Terrassenüberdachungen ansehen"
+    },
+    "frames": {
+      "title": "Rahmen",
+      "description": "Verbessern Sie Isolierung und Ausstrahlung mit hochwertigen Rahmen. Langlebig, stilvoll und wartungsarm.",
+      "viewMore": "Rahmen ansehen"
+    },
+    "sliding": {
+      "title": "Schiebewände",
+      "description": "Lassen Sie Innen- und Außenbereiche nahtlos ineinander übergehen. Mehr Licht und Raum mit unseren Schiebewänden.",
+      "viewMore": "Schiebewände ansehen"
+    },
+    "sunshade": {
+      "title": "Sonnenschutz",
+      "description": "Genießen Sie Schatten und Komfort auf Ihrer Terrasse. Stilvoller Schutz vor Hitze und UV-Strahlung.",
+      "viewMore": "Sonnenschutz ansehen"
+    },
+    "roller": {
+      "title": "Rollläden",
+      "description": "Wählen Sie einbruchhemmende Rollläden mit modernem Design. Schutz und Komfort in einem.",
+      "viewMore": "Rollläden ansehen"
+    },
+    "tiles": {
+      "title": "Keramikfliesen",
+      "description": "Geben Sie Ihrer Terrasse oder Auffahrt ein nachhaltiges Upgrade. Verschleißfest, farbecht und pflegeleicht.",
+      "viewMore": "Keramikfliesen ansehen"
+    },
     "modernVeranda": {
       "title": "Moderne Veranda",
       "description": "Eine moderne Veranda mit klaren Linien und zeitgemäßem Design, perfekt für moderne Häuser."

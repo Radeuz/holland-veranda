@@ -182,10 +182,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Veranda</h3>
-                        <p className="text-gray-700 mb-4">Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.veranda.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.veranda.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk veranda's
+                          {t('products.veranda.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -212,10 +212,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Carport</h3>
-                        <p className="text-gray-700 mb-4">Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.carport.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.carport.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk carports
+                          {t('products.carport.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -242,10 +242,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
-                        <p className="text-gray-700 mb-4">Zorg voor extra leefruimte en comfort met een stijlvolle, weerbestendige terrasoverkapping.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.terrace.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.terrace.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk terrasoverkappingen
+                          {t('products.terrace.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -272,10 +272,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Kozijnen</h3>
-                        <p className="text-gray-700 mb-4">Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.frames.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.frames.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk kozijnen
+                          {t('products.frames.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -302,10 +302,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Schuifpuien</h3>
-                        <p className="text-gray-700 mb-4">Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.sliding.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.sliding.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk schuifpuien
+                          {t('products.sliding.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -332,10 +332,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Zonweringen</h3>
-                        <p className="text-gray-700 mb-4">Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.sunshade.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.sunshade.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk zonweringen
+                          {t('products.sunshade.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -362,10 +362,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Rolluiken</h3>
-                        <p className="text-gray-700 mb-4">Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.roller.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.roller.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk rolluiken
+                          {t('products.roller.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -392,10 +392,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">Keramische Tegels</h3>
-                        <p className="text-gray-700 mb-4">Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.tiles.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.tiles.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          Bekijk keramische tegels
+                          {t('products.tiles.viewMore')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
