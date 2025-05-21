@@ -174,27 +174,25 @@ export default function Contact() {
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">{t('contact.info.title')}</h2>
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />Adres</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />{t('contact.location.title')}</h3>
                     <p className="text-orange-900 font-medium">
-                      Andorrastraat 3<br />
-                      5171 PC Kaatsheuvel<br />
-                      Nederland
+                      {t('contact.location.address')}
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />Contact</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />{t('contact.info.title')}</h3>
                     <div className="text-orange-900 font-medium space-y-1">
                       <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition-colors underline block">+31 (0) 618 612 190</a>
                       <a href="tel:+31132340905" className="hover:text-orange-600 transition-colors underline block">+31 (0) 132 340 905</a>
-                      <span>info@hollandveranda.nl</span>
+                      <span>{t('contact.info.email')}</span>
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><ClockIcon className="w-5 h-5 mr-2 text-orange-200" />Openingstijden</h3>
+                    <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><ClockIcon className="w-5 h-5 mr-2 text-orange-200" />{t('contact.location.openingHours.title')}</h3>
                     <div>
-                      <span className="text-orange-900 font-medium">Maandag - Vrijdag:</span> <span className="text-orange-900 font-medium">09:00 - 17:00</span><br />
-                      <span className="text-orange-900 font-medium">Zaterdag:</span> <span className="text-orange-900 font-medium">10:00 - 15:00</span><br />
-                      <span className="text-orange-900 font-medium">Zondag:</span> <span className="text-orange-900 font-medium">Gesloten</span>
+                      <span className="text-orange-900 font-medium">{t('contact.location.openingHours.weekdays')}</span><br />
+                      <span className="text-orange-900 font-medium">{t('contact.location.openingHours.saturday')}</span><br />
+                      <span className="text-orange-900 font-medium">{t('contact.location.openingHours.sunday')}</span>
                     </div>
                   </div>
                 </div>
