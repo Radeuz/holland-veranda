@@ -86,7 +86,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 justify-end flex-1">
             <Link 
               href="/" 
               className={`text-gray-800 hover:text-orange-600 transition-colors duration-200 font-bold ${
