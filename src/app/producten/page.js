@@ -13,7 +13,7 @@ export default function Producten() {
     {
       id: 'veranda',
       title: t('products.items.veranda.title'),
-      image: '/images/products/veranda.jpg',
+      image: '/Veranda6.jpg',
       description: t('products.items.veranda.description'),
       features: [
         t('products.items.veranda.features.0'),
@@ -26,7 +26,7 @@ export default function Producten() {
     {
       id: 'carport',
       title: t('products.items.carport.title'),
-      image: '/images/products/carport.jpg',
+      image: '/Carport2.jpg',
       description: t('products.items.carport.description'),
       features: [
         t('products.items.carport.features.0'),
@@ -39,7 +39,7 @@ export default function Producten() {
     {
       id: 'terrasoverkapping',
       title: t('products.items.terrasoverkapping.title'),
-      image: '/images/products/terrasoverkapping.jpg',
+      image: '/Terrasoverkapping3.jpg',
       description: t('products.items.terrasoverkapping.description'),
       features: [
         t('products.items.terrasoverkapping.features.0'),
@@ -52,7 +52,7 @@ export default function Producten() {
     {
       id: 'kozijnen',
       title: t('products.items.kozijnen.title'),
-      image: '/images/products/kozijnen.jpg',
+      image: '/Kozijnen3.jpg',
       description: t('products.items.kozijnen.description'),
       features: [
         t('products.items.kozijnen.features.0'),
@@ -65,7 +65,7 @@ export default function Producten() {
     {
       id: 'schuifpuien',
       title: t('products.items.schuifpuien.title'),
-      image: '/images/products/schuifpuien.jpg',
+      image: '/Schuifpui3.jpg',
       description: t('products.items.schuifpuien.description'),
       features: [
         t('products.items.schuifpuien.features.0'),
@@ -78,7 +78,7 @@ export default function Producten() {
     {
       id: 'zonweringen',
       title: t('products.items.zonweringen.title'),
-      image: '/images/products/zonweringen.jpg',
+      image: '/Zonweringen1.jpg',
       description: t('products.items.zonweringen.description'),
       features: [
         t('products.items.zonweringen.features.0'),
@@ -91,7 +91,7 @@ export default function Producten() {
     {
       id: 'rolluiken',
       title: t('products.items.rolluiken.title'),
-      image: '/images/products/rolluiken.jpg',
+      image: '/Rolluiken1.jpg',
       description: t('products.items.rolluiken.description'),
       features: [
         t('products.items.rolluiken.features.0'),
@@ -104,7 +104,7 @@ export default function Producten() {
     {
       id: 'keramische-tegels',
       title: t('products.items.keramische-tegels.title'),
-      image: '/images/products/keramische-tegels.jpg',
+      image: '/KeramischeTegels1.jpg',
       description: t('products.items.keramische-tegels.description'),
       features: [
         t('products.items.keramische-tegels.features.0'),
