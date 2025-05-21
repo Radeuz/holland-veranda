@@ -230,24 +230,30 @@ export default function Projecten() {
       {/* Image Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
-          <div className="relative w-full max-w-7xl max-h-[90vh]">
+          <div className="relative w-full max-w-7xl max-h-[90vh]" onClick={e => e.stopPropagation()}>
+            {/* Close Button */}
             <button
-              className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors"
+              className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors text-3xl font-bold"
               onClick={() => setSelectedImage(null)}
+              aria-label="Close"
             >
-              {t('projects.modal.close')}
+              &times;
             </button>
+            {/* Previous Button */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors text-4xl font-bold"
               onClick={handlePrevious}
+              aria-label="Previous"
             >
-              {t('projects.modal.previous')}
+              &#8592;
             </button>
+            {/* Next Button */}
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors text-4xl font-bold"
               onClick={handleNext}
+              aria-label="Next"
             >
-              {t('projects.modal.next')}
+              &#8594;
             </button>
             <div className="relative h-[80vh] rounded-xl overflow-hidden">
               <Image
@@ -260,14 +266,9 @@ export default function Projecten() {
                 className="rounded-xl"
               />
             </div>
-            <div className="absolute bottom-4 left-0 right-0 text-center text-white">
-              <p className="text-lg font-medium">{selectedImage.location}</p>
-            </div>
           </div>
         </div>
       )}
-
-      <Footer />
     </main>
   )
-} 
+}

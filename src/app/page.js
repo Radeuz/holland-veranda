@@ -439,7 +439,7 @@ export default function Home() {
       {/* Voordelen Section */}
       <section className="py-12 relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-10 text-white">Waarom Kiezen Voor Holland Veranda</h2>
+          <h2 className="text-4xl font-bold text-center mb-10 text-white">{t('home.whyChooseUs.title')}</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Left Column with 4 cards stacked in 2x2 grid */}
