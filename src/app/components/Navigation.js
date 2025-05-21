@@ -15,6 +15,12 @@ export default function Navigation() {
   const [dropdownWidth, setDropdownWidth] = useState(180);
   const pathname = usePathname();
 
+  const languageOptions = [
+    { value: 'nl', label: 'Hollanda', icon: '/flag-nl.svg' },
+    { value: 'en', label: 'İngiltere', icon: '/flag-en.svg' },
+    { value: 'de', label: 'Almanya', icon: '/flag-de.svg' },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -178,16 +184,19 @@ export default function Navigation() {
             </Link>
             {/* Language Selector */}
             <div className="ml-4">
-              <select
-                value={language}
-                onChange={e => handleLanguageChange(e.target.value)}
-                className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
-                aria-label="Select language"
-              >
-                <option value="nl">NL</option>
-                <option value="en">EN</option>
-                <option value="de">DE</option>
-              </select>
+              <div className="flex items-center space-x-2">
+                {languageOptions.map(opt => (
+                  <button
+                    key={opt.value}
+                    onClick={() => handleLanguageChange(opt.value)}
+                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
+                    aria-label={opt.label}
+                    style={{ background: 'none' }}
+                  >
+                    <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ display: 'inline-block' }} />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -305,16 +314,19 @@ export default function Navigation() {
             </Link>
             {/* Mobile Language Selector */}
             <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'}`}>
-              <select
-                value={language}
-                onChange={e => handleLanguageChange(e.target.value)}
-                className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
-                aria-label="Select language"
-              >
-                <option value="nl">NL</option>
-                <option value="en">EN</option>
-                <option value="de">DE</option>
-              </select>
+              <div className="flex items-center space-x-2">
+                {languageOptions.map(opt => (
+                  <button
+                    key={opt.value}
+                    onClick={() => handleLanguageChange(opt.value)}
+                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
+                    aria-label={opt.label}
+                    style={{ background: 'none' }}
+                  >
+                    <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ display: 'inline-block' }} />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
