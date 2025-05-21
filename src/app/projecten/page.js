@@ -230,32 +230,41 @@ export default function Projecten() {
       {/* Image Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
-          <div className="relative w-full max-w-7xl max-h-[90vh]" onClick={e => e.stopPropagation()}>
-            {/* Close Button */}
-            <button
-              className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors text-3xl font-bold"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close"
-            >
-              &times;
-            </button>
+          <div className="relative w-full max-w-4xl max-h-[90vh] flex items-center justify-center" onClick={e => e.stopPropagation()}>
             {/* Previous Button */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors text-4xl font-bold"
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
               onClick={handlePrevious}
               aria-label="Previous"
+              style={{zIndex: 2}}
             >
-              &#8592;
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
             {/* Next Button */}
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors text-4xl font-bold"
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
               onClick={handleNext}
               aria-label="Next"
+              style={{zIndex: 2}}
             >
-              &#8594;
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
             </button>
-            <div className="relative h-[80vh] rounded-xl overflow-hidden">
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+              onClick={() => setSelectedImage(null)}
+              aria-label="Close"
+              style={{zIndex: 2}}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="relative h-[80vh] w-full flex items-center justify-center">
               <Image
                 src={selectedImage.image}
                 alt={`Project ${selectedImage.id}`}
