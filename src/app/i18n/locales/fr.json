@@ -69,9 +69,10 @@
       "learnMore": "En savoir plus"
     },
     "quickLinks": {
-      "title": "Liens rapides",
+      "title": "Liens Rapides",
       "home": "Accueil",
       "products": "Produits",
+      "projects": "Projets",
       "about": "À propos",
       "contact": "Contact"
     },
@@ -79,13 +80,16 @@
       "title": "Contact",
       "email": "info@hollandveranda.nl",
       "phone": "+31 (0)20 123 4567",
-      "address": "Amsterdam, Pays-Bas"
+      "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nPays-Bas"
     },
     "openingHours": {
-      "title": "Heures d'ouverture",
-      "weekdays": "Lun - Ven: 9h00 - 17h00",
-      "saturday": "Sam: 10h00 - 15h00",
+      "title": "Heures d'Ouverture",
+      "weekdays": "Lun - Ven: 9:00 - 17:00",
+      "saturday": "Sam: 10:00 - 15:00",
       "sunday": "Dim: Fermé"
+    },
+    "social": {
+      "title": "Réseaux Sociaux"
     },
     "copyright": "Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
@@ -157,5 +161,11 @@
       "description": "Holland Veranda est spécialiste des vérandas en aluminium, carports, pergolas, murs coulissants, stores, cadres et protection solaire sur mesure. Avec plus de 20 ans d'expérience, nous fournissons des solutions extérieures durables aux Pays-Bas, en Belgique et en Allemagne.",
       "cta": "En savoir plus sur nous"
     }
+  },
+  "languages": {
+    "nl": "Néerlandais",
+    "en": "Anglais",
+    "de": "Allemand",
+    "fr": "Français"
   }
 } 

@@ -18,10 +18,10 @@ export default function Navigation() {
   const productsDropdownTimeout = useRef();
 
   const languageOptions = [
-    { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
-    { value: 'en', label: 'English', icon: '/flag-en.svg' },
-    { value: 'de', label: 'Deutsch', icon: '/flag-de.svg' },
-    { value: 'fr', label: 'Français', icon: '/flag-fr.svg' },
+    { value: 'nl', label: t('languages.nl'), icon: '/flag-nl.svg' },
+    { value: 'en', label: t('languages.en'), icon: '/flag-en.svg' },
+    { value: 'de', label: t('languages.de'), icon: '/flag-de.svg' },
+    { value: 'fr', label: t('languages.fr'), icon: '/flag-fr.svg' },
   ];
 
   useEffect(() => {

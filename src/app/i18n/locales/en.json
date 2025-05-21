@@ -113,6 +113,7 @@
       "title": "Quick Links",
       "home": "Home",
       "products": "Products",
+      "projects": "Projects",
       "about": "About",
       "contact": "Contact"
     },
@@ -120,14 +121,18 @@
       "title": "Contact",
       "email": "info@hollandveranda.nl",
       "phone": "+31 (0)20 123 4567",
-      "address": "Amsterdam, Netherlands"
+      "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nNetherlands"
     },
     "openingHours": {
       "title": "Opening Hours",
       "weekdays": "Mon - Fri: 9:00 AM - 5:00 PM",
       "saturday": "Sat: 10:00 AM - 3:00 PM",
       "sunday": "Sun: Closed"
-    }
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "copyright": "All rights reserved."
   },
   "contact": {
     "title": "Contact Us",
@@ -140,5 +145,11 @@
     "title": "Our Projects",
     "description": "Discover our recent projects and see how we've helped our customers create their perfect outdoor space.",
     "cta": "View all projects"
+  },
+  "languages": {
+    "nl": "Dutch",
+    "en": "English",
+    "de": "German",
+    "fr": "French"
   }
 } 

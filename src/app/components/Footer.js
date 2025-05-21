@@ -15,13 +15,13 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Contact</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">{t('footer.contact.title')}</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center text-white font-medium">
                 <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-200" />
-                info@hollandveranda.nl
+                {t('footer.contact.email')}
               </div>
               <div className="flex items-center text-orange-200">
                 <PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />
@@ -32,9 +32,7 @@ export default function Footer() {
               <div className="flex text-white font-medium">
                 <span className="flex-shrink-0"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" /></span>
                 <span>
-                  Andorrastraat 3<br />
-                  5171 PC Kaatsheuvel<br />
-                  Nederland
+                  {t('footer.contact.address')}
                 </span>
               </div>
             </div>
@@ -43,18 +41,18 @@ export default function Footer() {
           {/* Opening Hours */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Openingstijden</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">{t('footer.openingHours.title')}</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="space-y-2">
               <div className="text-white font-medium">
-                Maandag - Vrijdag: 9:00 - 17:00
+                {t('footer.openingHours.weekdays')}
               </div>
               <div className="text-white font-medium">
-                Zaterdag: 10:00 - 15:00
+                {t('footer.openingHours.saturday')}
               </div>
               <div className="text-white font-medium">
-                Zondag: Gesloten
+                {t('footer.openingHours.sunday')}
               </div>
             </div>
           </div>
@@ -62,7 +60,7 @@ export default function Footer() {
           {/* Social Links */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Sociale Media</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">{t('footer.social.title')}</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="flex space-x-4">
@@ -99,21 +97,21 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-2">Snelle Links</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">{t('footer.quickLinks.title')}</h3>
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="space-y-2">
               <Link href="/over-ons" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
-                <span className="mr-2">&gt;</span> Over Ons
+                <span className="mr-2">&gt;</span> {t('footer.quickLinks.about')}
               </Link>
               <Link href="/producten" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
-                <span className="mr-2">&gt;</span> Producten
+                <span className="mr-2">&gt;</span> {t('footer.quickLinks.products')}
               </Link>
               <Link href="/projecten" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
-                <span className="mr-2">&gt;</span> Projecten
+                <span className="mr-2">&gt;</span> {t('footer.quickLinks.projects')}
               </Link>
               <Link href="/contact" className="flex items-center text-white hover:text-orange-200 transition-colors font-medium">
-                <span className="mr-2">&gt;</span> Contact
+                <span className="mr-2">&gt;</span> {t('footer.quickLinks.contact')}
               </Link>
             </div>
           </div>
