@@ -13,173 +13,139 @@ export default function Projecten() {
   const projects = [
     { 
       id: 5, 
-      image: '/Veranda5.jpg',
-      location: 'Eindhoven, ' + t('projects.location.netherlands')
+      image: '/Veranda5.jpg'
     },
     { 
       id: 6, 
-      image: '/Veranda6.jpg',
-      location: 'Antwerpen, ' + t('projects.location.belgium')
+      image: '/Veranda6.jpg'
     },
     { 
       id: 7, 
-      image: '/Veranda7.jpg',
-      location: 'Brugge, ' + t('projects.location.belgium')
+      image: '/Veranda7.jpg'
     },
     { 
       id: 8, 
-      image: '/Veranda8.jpg',
-      location: 'Gent, ' + t('projects.location.belgium')
+      image: '/Veranda8.jpg'
     },
     {
       id: 9,
-      image: '/Veranda9.jpg',
-      location: 'Brussel, ' + t('projects.location.belgium')
+      image: '/Veranda9.jpg'
     },
     {
       id: 10,
-      image: '/Terrasoverkapping5.jpg',
-      location: 'Groningen, ' + t('projects.location.netherlands')
+      image: '/Terrasoverkapping5.jpg'
     },
     {
       id: 11,
-      image: '/Terrasoverkapping3.jpg',
-      location: 'Leeuwarden, ' + t('projects.location.netherlands')
+      image: '/Terrasoverkapping3.jpg'
     },
     {
       id: 12,
-      image: '/Terrasoverkapping4.jpg',
-      location: 'Arnhem, ' + t('projects.location.netherlands')
+      image: '/Terrasoverkapping4.jpg'
     },
     { 
       id: 13, 
-      image: '/Carport3.jpg',
-      location: 'Tilburg, ' + t('projects.location.netherlands')
+      image: '/Carport3.jpg'
     },
     { 
       id: 14, 
-      image: '/Carport5.jpg',
-      location: 'Enschede, ' + t('projects.location.netherlands')
+      image: '/Carport5.jpg'
     },
     { 
       id: 15, 
-      image: '/Kozijnen5.jpg',
-      location: 'Haarlem, ' + t('projects.location.netherlands')
+      image: '/Kozijnen5.jpg'
     },
     { 
       id: 16, 
-      image: '/Kozijnen2.jpg',
-      location: 'Alkmaar, ' + t('projects.location.netherlands')
+      image: '/Kozijnen2.jpg'
     },
     { 
       id: 17, 
-      image: '/Kozijnen4.jpg',
-      location: 'Delft, ' + t('projects.location.netherlands')
+      image: '/Kozijnen4.jpg'
     },
     { 
       id: 18, 
-      image: '/Schuifpui5.jpg',
-      location: 'Zwolle, ' + t('projects.location.netherlands')
+      image: '/Schuifpui5.jpg'
     },
     { 
       id: 19, 
-      image: '/Schuifpui2.jpg',
-      location: 'Apeldoorn, ' + t('projects.location.netherlands')
+      image: '/Schuifpui2.jpg'
     },
     { 
       id: 20, 
-      image: '/Schuifpui3.jpg',
-      location: 'Amersfoort, ' + t('projects.location.netherlands')
+      image: '/Schuifpui3.jpg'
     },
     { 
       id: 21, 
-      image: '/Schuifpui4.jpg',
-      location: 'Dordrecht, ' + t('projects.location.netherlands')
+      image: '/Schuifpui4.jpg'
     },
     { 
       id: 22, 
-      image: '/Zonweringen1.jpg',
-      location: 'Venlo, ' + t('projects.location.netherlands')
+      image: '/Zonweringen1.jpg'
     },
     { 
       id: 23, 
-      image: '/Zonweringen2.jpg',
-      location: 'Deventer, ' + t('projects.location.netherlands')
+      image: '/Zonweringen2.jpg'
     },
     { 
       id: 24, 
-      image: '/Zonweringen3.jpg',
-      location: 'Zaanstad, ' + t('projects.location.netherlands')
+      image: '/Zonweringen3.jpg'
     },
     { 
       id: 25, 
-      image: '/Zonweringen4.jpg',
-      location: 'Almere, ' + t('projects.location.netherlands')
+      image: '/Zonweringen4.jpg'
     },
     { 
       id: 26, 
-      image: '/Rolluiken1.jpg',
-      location: 'Hoorn, ' + t('projects.location.netherlands')
+      image: '/Rolluiken1.jpg'
     },
     { 
       id: 27, 
-      image: '/Rolluiken2.jpg',
-      location: 'Den Bosch, ' + t('projects.location.netherlands')
+      image: '/Rolluiken2.jpg'
     },
     { 
       id: 28, 
-      image: '/Rolluiken3.jpg',
-      location: 'Lelystad, ' + t('projects.location.netherlands')
+      image: '/Rolluiken3.jpg'
     },
     { 
       id: 29, 
-      image: '/Rolluiken4.jpg',
-      location: 'Hilversum, ' + t('projects.location.netherlands')
+      image: '/Rolluiken4.jpg'
     },
     { 
       id: 30, 
-      image: '/KeramischeTegels1.jpg',
-      location: 'Purmerend, ' + t('projects.location.netherlands')
+      image: '/KeramischeTegels1.jpg'
     },
     { 
       id: 31, 
-      image: '/KeramischeTegels2.jpg',
-      location: 'Roosendaal, ' + t('projects.location.netherlands')
+      image: '/KeramischeTegels2.jpg'
     },
     { 
       id: 32, 
-      image: '/KeramischeTegels3.jpg',
-      location: 'Middelburg, ' + t('projects.location.netherlands')
+      image: '/KeramischeTegels3.jpg'
     },
     { 
       id: 33, 
-      image: '/KeramischeTegels4.jpg',
-      location: 'Emmen, ' + t('projects.location.netherlands')
+      image: '/KeramischeTegels4.jpg'
     },
     {
       id: 34,
-      image: '/GespecialiseerdeMonteurs1.jpg',
-      location: t('projects.location.team')
+      image: '/GespecialiseerdeMonteurs1.jpg'
     },
     { 
       id: 1, 
-      image: '/Veranda1.jpg',
-      location: 'Rotterdam, ' + t('projects.location.netherlands')
+      image: '/Veranda1.jpg'
     },
     { 
       id: 2, 
-      image: '/Veranda13.jpg',
-      location: 'Amsterdam, ' + t('projects.location.netherlands')
+      image: '/Veranda13.jpg'
     },
     { 
       id: 3, 
-      image: '/Veranda12.jpg',
-      location: 'Utrecht, ' + t('projects.location.netherlands')
+      image: '/Veranda12.jpg'
     },
     { 
       id: 4, 
       image: '/Veranda4.jpg',
-      location: 'Den Haag, ' + t('projects.location.netherlands'),
       objectPosition: 'center 30%'
     }
   ]
