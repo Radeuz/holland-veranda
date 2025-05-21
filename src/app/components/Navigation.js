@@ -200,12 +200,24 @@ export default function Navigation() {
                 <span style={{ display: 'inline-block', width: 32, height: 24 }}>
                   <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                 </span>
-                <svg className={`ml-2 h-4 w-4 transition-transform duration-200 ${languageDropdownOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                <svg
+                  className={`ml-2 h-4 w-4 transition-transform duration-200 ${languageDropdownOpen ? 'rotate-180' : ''}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill={languageDropdownOpen ? '#c2410c' : '#ea580c'} // orange-700 : orange-600
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
               {/* Dropdown */}
               <div
-                className={`absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-20 transition-all duration-200 ${languageDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
-                style={{ minWidth: 140 }}
+                className={`absolute mt-2 bg-white border border-gray-200 rounded shadow-lg z-20 transition-all duration-200 ${languageDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                style={{ minWidth: 140, left: '50%', transform: languageDropdownOpen ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(-8px)' }}
                 role="menu"
                 aria-orientation="vertical"
               >
@@ -221,7 +233,7 @@ export default function Navigation() {
                         <span style={{ display: 'inline-block', width: 28, height: 21, marginRight: 8 }}>
                           <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                         </span>
-                        <span className="text-gray-800 hover:text-orange-600 transition-colors">{opt.label}</span>
+                        <span className="text-gray-800 hover:text-orange-600 transition-colors whitespace-nowrap" style={{ marginRight: 0 }}>{opt.label}</span>
                       </button>
                     </li>
                   ))}
