@@ -14,11 +14,12 @@ export default function Navigation() {
   const productsButtonRef = useRef(null);
   const [dropdownWidth, setDropdownWidth] = useState(180);
   const pathname = usePathname();
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
   const languageOptions = [
-    { value: 'nl', label: 'Hollanda', icon: '/flag-nl.svg' },
-    { value: 'en', label: 'İngiltere', icon: '/flag-en.svg' },
-    { value: 'de', label: 'Almanya', icon: '/flag-de.svg' },
+    { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
+    { value: 'en', label: 'English', icon: '/flag-en.svg' },
+    { value: 'de', label: 'Deutsch', icon: '/flag-de.svg' },
   ];
 
   useEffect(() => {
@@ -184,23 +185,47 @@ export default function Navigation() {
             >
               {t('navigation.contact')}
             </Link>
-            {/* Language Selector */}
-            <div className="ml-4">
-              <div className="flex items-center space-x-2">
-                {languageOptions.map(opt => (
-                  <button
-                    key={opt.value}
-                    onClick={() => handleLanguageChange(opt.value)}
-                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
-                    aria-label={opt.label}
-                    style={{ background: 'none' }}
-                    type="button"
-                  >
-                    <span style={{ display: 'inline-block', width: 32, height: 24 }}>
-                      <Image src={opt.icon} alt={opt.label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
-                    </span>
-                  </button>
-                ))}
+            {/* Language Selector Dropdown */}
+            <div
+              className="ml-4 relative"
+              onMouseEnter={() => setLanguageDropdownOpen(true)}
+              onMouseLeave={() => setLanguageDropdownOpen(false)}
+            >
+              <button
+                className="flex items-center px-2 py-1 bg-white rounded shadow-sm hover:bg-gray-50 transition-colors"
+                aria-haspopup="true"
+                aria-expanded={languageDropdownOpen}
+                type="button"
+              >
+                <span style={{ display: 'inline-block', width: 32, height: 24 }}>
+                  <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                </span>
+                <svg className={`ml-2 h-4 w-4 transition-transform duration-200 ${languageDropdownOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+              </button>
+              {/* Dropdown */}
+              <div
+                className={`absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-20 transition-all duration-200 ${languageDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                style={{ minWidth: 140 }}
+                role="menu"
+                aria-orientation="vertical"
+              >
+                <ul className="py-1">
+                  {languageOptions.filter(opt => opt.value !== language).map(opt => (
+                    <li key={opt.value}>
+                      <button
+                        onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
+                        className="flex items-center w-full px-3 py-2 hover:bg-gray-100 transition-colors text-left"
+                        role="menuitem"
+                        type="button"
+                      >
+                        <span style={{ display: 'inline-block', width: 28, height: 21, marginRight: 8 }}>
+                          <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                        </span>
+                        <span>{opt.label}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
