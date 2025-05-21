@@ -84,10 +84,6 @@ export default function Projecten() {
       image: '/Zonweringen1.jpg'
     },
     { 
-      id: 23, 
-      image: '/Zonweringen2.jpg'
-    },
-    { 
       id: 24, 
       image: '/Zonweringen3.jpg'
     },

@@ -165,9 +165,42 @@
   "contact": {
     "title": "Contact Us",
     "description": "We're here to answer all your questions. Feel free to contact us.",
-    "email": "info@hollandveranda.nl",
-    "phone": "+31 (0)20 123 4567",
-    "address": "Amsterdam, Netherlands"
+    "form": {
+      "name": {
+        "label": "Name *",
+        "error": "Name is required"
+      },
+      "email": {
+        "label": "Email *",
+        "error": "Email is required",
+        "invalid": "Invalid email address"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "error": "Phone number is required"
+      },
+      "message": {
+        "label": "Message *",
+        "error": "Message is required"
+      },
+      "submit": "Send"
+    },
+    "location": {
+      "title": "Our Address",
+      "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nNetherlands",
+      "directions": "Get Directions",
+      "openingHours": {
+        "title": "Opening Hours",
+        "weekdays": "Mon - Fri: 9:00 AM - 5:00 PM",
+        "saturday": "Sat: 10:00 AM - 3:00 PM",
+        "sunday": "Sun: Closed"
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "info@hollandveranda.nl",
+      "phone": "+31 (0)20 123 4567"
+    }
   },
   "projects": {
     "title": "Our Projects",
