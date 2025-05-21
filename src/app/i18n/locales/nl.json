@@ -200,6 +200,10 @@
         "label": "Bericht *",
         "error": "Bericht is verplicht"
       },
+      "subject": {
+        "label": "Onderwerp *",
+        "error": "Onderwerp is verplicht"
+      },
       "submit": {
         "default": "Verstuur bericht",
         "loading": "Verzenden..."
