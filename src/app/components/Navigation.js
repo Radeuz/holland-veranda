@@ -116,13 +116,12 @@ export default function Navigation() {
               onMouseEnter={handleProductsMouseEnter}
               onMouseLeave={handleProductsMouseLeave}
             >
-              <button
+              <Link
+                href="/producten"
                 ref={productsButtonRef}
                 className={`flex items-center justify-center text-gray-800 hover:text-orange-600 transition-colors duration-200 font-bold ${isProductActive() ? 'text-orange-600' : ''}`}
                 aria-expanded={productsDropdownOpen}
                 aria-haspopup="true"
-                onClick={() => setProductsDropdownOpen((open) => !open)}
-                type="button"
               >
                 {t('navigation.products')}
                 <svg 
@@ -134,7 +133,7 @@ export default function Navigation() {
                 >
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </button>
+              </Link>
               
               {/* Dropdown Menu */}
               <div 
