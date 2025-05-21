@@ -32,7 +32,9 @@ export default function Footer() {
               <div className="flex text-white font-medium">
                 <span className="flex-shrink-0"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" /></span>
                 <span>
-                  {t('footer.contact.address')}
+                  {t('footer.contact.address').split('\n').map((line, idx) => (
+                    <span key={idx}>{line}<br /></span>
+                  ))}
                 </span>
               </div>
             </div>

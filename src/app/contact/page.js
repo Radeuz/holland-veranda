@@ -176,7 +176,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />{t('contact.location.title')}</h3>
                     <p className="text-orange-900 font-medium">
-                      {t('contact.location.address')}
+                      {t('contact.location.address').split('\n').map((line, idx) => (
+                        <span key={idx}>{line}<br /></span>
+                      ))}
                     </p>
                   </div>
                   <div>
