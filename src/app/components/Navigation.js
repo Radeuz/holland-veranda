@@ -14,16 +14,12 @@ export default function Navigation() {
   const productsButtonRef = useRef(null);
   const [dropdownWidth, setDropdownWidth] = useState(180);
   const pathname = usePathname();
-  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
-  const languageDropdownRef = useRef(null);
 
   const languageOptions = [
-    { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
-    { value: 'en', label: 'English', icon: '/flag-en.svg' },
-    { value: 'de', label: 'Deutsch', icon: '/flag-de.svg' },
+    { value: 'nl', label: 'Hollanda', icon: '/flag-nl.svg' },
+    { value: 'en', label: 'İngiltere', icon: '/flag-en.svg' },
+    { value: 'de', label: 'Almanya', icon: '/flag-de.svg' },
   ];
-
-  const orangeBorder = 'border-orange-500';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,17 +47,6 @@ export default function Navigation() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [productsButtonRef]);
-
-  useEffect(() => {
-    if (!languageDropdownOpen) return;
-    function handleClick(e) {
-      if (languageDropdownRef.current && !languageDropdownRef.current.contains(e.target)) {
-        setLanguageDropdownOpen(false);
-      }
-    }
-    document.addEventListener('mousedown', handleClick);
-    return () => document.removeEventListener('mousedown', handleClick);
-  }, [languageDropdownOpen]);
 
   const productItems = [
     { name: 'Alle Producten', href: '/producten' },
@@ -112,22 +97,21 @@ export default function Navigation() {
             
             {/* Products Dropdown - Hover Version */}
             <div 
-              className="relative group"
+              className="relative"
               onMouseEnter={() => setProductsDropdownOpen(true)}
               onMouseLeave={() => setProductsDropdownOpen(false)}
             >
-              <Link 
-                href="/producten"
+              <button
                 ref={productsButtonRef}
-                className={`flex items-center justify-center text-gray-800 hover:text-orange-600 transition-colors duration-200 font-bold ${
-                  isProductActive() ? 'text-orange-600' : ''
-                }`}
+                className={`flex items-center justify-center text-gray-800 hover:text-orange-600 transition-colors duration-200 font-bold ${isProductActive() ? 'text-orange-600' : ''}`}
                 aria-expanded={productsDropdownOpen}
                 aria-haspopup="true"
+                onClick={() => setProductsDropdownOpen((open) => !open)}
+                type="button"
               >
                 {t('navigation.products')}
                 <svg 
-                  className={`ml-2 h-4 w-4 transition-transform duration-200 group-hover:rotate-180 ${isProductActive() ? 'text-orange-600' : ''}`} 
+                  className={`ml-2 h-4 w-4 transition-transform duration-200 ${productsDropdownOpen ? 'rotate-180' : ''} ${isProductActive() ? 'text-orange-600' : ''}`} 
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 20 20" 
                   fill="currentColor" 
@@ -135,15 +119,11 @@ export default function Navigation() {
                 >
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </Link>
+              </button>
               
-              {/* Minimalist Dropdown Menu - Centered */}
+              {/* Dropdown Menu */}
               <div 
-                className={`absolute z-10 mt-1 bg-white transform transition-all duration-200 ease-in-out border-t-2 border-orange-500 ${
-                  productsDropdownOpen 
-                    ? 'opacity-100 translate-y-0 visible' 
-                    : 'opacity-0 -translate-y-1 invisible'
-                }`}
+                className={`absolute z-10 mt-1 bg-white transform transition-all duration-200 ease-in-out border-t-2 border-orange-500 ${productsDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-1 invisible'}`}
                 style={{
                   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
                   width: `${dropdownWidth}px`,
@@ -152,8 +132,13 @@ export default function Navigation() {
                     ? 'translateX(-50%) translateY(0)' 
                     : 'translateX(-50%) translateY(-8px)'
                 }}
+                onMouseEnter={() => setProductsDropdownOpen(true)}
+                onMouseLeave={() => setProductsDropdownOpen(false)}
+                tabIndex={-1}
+                role="menu"
+                aria-orientation="vertical"
               >
-                <ul className="py-2 list-none m-0 p-0" role="menu" aria-orientation="vertical">
+                <ul className="py-2 list-none m-0 p-0">
                   {productItems.map((item) => (
                     <li key={item.name} className="m-0 p-0">
                       <Link
@@ -164,6 +149,8 @@ export default function Navigation() {
                             : 'text-gray-800 hover:bg-gray-50 hover:text-orange-600'
                         } transition-colors duration-150`}
                         role="menuitem"
+                        tabIndex={0}
+                        onClick={() => setProductsDropdownOpen(false)}
                       >
                         {item.name}
                       </Link>
@@ -198,35 +185,20 @@ export default function Navigation() {
               {t('navigation.contact')}
             </Link>
             {/* Language Selector */}
-            <div
-              className="ml-4 relative group"
-              ref={languageDropdownRef}
-              onMouseEnter={() => setLanguageDropdownOpen(true)}
-              onMouseLeave={() => setLanguageDropdownOpen(false)}
-            >
-              <button
-                onClick={() => setLanguageDropdownOpen((v) => !v)}
-                className={`flex items-center border-2 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white ${orangeBorder}`}
-                aria-label="Select language"
-                type="button"
-                style={{ transition: 'border-color 0.2s' }}
-              >
-                <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={28} height={21} />
-                <svg className="ml-2 w-4 h-4 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
-              <div
-                className={`absolute right-0 mt-1 bg-white border-t-2 border-orange-500 rounded shadow-lg z-50 transition-all duration-200 ease-in-out
-                  ${languageDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-1 invisible'}`}
-                style={{ minWidth: 160, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}
-              >
-                {languageDropdownOpen && languageOptions.filter(opt => opt.value !== language).map(opt => (
+            <div className="ml-4">
+              <div className="flex items-center space-x-2">
+                {languageOptions.map(opt => (
                   <button
                     key={opt.value}
-                    onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
-                    className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
+                    onClick={() => handleLanguageChange(opt.value)}
+                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
+                    aria-label={opt.label}
+                    style={{ background: 'none' }}
+                    type="button"
                   >
-                    <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
-                    <span className="text-gray-800">{opt.label}</span>
+                    <span style={{ display: 'inline-block', width: 32, height: 24 }}>
+                      <Image src={opt.icon} alt={opt.label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                    </span>
                   </button>
                 ))}
               </div>
@@ -346,34 +318,20 @@ export default function Navigation() {
               {t('navigation.contact')}
             </Link>
             {/* Mobile Language Selector */}
-            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'} relative group`}
-              ref={languageDropdownRef}
-              onMouseEnter={() => setLanguageDropdownOpen(true)}
-              onMouseLeave={() => setLanguageDropdownOpen(false)}
-            >
-              <button
-                onClick={() => setLanguageDropdownOpen((v) => !v)}
-                className={`flex items-center border-2 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white ${orangeBorder}`}
-                aria-label="Select language"
-                type="button"
-                style={{ transition: 'border-color 0.2s' }}
-              >
-                <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={28} height={21} />
-                <svg className="ml-2 w-4 h-4 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
-              <div
-                className={`absolute right-0 mt-1 bg-white border-t-2 border-orange-500 rounded shadow-lg z-50 transition-all duration-200 ease-in-out
-                  ${languageDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-1 invisible'}`}
-                style={{ minWidth: 160, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}
-              >
-                {languageDropdownOpen && languageOptions.filter(opt => opt.value !== language).map(opt => (
+            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'}`}>
+              <div className="flex items-center space-x-2">
+                {languageOptions.map(opt => (
                   <button
                     key={opt.value}
-                    onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
-                    className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
+                    onClick={() => handleLanguageChange(opt.value)}
+                    className={`p-0.5 rounded focus:outline-none border-2 transition-all ${language === opt.value ? 'border-orange-500' : 'border-transparent'}`}
+                    aria-label={opt.label}
+                    style={{ background: 'none' }}
+                    type="button"
                   >
-                    <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
-                    <span className="text-gray-800">{opt.label}</span>
+                    <span style={{ display: 'inline-block', width: 32, height: 24 }}>
+                      <Image src={opt.icon} alt={opt.label} width={32} height={24} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                    </span>
                   </button>
                 ))}
               </div>
