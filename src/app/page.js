@@ -24,7 +24,7 @@ export default function Home() {
       initial: "W"
     },
     {
-      text: "De schuifpui werd snel geplaatst en zorgt voor veel licht in onze woning in Düsseldorf. Echt een aanrader!",
+      text: "The sliding door was installed quickly and brings a lot of light into our home in Düsseldorf. Highly recommended!",
       firstName: "Anna",
       lastName: "Jansen",
       location: "Düsseldorf",
@@ -38,7 +38,7 @@ export default function Home() {
       initial: "P"
     },
     {
-      text: "Rolluiken laten installeren in Utrecht. Snelle service, nette afwerking en topkwaliteit materialen.",
+      text: "Rollläden in Utrecht installieren lassen. Schneller Service, saubere Verarbeitung und Top-Qualitätsmaterialien.",
       firstName: "Sophie",
       lastName: "Visser",
       location: "Utrecht",

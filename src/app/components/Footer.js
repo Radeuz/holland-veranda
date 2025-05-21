@@ -19,18 +19,15 @@ export default function Footer() {
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="space-y-2">
-              <div className="flex items-center text-white font-medium">
-                <EnvelopeIcon className="w-5 h-5 mr-2 text-orange-200" />
+              <div className="text-white font-medium">
                 {t('footer.contact.email')}
               </div>
-              <div className="flex items-center text-orange-200">
-                <PhoneIcon className="w-5 h-5 mr-2 text-orange-200" />
+              <div className="text-orange-200">
                 <a href="https://wa.me/31618612190" target="_blank" rel="noopener noreferrer" className="hover:text-orange-200 transition-colors underline">+31 (0) 618 612 190</a>
                 <span className="text-white mx-2">&amp;</span>
                 <a href="tel:+31132340905" className="hover:text-orange-200 transition-colors underline">+31 (0) 132 340 905</a>
               </div>
-              <div className="flex text-white font-medium">
-                <span className="flex-shrink-0"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" /></span>
+              <div className="text-white font-medium">
                 <span>
                   {t('footer.contact.address').split('\n').map((line, idx) => (
                     <span key={idx}>{line}<br /></span>
