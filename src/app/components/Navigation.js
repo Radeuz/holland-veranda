@@ -15,6 +15,7 @@ export default function Navigation() {
   const [dropdownWidth, setDropdownWidth] = useState(180);
   const pathname = usePathname();
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+  const productsDropdownTimeout = useRef();
 
   const languageOptions = [
     { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
@@ -64,6 +65,19 @@ export default function Navigation() {
   const isActive = (path) => pathname === path;
   const isProductActive = () => pathname.includes('/producten');
 
+  const handleProductsMouseEnter = () => {
+    if (productsDropdownTimeout.current) {
+      clearTimeout(productsDropdownTimeout.current);
+    }
+    setProductsDropdownOpen(true);
+  };
+
+  const handleProductsMouseLeave = () => {
+    productsDropdownTimeout.current = setTimeout(() => {
+      setProductsDropdownOpen(false);
+    }, 180); // 180ms gecikme
+  };
+
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-white'
@@ -99,8 +113,8 @@ export default function Navigation() {
             {/* Products Dropdown - Hover Version */}
             <div 
               className="relative"
-              onMouseEnter={() => setProductsDropdownOpen(true)}
-              onMouseLeave={() => setProductsDropdownOpen(false)}
+              onMouseEnter={handleProductsMouseEnter}
+              onMouseLeave={handleProductsMouseLeave}
             >
               <button
                 ref={productsButtonRef}
@@ -133,8 +147,8 @@ export default function Navigation() {
                     ? 'translateX(-50%) translateY(0)' 
                     : 'translateX(-50%) translateY(-8px)'
                 }}
-                onMouseEnter={() => setProductsDropdownOpen(true)}
-                onMouseLeave={() => setProductsDropdownOpen(false)}
+                onMouseEnter={handleProductsMouseEnter}
+                onMouseLeave={handleProductsMouseLeave}
                 tabIndex={-1}
                 role="menu"
                 aria-orientation="vertical"
