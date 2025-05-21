@@ -192,7 +192,7 @@ export default function Navigation() {
               onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
               <button
-                className="flex items-center px-2 py-1 bg-white rounded shadow-sm hover:bg-gray-50 transition-colors"
+                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-700' : 'border-orange-600'} hover:border-orange-700`}
                 aria-haspopup="true"
                 aria-expanded={languageDropdownOpen}
                 type="button"
@@ -221,7 +221,7 @@ export default function Navigation() {
                         <span style={{ display: 'inline-block', width: 28, height: 21, marginRight: 8 }}>
                           <Image src={opt.icon} alt={opt.label} width={28} height={21} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                         </span>
-                        <span>{opt.label}</span>
+                        <span className="text-gray-800 hover:text-orange-600 transition-colors">{opt.label}</span>
                       </button>
                     </li>
                   ))}
