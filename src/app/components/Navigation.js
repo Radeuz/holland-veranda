@@ -111,7 +111,7 @@ export default function Navigation() {
             </Link>
             
             {/* Products Dropdown - Hover Version */}
-            <div 
+            <div
               className="relative"
               onMouseEnter={handleProductsMouseEnter}
               onMouseLeave={handleProductsMouseLeave}
@@ -147,8 +147,6 @@ export default function Navigation() {
                     ? 'translateX(-50%) translateY(0)' 
                     : 'translateX(-50%) translateY(-8px)'
                 }}
-                onMouseEnter={handleProductsMouseEnter}
-                onMouseLeave={handleProductsMouseLeave}
                 tabIndex={-1}
                 role="menu"
                 aria-orientation="vertical"
