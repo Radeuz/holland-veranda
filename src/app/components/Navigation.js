@@ -15,6 +15,7 @@ export default function Navigation() {
   const [dropdownWidth, setDropdownWidth] = useState(180);
   const pathname = usePathname();
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+  const languageDropdownRef = useRef(null);
 
   const languageOptions = [
     { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
@@ -50,6 +51,17 @@ export default function Navigation() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [productsButtonRef]);
+
+  useEffect(() => {
+    if (!languageDropdownOpen) return;
+    function handleClick(e) {
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(e.target)) {
+        setLanguageDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [languageDropdownOpen]);
 
   const productItems = [
     { name: 'Alle Producten', href: '/producten' },
@@ -187,12 +199,13 @@ export default function Navigation() {
             </Link>
             {/* Language Selector */}
             <div
-              className="ml-4 relative"
+              className="ml-4 relative group"
+              ref={languageDropdownRef}
               onMouseEnter={() => setLanguageDropdownOpen(true)}
               onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
               <button
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={() => setLanguageDropdownOpen((v) => !v)}
                 className={`flex items-center border-2 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white ${orangeBorder}`}
                 aria-label="Select language"
                 type="button"
@@ -201,20 +214,22 @@ export default function Navigation() {
                 <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={28} height={21} />
                 <svg className="ml-2 w-4 h-4 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              {languageDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
-                  {languageOptions.filter(opt => opt.value !== language).map(opt => (
-                    <button
-                      key={opt.value}
-                      onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
-                      className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
-                    >
-                      <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
-                      <span className="text-gray-800">{opt.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
+              <div
+                className={`absolute right-0 mt-1 bg-white border-t-2 border-orange-500 rounded shadow-lg z-50 transition-all duration-200 ease-in-out
+                  ${languageDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-1 invisible'}`}
+                style={{ minWidth: 160, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}
+              >
+                {languageDropdownOpen && languageOptions.filter(opt => opt.value !== language).map(opt => (
+                  <button
+                    key={opt.value}
+                    onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
+                    className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
+                  >
+                    <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
+                    <span className="text-gray-800">{opt.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -331,12 +346,13 @@ export default function Navigation() {
               {t('navigation.contact')}
             </Link>
             {/* Mobile Language Selector */}
-            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'} relative`}
+            <div className={`flex justify-end px-4 py-2 ${isMenuOpen ? '' : 'hidden'} relative group`}
+              ref={languageDropdownRef}
               onMouseEnter={() => setLanguageDropdownOpen(true)}
               onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
               <button
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={() => setLanguageDropdownOpen((v) => !v)}
                 className={`flex items-center border-2 rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white ${orangeBorder}`}
                 aria-label="Select language"
                 type="button"
@@ -345,20 +361,22 @@ export default function Navigation() {
                 <Image src={languageOptions.find(opt => opt.value === language).icon} alt={languageOptions.find(opt => opt.value === language).label} width={28} height={21} />
                 <svg className="ml-2 w-4 h-4 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              {languageDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
-                  {languageOptions.filter(opt => opt.value !== language).map(opt => (
-                    <button
-                      key={opt.value}
-                      onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
-                      className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
-                    >
-                      <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
-                      <span className="text-gray-800">{opt.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
+              <div
+                className={`absolute right-0 mt-1 bg-white border-t-2 border-orange-500 rounded shadow-lg z-50 transition-all duration-200 ease-in-out
+                  ${languageDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-1 invisible'}`}
+                style={{ minWidth: 160, boxShadow: '0 4px 12px rgba(0,0,0,0.08)' }}
+              >
+                {languageDropdownOpen && languageOptions.filter(opt => opt.value !== language).map(opt => (
+                  <button
+                    key={opt.value}
+                    onClick={() => { handleLanguageChange(opt.value); setLanguageDropdownOpen(false); }}
+                    className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-left text-gray-800"
+                  >
+                    <Image src={opt.icon} alt={opt.label} width={24} height={18} className="mr-2" />
+                    <span className="text-gray-800">{opt.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>

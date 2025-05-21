@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 24" width="32" height="24">
-  <rect width="32" height="24" fill="#012169"/>
-  <g stroke-width="2">
-    <path d="M0,0L32,24M32,0L0,24" stroke="#fff"/>
-    <path d="M0,0L32,24M32,0L0,24" stroke="#C8102E" stroke-width="1"/>
-    <path d="M16,0V24M0,12H32" stroke="#fff"/>
-    <path d="M16,0V24M0,12H32" stroke="#C8102E" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="32" height="24">
+  <clipPath id="s">
+    <path d="M0,0 v30 h60 v-30 z"/>
+  </clipPath>
+  <g clip-path="url(#s)">
+    <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+    <path d="M0,0 l60,30 M60,0 l-60,30" stroke="#fff" stroke-width="6"/>
+    <path d="M0,0 l60,30 M60,0 l-60,30" stroke="#C8102E" stroke-width="4"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
   </g>
 </svg> 
