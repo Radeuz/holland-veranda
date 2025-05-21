@@ -194,8 +194,9 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "description": "Nous sommes là pour répondre à toutes vos questions. N'hésitez pas à nous contacter.",
+    "description": "Contactez-nous pour plus d'informations ou un devis gratuit.",
     "form": {
+      "title": "Envoyez-nous un message",
       "name": {
         "label": "Nom *",
         "error": "Le nom est requis"
@@ -205,18 +206,21 @@
         "error": "L'e-mail est requis",
         "invalid": "Adresse e-mail invalide"
       },
-      "phone": {
-        "label": "Numéro de téléphone",
-        "error": "Le numéro de téléphone est requis"
+      "subject": {
+        "label": "Sujet *",
+        "error": "Le sujet est requis"
       },
       "message": {
         "label": "Message *",
         "error": "Le message est requis"
       },
-      "submit": "Envoyer"
+      "submit": {
+        "default": "Envoyer le message",
+        "loading": "Envoi en cours..."
+      }
     },
     "location": {
-      "title": "Notre Adresse",
+      "title": "Notre emplacement",
       "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nPays-Bas",
       "directions": "Itinéraire",
       "openingHours": {

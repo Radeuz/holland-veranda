@@ -164,8 +164,9 @@
   },
   "contact": {
     "title": "Contact Us",
-    "description": "We're here to answer all your questions. Feel free to contact us.",
+    "description": "Get in touch with us for more information or a free quote.",
     "form": {
+      "title": "Send Us a Message",
       "name": {
         "label": "Name *",
         "error": "Name is required"
@@ -175,24 +176,27 @@
         "error": "Email is required",
         "invalid": "Invalid email address"
       },
-      "phone": {
-        "label": "Phone Number",
-        "error": "Phone number is required"
+      "subject": {
+        "label": "Subject *",
+        "error": "Subject is required"
       },
       "message": {
         "label": "Message *",
         "error": "Message is required"
       },
-      "submit": "Send"
+      "submit": {
+        "default": "Send Message",
+        "loading": "Sending..."
+      }
     },
     "location": {
-      "title": "Our Address",
+      "title": "Our Location",
       "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nNetherlands",
       "directions": "Get Directions",
       "openingHours": {
         "title": "Opening Hours",
-        "weekdays": "Mon - Fri: 9:00 AM - 5:00 PM",
-        "saturday": "Sat: 10:00 AM - 3:00 PM",
+        "weekdays": "Mon - Fri: 9:00 - 17:00",
+        "saturday": "Sat: 10:00 - 15:00",
         "sunday": "Sun: Closed"
       }
     },

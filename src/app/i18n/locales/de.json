@@ -134,8 +134,9 @@
   },
   "contact": {
     "title": "Kontakt",
-    "description": "Wir sind für alle Ihre Fragen da. Kontaktieren Sie uns gerne.",
+    "description": "Kontaktieren Sie uns für weitere Informationen oder ein unverbindliches Angebot.",
     "form": {
+      "title": "Senden Sie uns eine Nachricht",
       "name": {
         "label": "Name *",
         "error": "Name ist erforderlich"
@@ -145,18 +146,21 @@
         "error": "E-Mail ist erforderlich",
         "invalid": "Ungültige E-Mail-Adresse"
       },
-      "phone": {
-        "label": "Telefonnummer",
-        "error": "Telefonnummer ist erforderlich"
+      "subject": {
+        "label": "Betreff *",
+        "error": "Betreff ist erforderlich"
       },
       "message": {
         "label": "Nachricht *",
         "error": "Nachricht ist erforderlich"
       },
-      "submit": "Senden"
+      "submit": {
+        "default": "Nachricht senden",
+        "loading": "Wird gesendet..."
+      }
     },
     "location": {
-      "title": "Unsere Adresse",
+      "title": "Unser Standort",
       "address": "Andorrastraat 3\n5171 PC Kaatsheuvel\nNiederlande",
       "directions": "Wegbeschreibung",
       "openingHours": {

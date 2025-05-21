@@ -78,10 +78,10 @@ export default function Contact() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Contact
+              {t('contact.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              Neem contact met ons op voor meer informatie of een vrijblijvende offerte.
+              {t('contact.description')}
             </p>
           </div>
         </div>
@@ -94,11 +94,11 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="order-1 lg:order-1">
               <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8 group">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Stuur Ons Een Bericht</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">{t('contact.form.title')}</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-white mb-2">Naam</label>
+                      <label htmlFor="name" className="block text-sm font-medium text-white mb-2">{t('contact.form.name.label')}</label>
                       <input
                         type="text"
                         id="name"
@@ -110,7 +110,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-white mb-2">E-mail</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-white mb-2">{t('contact.form.email.label')}</label>
                       <input
                         type="email"
                         id="email"
@@ -123,7 +123,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">Onderwerp</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">{t('contact.form.subject.label')}</label>
                     <input
                       type="text"
                       id="subject"
@@ -135,7 +135,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">Bericht</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">{t('contact.form.message.label')}</label>
                     <textarea
                       id="message"
                       name="message"
@@ -162,7 +162,7 @@ export default function Contact() {
                       status.loading ? 'opacity-75 cursor-not-allowed' : ''
                     }`}
                   >
-                    {status.loading ? 'Verzenden...' : 'Verstuur bericht'}
+                    {status.loading ? t('contact.form.submit.loading') : t('contact.form.submit.default')}
                   </button>
                 </form>
               </div>
@@ -171,7 +171,7 @@ export default function Contact() {
             {/* Contact Details */}
             <div className="order-2 lg:order-2">
               <div className="bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Contactgegevens</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">{t('contact.info.title')}</h2>
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-4 flex items-center"><MapPinIcon className="w-5 h-5 mr-2 text-orange-200" />Adres</h3>
