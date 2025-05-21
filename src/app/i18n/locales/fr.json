@@ -1,0 +1,161 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "quote": "Devis gratuit"
+  },
+  "hero": {
+    "title": "Holland Veranda",
+    "subtitle": "Profitez d'une vie extérieure luxueuse – avec des vérandas sur mesure de Holland Veranda",
+    "cta": "Demandez un devis gratuit"
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Découvrez notre gamme de vérandas et d'auvents de haute qualité, parfaits pour votre espace extérieur",
+    "modern": {
+      "title": "Véranda Moderne",
+      "description": "Lignes épurées et design minimaliste pour un look contemporain."
+    },
+    "classic": {
+      "title": "Véranda Classique",
+      "description": "Élégance intemporelle avec des détails traditionnels et une ambiance chaleureuse."
+    },
+    "glass": {
+      "title": "Murs Coulissants en Verre",
+      "description": "Lumière maximale et flexibilité pour votre véranda."
+    },
+    "moreInfo": "Plus d'informations",
+    "cta": {
+      "title": "Intéressé par une véranda ?",
+      "description": "Contactez-nous pour un entretien sans engagement sur les possibilités pour votre jardin.",
+      "button": "Nous contacter"
+    },
+    "modernVeranda": {
+      "title": "Véranda Moderne",
+      "description": "Une véranda moderne avec des lignes épurées et un design contemporain, parfaite pour les maisons modernes."
+    },
+    "classicVeranda": {
+      "title": "Véranda Classique",
+      "description": "Une véranda classique avec un design élégant et intemporel, idéale pour les maisons traditionnelles."
+    },
+    "glassSlidingWalls": {
+      "title": "Murs Coulissants en Verre",
+      "description": "Des murs coulissants en verre qui créent une transition fluide entre l'intérieur et l'extérieur."
+    }
+  },
+  "about": {
+    "title": "À propos de nous",
+    "history": {
+      "title": "Notre histoire",
+      "description": "Holland Veranda a été fondée en 2000 avec la vision de fournir des solutions extérieures de haute qualité. Depuis lors, nous avons grandi pour devenir un leader dans l'industrie."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "description": "Nous croyons en la qualité, l'innovation et la satisfaction du client. Ces valeurs guident tout ce que nous faisons."
+    },
+    "team": {
+      "title": "Notre équipe",
+      "description": "Notre équipe d'experts est dédiée à fournir le meilleur service et les meilleurs produits à nos clients."
+    },
+    "cta": "En savoir plus sur nous"
+  },
+  "footer": {
+    "company": {
+      "title": "Holland Veranda",
+      "description": "Votre spécialiste en solutions extérieures de haute qualité.",
+      "learnMore": "En savoir plus"
+    },
+    "quickLinks": {
+      "title": "Liens rapides",
+      "home": "Accueil",
+      "products": "Produits",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@hollandveranda.nl",
+      "phone": "+31 (0)20 123 4567",
+      "address": "Amsterdam, Pays-Bas"
+    },
+    "openingHours": {
+      "title": "Heures d'ouverture",
+      "weekdays": "Lun - Ven: 9h00 - 17h00",
+      "saturday": "Sam: 10h00 - 15h00",
+      "sunday": "Dim: Fermé"
+    },
+    "copyright": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions Générales"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Nous sommes là pour répondre à toutes vos questions. N'hésitez pas à nous contacter.",
+    "email": "info@hollandveranda.nl",
+    "phone": "+31 (0)20 123 4567",
+    "address": "Amsterdam, Pays-Bas"
+  },
+  "projects": {
+    "title": "Nos projets",
+    "description": "Découvrez nos projets récents et voyez comment nous avons aidé nos clients à créer leur espace extérieur parfait.",
+    "cta": "Voir tous les projets"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "Pourquoi choisir Holland Veranda",
+      "advantages": {
+        "custom": {
+          "title": "Sur mesure & savoir-faire",
+          "description": "Chaque véranda ou pergola est fabriquée sur mesure par des spécialistes expérimentés – avec un souci du détail et de la finition."
+        },
+        "delivery": {
+          "title": "Livraison & installation rapides",
+          "description": "Livré et installé en quelques jours – monté proprement par notre équipe fixe. Vous serez ainsi rapidement prêt pour la vie en plein air."
+        },
+        "materials": {
+          "title": "Matériaux de haute qualité",
+          "description": "Nous utilisons uniquement de l'aluminium de qualité A et du verre de fabrication européenne – résistant aux intempéries, robuste et nécessitant peu d'entretien."
+        },
+        "customers": {
+          "title": "Clients satisfaits",
+          "description": "Plus de 1500 clients satisfaits aux Pays-Bas, en Belgique et en Allemagne ont choisi nos vérandas et stores."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Avis de nos clients",
+      "rating": "4.5",
+      "reviews": "90+ avis",
+      "viewAll": "Voir tous les avis Google"
+    },
+    "featuredProjects": {
+      "title": "Projets en vedette",
+      "projects": {
+        "modern": {
+          "title": "Véranda Moderne",
+          "location": "Amsterdam, Pays-Bas",
+          "description": "Véranda moderne sur mesure à Amsterdam avec structure en aluminium et lignes épurées. S'intègre parfaitement aux maisons urbaines modernes."
+        },
+        "terrace": {
+          "title": "Pergola de Terrasse",
+          "location": "Rotterdam, Pays-Bas",
+          "description": "Pergola de terrasse moderne à Rotterdam avec structure en aluminium. Parfaite pour créer un espace de vie supplémentaire à l'extérieur."
+        },
+        "sliding": {
+          "title": "Murs Coulissants",
+          "location": "Düsseldorf, Allemagne",
+          "description": "Mur coulissant en aluminium à Düsseldorf avec un apport de lumière maximal. Transition fluide entre l'intérieur et l'extérieur."
+        }
+      },
+      "viewAll": "Voir tous les projets"
+    },
+    "about": {
+      "title": "À propos de Holland Veranda",
+      "description": "Holland Veranda est spécialiste des vérandas en aluminium, carports, pergolas, murs coulissants, stores, cadres et protection solaire sur mesure. Avec plus de 20 ans d'expérience, nous fournissons des solutions extérieures durables aux Pays-Bas, en Belgique et en Allemagne.",
+      "cta": "En savoir plus sur nous"
+    }
+  }
+} 

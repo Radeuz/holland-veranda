@@ -3,28 +3,84 @@
     "home": "Startseite",
     "products": "Produkte",
     "about": "Über uns",
+    "contact": "Kontakt",
     "projects": "Projekte",
-    "contact": "Kontakt"
+    "quote": "Kostenloses Angebot"
   },
   "hero": {
     "title": "Holland Veranda",
-    "subtitle": "Verandas, Carports, Rahmen und mehr – für Ihren perfekten Garten",
+    "subtitle": "Genießen Sie ein luxuriöses Leben im Freien – mit maßgeschneiderten Verandas von Holland Veranda",
     "cta": "Kostenloses Angebot anfordern"
+  },
+  "home": {
+    "whyChooseUs": {
+      "title": "Warum Holland Veranda",
+      "advantages": {
+        "custom": {
+          "title": "Maßarbeit & Handwerkskunst",
+          "description": "Jede Veranda oder Pergola wird maßgeschneidert von erfahrenen Spezialisten – mit Liebe zum Detail und perfekter Verarbeitung."
+        },
+        "delivery": {
+          "title": "Schnelle Lieferung & Montage",
+          "description": "Innerhalb weniger Tage geliefert und montiert – sauber installiert von unserem festen Team. So sind Sie schnell bereit für das Leben im Freien."
+        },
+        "materials": {
+          "title": "Hochwertige Materialien",
+          "description": "Wir verwenden nur Aluminium der Güteklasse A und europäisches Glas – witterungsbeständig, stabil und wartungsarm."
+        },
+        "customers": {
+          "title": "Zufriedene Kunden",
+          "description": "Mehr als 1500 zufriedene Kunden in den Niederlanden, Belgien und Deutschland haben sich für unsere Verandas und Rollläden entschieden."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Kundenbewertungen",
+      "rating": "4.5",
+      "reviews": "90+ Bewertungen",
+      "viewAll": "Alle Google-Bewertungen ansehen"
+    },
+    "featuredProjects": {
+      "title": "Ausgewählte Projekte",
+      "projects": {
+        "modern": {
+          "title": "Moderne Veranda",
+          "location": "Amsterdam, Niederlande",
+          "description": "Maßgeschneiderte moderne Veranda in Amsterdam mit Aluminiumstruktur und klaren Linien. Perfekt geeignet für moderne Stadthäuser."
+        },
+        "terrace": {
+          "title": "Terrassen-Pergola",
+          "location": "Rotterdam, Niederlande",
+          "description": "Moderne Terrassen-Pergola in Rotterdam mit Aluminiumstruktur. Ideal für die Schaffung eines zusätzlichen Wohnraums im Freien."
+        },
+        "sliding": {
+          "title": "Glasschiebetüren",
+          "location": "Düsseldorf, Deutschland",
+          "description": "Aluminium-Glasschiebetür in Düsseldorf mit maximaler Lichteinstrahlung. Nahtloser Übergang zwischen Innen- und Außenbereich."
+        }
+      },
+      "viewAll": "Alle Projekte ansehen"
+    },
+    "about": {
+      "title": "Über Holland Veranda",
+      "description": "Holland Veranda ist Spezialist für Aluminium-Verandas, Carports, Pergolen, Glasschiebetüren, Rollläden, Rahmen und maßgeschneiderten Sonnenschutz. Mit über 20 Jahren Erfahrung liefern wir nachhaltige Außenlösungen in den Niederlanden, Belgien und Deutschland.",
+      "cta": "Mehr über uns erfahren"
+    }
   },
   "products": {
     "title": "Unsere Produkte",
     "subtitle": "Entdecken Sie unser Sortiment an hochwertigen Verandas und Überdachungen, perfekt für Ihren Außenbereich",
-    "modern": {
+    "modernVeranda": {
       "title": "Moderne Veranda",
-      "description": "Klare Linien und minimalistisches Design für einen modernen Look."
+      "description": "Eine moderne Veranda mit klaren Linien und zeitgemäßem Design, perfekt für moderne Häuser."
     },
-    "classic": {
+    "classicVeranda": {
       "title": "Klassische Veranda",
-      "description": "Zeitlose Eleganz mit traditionellen Details und warmer Ausstrahlung."
+      "description": "Eine klassische Veranda mit elegantem und zeitlosem Design, ideal für traditionelle Häuser."
     },
-    "glass": {
+    "glassSlidingWalls": {
       "title": "Glasschiebetüren",
-      "description": "Maximale Lichtdurchflutung und Flexibilität für Ihre Veranda."
+      "description": "Glasschiebetüren, die einen nahtlosen Übergang zwischen Innen- und Außenbereich schaffen."
     },
     "moreInfo": "Mehr Informationen",
     "cta": {
@@ -37,92 +93,52 @@
     "title": "Über uns",
     "history": {
       "title": "Unsere Geschichte",
-      "description1": "Holland Veranda wurde 2005 von Jan Jansen gegründet, einem erfahrenen Tischler mit einer Leidenschaft für das Leben im Freien. Was als kleines Familienunternehmen begann, hat sich zu einem führenden Anbieter von Verandas in den Niederlanden entwickelt.",
-      "description2": "Unsere Mission ist es, hochwertige Verandas zu liefern, die nicht nur funktional, sondern auch eine ästhetische Bereicherung für Ihr Zuhause sind. Wir glauben, dass eine Veranda mehr ist als nur eine Überdachung – sie ist eine Erweiterung Ihres Wohnraums ins Freie."
+      "description": "Holland Veranda wurde im Jahr 2000 mit der Vision gegründet, hochwertige Außenlösungen anzubieten. Seitdem sind wir zu einem führenden Unternehmen in der Branche geworden."
     },
     "values": {
       "title": "Unsere Werte",
-      "quality": {
-        "title": "Qualität",
-        "description": "Wir verwenden nur die besten Materialien und arbeiten mit größter Präzision."
-      },
-      "service": {
-        "title": "Service",
-        "description": "Persönliche Beratung und exzellenter Kundenservice stehen bei uns an erster Stelle."
-      },
-      "sustainability": {
-        "title": "Nachhaltigkeit",
-        "description": "Wir streben nach nachhaltigen Produkten und verantwortungsvollen Produktionsmethoden."
-      }
+      "description": "Wir glauben an Qualität, Innovation und Kundenzufriedenheit. Diese Werte leiten alles, was wir tun."
     },
     "team": {
       "title": "Unser Team",
-      "description1": "Unser Team besteht aus erfahrenen Fachleuten, die mit Leidenschaft und Engagement an Ihrer Veranda arbeiten. Vom Design bis zur Installation sorgen wir dafür, dass alles bis ins kleinste Detail erledigt wird.",
-      "description2": "Möchten Sie mehr über unsere Verandas erfahren oder haben Sie spezielle Wünsche? Kontaktieren Sie uns gerne. Wir helfen Ihnen gerne weiter!"
+      "description": "Unser Team von Experten ist darauf ausgerichtet, den besten Service und die besten Produkte für unsere Kunden zu liefern."
     }
   },
   "contact": {
-    "title": "Kontakt",
-    "info": {
-      "title": "Kontaktinformationen",
-      "email": "info@hollandveranda.nl",
-      "phone": "+31 (0) 6186 121 90",
-      "address": "Andorrastraat 3",
-      "city": "5171 PC Kaatsheuvel"
-    },
-    "hours": {
-      "title": "Öffnungszeiten",
-      "weekdays": "Montag bis Freitag: 9:00 - 17:00",
-      "saturday": "Samstag: 10:00 - 16:00",
-      "sunday": "Sonntag: Geschlossen"
-    },
-    "form": {
-      "title": "Nachricht senden",
-      "name": "Name",
-      "email": "E-Mail",
-      "message": "Nachricht",
-      "submit": "Senden"
-    },
-    "location": {
-      "title": "Unser Standort",
-      "description": "Besuchen Sie unseren Showroom, um unsere Verandas persönlich zu sehen.",
-      "directions": "Wegbeschreibung"
-    }
+    "title": "Kontaktieren Sie uns",
+    "description": "Wir sind hier, um alle Ihre Fragen zu beantworten. Kontaktieren Sie uns gerne.",
+    "email": "info@hollandveranda.nl",
+    "phone": "+31 (0)20 123 4567",
+    "address": "Amsterdam, Niederlande"
   },
   "footer": {
     "company": {
-      "title": "Über Holland Veranda",
-      "description": "Der Spezialist für Qualitätsverandas für Ihren Garten. Wir bieten eine große Auswahl an modernen und klassischen Verandas, perfekt zur Erweiterung Ihres Wohnraums.",
-      "learnMore": "Mehr über uns erfahren"
+      "title": "Holland Veranda",
+      "description": "Ihr Spezialist für hochwertige Außenlösungen."
     },
     "quickLinks": {
-      "title": "Schnellzugriff"
+      "title": "Schnelllinks",
+      "home": "Startseite",
+      "products": "Produkte",
+      "about": "Über uns",
+      "contact": "Kontakt"
     },
     "contact": {
       "title": "Kontakt",
-      "address": "Andorrastraat 3",
-      "city": "5171 PC Kaatsheuvel",
-      "country": "Niederlande",
-      "phone": "Telefon",
-      "email": "E-Mail"
+      "email": "info@hollandveranda.nl",
+      "phone": "+31 (0)20 123 4567",
+      "address": "Amsterdam, Niederlande"
     },
-    "hours": {
+    "openingHours": {
       "title": "Öffnungszeiten",
-      "weekdays": "Montag bis Freitag: 9:00 - 17:00",
-      "saturday": "Samstag: 10:00 - 16:00",
-      "sunday": "Sonntag: Geschlossen"
-    },
-    "copyright": "Alle Rechte vorbehalten.",
-    "privacy": "Datenschutzrichtlinie",
-    "terms": "Allgemeine Geschäftsbedingungen"
+      "weekdays": "Mo - Fr: 9:00 - 17:00",
+      "saturday": "Sa: 10:00 - 15:00",
+      "sunday": "So: Geschlossen"
+    }
   },
   "projects": {
-    "subtitle": "Entdecken Sie unsere neuesten Projekte in verschiedenen Teilen Europas und lassen Sie sich von unseren Qualitätsverandas inspirieren",
-    "description": "Ein schönes Beispiel für unsere Expertise in Verandas und Überdachungen",
-    "cta": {
-      "title": "Interesse an einem ähnlichen Projekt?",
-      "description": "Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch über die Möglichkeiten für Ihren Garten",
-      "button": "Kontakt aufnehmen"
-    }
+    "title": "Unsere Projekte",
+    "description": "Entdecken Sie unsere aktuellen Projekte und sehen Sie, wie wir unseren Kunden geholfen haben, ihren perfekten Außenbereich zu gestalten.",
+    "cta": "Alle Projekte ansehen"
   }
 } 

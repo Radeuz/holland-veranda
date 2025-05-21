@@ -21,6 +21,7 @@ export default function Navigation() {
     { value: 'nl', label: 'Nederlands', icon: '/flag-nl.svg' },
     { value: 'en', label: 'English', icon: '/flag-en.svg' },
     { value: 'de', label: 'Deutsch', icon: '/flag-de.svg' },
+    { value: 'fr', label: 'Français', icon: '/flag-fr.svg' },
   ];
 
   useEffect(() => {

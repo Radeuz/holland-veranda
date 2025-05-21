@@ -116,7 +116,7 @@ export default function Home() {
             {/* Text Content */}
             <div className="w-full md:w-1/2 pt-24 pb-12 md:py-24 px-4 md:px-0 text-center md:text-left">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">
-                Holland Veranda
+                {t('hero.title')}
               </h1>
               <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-xl mx-auto md:mx-0">
                 {t('hero.subtitle')}
@@ -126,7 +126,7 @@ export default function Home() {
                   href="/offerte"
                   className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
-                  Vraag een gratis offerte aan
+                  {t('hero.cta')}
                   <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -452,9 +452,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white">Maatwerk & vakmanschap</h3>
+                  <h3 className="text-xl font-bold text-white">{t('home.whyChooseUs.advantages.custom.title')}</h3>
                 </div>
-                <p className="text-orange-900 text-base font-medium">Elke veranda of overkapping wordt exact op maat gemaakt door ervaren specialisten – met oog voor detail én afwerking.</p>
+                <p className="text-orange-900 text-base font-medium">{t('home.whyChooseUs.advantages.custom.description')}</p>
               </div>
               
               {/* Voordeel 2 */}
@@ -465,9 +465,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white">Snelle levering & montage</h3>
+                  <h3 className="text-xl font-bold text-white">{t('home.whyChooseUs.advantages.delivery.title')}</h3>
                 </div>
-                <p className="text-orange-900 text-base font-medium">Binnen enkele dagen geleverd én geplaatst – strak gemonteerd door ons vaste team. Zo bent u snel klaar voor het buitenleven.</p>
+                <p className="text-orange-900 text-base font-medium">{t('home.whyChooseUs.advantages.delivery.description')}</p>
               </div>
               
               {/* Voordeel 3 */}
@@ -478,9 +478,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white">Hoogwaardige materialen</h3>
+                  <h3 className="text-xl font-bold text-white">{t('home.whyChooseUs.advantages.materials.title')}</h3>
                 </div>
-                <p className="text-orange-900 text-base font-medium">Wij gebruiken alleen A-kwaliteit aluminium en glas van Europese makelij – weerbestendig, stevig en onderhoudsarm.</p>
+                <p className="text-orange-900 text-base font-medium">{t('home.whyChooseUs.advantages.materials.description')}</p>
               </div>
               
               {/* Voordeel 4 */}
@@ -491,9 +491,9 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white">Tevreden klanten</h3>
+                  <h3 className="text-xl font-bold text-white">{t('home.whyChooseUs.advantages.customers.title')}</h3>
                 </div>
-                <p className="text-orange-900 text-base font-medium">Meer dan 1500+ tevreden klanten in Nederland, België en Duitsland kozen voor onze veranda's en rolluiken.</p>
+                <p className="text-orange-900 text-base font-medium">{t('home.whyChooseUs.advantages.customers.description')}</p>
               </div>
             </div>
             
@@ -507,10 +507,10 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
                     </svg>
-                    Ervaringen Van Onze Klanten
+                    {t('home.testimonials.title')}
                   </h3>
                   <div className="flex items-center space-x-1">
-                    <span className="text-2xl md:text-3xl font-bold text-orange-900">4.5</span>
+                    <span className="text-2xl md:text-3xl font-bold text-orange-900">{t('home.testimonials.rating')}</span>
                     <div className="flex flex-col">
                       <div className="flex text-yellow-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
                         {[1, 2, 3, 4].map((star) => (
@@ -528,7 +528,7 @@ export default function Home() {
                           <path fill="url(#halfStarWhite)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       </div>
-                      <span className="text-orange-900 text-xs font-semibold">90+ beoordelingen</span>
+                      <span className="text-orange-900 text-xs font-semibold">{t('home.testimonials.reviews')}</span>
                     </div>
                   </div>
                 </div>
@@ -573,7 +573,7 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5" viewBox="0 0 20 20" fill="currentColor">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-                    Bekijk alle Google beoordelingen
+                    {t('home.testimonials.viewAll')}
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1.5 transform group-hover:translate-x-1 transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -588,7 +588,7 @@ export default function Home() {
       {/* Uitgelichte Projecten Section */}
       <section className="py-12 bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Uitgelichte Projecten</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{t('home.featuredProjects.title')}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Project 1 */}
@@ -606,15 +606,15 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">Moderne Veranda</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('home.featuredProjects.projects.modern.title')}</h3>
                 <div className="flex items-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-600">Amsterdam, Nederland</span>
+                  <span className="text-gray-600">{t('home.featuredProjects.projects.modern.location')}</span>
                 </div>
-                <p className="text-gray-700">Moderne veranda op maat in Amsterdam met aluminium structuur en strakke lijnen. Perfect passend bij moderne stadswoningen.</p>
+                <p className="text-gray-700">{t('home.featuredProjects.projects.modern.description')}</p>
               </div>
             </div>
             
@@ -633,15 +633,15 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">Terrasoverkapping</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('home.featuredProjects.projects.terrace.title')}</h3>
                 <div className="flex items-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-600">Rotterdam, Nederland</span>
+                  <span className="text-gray-600">{t('home.featuredProjects.projects.terrace.location')}</span>
                 </div>
-                <p className="text-gray-700">Moderne terrasoverkapping in Rotterdam met aluminium structuur. Perfect voor het creëren van een extra woonruimte buiten.</p>
+                <p className="text-gray-700">{t('home.featuredProjects.projects.terrace.description')}</p>
               </div>
             </div>
             
@@ -660,15 +660,15 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">Schuifpuien</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('home.featuredProjects.projects.sliding.title')}</h3>
                 <div className="flex items-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-600">Düsseldorf, Duitsland</span>
+                  <span className="text-gray-600">{t('home.featuredProjects.projects.sliding.location')}</span>
                 </div>
-                <p className="text-gray-700">Aluminium schuifpui in Düsseldorf met maximale lichtinval. Naadloze overgang tussen binnen en buiten.</p>
+                <p className="text-gray-700">{t('home.featuredProjects.projects.sliding.description')}</p>
               </div>
             </div>
           </div>
@@ -678,7 +678,7 @@ export default function Home() {
               href="/projecten" 
               className="inline-block px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
             >
-              Bekijk alle projecten
+              {t('home.featuredProjects.viewAll')}
             </Link>
           </div>
         </div>
@@ -706,17 +706,17 @@ export default function Home() {
             
             {/* Content */}
             <div className="w-full md:w-1/2 space-y-6 md:space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Over Holland Veranda</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t('home.about.title')}</h2>
               <div className="w-16 md:w-20 h-1.5 bg-orange-600 rounded-full"></div>
               <p className="text-base md:text-xl text-gray-700 leading-relaxed">
-                Holland Veranda is specialist in aluminium veranda's, carports, terrasoverkappingen, schuifpuien, rolluiken, kozijnen en zonwering op maat. Met meer dan 20 jaar ervaring leveren wij duurzame buitenoplossingen in Nederland, België en Duitsland.
+                {t('home.about.description')}
               </p>
               <div className="pt-2 md:pt-4">
                 <Link 
                   href="/over-ons" 
                   className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
                 >
-                  Meer over ons
+                  {t('home.about.cta')}
                   <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

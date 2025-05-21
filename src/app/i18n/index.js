@@ -4,9 +4,10 @@ import { createContext, useContext, useState, useEffect } from 'react';
 import en from './locales/en.json';
 import nl from './locales/nl.json';
 import de from './locales/de.json';
+import fr from './locales/fr.json';
 import { usePathname, useRouter } from 'next/navigation';
 
-const translations = { en, nl, de };
+const translations = { en, nl, de, fr };
 
 export const LanguageContext = createContext();
 
