@@ -182,10 +182,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.veranda.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.veranda.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.veranda.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.veranda.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.veranda.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -212,10 +212,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.carport.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.carport.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.carport.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.carport.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.carport.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -242,10 +242,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.terrace.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.terrace.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.terrasoverkapping.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.terrasoverkapping.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.terrace.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -272,10 +272,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.frames.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.frames.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.kozijnen.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.kozijnen.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.frames.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -302,10 +302,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.sliding.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.sliding.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.schuifpuien.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.schuifpuien.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.sliding.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -332,10 +332,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.sunshade.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.sunshade.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.zonweringen.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.zonweringen.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.sunshade.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -362,10 +362,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.roller.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.roller.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.rolluiken.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.rolluiken.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.roller.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>
@@ -392,10 +392,10 @@ export default function Home() {
                         />
                       </div>
                       <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.tiles.title')}</h3>
-                        <p className="text-gray-700 mb-4">{t('products.tiles.description')}</p>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{t('products.items.keramische-tegels.title')}</h3>
+                        <p className="text-gray-700 mb-4">{t('products.items.keramische-tegels.description')}</p>
                         <div className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
-                          {t('products.tiles.viewMore')}
+                          {t('products.moreInfo')}
                           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                           </svg>

@@ -13,65 +13,105 @@ export default function Producten() {
     {
       id: 'veranda',
       title: t('products.items.veranda.title'),
-      image: '/images/products/veranda.jpg',
+      image: '/veranda.jpg',
       description: t('products.items.veranda.description'),
-      features: t('products.items.veranda.features', { returnObjects: true }),
+      features: [
+        t('products.items.veranda.features.0'),
+        t('products.items.veranda.features.1'),
+        t('products.items.veranda.features.2'),
+        t('products.items.veranda.features.3')
+      ],
       slug: 'veranda'
     },
     {
       id: 'carport',
       title: t('products.items.carport.title'),
-      image: '/images/products/carport.jpg',
+      image: '/carport.jpg',
       description: t('products.items.carport.description'),
-      features: t('products.items.carport.features', { returnObjects: true }),
+      features: [
+        t('products.items.carport.features.0'),
+        t('products.items.carport.features.1'),
+        t('products.items.carport.features.2'),
+        t('products.items.carport.features.3')
+      ],
       slug: 'carport'
     },
     {
       id: 'terrasoverkapping',
       title: t('products.items.terrasoverkapping.title'),
-      image: '/images/products/terrasoverkapping.jpg',
+      image: '/terrasoverkapping.jpg',
       description: t('products.items.terrasoverkapping.description'),
-      features: t('products.items.terrasoverkapping.features', { returnObjects: true }),
+      features: [
+        t('products.items.terrasoverkapping.features.0'),
+        t('products.items.terrasoverkapping.features.1'),
+        t('products.items.terrasoverkapping.features.2'),
+        t('products.items.terrasoverkapping.features.3')
+      ],
       slug: 'terrasoverkapping'
     },
     {
       id: 'kozijnen',
       title: t('products.items.kozijnen.title'),
-      image: '/images/products/kozijnen.jpg',
+      image: '/kozijnen.jpg',
       description: t('products.items.kozijnen.description'),
-      features: t('products.items.kozijnen.features', { returnObjects: true }),
+      features: [
+        t('products.items.kozijnen.features.0'),
+        t('products.items.kozijnen.features.1'),
+        t('products.items.kozijnen.features.2'),
+        t('products.items.kozijnen.features.3')
+      ],
       slug: 'kozijnen'
     },
     {
       id: 'schuifpuien',
       title: t('products.items.schuifpuien.title'),
-      image: '/images/products/schuifpuien.jpg',
+      image: '/schuifpuien.jpg',
       description: t('products.items.schuifpuien.description'),
-      features: t('products.items.schuifpuien.features', { returnObjects: true }),
+      features: [
+        t('products.items.schuifpuien.features.0'),
+        t('products.items.schuifpuien.features.1'),
+        t('products.items.schuifpuien.features.2'),
+        t('products.items.schuifpuien.features.3')
+      ],
       slug: 'schuifpuien'
     },
     {
       id: 'zonweringen',
       title: t('products.items.zonweringen.title'),
-      image: '/images/products/zonweringen.jpg',
+      image: '/zonweringen.jpg',
       description: t('products.items.zonweringen.description'),
-      features: t('products.items.zonweringen.features', { returnObjects: true }),
+      features: [
+        t('products.items.zonweringen.features.0'),
+        t('products.items.zonweringen.features.1'),
+        t('products.items.zonweringen.features.2'),
+        t('products.items.zonweringen.features.3')
+      ],
       slug: 'zonweringen'
     },
     {
       id: 'rolluiken',
       title: t('products.items.rolluiken.title'),
-      image: '/images/products/rolluiken.jpg',
+      image: '/rolluiken.jpg',
       description: t('products.items.rolluiken.description'),
-      features: t('products.items.rolluiken.features', { returnObjects: true }),
+      features: [
+        t('products.items.rolluiken.features.0'),
+        t('products.items.rolluiken.features.1'),
+        t('products.items.rolluiken.features.2'),
+        t('products.items.rolluiken.features.3')
+      ],
       slug: 'rolluiken'
     },
     {
       id: 'keramische-tegels',
       title: t('products.items.keramische-tegels.title'),
-      image: '/images/products/keramische-tegels.jpg',
+      image: '/keramische-tegels.jpg',
       description: t('products.items.keramische-tegels.description'),
-      features: t('products.items.keramische-tegels.features', { returnObjects: true }),
+      features: [
+        t('products.items.keramische-tegels.features.0'),
+        t('products.items.keramische-tegels.features.1'),
+        t('products.items.keramische-tegels.features.2'),
+        t('products.items.keramische-tegels.features.3')
+      ],
       slug: 'keramische-tegels'
     }
   ];
