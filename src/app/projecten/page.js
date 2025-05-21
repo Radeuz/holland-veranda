@@ -14,172 +14,172 @@ export default function Projecten() {
     { 
       id: 5, 
       image: '/Veranda5.jpg',
-      location: 'Eindhoven, Nederland'
+      location: 'Eindhoven, ' + t('projects.location.netherlands')
     },
     { 
       id: 6, 
       image: '/Veranda6.jpg',
-      location: 'Antwerpen, België'
+      location: 'Antwerpen, ' + t('projects.location.belgium')
     },
     { 
       id: 7, 
       image: '/Veranda7.jpg',
-      location: 'Brugge, België'
+      location: 'Brugge, ' + t('projects.location.belgium')
     },
     { 
       id: 8, 
       image: '/Veranda8.jpg',
-      location: 'Gent, België'
+      location: 'Gent, ' + t('projects.location.belgium')
     },
     {
       id: 9,
       image: '/Veranda9.jpg',
-      location: 'Brussel, België'
+      location: 'Brussel, ' + t('projects.location.belgium')
     },
     {
       id: 10,
       image: '/Terrasoverkapping5.jpg',
-      location: 'Groningen, Nederland'
+      location: 'Groningen, ' + t('projects.location.netherlands')
     },
     {
       id: 11,
       image: '/Terrasoverkapping3.jpg',
-      location: 'Leeuwarden, Nederland'
+      location: 'Leeuwarden, ' + t('projects.location.netherlands')
     },
     {
       id: 12,
       image: '/Terrasoverkapping4.jpg',
-      location: 'Arnhem, Nederland'
+      location: 'Arnhem, ' + t('projects.location.netherlands')
     },
     { 
       id: 13, 
       image: '/Carport3.jpg',
-      location: 'Tilburg, Nederland'
+      location: 'Tilburg, ' + t('projects.location.netherlands')
     },
     { 
       id: 14, 
       image: '/Carport5.jpg',
-      location: 'Enschede, Nederland'
+      location: 'Enschede, ' + t('projects.location.netherlands')
     },
     { 
       id: 15, 
       image: '/Kozijnen5.jpg',
-      location: 'Haarlem, Nederland'
+      location: 'Haarlem, ' + t('projects.location.netherlands')
     },
     { 
       id: 16, 
       image: '/Kozijnen2.jpg',
-      location: 'Alkmaar, Nederland'
+      location: 'Alkmaar, ' + t('projects.location.netherlands')
     },
     { 
       id: 17, 
       image: '/Kozijnen4.jpg',
-      location: 'Delft, Nederland'
+      location: 'Delft, ' + t('projects.location.netherlands')
     },
     { 
       id: 18, 
       image: '/Schuifpui5.jpg',
-      location: 'Zwolle, Nederland'
+      location: 'Zwolle, ' + t('projects.location.netherlands')
     },
     { 
       id: 19, 
       image: '/Schuifpui2.jpg',
-      location: 'Apeldoorn, Nederland'
+      location: 'Apeldoorn, ' + t('projects.location.netherlands')
     },
     { 
       id: 20, 
       image: '/Schuifpui3.jpg',
-      location: 'Amersfoort, Nederland'
+      location: 'Amersfoort, ' + t('projects.location.netherlands')
     },
     { 
       id: 21, 
       image: '/Schuifpui4.jpg',
-      location: 'Dordrecht, Nederland'
+      location: 'Dordrecht, ' + t('projects.location.netherlands')
     },
     { 
       id: 22, 
       image: '/Zonweringen1.jpg',
-      location: 'Venlo, Nederland'
+      location: 'Venlo, ' + t('projects.location.netherlands')
     },
     { 
       id: 23, 
       image: '/Zonweringen2.jpg',
-      location: 'Deventer, Nederland'
+      location: 'Deventer, ' + t('projects.location.netherlands')
     },
     { 
       id: 24, 
       image: '/Zonweringen3.jpg',
-      location: 'Zaanstad, Nederland'
+      location: 'Zaanstad, ' + t('projects.location.netherlands')
     },
     { 
       id: 25, 
       image: '/Zonweringen4.jpg',
-      location: 'Almere, Nederland'
+      location: 'Almere, ' + t('projects.location.netherlands')
     },
     { 
       id: 26, 
       image: '/Rolluiken1.jpg',
-      location: 'Hoorn, Nederland'
+      location: 'Hoorn, ' + t('projects.location.netherlands')
     },
     { 
       id: 27, 
       image: '/Rolluiken2.jpg',
-      location: 'Den Bosch, Nederland'
+      location: 'Den Bosch, ' + t('projects.location.netherlands')
     },
     { 
       id: 28, 
       image: '/Rolluiken3.jpg',
-      location: 'Lelystad, Nederland'
+      location: 'Lelystad, ' + t('projects.location.netherlands')
     },
     { 
       id: 29, 
       image: '/Rolluiken4.jpg',
-      location: 'Hilversum, Nederland'
+      location: 'Hilversum, ' + t('projects.location.netherlands')
     },
     { 
       id: 30, 
       image: '/KeramischeTegels1.jpg',
-      location: 'Purmerend, Nederland'
+      location: 'Purmerend, ' + t('projects.location.netherlands')
     },
     { 
       id: 31, 
       image: '/KeramischeTegels2.jpg',
-      location: 'Roosendaal, Nederland'
+      location: 'Roosendaal, ' + t('projects.location.netherlands')
     },
     { 
       id: 32, 
       image: '/KeramischeTegels3.jpg',
-      location: 'Middelburg, Nederland'
+      location: 'Middelburg, ' + t('projects.location.netherlands')
     },
     { 
       id: 33, 
       image: '/KeramischeTegels4.jpg',
-      location: 'Emmen, Nederland'
+      location: 'Emmen, ' + t('projects.location.netherlands')
     },
     {
       id: 34,
       image: '/GespecialiseerdeMonteurs1.jpg',
-      location: 'Ons team aan het werk'
+      location: t('projects.location.team')
     },
     { 
       id: 1, 
       image: '/Veranda1.jpg',
-      location: 'Rotterdam, Nederland'
+      location: 'Rotterdam, ' + t('projects.location.netherlands')
     },
     { 
       id: 2, 
       image: '/Veranda13.jpg',
-      location: 'Amsterdam, Nederland'
+      location: 'Amsterdam, ' + t('projects.location.netherlands')
     },
     { 
       id: 3, 
       image: '/Veranda12.jpg',
-      location: 'Utrecht, Nederland'
+      location: 'Utrecht, ' + t('projects.location.netherlands')
     },
     { 
       id: 4, 
       image: '/Veranda4.jpg',
-      location: 'Den Haag, Nederland',
+      location: 'Den Haag, ' + t('projects.location.netherlands'),
       objectPosition: 'center 30%'
     }
   ]
@@ -201,10 +201,6 @@ export default function Projecten() {
     }
   }, []);
 
-  useEffect(() => {
-    // ... existing code ...
-  }, [projects]);
-
   const handlePrevious = (e) => {
     e.stopPropagation();
     const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
@@ -220,44 +216,48 @@ export default function Projecten() {
   };
 
   return (
-    <main>
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50">
       <Navigation />
 
-      {/* Page Header */}
+      {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
-          <div className="text-center mt-8">
+          <div className="text-center mt-8 w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Projecten
+              {t('projects.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              Bekijk onze voltooide projecten en laat u inspireren door onze vakmanschap en kwaliteit.
+              {t('projects.subtitle')}
             </p>
           </div>
         </div>
       </div>
 
       {/* Projects Grid */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg border border-orange-100 hover:border-orange-300 transition-all duration-300 hover:scale-[1.02]">
-                <div 
-                  className="relative aspect-[4/3] cursor-pointer"
-                  onClick={() => setSelectedImage(project)}
-                >
+              <div
+                key={project.id}
+                className="relative group cursor-pointer"
+                onClick={() => setSelectedImage(project)}
+              >
+                <div className="relative h-[400px] rounded-xl overflow-hidden">
                   <Image
                     src={project.image}
-                    alt={`Project in ${project.location}`}
+                    alt={`Project ${project.id}`}
                     fill
-                    style={{
-                      objectFit: 'cover',
-                      objectPosition: project.objectPosition || 'center'
-                    }}
-                    className="rounded-lg"
+                    quality={85}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{objectFit: 'cover', objectPosition: project.objectPosition || 'center'}}
+                    className="rounded-xl transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-lg font-medium">{project.location}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -267,48 +267,40 @@ export default function Projecten() {
 
       {/* Image Modal */}
       {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative w-full max-w-6xl max-h-[90vh]">
-            <Image
-              src={selectedImage.image}
-              alt={`Project in ${selectedImage.location}`}
-              width={1920}
-              height={1080}
-              style={{
-                objectFit: 'contain',
-                objectPosition: selectedImage.objectPosition || 'center'
-              }}
-              className="rounded-lg"
-            />
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
+          <div className="relative w-full max-w-7xl max-h-[90vh]">
             <button
-              className="absolute top-4 right-4 text-white bg-orange-600 rounded-full p-2 hover:bg-orange-700 transition-colors duration-200 shadow-md"
+              className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors"
               onClick={() => setSelectedImage(null)}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              {t('projects.modal.close')}
             </button>
-            
-            {/* Navigation Arrows */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-orange-600/80 hover:bg-orange-700/90 rounded-full p-3 transition-all duration-200 shadow-md"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors"
               onClick={handlePrevious}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
+              {t('projects.modal.previous')}
             </button>
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-orange-600/80 hover:bg-orange-700/90 rounded-full p-3 transition-all duration-200 shadow-md"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors"
               onClick={handleNext}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              {t('projects.modal.next')}
             </button>
+            <div className="relative h-[80vh] rounded-xl overflow-hidden">
+              <Image
+                src={selectedImage.image}
+                alt={`Project ${selectedImage.id}`}
+                fill
+                quality={100}
+                sizes="100vw"
+                style={{objectFit: 'contain'}}
+                className="rounded-xl"
+              />
+            </div>
+            <div className="absolute bottom-4 left-0 right-0 text-center text-white">
+              <p className="text-lg font-medium">{selectedImage.location}</p>
+            </div>
           </div>
         </div>
       )}

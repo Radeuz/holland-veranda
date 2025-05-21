@@ -11,79 +11,68 @@ export default function Producten() {
 
   const products = [
     {
-      id: 1,
-      title: "Veranda",
-      image: "/Veranda1.jpg",
-      description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
-      features: ["Maatwerk ontwerp", "Diverse dakopties", "LED-verlichting mogelijk", "Verschillende kleuropties"],
-      objectFit: "cover",
-      slug: "veranda"
+      id: 'veranda',
+      title: t('products.items.veranda.title'),
+      image: '/images/products/veranda.jpg',
+      description: t('products.items.veranda.description'),
+      features: t('products.items.veranda.features', { returnObjects: true }),
+      slug: 'veranda'
     },
     {
-      id: 2,
-      title: "Carport",
-      image: "/Carport2.jpg",
-      description: "Duurzame carports die uw auto beschermen tegen weersinvloeden en UV-straling. De open structuur zorgt voor een luchtige uitstraling die past bij elke woning.",
-      features: ["Robuuste constructie", "Eenvoudig te installeren", "Onderhoudsarm", "Diverse afmetingen mogelijk"],
-      objectFit: "cover",
-      objectPosition: "center center",
-      slug: "carport"
+      id: 'carport',
+      title: t('products.items.carport.title'),
+      image: '/images/products/carport.jpg',
+      description: t('products.items.carport.description'),
+      features: t('products.items.carport.features', { returnObjects: true }),
+      slug: 'carport'
     },
     {
-      id: 3,
-      title: "Terrasoverkapping",
-      image: "/Terrasoverkapping1.jpg",
-      description: "Een terrasoverkapping biedt beschutting tegen regen en zon, zodat u optimaal kunt genieten van uw buitenruimte. Onze terrasoverkappingen zijn verkrijgbaar in verschillende materialen en stijlen, passend bij uw woning en wensen.",
-      features: ["Waterdicht dak", "Optionele glazen schuifwanden", "Geïntegreerde zonwering mogelijk", "Diverse uitvoeringen"],
-      objectFit: "cover",
-      slug: "terrasoverkapping"
+      id: 'terrasoverkapping',
+      title: t('products.items.terrasoverkapping.title'),
+      image: '/images/products/terrasoverkapping.jpg',
+      description: t('products.items.terrasoverkapping.description'),
+      features: t('products.items.terrasoverkapping.features', { returnObjects: true }),
+      slug: 'terrasoverkapping'
     },
     {
-      id: 4,
-      title: "Kozijnen",
-      image: "/Kozijnen1.jpg",
-      description: "Onze kozijnen zijn van hoogwaardige kwaliteit en verkrijgbaar in verschillende materialen zoals hout, kunststof en aluminium. Ze bieden uitstekende isolatie en zijn verkrijgbaar in diverse kleuren en afwerkingen.",
-      features: ["Uitstekende isolatiewaarden", "Inbraakwerend", "Geluidsisolerend", "Onderhoudsvriendelijk"],
-      objectFit: "cover",
-      slug: "kozijnen"
+      id: 'kozijnen',
+      title: t('products.items.kozijnen.title'),
+      image: '/images/products/kozijnen.jpg',
+      description: t('products.items.kozijnen.description'),
+      features: t('products.items.kozijnen.features', { returnObjects: true }),
+      slug: 'kozijnen'
     },
     {
-      id: 5,
-      title: "Schuifpuien",
-      image: "/Schuifpui1.jpg",
-      description: "Een schuifpui is een elegante oplossing om uw woonkamer te verbinden met de tuin. Onze schuifpuien zijn verkrijgbaar in verschillende materialen en stijlen, met uitstekende isolatiewaarden en een soepele bediening.",
-      features: ["Soepel schuifsysteem", "Hoge isolatiewaarde", "Inbraakwerend", "Diverse indelingen mogelijk"],
-      objectFit: "cover",
-      slug: "schuifpuien"
+      id: 'schuifpuien',
+      title: t('products.items.schuifpuien.title'),
+      image: '/images/products/schuifpuien.jpg',
+      description: t('products.items.schuifpuien.description'),
+      features: t('products.items.schuifpuien.features', { returnObjects: true }),
+      slug: 'schuifpuien'
     },
     {
-      id: 6,
-      title: "Zonweringen",
-      image: "/Zonweringen1.jpg",
-      description: "Effectieve zonwering voor optimaal comfort in en rond uw woning. Bescherm uw interieur tegen zonlicht en creëer een aangename binnentemperatuur.",
-      features: ["Automatische bediening mogelijk", "Wind- en weerbestendig", "Diverse kleuren en dessins", "Terugdringen energiekosten"],
-      objectFit: "cover",
-      objectPosition: "center 70%",
-      slug: "zonweringen"
+      id: 'zonweringen',
+      title: t('products.items.zonweringen.title'),
+      image: '/images/products/zonweringen.jpg',
+      description: t('products.items.zonweringen.description'),
+      features: t('products.items.zonweringen.features', { returnObjects: true }),
+      slug: 'zonweringen'
     },
     {
-      id: 7,
-      title: "Rolluiken",
-      image: "/Rolluiken1.jpg",
-      description: "Veilige en stijlvolle rolluiken die niet alleen uw privacy waarborgen maar ook zorgen voor extra isolatie en bescherming tegen inbraak.",
-      features: ["Extra isolatie", "Verduisterend", "Inbraakwerend", "Elektrische bediening mogelijk"],
-      objectFit: "cover",
-      objectPosition: "center 90%",
-      slug: "rolluiken"
+      id: 'rolluiken',
+      title: t('products.items.rolluiken.title'),
+      image: '/images/products/rolluiken.jpg',
+      description: t('products.items.rolluiken.description'),
+      features: t('products.items.rolluiken.features', { returnObjects: true }),
+      slug: 'rolluiken'
     },
     {
-      id: 8,
-      title: "Keramische Tegels",
-      image: "/KeramischeTegels1.jpg",
-      description: "Duurzame en stijlvolle keramische tegels voor binnen en buiten. Creëer een naadloze overgang van uw woning naar uw terras of tuin.",
-      features: ["Vorstbestendig", "Kleurvast", "Krasbestendig", "Antislip-opties beschikbaar"],
-      objectFit: "cover",
-      slug: "keramische-tegels"
+      id: 'keramische-tegels',
+      title: t('products.items.keramische-tegels.title'),
+      image: '/images/products/keramische-tegels.jpg',
+      description: t('products.items.keramische-tegels.description'),
+      features: t('products.items.keramische-tegels.features', { returnObjects: true }),
+      slug: 'keramische-tegels'
     }
   ];
 
@@ -100,7 +89,7 @@ export default function Producten() {
               {t('products.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              Ontdek onze ruime collectie aluminium veranda's, terrasoverkappingen en maatwerk buitenoplossingen.
+              {t('products.subtitle')}
             </p>
           </div>
         </div>
@@ -119,8 +108,8 @@ export default function Producten() {
                       alt={product.title}
                       fill
                       style={{
-                        objectFit: product.objectFit || 'cover',
-                        objectPosition: product.objectPosition || 'center'
+                        objectFit: 'cover',
+                        objectPosition: 'center'
                       }}
                       className="rounded-t-lg transition-transform duration-300 hover:scale-105"
                     />

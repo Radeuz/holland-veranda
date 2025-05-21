@@ -69,68 +69,68 @@
   },
   "products": {
     "title": "Onze Producten",
-    "subtitle": "Ontdek ons assortiment hoogwaardige veranda's en overkappingen, perfect voor uw buitenruimte",
-    "veranda": {
-      "title": "Veranda",
-      "description": "Verhoog uw wooncomfort met een stijlvolle veranda op maat. Extra ruimte en bescherming tegen weer.",
-      "viewMore": "Bekijk veranda's"
-    },
-    "carport": {
-      "title": "Carport",
-      "description": "Bescherm uw auto tegen regen en zon met een moderne carport. Strak design en lange levensduur.",
-      "viewMore": "Bekijk carports"
-    },
-    "terrace": {
-      "title": "Terrasoverkapping",
-      "description": "Zorg voor extra leefruimte en comfort met een stijlvolle, weerbestendige terrasoverkapping.",
-      "viewMore": "Bekijk terrasoverkappingen"
-    },
-    "frames": {
-      "title": "Kozijnen",
-      "description": "Verbeter isolatie en uitstraling met hoogwaardige kozijnen. Duurzaam, stijlvol en onderhoudsarm.",
-      "viewMore": "Bekijk kozijnen"
-    },
-    "sliding": {
-      "title": "Schuifpuien",
-      "description": "Laat binnen en buiten naadloos in elkaar overlopen. Meer licht en ruimte met onze schuifpuien.",
-      "viewMore": "Bekijk schuifpuien"
-    },
-    "sunshade": {
-      "title": "Zonweringen",
-      "description": "Geniet van schaduw en comfort op uw terras. Stijlvolle bescherming tegen hitte en UV-straling.",
-      "viewMore": "Bekijk zonweringen"
-    },
-    "roller": {
-      "title": "Rolluiken",
-      "description": "Kies voor inbraakwerende rolluiken met moderne uitstraling. Bescherming en comfort in één.",
-      "viewMore": "Bekijk rolluiken"
-    },
-    "tiles": {
-      "title": "Keramische Tegels",
-      "description": "Geef uw terras of oprit een duurzame upgrade. Slijtvast, kleurvast en onderhoudsvriendelijk.",
-      "viewMore": "Bekijk keramische tegels"
-    },
-    "modernVeranda": {
-      "title": "Moderne Veranda",
-      "description": "Een moderne veranda met strakke lijnen en eigentijds design, perfect voor moderne woningen."
-    },
-    "classicVeranda": {
-      "title": "Klassieke Veranda",
-      "description": "Een klassieke veranda met elegant en tijdloos design, ideaal voor traditionele woningen."
-    },
-    "glassSlidingWalls": {
-      "title": "Schuifpuien",
-      "description": "Schuifpuien die een naadloze overgang creëren tussen binnen en buiten."
-    },
+    "subtitle": "Ontdek onze ruime collectie aluminium veranda's, terrasoverkappingen en maatwerk buitenoplossingen.",
     "moreInfo": "Meer informatie",
-    "cta": {
-      "title": "Interesse in een veranda?",
-      "description": "Neem contact met ons op voor een vrijblijvend gesprek over de mogelijkheden voor uw tuin.",
-      "button": "Contact opnemen"
+    "requestQuote": "Vraag offerte aan",
+    "features": "Kenmerken:",
+    "items": {
+      "veranda": {
+        "title": "Veranda",
+        "description": "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
+        "features": ["Maatwerk ontwerp", "Diverse dakopties", "LED-verlichting mogelijk", "Verschillende kleuropties"]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Duurzame carports die uw auto beschermen tegen weersinvloeden en UV-straling. De open structuur zorgt voor een luchtige uitstraling die past bij elke woning.",
+        "features": ["Robuuste constructie", "Eenvoudig te installeren", "Onderhoudsarm", "Diverse afmetingen mogelijk"]
+      },
+      "terrasoverkapping": {
+        "title": "Terrasoverkapping",
+        "description": "Een terrasoverkapping biedt beschutting tegen regen en zon, zodat u optimaal kunt genieten van uw buitenruimte. Onze terrasoverkappingen zijn verkrijgbaar in verschillende materialen en stijlen, passend bij uw woning en wensen.",
+        "features": ["Waterdicht dak", "Optionele glazen schuifwanden", "Geïntegreerde zonwering mogelijk", "Diverse uitvoeringen"]
+      },
+      "kozijnen": {
+        "title": "Kozijnen",
+        "description": "Onze kozijnen zijn van hoogwaardige kwaliteit en verkrijgbaar in verschillende materialen zoals hout, kunststof en aluminium. Ze bieden uitstekende isolatie en zijn verkrijgbaar in diverse kleuren en afwerkingen.",
+        "features": ["Uitstekende isolatiewaarden", "Inbraakwerend", "Geluidsisolerend", "Onderhoudsvriendelijk"]
+      },
+      "schuifpuien": {
+        "title": "Schuifpuien",
+        "description": "Een schuifpui is een elegante oplossing om uw woonkamer te verbinden met de tuin. Onze schuifpuien zijn verkrijgbaar in verschillende materialen en stijlen, met uitstekende isolatiewaarden en een soepele bediening.",
+        "features": ["Soepel schuifsysteem", "Hoge isolatiewaarde", "Inbraakwerend", "Diverse indelingen mogelijk"]
+      },
+      "zonweringen": {
+        "title": "Zonweringen",
+        "description": "Effectieve zonwering voor optimaal comfort in en rond uw woning. Bescherm uw interieur tegen zonlicht en creëer een aangename binnentemperatuur.",
+        "features": ["Automatische bediening mogelijk", "Wind- en weerbestendig", "Diverse kleuren en dessins", "Terugdringen energiekosten"]
+      },
+      "rolluiken": {
+        "title": "Rolluiken",
+        "description": "Veilige en stijlvolle rolluiken die niet alleen uw privacy waarborgen maar ook zorgen voor extra isolatie en bescherming tegen inbraak.",
+        "features": ["Extra isolatie", "Verduisterend", "Inbraakwerend", "Elektrische bediening mogelijk"]
+      },
+      "keramische-tegels": {
+        "title": "Keramische Tegels",
+        "description": "Duurzame en stijlvolle keramische tegels voor binnen en buiten. Creëer een naadloze overgang van uw woning naar uw terras of tuin.",
+        "features": ["Vorstbestendig", "Kleurvast", "Krasbestendig", "Antislip-opties beschikbaar"]
+      }
     }
   },
   "about": {
-    "title": "Over ons",
+    "title": "Over Ons",
+    "subtitle": "Leer meer over ons bedrijf, onze missie en onze toewijding aan kwaliteit en klanttevredenheid.",
+    "vision": {
+      "title": "Onze Visie",
+      "description": "Bij Holland Veranda geloven we dat een aluminium veranda of terrasoverkapping op maat een echte meerwaarde is voor elke woning. Het biedt extra leefruimte, beschutting tegen weer en een stijlvolle uitbreiding van uw huis. Met aandacht voor comfort en duurzaamheid creëren we buitenoplossingen die uw levenskwaliteit verhogen."
+    },
+    "expertise": {
+      "title": "Expertise & Kwaliteit",
+      "description": "Met meer dan 20 jaar ervaring in het plaatsen van veranda's, carports, schuifpuien en rolluiken, combineren wij vakmanschap met moderne technieken. Wij gebruiken alleen hoogwaardige materialen voor duurzame buitenoplossingen die bestand zijn tegen elk seizoen."
+    },
+    "service": {
+      "title": "Persoonlijke Service",
+      "description": "Vanaf het eerste contact tot de volledige montage van uw veranda, overkapping of kozijnen begeleiden wij u met persoonlijke service. Wij denken mee in oplossingen en zorgen voor een vlotte installatie. Uw tevredenheid staat altijd centraal bij Holland Veranda."
+    },
     "history": {
       "title": "Onze geschiedenis",
       "description": "Holland Veranda is in 2000 opgericht met de visie om hoogwaardige buitenoplossingen te leveren. Sindsdien zijn we uitgegroeid tot een toonaangevend bedrijf in de branche."
@@ -186,14 +186,59 @@
     "address": "Amsterdam, Nederland"
   },
   "projects": {
-    "title": "Onze projecten",
-    "description": "Ontdek onze recente projecten en zie hoe we onze klanten hebben geholpen hun perfecte buitenruimte te creëren.",
-    "cta": "Bekijk alle projecten"
+    "title": "Onze Projecten",
+    "subtitle": "Bekijk onze recente projecten en ontdek hoe wij uw buitenruimte kunnen transformeren.",
+    "location": {
+      "netherlands": "Nederland",
+      "belgium": "België",
+      "team": "Ons team aan het werk"
+    },
+    "modal": {
+      "close": "Sluiten",
+      "previous": "Vorige",
+      "next": "Volgende"
+    }
   },
   "languages": {
     "nl": "Nederlands",
     "en": "English",
     "de": "Deutsch",
     "fr": "Français"
+  },
+  "quote": {
+    "title": "Offerte Aanvragen",
+    "subtitle": "Vraag een vrijblijvende offerte aan voor uw project. Wij nemen binnen 24 uur contact met u op.",
+    "success": {
+      "title": "Bedankt voor uw aanvraag!",
+      "message": "We nemen zo spoedig mogelijk contact met u op."
+    },
+    "form": {
+      "name": {
+        "label": "Naam *",
+        "error": "Naam is verplicht"
+      },
+      "email": {
+        "label": "Email *",
+        "error": "Email is verplicht",
+        "invalid": "Ongeldig email adres"
+      },
+      "phone": {
+        "label": "Telefoonnummer *",
+        "error": "Telefoonnummer is verplicht"
+      },
+      "product": {
+        "label": "Product *",
+        "error": "Selecteer een product",
+        "placeholder": "Selecteer een product"
+      },
+      "description": {
+        "label": "Beschrijving van uw aanvraag *",
+        "error": "Beschrijving is verplicht"
+      },
+      "submit": {
+        "default": "Verstuur aanvraag",
+        "loading": "Verzenden..."
+      }
+    }
   }
 } 

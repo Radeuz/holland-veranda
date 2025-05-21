@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useForm } from 'react-hook-form';
 import { useSearchParams } from 'next/navigation';
+import { useTranslation } from '../i18n';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -18,6 +19,7 @@ const products = [
 ];
 
 function OffertePageContent() {
+  const { t } = useTranslation();
   const searchParams = useSearchParams();
   const productParam = searchParams.get('product');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -73,10 +75,10 @@ function OffertePageContent() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Offerte Aanvragen
+              {t('quote.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              Vraag een vrijblijvende offerte aan voor uw project. Wij nemen binnen 24 uur contact met u op.
+              {t('quote.subtitle')}
             </p>
           </div>
         </div>
@@ -89,10 +91,10 @@ function OffertePageContent() {
             {submitStatus === 'success' ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
                 <h2 className="text-2xl font-semibold text-green-800 mb-4">
-                  Bedankt voor uw aanvraag!
+                  {t('quote.success.title')}
                 </h2>
                 <p className="text-green-700 text-lg">
-                  We nemen zo spoedig mogelijk contact met u op.
+                  {t('quote.success.message')}
                 </p>
               </div>
             ) : (
@@ -101,12 +103,12 @@ function OffertePageContent() {
                   {/* Naam */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
-                      Naam *
+                      {t('quote.form.name.label')}
                     </label>
                     <input
                       type="text"
                       id="name"
-                      {...register('name', { required: 'Naam is verplicht' })}
+                      {...register('name', { required: t('quote.form.name.error') })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                     />
                     {errors.name && (
@@ -117,16 +119,16 @@ function OffertePageContent() {
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
-                      Email *
+                      {t('quote.form.email.label')}
                     </label>
                     <input
                       type="email"
                       id="email"
                       {...register('email', { 
-                        required: 'Email is verplicht',
+                        required: t('quote.form.email.error'),
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                          message: 'Ongeldig email adres'
+                          message: t('quote.form.email.invalid')
                         }
                       })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
@@ -139,12 +141,12 @@ function OffertePageContent() {
                   {/* Telefoon */}
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">
-                      Telefoonnummer *
+                      {t('quote.form.phone.label')}
                     </label>
                     <input
                       type="tel"
                       id="phone"
-                      {...register('phone', { required: 'Telefoonnummer is verplicht' })}
+                      {...register('phone', { required: t('quote.form.phone.error') })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                     />
                     {errors.phone && (
@@ -155,14 +157,14 @@ function OffertePageContent() {
                   {/* Product */}
                   <div>
                     <label htmlFor="product" className="block text-sm font-medium text-white mb-1">
-                      Product *
+                      {t('quote.form.product.label')}
                     </label>
                     <select
                       id="product"
-                      {...register('product', { required: 'Selecteer een product' })}
+                      {...register('product', { required: t('quote.form.product.error') })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                     >
-                      <option value="">Selecteer een product</option>
+                      <option value="">{t('quote.form.product.placeholder')}</option>
                       {products.map((product) => (
                         <option key={product.id} value={product.id}>
                           {product.name}
@@ -177,12 +179,12 @@ function OffertePageContent() {
                   {/* Beschrijving */}
                   <div>
                     <label htmlFor="description" className="block text-sm font-medium text-white mb-1">
-                      Beschrijving van uw aanvraag *
+                      {t('quote.form.description.label')}
                     </label>
                     <textarea
                       id="description"
                       rows="4"
-                      {...register('description', { required: 'Beschrijving is verplicht' })}
+                      {...register('description', { required: t('quote.form.description.error') })}
                       className="w-full px-4 py-3 bg-orange-50/90 border border-orange-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-orange-900 placeholder-orange-300"
                     ></textarea>
                     {errors.description && (
@@ -197,15 +199,9 @@ function OffertePageContent() {
                       disabled={isSubmitting}
                       className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-lg hover:scale-[1.02]"
                     >
-                      {isSubmitting ? 'Verzenden...' : 'Verstuur aanvraag'}
+                      {isSubmitting ? t('quote.form.submit.loading') : t('quote.form.submit.default')}
                     </button>
                   </div>
-
-                  {submitStatus === 'error' && (
-                    <p className="text-red-400 text-center">
-                      Er is een fout opgetreden. Probeer het later opnieuw.
-                    </p>
-                  )}
                 </div>
               </form>
             )}
@@ -220,7 +216,7 @@ function OffertePageContent() {
 
 export default function OffertePage() {
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <OffertePageContent />
     </Suspense>
   );

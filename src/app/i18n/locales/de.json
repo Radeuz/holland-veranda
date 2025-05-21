@@ -69,79 +69,67 @@
   },
   "products": {
     "title": "Unsere Produkte",
-    "subtitle": "Entdecken Sie unser Sortiment an hochwertigen Verandas und Überdachungen, perfekt für Ihren Außenbereich",
-    "veranda": {
-      "title": "Veranda",
-      "description": "Steigern Sie Ihren Wohnkomfort mit einer stilvollen, maßgeschneiderten Veranda. Zusätzlicher Raum und Schutz vor Witterung.",
-      "viewMore": "Verandas ansehen"
-    },
-    "carport": {
-      "title": "Carport",
-      "description": "Schützen Sie Ihr Auto vor Regen und Sonne mit einem modernen Carport. Schickes Design und lange Lebensdauer.",
-      "viewMore": "Carports ansehen"
-    },
-    "terrace": {
-      "title": "Terrassenüberdachung",
-      "description": "Schaffen Sie zusätzlichen Wohnraum und Komfort mit einer stilvollen, witterungsbeständigen Terrassenüberdachung.",
-      "viewMore": "Terrassenüberdachungen ansehen"
-    },
-    "frames": {
-      "title": "Rahmen",
-      "description": "Verbessern Sie Isolierung und Ausstrahlung mit hochwertigen Rahmen. Langlebig, stilvoll und wartungsarm.",
-      "viewMore": "Rahmen ansehen"
-    },
-    "sliding": {
-      "title": "Schiebewände",
-      "description": "Lassen Sie Innen- und Außenbereiche nahtlos ineinander übergehen. Mehr Licht und Raum mit unseren Schiebewänden.",
-      "viewMore": "Schiebewände ansehen"
-    },
-    "sunshade": {
-      "title": "Sonnenschutz",
-      "description": "Genießen Sie Schatten und Komfort auf Ihrer Terrasse. Stilvoller Schutz vor Hitze und UV-Strahlung.",
-      "viewMore": "Sonnenschutz ansehen"
-    },
-    "roller": {
-      "title": "Rollläden",
-      "description": "Wählen Sie einbruchhemmende Rollläden mit modernem Design. Schutz und Komfort in einem.",
-      "viewMore": "Rollläden ansehen"
-    },
-    "tiles": {
-      "title": "Keramikfliesen",
-      "description": "Geben Sie Ihrer Terrasse oder Auffahrt ein nachhaltiges Upgrade. Verschleißfest, farbecht und pflegeleicht.",
-      "viewMore": "Keramikfliesen ansehen"
-    },
-    "modernVeranda": {
-      "title": "Moderne Veranda",
-      "description": "Eine moderne Veranda mit klaren Linien und zeitgemäßem Design, perfekt für moderne Häuser."
-    },
-    "classicVeranda": {
-      "title": "Klassische Veranda",
-      "description": "Eine klassische Veranda mit elegantem und zeitlosem Design, ideal für traditionelle Häuser."
-    },
-    "glassSlidingWalls": {
-      "title": "Glasschiebetüren",
-      "description": "Glasschiebetüren, die einen nahtlosen Übergang zwischen Innen- und Außenbereich schaffen."
-    },
+    "subtitle": "Entdecken Sie unsere umfangreiche Kollektion von Aluminium-Verglasungen, Terrassenüberdachungen und maßgeschneiderten Außenlösungen.",
     "moreInfo": "Mehr Informationen",
-    "cta": {
-      "title": "Interesse an einer Veranda?",
-      "description": "Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch über die Möglichkeiten für Ihren Garten.",
-      "button": "Kontakt aufnehmen"
+    "requestQuote": "Angebot anfordern",
+    "features": "Merkmale:",
+    "items": {
+      "veranda": {
+        "title": "Verglasung",
+        "description": "Moderne und stilvolle Verglasungen, maßgeschneidert für Ihr Zuhause und Garten. Unsere Verglasungen bieten zusätzlichen Wohnraum und Schutz vor den Elementen das ganze Jahr über.",
+        "features": ["Maßgeschneidertes Design", "Verschiedene Dachoptionen", "LED-Beleuchtung möglich", "Mehrere Farboptionen"]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Langlebige Carports, die Ihr Auto vor Witterungseinflüssen und UV-Strahlung schützen. Die offene Struktur sorgt für ein luftiges Erscheinungsbild, das zu jedem Haus passt.",
+        "features": ["Robuste Konstruktion", "Einfach zu installieren", "Wartungsarm", "Verschiedene Größen verfügbar"]
+      },
+      "terrasoverkapping": {
+        "title": "Terrassenüberdachung",
+        "description": "Eine Terrassenüberdachung bietet Schutz vor Regen und Sonne, sodass Sie Ihren Außenbereich optimal genießen können. Unsere Terrassenüberdachungen sind in verschiedenen Materialien und Stilen erhältlich, passend zu Ihrem Zuhause und Ihren Wünschen.",
+        "features": ["Wasserdichtes Dach", "Optionale Glasschiebewände", "Integrierter Sonnenschutz möglich", "Verschiedene Ausführungen"]
+      },
+      "kozijnen": {
+        "title": "Rahmen",
+        "description": "Unsere Rahmen sind von hoher Qualität und in verschiedenen Materialien wie Holz, Kunststoff und Aluminium erhältlich. Sie bieten ausgezeichnete Isolierung und sind in verschiedenen Farben und Ausführungen verfügbar.",
+        "features": ["Ausgezeichnete Isolationswerte", "Einbruchhemmend", "Schalldämmend", "Wartungsfreundlich"]
+      },
+      "schuifpuien": {
+        "title": "Schiebewände",
+        "description": "Eine Schiebewand ist eine elegante Lösung, um Ihr Wohnzimmer mit dem Garten zu verbinden. Unsere Schiebewände sind in verschiedenen Materialien und Stilen erhältlich, mit ausgezeichneten Isolationswerten und sanftem Betrieb.",
+        "features": ["Sanftes Schiebesystem", "Hoher Isolationswert", "Einbruchhemmend", "Verschiedene Anordnungen möglich"]
+      },
+      "zonweringen": {
+        "title": "Sonnenschutz",
+        "description": "Effektiver Sonnenschutz für optimalen Komfort in und um Ihr Zuhause. Schützen Sie Ihr Interieur vor Sonnenlicht und schaffen Sie eine angenehme Innentemperatur.",
+        "features": ["Automatischer Betrieb möglich", "Wind- und wetterbeständig", "Verschiedene Farben und Muster", "Energiekosten reduzieren"]
+      },
+      "rolluiken": {
+        "title": "Rollläden",
+        "description": "Sichere und stilvolle Rollläden, die nicht nur Ihre Privatsphäre gewährleisten, sondern auch für zusätzliche Isolierung und Schutz vor Einbrüchen sorgen.",
+        "features": ["Zusätzliche Isolierung", "Verdunkelnd", "Einbruchhemmend", "Elektrischer Betrieb möglich"]
+      },
+      "keramische-tegels": {
+        "title": "Keramikfliesen",
+        "description": "Langlebige und stilvolle Keramikfliesen für Innen- und Außenbereich. Schaffen Sie einen nahtlosen Übergang von Ihrem Zuhause zu Ihrer Terrasse oder Ihrem Garten.",
+        "features": ["Frostbeständig", "Farbecht", "Kratzfest", "Rutschhemmende Optionen verfügbar"]
+      }
     }
   },
   "about": {
-    "title": "Über uns",
-    "history": {
-      "title": "Unsere Geschichte",
-      "description": "Holland Veranda wurde im Jahr 2000 mit der Vision gegründet, hochwertige Außenlösungen anzubieten. Seitdem sind wir zu einem führenden Unternehmen in der Branche geworden."
+    "title": "Über Uns",
+    "subtitle": "Erfahren Sie mehr über unser Unternehmen, unsere Mission und unser Engagement für Qualität und Kundenzufriedenheit.",
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Bei Holland Veranda glauben wir, dass eine maßgeschneiderte Aluminium-Veranda oder Terrassenüberdachung einen echten Mehrwert für jedes Zuhause darstellt. Sie bietet zusätzlichen Wohnraum, Schutz vor Witterungseinflüssen und eine stilvolle Erweiterung Ihres Hauses. Mit Fokus auf Komfort und Nachhaltigkeit schaffen wir Außenlösungen, die Ihre Lebensqualität steigern."
     },
-    "values": {
-      "title": "Unsere Werte",
-      "description": "Wir glauben an Qualität, Innovation und Kundenzufriedenheit. Diese Werte leiten alles, was wir tun."
+    "expertise": {
+      "title": "Expertise & Qualität",
+      "description": "Mit über 20 Jahren Erfahrung in der Installation von Veranden, Carports, Schiebewänden und Rollläden verbinden wir Handwerkskunst mit modernen Techniken. Wir verwenden ausschließlich hochwertige Materialien für langlebige Außenlösungen, die jeder Jahreszeit standhalten."
     },
-    "team": {
-      "title": "Unser Team",
-      "description": "Unser Team von Experten ist darauf ausgerichtet, den besten Service und die besten Produkte für unsere Kunden zu liefern."
+    "service": {
+      "title": "Persönlicher Service",
+      "description": "Vom ersten Kontakt bis zur vollständigen Installation Ihrer Veranda, Überdachung oder Fensterrahmen begleiten wir Sie mit persönlichem Service. Wir denken in Lösungen mit und sorgen für eine reibungslose Installation. Ihre Zufriedenheit steht bei Holland Veranda immer im Mittelpunkt."
     }
   },
   "contact": {
@@ -183,7 +171,17 @@
   },
   "projects": {
     "title": "Unsere Projekte",
-    "description": "Entdecken Sie unsere aktuellen Projekte und sehen Sie, wie wir unseren Kunden geholfen haben, ihren perfekten Außenbereich zu gestalten.",
+    "subtitle": "Sehen Sie sich unsere aktuellen Projekte an und entdecken Sie, wie wir Ihren Außenbereich verwandeln können.",
+    "location": {
+      "netherlands": "Niederlande",
+      "belgium": "Belgien",
+      "team": "Unser Team bei der Arbeit"
+    },
+    "modal": {
+      "close": "Schließen",
+      "previous": "Zurück",
+      "next": "Weiter"
+    },
     "cta": "Alle Projekte ansehen"
   },
   "languages": {
@@ -191,5 +189,41 @@
     "en": "English",
     "de": "Deutsch",
     "fr": "Français"
+  },
+  "quote": {
+    "title": "Angebot Anfordern",
+    "subtitle": "Fordern Sie ein unverbindliches Angebot für Ihr Projekt an. Wir kontaktieren Sie innerhalb von 24 Stunden.",
+    "success": {
+      "title": "Vielen Dank für Ihre Anfrage!",
+      "message": "Wir werden Sie so schnell wie möglich kontaktieren."
+    },
+    "form": {
+      "name": {
+        "label": "Name *",
+        "error": "Name ist erforderlich"
+      },
+      "email": {
+        "label": "E-Mail *",
+        "error": "E-Mail ist erforderlich",
+        "invalid": "Ungültige E-Mail-Adresse"
+      },
+      "phone": {
+        "label": "Telefonnummer *",
+        "error": "Telefonnummer ist erforderlich"
+      },
+      "product": {
+        "label": "Produkt *",
+        "error": "Bitte wählen Sie ein Produkt",
+        "placeholder": "Produkt auswählen"
+      },
+      "description": {
+        "label": "Beschreibung Ihrer Anfrage *",
+        "error": "Beschreibung ist erforderlich"
+      },
+      "submit": {
+        "default": "Anfrage senden",
+        "loading": "Wird gesendet..."
+      }
+    }
   }
 } 

@@ -14,7 +14,52 @@
   },
   "products": {
     "title": "Nos Produits",
-    "subtitle": "Découvrez notre gamme de vérandas et de couvertures de haute qualité, parfaites pour votre espace extérieur",
+    "subtitle": "Découvrez notre vaste collection de vérandas en aluminium, couvertures de terrasse et solutions extérieures sur mesure.",
+    "moreInfo": "Plus d'informations",
+    "requestQuote": "Demander un devis",
+    "features": "Caractéristiques :",
+    "items": {
+      "veranda": {
+        "title": "Véranda",
+        "description": "Vérandas modernes et élégantes sur mesure pour votre maison et jardin. Nos vérandas offrent un espace de vie supplémentaire et une protection contre les intempéries toute l'année.",
+        "features": ["Design sur mesure", "Options de toit variées", "Éclairage LED disponible", "Plusieurs options de couleurs"]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Carports durables qui protègent votre voiture des conditions météorologiques et des rayons UV. La structure ouverte offre une apparence aérée qui s'adapte à chaque maison.",
+        "features": ["Construction robuste", "Facile à installer", "Entretien minimal", "Tailles variées disponibles"]
+      },
+      "terrasoverkapping": {
+        "title": "Couverture de Terrasse",
+        "description": "Une couverture de terrasse offre un abri contre la pluie et le soleil, vous permettant de profiter pleinement de votre espace extérieur. Nos couvertures de terrasse sont disponibles en différents matériaux et styles, adaptés à votre maison et à vos préférences.",
+        "features": ["Toit étanche", "Murs coulissants en verre optionnels", "Protection solaire intégrée disponible", "Diverses finitions"]
+      },
+      "kozijnen": {
+        "title": "Cadres",
+        "description": "Nos cadres sont de haute qualité et disponibles en différents matériaux comme le bois, le plastique et l'aluminium. Ils offrent une excellente isolation et sont disponibles en différentes couleurs et finitions.",
+        "features": ["Excellent pouvoir isolant", "Anti-effraction", "Isolation phonique", "Facile d'entretien"]
+      },
+      "schuifpuien": {
+        "title": "Murs Coulissants",
+        "description": "Un mur coulissant est une solution élégante pour connecter votre salon au jardin. Nos murs coulissants sont disponibles en différents matériaux et styles, avec d'excellentes valeurs d'isolation et un fonctionnement fluide.",
+        "features": ["Système de glissement fluide", "Haute valeur d'isolation", "Anti-effraction", "Diverses configurations possibles"]
+      },
+      "zonweringen": {
+        "title": "Protection Solaire",
+        "description": "Protection solaire efficace pour un confort optimal dans et autour de votre maison. Protégez votre intérieur du soleil et créez une température intérieure agréable.",
+        "features": ["Fonctionnement automatique disponible", "Résistant au vent et aux intempéries", "Diverses couleurs et motifs", "Réduction des coûts énergétiques"]
+      },
+      "rolluiken": {
+        "title": "Volets Roulants",
+        "description": "Volets roulants sûrs et élégants qui assurent non seulement votre intimité mais offrent également une isolation supplémentaire et une protection contre les effractions.",
+        "features": ["Isolation supplémentaire", "Effet occultant", "Anti-effraction", "Fonctionnement électrique disponible"]
+      },
+      "keramische-tegels": {
+        "title": "Carrelage Céramique",
+        "description": "Carrelage céramique durable et élégant pour l'intérieur et l'extérieur. Créez une transition fluide de votre maison vers votre terrasse ou jardin.",
+        "features": ["Résistant au gel", "Couleur stable", "Résistant aux rayures", "Options antidérapantes disponibles"]
+      }
+    },
     "veranda": {
       "title": "Véranda",
       "description": "Améliorez votre confort de vie avec une véranda élégante sur mesure. Espace supplémentaire et protection contre les intempéries.",
@@ -67,7 +112,6 @@
       "title": "Murs Coulissants en Verre",
       "description": "Lumière maximale et flexibilité pour votre véranda."
     },
-    "moreInfo": "Plus d'informations",
     "cta": {
       "title": "Intéressé par une véranda ?",
       "description": "Contactez-nous pour un entretien sans engagement sur les possibilités pour votre jardin.",
@@ -87,7 +131,20 @@
     }
   },
   "about": {
-    "title": "À propos de nous",
+    "title": "À Propos",
+    "subtitle": "Découvrez notre entreprise, notre mission et notre engagement envers la qualité et la satisfaction client.",
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Chez Holland Veranda, nous croyons qu'une véranda en aluminium sur mesure ou une couverture de terrasse apporte une réelle valeur ajoutée à chaque maison. Elle offre un espace de vie supplémentaire, une protection contre les intempéries et une extension élégante de votre maison. Avec une attention particulière au confort et à la durabilité, nous créons des solutions extérieures qui améliorent votre qualité de vie."
+    },
+    "expertise": {
+      "title": "Expertise & Qualité",
+      "description": "Avec plus de 20 ans d'expérience dans l'installation de vérandas, carports, murs coulissants et volets roulants, nous combinons savoir-faire artisanal et techniques modernes. Nous utilisons uniquement des matériaux de haute qualité pour des solutions extérieures durables qui résistent à toutes les saisons."
+    },
+    "service": {
+      "title": "Service Personnalisé",
+      "description": "Du premier contact jusqu'à l'installation complète de votre véranda, couverture ou cadres de fenêtres, nous vous accompagnons avec un service personnalisé. Nous réfléchissons ensemble aux solutions et assurons une installation fluide. Votre satisfaction est toujours au cœur de Holland Veranda."
+    },
     "history": {
       "title": "Notre histoire",
       "description": "Holland Veranda a été fondée en 2000 avec la vision de fournir des solutions extérieures de haute qualité. Depuis lors, nous avons grandi pour devenir un leader dans l'industrie."
@@ -143,8 +200,18 @@
     "address": "Amsterdam, Pays-Bas"
   },
   "projects": {
-    "title": "Nos projets",
-    "description": "Découvrez nos projets récents et voyez comment nous avons aidé nos clients à créer leur espace extérieur parfait.",
+    "title": "Nos Projets",
+    "subtitle": "Découvrez nos projets récents et voyez comment nous pouvons transformer votre espace extérieur.",
+    "location": {
+      "netherlands": "Pays-Bas",
+      "belgium": "Belgique",
+      "team": "Notre équipe au travail"
+    },
+    "modal": {
+      "close": "Fermer",
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
     "cta": "Voir tous les projets"
   },
   "home": {
@@ -207,5 +274,41 @@
     "en": "English",
     "de": "Deutsch",
     "fr": "Français"
+  },
+  "quote": {
+    "title": "Demander un Devis",
+    "subtitle": "Demandez un devis gratuit pour votre projet. Nous vous contacterons sous 24 heures.",
+    "success": {
+      "title": "Merci pour votre demande !",
+      "message": "Nous vous contacterons dès que possible."
+    },
+    "form": {
+      "name": {
+        "label": "Nom *",
+        "error": "Le nom est requis"
+      },
+      "email": {
+        "label": "Email *",
+        "error": "L'email est requis",
+        "invalid": "Adresse email invalide"
+      },
+      "phone": {
+        "label": "Numéro de téléphone *",
+        "error": "Le numéro de téléphone est requis"
+      },
+      "product": {
+        "label": "Produit *",
+        "error": "Veuillez sélectionner un produit",
+        "placeholder": "Sélectionner un produit"
+      },
+      "description": {
+        "label": "Description de votre demande *",
+        "error": "La description est requise"
+      },
+      "submit": {
+        "default": "Envoyer la demande",
+        "loading": "Envoi en cours..."
+      }
+    }
   }
 } 

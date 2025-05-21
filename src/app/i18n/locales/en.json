@@ -69,79 +69,67 @@
   },
   "products": {
     "title": "Our Products",
-    "subtitle": "Discover our range of high-quality verandas and canopies, perfect for your outdoor space",
-    "veranda": {
-      "title": "Veranda",
-      "description": "Enhance your living comfort with a stylish custom-made veranda. Extra space and protection against weather.",
-      "viewMore": "View verandas"
-    },
-    "carport": {
-      "title": "Carport",
-      "description": "Protect your car from rain and sun with a modern carport. Sleek design and long lifespan.",
-      "viewMore": "View carports"
-    },
-    "terrace": {
-      "title": "Terrace Cover",
-      "description": "Create additional living space and comfort with a stylish, weather-resistant terrace cover.",
-      "viewMore": "View terrace covers"
-    },
-    "frames": {
-      "title": "Window Frames",
-      "description": "Improve insulation and appearance with high-quality frames. Durable, stylish, and low-maintenance.",
-      "viewMore": "View frames"
-    },
-    "sliding": {
-      "title": "Sliding Walls",
-      "description": "Let indoor and outdoor spaces flow seamlessly. More light and space with our sliding walls.",
-      "viewMore": "View sliding walls"
-    },
-    "sunshade": {
-      "title": "Sun Protection",
-      "description": "Enjoy shade and comfort on your terrace. Stylish protection against heat and UV radiation.",
-      "viewMore": "View sun protection"
-    },
-    "roller": {
-      "title": "Roller Shutters",
-      "description": "Choose burglar-resistant roller shutters with modern design. Protection and comfort in one.",
-      "viewMore": "View roller shutters"
-    },
-    "tiles": {
-      "title": "Ceramic Tiles",
-      "description": "Give your terrace or driveway a sustainable upgrade. Wear-resistant, colorfast, and low-maintenance.",
-      "viewMore": "View ceramic tiles"
-    },
-    "modernVeranda": {
-      "title": "Modern Veranda",
-      "description": "A modern veranda with clean lines and contemporary design, perfect for modern homes."
-    },
-    "classicVeranda": {
-      "title": "Classic Veranda",
-      "description": "A classic veranda with elegant and timeless design, ideal for traditional homes."
-    },
-    "glassSlidingWalls": {
-      "title": "Glass Sliding Walls",
-      "description": "Glass sliding walls that create a seamless transition between indoor and outdoor."
-    },
+    "subtitle": "Discover our extensive collection of aluminum verandas, terrace covers, and custom outdoor solutions.",
     "moreInfo": "More information",
-    "cta": {
-      "title": "Interested in a veranda?",
-      "description": "Contact us for a no-obligation consultation about the possibilities for your garden.",
-      "button": "Contact us"
+    "requestQuote": "Request a quote",
+    "features": "Features:",
+    "items": {
+      "veranda": {
+        "title": "Veranda",
+        "description": "Modern and stylish verandas custom-made for your home and garden. Our verandas provide extra living space and protection from the elements all year round.",
+        "features": ["Custom design", "Various roof options", "LED lighting available", "Multiple color options"]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Durable carports that protect your car from weather conditions and UV radiation. The open structure provides an airy appearance that matches any home.",
+        "features": ["Robust construction", "Easy to install", "Low maintenance", "Various sizes available"]
+      },
+      "terrasoverkapping": {
+        "title": "Terrace Cover",
+        "description": "A terrace cover provides shelter from rain and sun, allowing you to fully enjoy your outdoor space. Our terrace covers are available in various materials and styles, matching your home and preferences.",
+        "features": ["Waterproof roof", "Optional glass sliding walls", "Integrated sun protection available", "Various designs"]
+      },
+      "kozijnen": {
+        "title": "Window Frames",
+        "description": "Our window frames are of high quality and available in various materials such as wood, plastic, and aluminum. They offer excellent insulation and are available in different colors and finishes.",
+        "features": ["Excellent insulation values", "Burglar-resistant", "Sound-insulating", "Low maintenance"]
+      },
+      "schuifpuien": {
+        "title": "Sliding Walls",
+        "description": "A sliding wall is an elegant solution to connect your living room with the garden. Our sliding walls are available in various materials and styles, with excellent insulation values and smooth operation.",
+        "features": ["Smooth sliding system", "High insulation value", "Burglar-resistant", "Various layouts possible"]
+      },
+      "zonweringen": {
+        "title": "Sun Protection",
+        "description": "Effective sun protection for optimal comfort in and around your home. Protect your interior from sunlight and create a pleasant indoor temperature.",
+        "features": ["Automatic operation available", "Wind and weather resistant", "Various colors and patterns", "Reduce energy costs"]
+      },
+      "rolluiken": {
+        "title": "Roller Shutters",
+        "description": "Safe and stylish roller shutters that not only ensure your privacy but also provide extra insulation and protection against burglary.",
+        "features": ["Extra insulation", "Blackout effect", "Burglar-resistant", "Electric operation available"]
+      },
+      "keramische-tegels": {
+        "title": "Ceramic Tiles",
+        "description": "Durable and stylish ceramic tiles for indoor and outdoor use. Create a seamless transition from your home to your terrace or garden.",
+        "features": ["Frost-resistant", "Colorfast", "Scratch-resistant", "Anti-slip options available"]
+      }
     }
   },
   "about": {
     "title": "About Us",
-    "history": {
-      "title": "Our History",
-      "description": "Holland Veranda was founded in 2000 with the vision to provide high-quality outdoor solutions. Since then, we have grown to become a leader in the industry."
+    "subtitle": "Learn more about our company, our mission, and our commitment to quality and customer satisfaction.",
+    "vision": {
+      "title": "Our Vision",
+      "description": "At Holland Veranda, we believe that a custom aluminum veranda or terrace cover adds real value to any home. It provides extra living space, protection from the weather, and a stylish extension of your house. With attention to comfort and sustainability, we create outdoor solutions that enhance your quality of life."
     },
-    "values": {
-      "title": "Our Values",
-      "description": "We believe in quality, innovation, and customer satisfaction. These values guide everything we do."
+    "expertise": {
+      "title": "Expertise & Quality",
+      "description": "With over 20 years of experience in installing verandas, carports, sliding walls, and roller shutters, we combine craftsmanship with modern techniques. We use only high-quality materials for durable outdoor solutions that withstand every season."
     },
-    "team": {
-      "title": "Our Team",
-      "description": "Our team of experts is dedicated to providing the best service and products to our customers."
+    "service": {
+      "title": "Personal Service",
+      "description": "From the first contact to the complete installation of your veranda, canopy, or window frames, we guide you with personal service. We think along in solutions and ensure a smooth installation. Your satisfaction is always central at Holland Veranda."
     }
   },
   "footer": {
@@ -183,8 +171,53 @@
   },
   "projects": {
     "title": "Our Projects",
-    "description": "Discover our recent projects and see how we've helped our customers create their perfect outdoor space.",
-    "cta": "View all projects"
+    "subtitle": "View our recent projects and discover how we can transform your outdoor space.",
+    "location": {
+      "netherlands": "Netherlands",
+      "belgium": "Belgium",
+      "team": "Our team at work"
+    },
+    "modal": {
+      "close": "Close",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "subtitle": "Request a no-obligation quote for your project. We will contact you within 24 hours.",
+    "success": {
+      "title": "Thank you for your request!",
+      "message": "We will contact you as soon as possible."
+    },
+    "form": {
+      "name": {
+        "label": "Name *",
+        "error": "Name is required"
+      },
+      "email": {
+        "label": "Email *",
+        "error": "Email is required",
+        "invalid": "Invalid email address"
+      },
+      "phone": {
+        "label": "Phone Number *",
+        "error": "Phone number is required"
+      },
+      "product": {
+        "label": "Product *",
+        "error": "Please select a product",
+        "placeholder": "Select a product"
+      },
+      "description": {
+        "label": "Description of your request *",
+        "error": "Description is required"
+      },
+      "submit": {
+        "default": "Submit Request",
+        "loading": "Sending..."
+      }
+    }
   },
   "languages": {
     "nl": "Nederlands",
