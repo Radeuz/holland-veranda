@@ -253,18 +253,18 @@ export default function Projecten() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            {/* Close Button */}
-            <button
-              className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
-              onClick={() => setSelectedImage(null)}
-              aria-label="Close"
-              style={{zIndex: 2}}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
             <div className="relative h-[80vh] w-full flex items-center justify-center">
+              {/* Close Button - resmin sağ üstüne sabit */}
+              <button
+                className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+                onClick={() => setSelectedImage(null)}
+                aria-label="Close"
+                style={{zIndex: 2}}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
               <Image
                 src={selectedImage.image}
                 alt={`Project ${selectedImage.id}`}
