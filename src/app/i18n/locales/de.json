@@ -141,6 +141,11 @@
           { "label": "Beleuchtung", "value": "LED-Spots, LED-Streifen (optional)" },
           { "label": "Garantie", "value": "10 Jahre auf Konstruktion, 5 Jahre auf bewegliche Teile" }
         ],
+        "gallery": [
+          { "alt": "Moderne Verglasung am Haus" },
+          { "alt": "Verglasung mit Glasmauerwerk" },
+          { "alt": "Verglasung mit Seitenwänden" }
+        ],
         "faqs": [
           {
             "question": "Wie lange dauert die Installation einer Verglasung?",
@@ -161,16 +166,15 @@
         "description": "Langlebige Carports, die Ihr Auto vor Witterungseinflüssen und UV-Strahlung schützen. Die offene Struktur sorgt für ein luftiges Erscheinungsbild, das zu jedem Haus passt.",
         "longDescription": [
           "Ein Carport ist die ideale Lösung für diejenigen, die ihr Auto vor Wetter und Wind schützen möchten, ohne eine vollständig geschlossene Garage zu bauen.",
-          "Unsere Carports bieten optimalen Schutz vor Regen, Schnee, Hagel und UV-Strahlung, während die offene Struktur ein geräumiges Gefühl schafft.",
-          "",
-          "Das moderne, schlanke Design unserer Aluminium-Carports passt perfekt zu traditionellen und modernen Häusern.",
+          "Unsere Carports bieten optimalen Schutz vor Regen, Schnee, Hagel und UV-Strahlung, während die offene Struktur ein geräumiges Gefühl vermittelt.",
+          "Das moderne, elegante Design unserer Aluminium-Carports passt perfekt zu traditionellen und modernen Häusern.",
           "Zudem sind sie wartungsarm und sehr langlebig, sodass Sie Ihre Investition jahrelang genießen können."
         ],
         "features": [
           "Robuste Aluminiumkonstruktion",
           "Einfach auf verschiedenen Untergründen zu installieren",
           "Wartungsarm und wetterbeständig",
-          "Verschiedene Größen für ein oder mehrere Autos möglich",
+          "Verschiedene Größen für ein oder mehrere Autos verfügbar",
           "Kann mit LED-Beleuchtung kombiniert werden",
           "Verschiedene Dachoptionen verfügbar",
           "Optional mit Seitenwänden erweiterbar",
@@ -185,18 +189,23 @@
           { "label": "Standardtiefen", "value": "2,5m, 3,0m, 3,5m, 4,0m, 5,0m" },
           { "label": "Garantie", "value": "10 Jahre auf Konstruktion" }
         ],
+        "gallery": [
+          { "alt": "Moderner Carport für zwei Autos" },
+          { "alt": "Carport mit integriertem Stauraum" },
+          { "alt": "Freistehender Carport mit LED-Beleuchtung" }
+        ],
         "faqs": [
           {
             "question": "Benötige ich eine Baugenehmigung für einen Carport?",
             "answer": "Dies hängt von der Größe und dem Standort des Carports sowie den örtlichen Vorschriften ab. Wir können Sie dazu beraten und bei Bedarf bei der Genehmigungsantragstellung helfen."
           },
           {
-            "question": "Kann ein Carport als freistehende Konstruktion installiert werden?",
-            "answer": "Ja, unsere Carports können entweder am Haus befestigt oder als freistehende Konstruktionen installiert werden, abhängig von Ihren Wünschen und der Situation."
+            "question": "Kann ein Carport freistehend installiert werden?",
+            "answer": "Ja, unsere Carports können entweder am Haus befestigt oder freistehend installiert werden, abhängig von Ihren Wünschen und der Situation."
           },
           {
             "question": "Wie werden Carports verankert?",
-            "answer": "Carports können auf verschiedene Arten verankert werden, abhängig vom Untergrund. Auf Betonflächen werden Anker verwendet, während für weiche Untergründe wie Gras oder Sand spezielle Fundamentfüße verwendet werden."
+            "answer": "Carports können auf verschiedene Arten verankert werden, abhängig vom Untergrund. Auf Betonflächen werden Anker verwendet, während für weiche Untergründe wie Gras oder Sand spezielle Fundamentfüße zum Einsatz kommen."
           }
         ]
       }

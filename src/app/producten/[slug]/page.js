@@ -12,100 +12,32 @@ import { useState, useEffect, useRef } from 'react';
 // Product details database
 const productDetails = {
   "veranda": {
-    title: "Veranda",
+    title: t('products.details.veranda.title'),
     image: "/Veranda6.jpg",
-    description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
-    longDescription: [
-      "Een veranda is een elegante uitbreiding van uw woonruimte die u langer laat genieten van uw tuin en terras. Onze veranda's zijn op maat gemaakt en passen perfect bij de architectuur van uw woning.",
-      "Met een veranda creëert u een aangename ruimte die bescherming biedt tegen regen, wind en UV-straling, maar toch de verbinding met buiten behoudt. Het is de ideale plek om te ontspannen, gasten te ontvangen of gewoon te genieten van het uitzicht op uw tuin in alle seizoenen."
-    ],
-    features: [
-      "Maatwerk ontwerp afgestemd op uw woning",
-      "Diverse dakopties (glas, polycarbonaat, sandwichpanelen)",
-      "LED-verlichting mogelijk voor sfeervolle avonden",
-      "Verschillende kleuropties passend bij uw woning",
-      "Onderhoudsarme aluminium constructie",
-      "Optionele zijwanden en schuifdeuren",
-      "Mogelijkheid tot integratie van zonwering",
-      "10 jaar garantie op constructie"
-    ],
-    specifications: [
-      { label: "Materiaal", value: "Hoogwaardig aluminium" },
-      { label: "Dakopties", value: "Glas, polycarbonaat, sandwichpanelen" },
-      { label: "Standaard kleuren", value: "Wit (RAL 9016), Antraciet (RAL 7016)" },
-      { label: "Maatwerk kleuren", value: "Alle RAL-kleuren mogelijk" },
-      { label: "Verlichting", value: "LED-spots, LED-strips (optioneel)" },
-      { label: "Garantie", value: "10 jaar op constructie, 5 jaar op bewegende delen" }
-    ],
+    description: t('products.details.veranda.description'),
+    longDescription: t('products.details.veranda.longDescription'),
+    features: t('products.details.veranda.features'),
+    specifications: t('products.details.veranda.specifications'),
     gallery: [
-      { src: "/Veranda7.jpg", alt: "Moderne veranda aan woning" },
-      { src: "/Veranda8.jpg", alt: "Veranda met glazen dak" },
-      { src: "/Veranda9.jpg", alt: "Veranda met zijwanden" }
+      { src: "/Veranda7.jpg", alt: t('products.details.veranda.gallery.0.alt') },
+      { src: "/Veranda8.jpg", alt: t('products.details.veranda.gallery.1.alt') },
+      { src: "/Veranda9.jpg", alt: t('products.details.veranda.gallery.2.alt') }
     ],
-    faqs: [
-      {
-        question: "Hoe lang duurt de installatie van een veranda?",
-        answer: "De installatie van een standaard veranda duurt gemiddeld 2-3 werkdagen, afhankelijk van de grootte en complexiteit van het project."
-      },
-      {
-        question: "Is een bouwvergunning nodig voor een veranda?",
-        answer: "Dit hangt af van de grootte van de veranda en de lokale regelgeving. In veel gevallen is een vergunning niet nodig, maar wij kunnen u hierover adviseren en indien nodig helpen met de aanvraag."
-      },
-      {
-        question: "Kan ik mijn veranda later uitbreiden met zijwanden?",
-        answer: "Ja, onze veranda's zijn modulair ontworpen, zodat u later eenvoudig glazen schuifwanden of screens kunt toevoegen."
-      }
-    ]
+    faqs: t('products.details.veranda.faqs')
   },
   "carport": {
-    title: "Carport",
+    title: t('products.details.carport.title'),
     image: "/Carport2.jpg",
-    description: "Duurzame carports die uw auto beschermen tegen weersinvloeden en UV-straling. De open structuur zorgt voor een luchtige uitstraling die past bij elke woning.",
-    longDescription: [
-      "Een carport is de ideale oplossing voor wie zijn auto wil beschermen tegen weer en wind zonder een volledig gesloten garage te bouwen.",
-      "Onze carports bieden optimale bescherming tegen regen, sneeuw, hagel en UV-straling, terwijl de open structuur zorgt voor een ruimtelijk gevoel.",
-      "",
-      "De moderne, strakke vormgeving van onze aluminium carports past perfect bij zowel traditionele als moderne woningen.",
-      "Daarnaast zijn ze onderhoudsarm en zeer duurzaam, waardoor u jarenlang plezier hebt van uw investering."
-    ],
-    features: [
-      "Robuuste aluminium constructie",
-      "Eenvoudig te installeren op diverse ondergronden",
-      "Onderhoudsarm en weerbestendig",
-      "Diverse afmetingen mogelijk voor één of meerdere auto's",
-      "Te combineren met LED-verlichting",
-      "Verschillende dakopties beschikbaar",
-      "Optioneel uit te breiden met zijwanden",
-      "Maatwerk mogelijk voor specifieke situaties"
-    ],
-    specifications: [
-      { label: "Materiaal", value: "Hoogwaardig aluminium" },
-      { label: "Dakopties", value: "Polycarbonaat (helder of opaal), sandwichpanelen" },
-      { label: "Standaard kleuren", value: "Wit (RAL 9016), Antraciet (RAL 7016)" },
-      { label: "Maatwerk kleuren", value: "Alle RAL-kleuren mogelijk" },
-      { label: "Standaard breedtes", value: "3.0m, 3.5m, 4.0m, 5.0m, 6.0m" },
-      { label: "Standaard dieptes", value: "2.5m, 3.0m, 3.5m, 4.0m, 5.0m" },
-      { label: "Garantie", value: "10 jaar op constructie" }
-    ],
+    description: t('products.details.carport.description'),
+    longDescription: t('products.details.carport.longDescription'),
+    features: t('products.details.carport.features'),
+    specifications: t('products.details.carport.specifications'),
     gallery: [
-      { src: "/Carport3.jpg", alt: "Moderne carport voor twee auto's" },
-      { src: "/Carport4.jpg", alt: "Carport met geïntegreerde berging" },
-      { src: "/Carport5.jpg", alt: "Vrijstaande carport met LED-verlichting" }
+      { src: "/Carport3.jpg", alt: t('products.details.carport.gallery.0.alt') },
+      { src: "/Carport4.jpg", alt: t('products.details.carport.gallery.1.alt') },
+      { src: "/Carport5.jpg", alt: t('products.details.carport.gallery.2.alt') }
     ],
-    faqs: [
-      {
-        question: "Heb ik een bouwvergunning nodig voor een carport?",
-        answer: "Dit is afhankelijk van de grootte en locatie van de carport, en van de lokale regelgeving. Wij kunnen u hierover adviseren en indien nodig helpen bij de vergunningsaanvraag."
-      },
-      {
-        question: "Kan een carport ook vrijstaand geplaatst worden?",
-        answer: "Ja, onze carports kunnen zowel aan de woning bevestigd als vrijstaand geplaatst worden, afhankelijk van uw wensen en de situatie."
-      },
-      {
-        question: "Hoe worden carports verankerd?",
-        answer: "Carports kunnen op verschillende manieren verankerd worden, afhankelijk van de ondergrond. Op een betonnen ondergrond worden ankers gebruikt, terwijl bij zachte ondergronden zoals gras of zand speciale funderingsvoeten worden toegepast."
-      }
-    ]
+    faqs: t('products.details.carport.faqs')
   },
   "terrasoverkapping": {
     title: "Terrasoverkapping",

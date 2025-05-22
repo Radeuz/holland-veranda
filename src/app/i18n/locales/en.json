@@ -141,9 +141,14 @@
           { "label": "Lighting", "value": "LED spots, LED strips (optional)" },
           { "label": "Warranty", "value": "10 years on construction, 5 years on moving parts" }
         ],
+        "gallery": [
+          { "alt": "Modern veranda attached to house" },
+          { "alt": "Veranda with glass roof" },
+          { "alt": "Veranda with side walls" }
+        ],
         "faqs": [
           {
-            "question": "How long does the installation of a veranda take?",
+            "question": "How long does it take to install a veranda?",
             "answer": "The installation of a standard veranda takes an average of 2-3 working days, depending on the size and complexity of the project."
           },
           {
@@ -161,8 +166,7 @@
         "description": "Durable carports that protect your car from weather conditions and UV radiation. The open structure provides an airy appearance that matches any home.",
         "longDescription": [
           "A carport is the ideal solution for those who want to protect their car from weather and wind without building a fully enclosed garage.",
-          "Our carports provide optimal protection against rain, snow, hail, and UV radiation, while the open structure creates a spacious feeling.",
-          "",
+          "Our carports offer optimal protection against rain, snow, hail, and UV radiation, while the open structure provides a spacious feel.",
           "The modern, sleek design of our aluminum carports perfectly matches both traditional and modern homes.",
           "Additionally, they are low-maintenance and very durable, ensuring you enjoy your investment for years to come."
         ],
@@ -170,7 +174,7 @@
           "Robust aluminum construction",
           "Easy to install on various surfaces",
           "Low-maintenance and weather-resistant",
-          "Various sizes possible for one or multiple cars",
+          "Various sizes available for one or multiple cars",
           "Can be combined with LED lighting",
           "Different roof options available",
           "Optionally expandable with side walls",
@@ -185,14 +189,19 @@
           { "label": "Standard depths", "value": "2.5m, 3.0m, 3.5m, 4.0m, 5.0m" },
           { "label": "Warranty", "value": "10 years on construction" }
         ],
+        "gallery": [
+          { "alt": "Modern carport for two cars" },
+          { "alt": "Carport with integrated storage" },
+          { "alt": "Freestanding carport with LED lighting" }
+        ],
         "faqs": [
           {
             "question": "Do I need a building permit for a carport?",
             "answer": "This depends on the size and location of the carport, and local regulations. We can advise you on this and help with the permit application if needed."
           },
           {
-            "question": "Can a carport be installed as a freestanding structure?",
-            "answer": "Yes, our carports can be either attached to the house or installed as freestanding structures, depending on your wishes and the situation."
+            "question": "Can a carport be installed freestanding?",
+            "answer": "Yes, our carports can be either attached to the house or installed freestanding, depending on your wishes and the situation."
           },
           {
             "question": "How are carports anchored?",

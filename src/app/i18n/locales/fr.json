@@ -134,7 +134,7 @@
         "title": "Véranda",
         "description": "Vérandas modernes et élégantes sur mesure pour votre maison et jardin. Nos vérandas offrent un espace de vie supplémentaire et une protection contre les intempéries toute l'année.",
         "longDescription": [
-          "Une véranda est une extension élégante de votre espace de vie qui vous permet de profiter plus longtemps de votre jardin et de votre terrasse. Nos vérandas sont sur mesure et s'intègrent parfaitement à l'architecture de votre maison.",
+          "Une véranda est une extension élégante de votre espace de vie qui vous permet de profiter plus longtemps de votre jardin et de votre terrasse. Nos vérandas sont sur mesure et s'harmonisent parfaitement avec l'architecture de votre maison.",
           "Avec une véranda, vous créez un espace agréable qui offre une protection contre la pluie, le vent et les rayons UV tout en maintenant la connexion avec l'extérieur. C'est l'endroit idéal pour se détendre, recevoir des invités ou simplement profiter de la vue sur votre jardin en toutes saisons."
         ],
         "features": [
@@ -151,13 +151,18 @@
           { "label": "Matériau", "value": "Aluminium de haute qualité" },
           { "label": "Options de toiture", "value": "Verre, polycarbonate, panneaux sandwich" },
           { "label": "Couleurs standard", "value": "Blanc (RAL 9016), Anthracite (RAL 7016)" },
-          { "label": "Couleurs personnalisées", "value": "Toutes les couleurs RAL possibles" },
+          { "label": "Couleurs sur mesure", "value": "Toutes les couleurs RAL possibles" },
           { "label": "Éclairage", "value": "Spots LED, bandes LED (optionnel)" },
           { "label": "Garantie", "value": "10 ans sur la construction, 5 ans sur les pièces mobiles" }
         ],
+        "gallery": [
+          { "alt": "Véranda moderne attenante à la maison" },
+          { "alt": "Véranda avec toit en verre" },
+          { "alt": "Véranda avec murs latéraux" }
+        ],
         "faqs": [
           {
-            "question": "Combien de temps prend l'installation d'une véranda ?",
+            "question": "Combien de temps faut-il pour installer une véranda ?",
             "answer": "L'installation d'une véranda standard prend en moyenne 2-3 jours ouvrables, selon la taille et la complexité du projet."
           },
           {
@@ -172,32 +177,36 @@
       },
       "carport": {
         "title": "Carport",
-        "description": "Carports durables qui protègent votre voiture des conditions météorologiques et des rayons UV. La structure ouverte offre une apparence aérée qui s'adapte à chaque maison.",
+        "description": "Carports durables qui protègent votre voiture des conditions météorologiques et des rayons UV. La structure ouverte offre une apparence aérée qui s'harmonise avec n'importe quelle maison.",
         "longDescription": [
           "Un carport est la solution idéale pour ceux qui souhaitent protéger leur voiture des intempéries sans construire un garage entièrement fermé.",
-          "Nos carports offrent une protection optimale contre la pluie, la neige, la grêle et les rayons UV, tandis que la structure ouverte crée une sensation d'espace.",
-          "",
-          "Le design moderne et élégant de nos carports en aluminium s'adapte parfaitement aux maisons traditionnelles et modernes.",
+          "Nos carports offrent une protection optimale contre la pluie, la neige, la grêle et les rayons UV, tandis que la structure ouverte procure une sensation d'espace.",
+          "Le design moderne et élégant de nos carports en aluminium s'harmonise parfaitement avec les maisons traditionnelles et modernes.",
           "De plus, ils nécessitent peu d'entretien et sont très durables, vous permettant de profiter de votre investissement pendant des années."
         ],
         "features": [
           "Construction robuste en aluminium",
           "Facile à installer sur diverses surfaces",
           "Nécessite peu d'entretien et résistant aux intempéries",
-          "Diverses tailles possibles pour une ou plusieurs voitures",
+          "Diverses tailles disponibles pour une ou plusieurs voitures",
           "Peut être combiné avec un éclairage LED",
           "Différentes options de toiture disponibles",
           "Extensible en option avec des murs latéraux",
-          "Solutions personnalisées possibles pour des situations spécifiques"
+          "Solutions sur mesure possibles pour des situations spécifiques"
         ],
         "specifications": [
           { "label": "Matériau", "value": "Aluminium de haute qualité" },
           { "label": "Options de toiture", "value": "Polycarbonate (transparent ou opaque), panneaux sandwich" },
           { "label": "Couleurs standard", "value": "Blanc (RAL 9016), Anthracite (RAL 7016)" },
-          { "label": "Couleurs personnalisées", "value": "Toutes les couleurs RAL possibles" },
+          { "label": "Couleurs sur mesure", "value": "Toutes les couleurs RAL possibles" },
           { "label": "Largeurs standard", "value": "3,0m, 3,5m, 4,0m, 5,0m, 6,0m" },
           { "label": "Profondeurs standard", "value": "2,5m, 3,0m, 3,5m, 4,0m, 5,0m" },
           { "label": "Garantie", "value": "10 ans sur la construction" }
+        ],
+        "gallery": [
+          { "alt": "Carport moderne pour deux voitures" },
+          { "alt": "Carport avec rangement intégré" },
+          { "alt": "Carport autoportant avec éclairage LED" }
         ],
         "faqs": [
           {
@@ -205,12 +214,12 @@
             "answer": "Cela dépend de la taille et de l'emplacement du carport, ainsi que des réglementations locales. Nous pouvons vous conseiller et vous aider avec la demande de permis si nécessaire."
           },
           {
-            "question": "Un carport peut-il être installé comme une structure autonome ?",
-            "answer": "Oui, nos carports peuvent être soit fixés à la maison, soit installés comme des structures autonomes, selon vos souhaits et la situation."
+            "question": "Un carport peut-il être installé de manière autoportante ?",
+            "answer": "Oui, nos carports peuvent être soit fixés à la maison, soit installés de manière autoportante, selon vos souhaits et la situation."
           },
           {
             "question": "Comment les carports sont-ils ancrés ?",
-            "answer": "Les carports peuvent être ancrés de différentes manières, selon la surface. Sur les surfaces en béton, des ancres sont utilisées, tandis que des pieds de fondation spéciaux sont appliqués pour les surfaces molles comme l'herbe ou le sable."
+            "answer": "Les carports peuvent être ancrés de différentes manières, selon la surface. Sur les surfaces en béton, des ancres sont utilisées, tandis que pour les surfaces souples comme l'herbe ou le sable, des pieds de fondation spéciaux sont appliqués."
           }
         ]
       }
