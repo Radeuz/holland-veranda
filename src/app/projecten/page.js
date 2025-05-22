@@ -13,196 +13,186 @@ export default function Projecten() {
   
   const projectData = [
     { 
-      id: 5, 
-      image: '/Veranda5.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 6, 
-      image: '/Veranda6.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 7, 
-      image: '/Veranda7.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 8, 
-      image: '/Veranda8.jpg',
-      locationKey: 'netherlands'
-    },
-    {
-      id: 9,
-      image: '/Veranda9.jpg',
-      locationKey: 'netherlands'
-    },
-    {
-      id: 10,
-      image: '/Terrasoverkapping5.jpg',
-      locationKey: 'netherlands'
-    },
-    {
-      id: 11,
-      image: '/Terrasoverkapping3.jpg',
-      locationKey: 'netherlands'
-    },
-    {
-      id: 12,
-      image: '/Terrasoverkapping4.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 13, 
-      image: '/Carport3.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 14, 
-      image: '/Carport5.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 15, 
-      image: '/Kozijnen5.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 16, 
-      image: '/Kozijnen2.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 17, 
-      image: '/Kozijnen4.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 18, 
-      image: '/Schuifpui5.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 19, 
-      image: '/Schuifpui2.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 20, 
-      image: '/Schuifpui3.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 21, 
-      image: '/Schuifpui4.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 22, 
-      image: '/Zonweringen1.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 24, 
-      image: '/Zonweringen3.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 25, 
-      image: '/Zonweringen4.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 26, 
-      image: '/Rolluiken1.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 27, 
-      image: '/Rolluiken2.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 28, 
-      image: '/Rolluiken3.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 29, 
-      image: '/Rolluiken4.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 30, 
-      image: '/KeramischeTegels1.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 31, 
-      image: '/KeramischeTegels2.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 32, 
-      image: '/KeramischeTegels3.jpg',
-      locationKey: 'netherlands'
-    },
-    { 
-      id: 33, 
-      image: '/KeramischeTegels4.jpg',
-      locationKey: 'netherlands'
-    },
-    {
-      id: 34,
-      image: '/GespecialiseerdeMonteurs1.jpg',
-      locationKey: 'team'
-    },
-    { 
       id: 1, 
-      image: '/Veranda1.jpg',
-      locationKey: 'netherlands'
+      image: '/Veranda1.jpg'
     },
     { 
       id: 2, 
-      image: '/Veranda13.jpg',
-      locationKey: 'netherlands'
+      image: '/Veranda2.jpg'
     },
     { 
       id: 3, 
-      image: '/Veranda12.jpg',
-      locationKey: 'netherlands'
+      image: '/Veranda3.jpg'
     },
     { 
       id: 4, 
-      image: '/Veranda4.jpg',
-      objectPosition: 'center 30%',
-      locationKey: 'netherlands'
+      image: '/Veranda4.jpg'
+    },
+    { 
+      id: 5, 
+      image: '/Veranda5.jpg'
+    },
+    { 
+      id: 6, 
+      image: '/Veranda6.jpg'
+    },
+    { 
+      id: 7, 
+      image: '/Veranda7.jpg'
+    },
+    { 
+      id: 8, 
+      image: '/Veranda8.jpg'
+    },
+    {
+      id: 9,
+      image: '/Veranda9.jpg'
+    },
+    {
+      id: 10,
+      image: '/Veranda10.jpg'
+    },
+    {
+      id: 11,
+      image: '/Veranda11.jpg'
+    },
+    {
+      id: 12,
+      image: '/Veranda12.jpg'
+    },
+    { 
+      id: 13, 
+      image: '/Veranda13.jpg'
+    },
+    { 
+      id: 14, 
+      image: '/Carport2.jpg'
+    },
+    { 
+      id: 15, 
+      image: '/Carport3.jpg'
+    },
+    { 
+      id: 16, 
+      image: '/Carport4.jpg'
+    },
+    { 
+      id: 17, 
+      image: '/Carport5.jpg'
+    },
+    { 
+      id: 18, 
+      image: '/Terrasoverkapping1.jpg'
+    },
+    { 
+      id: 19, 
+      image: '/Terrasoverkapping2.jpg'
+    },
+    { 
+      id: 20, 
+      image: '/Terrasoverkapping3.jpg'
+    },
+    { 
+      id: 21, 
+      image: '/Terrasoverkapping4.jpg'
+    },
+    { 
+      id: 22, 
+      image: '/Terrasoverkapping5.jpg'
+    },
+    { 
+      id: 23, 
+      image: '/Kozijnen1.jpg'
+    },
+    { 
+      id: 24, 
+      image: '/Kozijnen2.jpg'
+    },
+    { 
+      id: 25, 
+      image: '/Kozijnen3.jpg'
+    },
+    { 
+      id: 26, 
+      image: '/Kozijnen4.jpg'
+    },
+    { 
+      id: 27, 
+      image: '/Kozijnen5.jpg'
+    },
+    { 
+      id: 28, 
+      image: '/Schuifpui1.jpg'
+    },
+    { 
+      id: 29, 
+      image: '/Schuifpui2.jpg'
+    },
+    { 
+      id: 30, 
+      image: '/Schuifpui3.jpg'
+    },
+    { 
+      id: 31, 
+      image: '/Schuifpui4.jpg'
+    },
+    { 
+      id: 32, 
+      image: '/Schuifpui5.jpg'
+    },
+    { 
+      id: 33, 
+      image: '/Zonweringen1.jpg'
+    },
+    { 
+      id: 34, 
+      image: '/Zonweringen2.jpg'
+    },
+    { 
+      id: 35, 
+      image: '/Zonweringen3.jpg'
+    },
+    { 
+      id: 36, 
+      image: '/Zonweringen4.jpg'
+    },
+    { 
+      id: 37, 
+      image: '/Rolluiken1.jpg'
+    },
+    { 
+      id: 38, 
+      image: '/Rolluiken2.jpg'
+    },
+    { 
+      id: 39, 
+      image: '/Rolluiken3.jpg'
+    },
+    { 
+      id: 40, 
+      image: '/Rolluiken4.jpg'
+    },
+    { 
+      id: 41, 
+      image: '/KeramischeTegels1.jpg'
+    },
+    { 
+      id: 42, 
+      image: '/KeramischeTegels2.jpg'
+    },
+    { 
+      id: 43, 
+      image: '/KeramischeTegels3.jpg'
+    },
+    { 
+      id: 44, 
+      image: '/KeramischeTegels4.jpg'
     }
   ];
 
   useEffect(() => {
-    // Apply translations to projects
-    const translatedProjects = projectData.map(project => ({
-      ...project,
-      location: t(`projects.location.${project.locationKey}`)
-    }));
-    setProjects(translatedProjects);
-
-    // Check if there's a selected project ID in sessionStorage
-    const selectedProjectId = sessionStorage.getItem('selectedProjectId');
-    if (selectedProjectId) {
-      // Find the project with the matching ID
-      const projectId = parseInt(selectedProjectId);
-      const project = translatedProjects.find(p => p.id === projectId);
-      
-      if (project) {
-        // Set the selected image to open the modal
-        setSelectedImage(project);
-      }
-      // Clear the sessionStorage
-      sessionStorage.removeItem('selectedProjectId');
-    }
-  }, [t]);
+    setProjects(projectData);
+  }, []);
 
   const handleImageClick = (project) => {
     setSelectedImage(project);
@@ -263,17 +253,9 @@ export default function Projecten() {
                   <Image
                     src={project.image}
                     alt={`Project ${project.id}`}
-                    width={800}
-                    height={600}
+                    fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <p className="text-white text-lg font-semibold">
-                      {project.location}
-                    </p>
-                  </div>
                 </div>
               </div>
             ))}
@@ -316,8 +298,7 @@ export default function Projecten() {
               <Image
                 src={selectedImage.image}
                 alt={`Project ${selectedImage.id}`}
-                width={1200}
-                height={800}
+                fill
                 className="object-contain"
                 priority
               />
