@@ -114,6 +114,92 @@
         "description": "Langlebige und stilvolle Keramikfliesen für Innen- und Außenbereich. Schaffen Sie einen nahtlosen Übergang von Ihrem Zuhause zu Ihrer Terrasse oder Ihrem Garten.",
         "features": ["Frostbeständig", "Farbecht", "Kratzfest", "Rutschhemmende Optionen verfügbar"]
       }
+    },
+    "details": {
+      "veranda": {
+        "title": "Verglasung",
+        "description": "Moderne und stilvolle Verglasungen, maßgeschneidert für Ihr Zuhause und Garten. Unsere Verglasungen bieten zusätzlichen Wohnraum und Schutz vor den Elementen das ganze Jahr über.",
+        "longDescription": [
+          "Eine Verglasung ist eine elegante Erweiterung Ihres Wohnraums, die Ihnen ermöglicht, länger Ihren Garten und Ihre Terrasse zu genießen. Unsere Verglasungen sind maßgeschneidert und passen perfekt zur Architektur Ihres Hauses.",
+          "Mit einer Verglasung schaffen Sie einen angenehmen Raum, der Schutz vor Regen, Wind und UV-Strahlung bietet und gleichzeitig die Verbindung zum Außenbereich erhält. Es ist der ideale Ort zum Entspannen, zum Empfangen von Gästen oder einfach zum Genießen der Aussicht auf Ihren Garten in allen Jahreszeiten."
+        ],
+        "features": [
+          "Maßgeschneidertes Design für Ihr Zuhause",
+          "Verschiedene Dachoptionen (Glas, Polycarbonat, Sandwichpaneele)",
+          "LED-Beleuchtung für stimmungsvolle Abende",
+          "Verschiedene Farboptionen passend zu Ihrem Zuhause",
+          "Wartungsarme Aluminiumkonstruktion",
+          "Optionale Seitenwände und Schiebetüren",
+          "Möglichkeit zur Integration von Sonnenschutz",
+          "10 Jahre Garantie auf die Konstruktion"
+        ],
+        "specifications": [
+          { "label": "Material", "value": "Hochwertiges Aluminium" },
+          { "label": "Dachoptionen", "value": "Glas, Polycarbonat, Sandwichpaneele" },
+          { "label": "Standardfarben", "value": "Weiß (RAL 9016), Anthrazit (RAL 7016)" },
+          { "label": "Maßgeschneiderte Farben", "value": "Alle RAL-Farben möglich" },
+          { "label": "Beleuchtung", "value": "LED-Spots, LED-Streifen (optional)" },
+          { "label": "Garantie", "value": "10 Jahre auf Konstruktion, 5 Jahre auf bewegliche Teile" }
+        ],
+        "faqs": [
+          {
+            "question": "Wie lange dauert die Installation einer Verglasung?",
+            "answer": "Die Installation einer Standard-Verglasung dauert durchschnittlich 2-3 Arbeitstage, abhängig von der Größe und Komplexität des Projekts."
+          },
+          {
+            "question": "Benötige ich eine Baugenehmigung für eine Verglasung?",
+            "answer": "Dies hängt von der Größe der Verglasung und den örtlichen Vorschriften ab. In vielen Fällen ist keine Genehmigung erforderlich, aber wir können Sie dazu beraten und bei Bedarf bei der Antragstellung helfen."
+          },
+          {
+            "question": "Kann ich meine Verglasung später mit Seitenwänden erweitern?",
+            "answer": "Ja, unsere Verglasungen sind modular gestaltet, sodass Sie später einfach Glasschiebewände oder Screens hinzufügen können."
+          }
+        ]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Langlebige Carports, die Ihr Auto vor Witterungseinflüssen und UV-Strahlung schützen. Die offene Struktur sorgt für ein luftiges Erscheinungsbild, das zu jedem Haus passt.",
+        "longDescription": [
+          "Ein Carport ist die ideale Lösung für diejenigen, die ihr Auto vor Wetter und Wind schützen möchten, ohne eine vollständig geschlossene Garage zu bauen.",
+          "Unsere Carports bieten optimalen Schutz vor Regen, Schnee, Hagel und UV-Strahlung, während die offene Struktur ein geräumiges Gefühl schafft.",
+          "",
+          "Das moderne, schlanke Design unserer Aluminium-Carports passt perfekt zu traditionellen und modernen Häusern.",
+          "Zudem sind sie wartungsarm und sehr langlebig, sodass Sie Ihre Investition jahrelang genießen können."
+        ],
+        "features": [
+          "Robuste Aluminiumkonstruktion",
+          "Einfach auf verschiedenen Untergründen zu installieren",
+          "Wartungsarm und wetterbeständig",
+          "Verschiedene Größen für ein oder mehrere Autos möglich",
+          "Kann mit LED-Beleuchtung kombiniert werden",
+          "Verschiedene Dachoptionen verfügbar",
+          "Optional mit Seitenwänden erweiterbar",
+          "Maßgeschneiderte Lösungen für spezifische Situationen möglich"
+        ],
+        "specifications": [
+          { "label": "Material", "value": "Hochwertiges Aluminium" },
+          { "label": "Dachoptionen", "value": "Polycarbonat (klar oder opak), Sandwichpaneele" },
+          { "label": "Standardfarben", "value": "Weiß (RAL 9016), Anthrazit (RAL 7016)" },
+          { "label": "Maßgeschneiderte Farben", "value": "Alle RAL-Farben möglich" },
+          { "label": "Standardbreiten", "value": "3,0m, 3,5m, 4,0m, 5,0m, 6,0m" },
+          { "label": "Standardtiefen", "value": "2,5m, 3,0m, 3,5m, 4,0m, 5,0m" },
+          { "label": "Garantie", "value": "10 Jahre auf Konstruktion" }
+        ],
+        "faqs": [
+          {
+            "question": "Benötige ich eine Baugenehmigung für einen Carport?",
+            "answer": "Dies hängt von der Größe und dem Standort des Carports sowie den örtlichen Vorschriften ab. Wir können Sie dazu beraten und bei Bedarf bei der Genehmigungsantragstellung helfen."
+          },
+          {
+            "question": "Kann ein Carport als freistehende Konstruktion installiert werden?",
+            "answer": "Ja, unsere Carports können entweder am Haus befestigt oder als freistehende Konstruktionen installiert werden, abhängig von Ihren Wünschen und der Situation."
+          },
+          {
+            "question": "Wie werden Carports verankert?",
+            "answer": "Carports können auf verschiedene Arten verankert werden, abhängig vom Untergrund. Auf Betonflächen werden Anker verwendet, während für weiche Untergründe wie Gras oder Sand spezielle Fundamentfüße verwendet werden."
+          }
+        ]
+      }
     }
   },
   "about": {

@@ -128,6 +128,92 @@
     "glassSlidingWalls": {
       "title": "Murs Coulissants en Verre",
       "description": "Des murs coulissants en verre qui créent une transition fluide entre l'intérieur et l'extérieur."
+    },
+    "details": {
+      "veranda": {
+        "title": "Véranda",
+        "description": "Vérandas modernes et élégantes sur mesure pour votre maison et jardin. Nos vérandas offrent un espace de vie supplémentaire et une protection contre les intempéries toute l'année.",
+        "longDescription": [
+          "Une véranda est une extension élégante de votre espace de vie qui vous permet de profiter plus longtemps de votre jardin et de votre terrasse. Nos vérandas sont sur mesure et s'intègrent parfaitement à l'architecture de votre maison.",
+          "Avec une véranda, vous créez un espace agréable qui offre une protection contre la pluie, le vent et les rayons UV tout en maintenant la connexion avec l'extérieur. C'est l'endroit idéal pour se détendre, recevoir des invités ou simplement profiter de la vue sur votre jardin en toutes saisons."
+        ],
+        "features": [
+          "Design sur mesure adapté à votre maison",
+          "Diverses options de toiture (verre, polycarbonate, panneaux sandwich)",
+          "Éclairage LED possible pour des soirées atmosphériques",
+          "Différentes options de couleurs assorties à votre maison",
+          "Construction en aluminium nécessitant peu d'entretien",
+          "Murs latéraux et portes coulissantes en option",
+          "Possibilité d'intégrer une protection solaire",
+          "Garantie de 10 ans sur la construction"
+        ],
+        "specifications": [
+          { "label": "Matériau", "value": "Aluminium de haute qualité" },
+          { "label": "Options de toiture", "value": "Verre, polycarbonate, panneaux sandwich" },
+          { "label": "Couleurs standard", "value": "Blanc (RAL 9016), Anthracite (RAL 7016)" },
+          { "label": "Couleurs personnalisées", "value": "Toutes les couleurs RAL possibles" },
+          { "label": "Éclairage", "value": "Spots LED, bandes LED (optionnel)" },
+          { "label": "Garantie", "value": "10 ans sur la construction, 5 ans sur les pièces mobiles" }
+        ],
+        "faqs": [
+          {
+            "question": "Combien de temps prend l'installation d'une véranda ?",
+            "answer": "L'installation d'une véranda standard prend en moyenne 2-3 jours ouvrables, selon la taille et la complexité du projet."
+          },
+          {
+            "question": "Ai-je besoin d'un permis de construire pour une véranda ?",
+            "answer": "Cela dépend de la taille de la véranda et des réglementations locales. Dans de nombreux cas, un permis n'est pas nécessaire, mais nous pouvons vous conseiller et vous aider avec la demande si nécessaire."
+          },
+          {
+            "question": "Puis-je ajouter des murs latéraux à ma véranda plus tard ?",
+            "answer": "Oui, nos vérandas sont conçues de manière modulaire, vous pouvez donc facilement ajouter des murs coulissants en verre ou des écrans plus tard."
+          }
+        ]
+      },
+      "carport": {
+        "title": "Carport",
+        "description": "Carports durables qui protègent votre voiture des conditions météorologiques et des rayons UV. La structure ouverte offre une apparence aérée qui s'adapte à chaque maison.",
+        "longDescription": [
+          "Un carport est la solution idéale pour ceux qui souhaitent protéger leur voiture des intempéries sans construire un garage entièrement fermé.",
+          "Nos carports offrent une protection optimale contre la pluie, la neige, la grêle et les rayons UV, tandis que la structure ouverte crée une sensation d'espace.",
+          "",
+          "Le design moderne et élégant de nos carports en aluminium s'adapte parfaitement aux maisons traditionnelles et modernes.",
+          "De plus, ils nécessitent peu d'entretien et sont très durables, vous permettant de profiter de votre investissement pendant des années."
+        ],
+        "features": [
+          "Construction robuste en aluminium",
+          "Facile à installer sur diverses surfaces",
+          "Nécessite peu d'entretien et résistant aux intempéries",
+          "Diverses tailles possibles pour une ou plusieurs voitures",
+          "Peut être combiné avec un éclairage LED",
+          "Différentes options de toiture disponibles",
+          "Extensible en option avec des murs latéraux",
+          "Solutions personnalisées possibles pour des situations spécifiques"
+        ],
+        "specifications": [
+          { "label": "Matériau", "value": "Aluminium de haute qualité" },
+          { "label": "Options de toiture", "value": "Polycarbonate (transparent ou opaque), panneaux sandwich" },
+          { "label": "Couleurs standard", "value": "Blanc (RAL 9016), Anthracite (RAL 7016)" },
+          { "label": "Couleurs personnalisées", "value": "Toutes les couleurs RAL possibles" },
+          { "label": "Largeurs standard", "value": "3,0m, 3,5m, 4,0m, 5,0m, 6,0m" },
+          { "label": "Profondeurs standard", "value": "2,5m, 3,0m, 3,5m, 4,0m, 5,0m" },
+          { "label": "Garantie", "value": "10 ans sur la construction" }
+        ],
+        "faqs": [
+          {
+            "question": "Ai-je besoin d'un permis de construire pour un carport ?",
+            "answer": "Cela dépend de la taille et de l'emplacement du carport, ainsi que des réglementations locales. Nous pouvons vous conseiller et vous aider avec la demande de permis si nécessaire."
+          },
+          {
+            "question": "Un carport peut-il être installé comme une structure autonome ?",
+            "answer": "Oui, nos carports peuvent être soit fixés à la maison, soit installés comme des structures autonomes, selon vos souhaits et la situation."
+          },
+          {
+            "question": "Comment les carports sont-ils ancrés ?",
+            "answer": "Les carports peuvent être ancrés de différentes manières, selon la surface. Sur les surfaces en béton, des ancres sont utilisées, tandis que des pieds de fondation spéciaux sont appliqués pour les surfaces molles comme l'herbe ou le sable."
+          }
+        ]
+      }
     }
   },
   "about": {
