@@ -114,101 +114,6 @@
         "description": "Durable and stylish ceramic tiles for indoor and outdoor use. Create a seamless transition from your home to your terrace or garden.",
         "features": ["Frost-resistant", "Colorfast", "Scratch-resistant", "Anti-slip options available"]
       }
-    },
-    "details": {
-      "veranda": {
-        "title": "Veranda",
-        "description": "Modern and stylish verandas custom-made for your home and garden. Our verandas provide extra living space and protection from the elements all year round.",
-        "longDescription": [
-          "A veranda is an elegant extension of your living space that allows you to enjoy your garden and terrace longer. Our verandas are custom-made and perfectly match the architecture of your home.",
-          "With a veranda, you create a pleasant space that offers protection from rain, wind, and UV radiation while maintaining the connection with the outdoors. It's the ideal place to relax, entertain guests, or simply enjoy the view of your garden in all seasons."
-        ],
-        "features": [
-          "Custom design tailored to your home",
-          "Various roof options (glass, polycarbonate, sandwich panels)",
-          "LED lighting possible for atmospheric evenings",
-          "Different color options matching your home",
-          "Low-maintenance aluminum construction",
-          "Optional side walls and sliding doors",
-          "Possibility to integrate sun protection",
-          "10-year warranty on construction"
-        ],
-        "specifications": [
-          { "label": "Material", "value": "High-quality aluminum" },
-          { "label": "Roof options", "value": "Glass, polycarbonate, sandwich panels" },
-          { "label": "Standard colors", "value": "White (RAL 9016), Anthracite (RAL 7016)" },
-          { "label": "Custom colors", "value": "All RAL colors possible" },
-          { "label": "Lighting", "value": "LED spots, LED strips (optional)" },
-          { "label": "Warranty", "value": "10 years on construction, 5 years on moving parts" }
-        ],
-        "gallery": [
-          { "alt": "Modern veranda attached to house" },
-          { "alt": "Veranda with glass roof" },
-          { "alt": "Veranda with side walls" }
-        ],
-        "faqs": [
-          {
-            "question": "How long does it take to install a veranda?",
-            "answer": "The installation of a standard veranda takes an average of 2-3 working days, depending on the size and complexity of the project."
-          },
-          {
-            "question": "Do I need a building permit for a veranda?",
-            "answer": "This depends on the size of the veranda and local regulations. In many cases, a permit is not required, but we can advise you on this and help with the application if needed."
-          },
-          {
-            "question": "Can I add side walls to my veranda later?",
-            "answer": "Yes, our verandas are modularly designed, so you can easily add glass sliding walls or screens later."
-          }
-        ]
-      },
-      "carport": {
-        "title": "Carport",
-        "description": "Durable carports that protect your car from weather conditions and UV radiation. The open structure provides an airy appearance that matches any home.",
-        "longDescription": [
-          "A carport is the ideal solution for those who want to protect their car from weather and wind without building a fully enclosed garage.",
-          "Our carports offer optimal protection against rain, snow, hail, and UV radiation, while the open structure provides a spacious feel.",
-          "The modern, sleek design of our aluminum carports perfectly matches both traditional and modern homes.",
-          "Additionally, they are low-maintenance and very durable, ensuring you enjoy your investment for years to come."
-        ],
-        "features": [
-          "Robust aluminum construction",
-          "Easy to install on various surfaces",
-          "Low-maintenance and weather-resistant",
-          "Various sizes available for one or multiple cars",
-          "Can be combined with LED lighting",
-          "Different roof options available",
-          "Optionally expandable with side walls",
-          "Custom solutions possible for specific situations"
-        ],
-        "specifications": [
-          { "label": "Material", "value": "High-quality aluminum" },
-          { "label": "Roof options", "value": "Polycarbonate (clear or opaque), sandwich panels" },
-          { "label": "Standard colors", "value": "White (RAL 9016), Anthracite (RAL 7016)" },
-          { "label": "Custom colors", "value": "All RAL colors possible" },
-          { "label": "Standard widths", "value": "3.0m, 3.5m, 4.0m, 5.0m, 6.0m" },
-          { "label": "Standard depths", "value": "2.5m, 3.0m, 3.5m, 4.0m, 5.0m" },
-          { "label": "Warranty", "value": "10 years on construction" }
-        ],
-        "gallery": [
-          { "alt": "Modern carport for two cars" },
-          { "alt": "Carport with integrated storage" },
-          { "alt": "Freestanding carport with LED lighting" }
-        ],
-        "faqs": [
-          {
-            "question": "Do I need a building permit for a carport?",
-            "answer": "This depends on the size and location of the carport, and local regulations. We can advise you on this and help with the permit application if needed."
-          },
-          {
-            "question": "Can a carport be installed freestanding?",
-            "answer": "Yes, our carports can be either attached to the house or installed freestanding, depending on your wishes and the situation."
-          },
-          {
-            "question": "How are carports anchored?",
-            "answer": "Carports can be anchored in different ways, depending on the surface. On concrete surfaces, anchors are used, while special foundation feet are applied for soft surfaces such as grass or sand."
-          }
-        ]
-      }
     }
   },
   "about": {
@@ -303,10 +208,11 @@
   },
   "projects": {
     "title": "Our Projects",
-    "subtitle": "Discover our completed projects",
+    "subtitle": "View our recent projects and discover how we can transform your outdoor space.",
     "location": {
       "netherlands": "Netherlands",
-      "team": "Our Team"
+      "belgium": "Belgium",
+      "team": "Our team at work"
     },
     "modal": {
       "close": "Close",

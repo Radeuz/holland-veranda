@@ -12,32 +12,100 @@ import { useState, useEffect, useRef } from 'react';
 // Product details database
 const productDetails = {
   "veranda": {
-    title: t('products.details.veranda.title'),
+    title: "Veranda",
     image: "/Veranda6.jpg",
-    description: t('products.details.veranda.description'),
-    longDescription: t('products.details.veranda.longDescription'),
-    features: t('products.details.veranda.features'),
-    specifications: t('products.details.veranda.specifications'),
-    gallery: [
-      { src: "/Veranda7.jpg", alt: t('products.details.veranda.gallery.0.alt') },
-      { src: "/Veranda8.jpg", alt: t('products.details.veranda.gallery.1.alt') },
-      { src: "/Veranda9.jpg", alt: t('products.details.veranda.gallery.2.alt') }
+    description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
+    longDescription: [
+      "Een veranda is een elegante uitbreiding van uw woonruimte die u langer laat genieten van uw tuin en terras. Onze veranda's zijn op maat gemaakt en passen perfect bij de architectuur van uw woning.",
+      "Met een veranda creëert u een aangename ruimte die bescherming biedt tegen regen, wind en UV-straling, maar toch de verbinding met buiten behoudt. Het is de ideale plek om te ontspannen, gasten te ontvangen of gewoon te genieten van het uitzicht op uw tuin in alle seizoenen."
     ],
-    faqs: t('products.details.veranda.faqs')
+    features: [
+      "Maatwerk ontwerp afgestemd op uw woning",
+      "Diverse dakopties (glas, polycarbonaat, sandwichpanelen)",
+      "LED-verlichting mogelijk voor sfeervolle avonden",
+      "Verschillende kleuropties passend bij uw woning",
+      "Onderhoudsarme aluminium constructie",
+      "Optionele zijwanden en schuifdeuren",
+      "Mogelijkheid tot integratie van zonwering",
+      "10 jaar garantie op constructie"
+    ],
+    specifications: [
+      { label: "Materiaal", value: "Hoogwaardig aluminium" },
+      { label: "Dakopties", value: "Glas, polycarbonaat, sandwichpanelen" },
+      { label: "Standaard kleuren", value: "Wit (RAL 9016), Antraciet (RAL 7016)" },
+      { label: "Maatwerk kleuren", value: "Alle RAL-kleuren mogelijk" },
+      { label: "Verlichting", value: "LED-spots, LED-strips (optioneel)" },
+      { label: "Garantie", value: "10 jaar op constructie, 5 jaar op bewegende delen" }
+    ],
+    gallery: [
+      { src: "/Veranda7.jpg", alt: "Moderne veranda aan woning" },
+      { src: "/Veranda8.jpg", alt: "Veranda met glazen dak" },
+      { src: "/Veranda9.jpg", alt: "Veranda met zijwanden" }
+    ],
+    faqs: [
+      {
+        question: "Hoe lang duurt de installatie van een veranda?",
+        answer: "De installatie van een standaard veranda duurt gemiddeld 2-3 werkdagen, afhankelijk van de grootte en complexiteit van het project."
+      },
+      {
+        question: "Is een bouwvergunning nodig voor een veranda?",
+        answer: "Dit hangt af van de grootte van de veranda en de lokale regelgeving. In veel gevallen is een vergunning niet nodig, maar wij kunnen u hierover adviseren en indien nodig helpen met de aanvraag."
+      },
+      {
+        question: "Kan ik mijn veranda later uitbreiden met zijwanden?",
+        answer: "Ja, onze veranda's zijn modulair ontworpen, zodat u later eenvoudig glazen schuifwanden of screens kunt toevoegen."
+      }
+    ]
   },
   "carport": {
-    title: t('products.details.carport.title'),
+    title: "Carport",
     image: "/Carport2.jpg",
-    description: t('products.details.carport.description'),
-    longDescription: t('products.details.carport.longDescription'),
-    features: t('products.details.carport.features'),
-    specifications: t('products.details.carport.specifications'),
-    gallery: [
-      { src: "/Carport3.jpg", alt: t('products.details.carport.gallery.0.alt') },
-      { src: "/Carport4.jpg", alt: t('products.details.carport.gallery.1.alt') },
-      { src: "/Carport5.jpg", alt: t('products.details.carport.gallery.2.alt') }
+    description: "Duurzame carports die uw auto beschermen tegen weersinvloeden en UV-straling. De open structuur zorgt voor een luchtige uitstraling die past bij elke woning.",
+    longDescription: [
+      "Een carport is de ideale oplossing voor wie zijn auto wil beschermen tegen weer en wind zonder een volledig gesloten garage te bouwen.",
+      "Onze carports bieden optimale bescherming tegen regen, sneeuw, hagel en UV-straling, terwijl de open structuur zorgt voor een ruimtelijk gevoel.",
+      "",
+      "De moderne, strakke vormgeving van onze aluminium carports past perfect bij zowel traditionele als moderne woningen.",
+      "Daarnaast zijn ze onderhoudsarm en zeer duurzaam, waardoor u jarenlang plezier hebt van uw investering."
     ],
-    faqs: t('products.details.carport.faqs')
+    features: [
+      "Robuuste aluminium constructie",
+      "Eenvoudig te installeren op diverse ondergronden",
+      "Onderhoudsarm en weerbestendig",
+      "Diverse afmetingen mogelijk voor één of meerdere auto's",
+      "Te combineren met LED-verlichting",
+      "Verschillende dakopties beschikbaar",
+      "Optioneel uit te breiden met zijwanden",
+      "Maatwerk mogelijk voor specifieke situaties"
+    ],
+    specifications: [
+      { label: "Materiaal", value: "Hoogwaardig aluminium" },
+      { label: "Dakopties", value: "Polycarbonaat (helder of opaal), sandwichpanelen" },
+      { label: "Standaard kleuren", value: "Wit (RAL 9016), Antraciet (RAL 7016)" },
+      { label: "Maatwerk kleuren", value: "Alle RAL-kleuren mogelijk" },
+      { label: "Standaard breedtes", value: "3.0m, 3.5m, 4.0m, 5.0m, 6.0m" },
+      { label: "Standaard dieptes", value: "2.5m, 3.0m, 3.5m, 4.0m, 5.0m" },
+      { label: "Garantie", value: "10 jaar op constructie" }
+    ],
+    gallery: [
+      { src: "/Carport3.jpg", alt: "Moderne carport voor twee auto's" },
+      { src: "/Carport4.jpg", alt: "Carport met geïntegreerde berging" },
+      { src: "/Carport5.jpg", alt: "Vrijstaande carport met LED-verlichting" }
+    ],
+    faqs: [
+      {
+        question: "Heb ik een bouwvergunning nodig voor een carport?",
+        answer: "Dit is afhankelijk van de grootte en locatie van de carport, en van de lokale regelgeving. Wij kunnen u hierover adviseren en indien nodig helpen bij de vergunningsaanvraag."
+      },
+      {
+        question: "Kan een carport ook vrijstaand geplaatst worden?",
+        answer: "Ja, onze carports kunnen zowel aan de woning bevestigd als vrijstaand geplaatst worden, afhankelijk van uw wensen en de situatie."
+      },
+      {
+        question: "Hoe worden carports verankerd?",
+        answer: "Carports kunnen op verschillende manieren verankerd worden, afhankelijk van de ondergrond. Op een betonnen ondergrond worden ankers gebruikt, terwijl bij zachte ondergronden zoals gras of zand speciale funderingsvoeten worden toegepast."
+      }
+    ]
   },
   "terrasoverkapping": {
     title: "Terrasoverkapping",
@@ -327,201 +395,210 @@ const productDetails = {
 export default function ProductDetail() {
   const params = useParams();
   const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState('overview');
-  const [activeImage, setActiveImage] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
-  const galleryRef = useRef(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [imageError, setImageError] = useState({});
 
-  const product = params.slug;
-  const productData = t(`products.details.${product}`);
-
-  useEffect(() => {
-    setIsLoading(false);
-  }, [product]);
-
-  if (isLoading) {
-    return <Placeholder />;
-  }
-
-  if (!productData) {
-    return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
-        <Navigation />
-        <div className="container mx-auto px-4 py-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Product not found</h1>
-          <p className="text-gray-600 mb-8">The requested product could not be found.</p>
-          <Link href="/producten" className="text-orange-600 hover:text-orange-700">
-            Back to products
-          </Link>
-        </div>
-        <Footer />
-      </main>
-    );
-  }
+  // Get product details or use fallback
+  const product = productDetails[params?.slug] || {
+    title: 'Product',
+    image: '/placeholder.jpg',
+    description: 'No description available',
+    longDescription: ['No detailed information available.'],
+    features: ['No features available'],
+    specifications: [
+      { label: 'Material', value: 'Not specified' },
+      { label: 'Warranty', value: 'Not specified' }
+    ],
+    gallery: [],
+    faqs: []
+  };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
+    <main>
       <Navigation />
 
-      {/* Page Header */}
-      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
-        <div className="absolute inset-0 bg-black/10" />
-        <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
-          <div className="text-center mt-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              {productData.title}
-            </h1>
-            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              {productData.description}
-            </p>
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 backdrop-blur-sm"></div>
+        
+        <div className="relative container mx-auto overflow-hidden">
+          <div className="flex flex-col-reverse md:flex-row items-stretch">
+            {/* Product Image - Mobile First */}
+            <div className="w-full md:w-1/2 relative h-[300px] md:h-[600px]">
+              <Image 
+                src={product.image}
+                alt={product.title}
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center center'
+                }}
+                className="shadow-2xl"
+              />
+            </div>
+            
+            {/* Product Info - Mobile First */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center px-6 pt-24 pb-8 md:py-24 md:px-12 text-center md:text-left">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 text-white">
+                {product.title}
+              </h1>
+              <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-10 text-white/90 max-w-xl mx-auto md:mx-0">
+                {product.description}
+              </p>
+              <div className="flex justify-center md:justify-start">
+                <Link 
+                  href={`/offerte?product=${product.title}`}
+                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-orange-600 hover:bg-orange-700 text-white rounded-lg text-base md:text-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105"
+                >
+                  Vraag een gratis offerte aan
+                  <svg className="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Product Content */}
-      <section className="py-16">
+      {/* Features Section */}
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Product Gallery */}
-            <div className="order-2 lg:order-1">
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="relative aspect-w-16 aspect-h-9">
-                  <Image
-                    src={productData.gallery[activeImage].src}
-                    alt={productData.gallery[activeImage].alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-4 grid grid-cols-4 gap-4" ref={galleryRef}>
-                  {productData.gallery.map((image, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setActiveImage(index)}
-                      className={`relative aspect-w-1 aspect-h-1 rounded-lg overflow-hidden ${
-                        activeImage === index ? 'ring-2 ring-orange-500' : ''
-                      }`}
-                    >
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        fill
-                        className="object-cover"
-                      />
-                    </button>
-                  ))}
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            {/* Long Description */}
+            <div className="space-y-6 md:space-y-8">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">Over {product.title}</h2>
+              {product.longDescription.map((paragraph, index) => (
+                <p key={index} className="text-gray-700 leading-relaxed text-lg md:text-xl">
+                  {paragraph}
+                </p>
+              ))}
             </div>
-
-            {/* Product Info */}
-            <div className="order-1 lg:order-2">
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <div className="flex space-x-4 mb-8">
-                  <button
-                    onClick={() => setActiveTab('overview')}
-                    className={`px-4 py-2 rounded-lg font-medium ${
-                      activeTab === 'overview'
-                        ? 'bg-orange-600 text-white'
-                        : 'text-gray-600 hover:text-orange-600'
-                    }`}
-                  >
-                    {t('products.tabs.overview')}
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('specifications')}
-                    className={`px-4 py-2 rounded-lg font-medium ${
-                      activeTab === 'specifications'
-                        ? 'bg-orange-600 text-white'
-                        : 'text-gray-600 hover:text-orange-600'
-                    }`}
-                  >
-                    {t('products.tabs.specifications')}
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('faq')}
-                    className={`px-4 py-2 rounded-lg font-medium ${
-                      activeTab === 'faq'
-                        ? 'bg-orange-600 text-white'
-                        : 'text-gray-600 hover:text-orange-600'
-                    }`}
-                  >
-                    {t('products.tabs.faq')}
-                  </button>
-                </div>
-
-                {activeTab === 'overview' && (
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('products.sections.description')}</h3>
-                      <div className="prose prose-orange max-w-none">
-                        {productData.longDescription.map((paragraph, index) => (
-                          <p key={index} className="text-gray-600 mb-4">
-                            {paragraph}
-                          </p>
-                        ))}
-                      </div>
+            
+            {/* Features List */}
+            <div className="relative md:pl-8">
+              <div className="absolute -left-4 md:left-0 top-0 bottom-0 w-1 bg-orange-600 rounded-full"></div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 pl-4">Kenmerken</h3>
+              <ul className="space-y-6 md:space-y-8">
+                {product.features.map((feature, index) => (
+                  <li key={index} className="flex items-start group pl-4">
+                    <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-orange-100 flex items-center justify-center mr-4 group-hover:bg-orange-600 transition-colors duration-200">
+                      <svg className="w-4 h-4 md:w-5 md:h-5 text-orange-600 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('products.sections.features')}</h3>
-                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {productData.features.map((feature, index) => (
-                          <li key={index} className="flex items-start">
-                            <svg className="w-5 h-5 text-orange-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span className="text-gray-600">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                )}
-
-                {activeTab === 'specifications' && (
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {productData.specifications.map((spec, index) => (
-                        <div key={index} className="bg-gray-50 rounded-lg p-4">
-                          <dt className="text-sm font-medium text-gray-500">{spec.label}</dt>
-                          <dd className="mt-1 text-lg font-semibold text-gray-900">{spec.value}</dd>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {activeTab === 'faq' && (
-                  <div className="space-y-6">
-                    {productData.faqs.map((faq, index) => (
-                      <div key={index} className="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                        <p className="text-gray-600">{faq.answer}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
+                    <span className="text-gray-700 text-lg md:text-xl group-hover:text-orange-600 transition-colors duration-200">{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Specifications Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Specificaties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Materiaal</h3>
+              <p className="text-orange-900 font-medium">Hoogwaardig aluminium met 10 jaar garantie</p>
+            </div>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Afmetingen</h3>
+              <p className="text-orange-900 font-medium">Op maat gemaakt, standaard 3m x 6m</p>
+            </div>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Kleur</h3>
+              <p className="text-orange-900 font-medium">RAL 9016 (zwart) of naar keuze</p>
+            </div>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Dak</h3>
+              <p className="text-orange-900 font-medium">Glas of polycarbonaat, naar keuze</p>
+            </div>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Montage</h3>
+              <p className="text-orange-900 font-medium">Professionele montage door ervaren team</p>
+            </div>
+            <div className="bg-white/70 rounded-xl p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-orange-700 mb-4">Garantie</h3>
+              <p className="text-orange-900 font-medium">10 jaar garantie op constructie</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      {product.gallery.length > 0 && (
+        <section className="py-16 md:py-24 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-12 md:mb-16 text-center">Projectfoto's</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {product.gallery.map((image, index) => (
+                <div 
+                  key={index} 
+                  className="relative h-[250px] md:h-[350px] rounded-lg overflow-hidden cursor-pointer group"
+                  onClick={() => {
+                    setModalImageIndex(index);
+                    setShowModal(true);
+                  }}
+                >
+                  <Image 
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{objectFit: 'cover'}}
+                    className="transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ Section */}
+      {product.faqs.length > 0 && (
+        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl md:text-4xl font-bold mb-12 md:mb-16 text-center text-white">Veelgestelde Vragen</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {product.faqs.map((faq, index) => (
+                <div key={index} className="bg-white/70 rounded-xl p-6 md:p-8 shadow-lg">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex items-center text-orange-700">
+                    <span className="w-8 h-8 md:w-10 md:h-10 bg-orange-600/20 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-orange-700 font-bold">{index + 1}</span>
+                    </span>
+                    {faq.question}
+                  </h3>
+                  <p className="text-orange-900 font-medium md:text-lg pl-12 md:pl-14">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-[#FFF8F5]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {t('products.cta.title', { product: productData.title })}
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Klaar om uw carport te realiseren?</h2>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              {t('products.cta.description', { product: productData.title })}
+              Neem contact met ons op voor een vrijblijvende offerte en ontdek de mogelijkheden voor uw droomcarport.
             </p>
             <Link 
               href="/contact"
               className="inline-block px-8 py-4 bg-orange-600 text-white rounded-lg font-semibold shadow-lg transition-all duration-200 hover:scale-105 hover:bg-orange-700"
             >
-              {t('products.cta.button')}
+              Vraag een offerte aan
             </Link>
           </div>
         </div>
