@@ -9,183 +9,191 @@ import { useState, useEffect } from 'react'
 export default function Projecten() {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
+  const [projects, setProjects] = useState([]);
   
-  const projects = [
+  const projectData = [
     { 
       id: 5, 
       image: '/Veranda5.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 6, 
       image: '/Veranda6.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 7, 
       image: '/Veranda7.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 8, 
       image: '/Veranda8.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     {
       id: 9,
       image: '/Veranda9.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     {
       id: 10,
       image: '/Terrasoverkapping5.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     {
       id: 11,
       image: '/Terrasoverkapping3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     {
       id: 12,
       image: '/Terrasoverkapping4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 13, 
       image: '/Carport3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 14, 
       image: '/Carport5.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 15, 
       image: '/Kozijnen5.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 16, 
       image: '/Kozijnen2.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 17, 
       image: '/Kozijnen4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 18, 
       image: '/Schuifpui5.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 19, 
       image: '/Schuifpui2.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 20, 
       image: '/Schuifpui3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 21, 
       image: '/Schuifpui4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 22, 
       image: '/Zonweringen1.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 24, 
       image: '/Zonweringen3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 25, 
       image: '/Zonweringen4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 26, 
       image: '/Rolluiken1.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 27, 
       image: '/Rolluiken2.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 28, 
       image: '/Rolluiken3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 29, 
       image: '/Rolluiken4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 30, 
       image: '/KeramischeTegels1.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 31, 
       image: '/KeramischeTegels2.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 32, 
       image: '/KeramischeTegels3.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 33, 
       image: '/KeramischeTegels4.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     {
       id: 34,
       image: '/GespecialiseerdeMonteurs1.jpg',
-      location: t('projects.location.team')
+      locationKey: 'team'
     },
     { 
       id: 1, 
       image: '/Veranda1.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 2, 
       image: '/Veranda13.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 3, 
       image: '/Veranda12.jpg',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     },
     { 
       id: 4, 
       image: '/Veranda4.jpg',
       objectPosition: 'center 30%',
-      location: t('projects.location.netherlands')
+      locationKey: 'netherlands'
     }
-  ]
-  
+  ];
+
   useEffect(() => {
+    // Apply translations to projects
+    const translatedProjects = projectData.map(project => ({
+      ...project,
+      location: t(`projects.location.${project.locationKey}`)
+    }));
+    setProjects(translatedProjects);
+
     // Check if there's a selected project ID in sessionStorage
     const selectedProjectId = sessionStorage.getItem('selectedProjectId');
     if (selectedProjectId) {
       // Find the project with the matching ID
       const projectId = parseInt(selectedProjectId);
-      const project = projects.find(p => p.id === projectId);
+      const project = translatedProjects.find(p => p.id === projectId);
       
       if (project) {
         // Set the selected image to open the modal
@@ -194,7 +202,7 @@ export default function Projecten() {
         sessionStorage.removeItem('selectedProjectId');
       }
     }
-  }, []);
+  }, [t]);
 
   const handlePrevious = (e) => {
     e.stopPropagation();
@@ -311,6 +319,8 @@ export default function Projecten() {
           </div>
         </div>
       )}
+
+      <Footer />
     </main>
-  )
+  );
 }
