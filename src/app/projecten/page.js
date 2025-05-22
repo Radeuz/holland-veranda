@@ -48,6 +48,7 @@ export default function Projecten() {
                   height={600}
                   style={{width: '100%', height: 'auto'}}
                   loading="lazy"
+                  className="rounded-xl"
                 />
               ))}
             </div>
@@ -61,6 +62,7 @@ export default function Projecten() {
                   height={600}
                   style={{width: '100%', height: 'auto'}}
                   loading="lazy"
+                  className="rounded-xl"
                 />
               ))}
             </div>
