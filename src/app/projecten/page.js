@@ -13,136 +13,169 @@ export default function Projecten() {
   const projects = [
     { 
       id: 5, 
-      image: '/Veranda5.jpg'
+      image: '/Veranda5.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 6, 
-      image: '/Veranda6.jpg'
+      image: '/Veranda6.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 7, 
-      image: '/Veranda7.jpg'
+      image: '/Veranda7.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 8, 
-      image: '/Veranda8.jpg'
+      image: '/Veranda8.jpg',
+      location: t('projects.location.netherlands')
     },
     {
       id: 9,
-      image: '/Veranda9.jpg'
+      image: '/Veranda9.jpg',
+      location: t('projects.location.netherlands')
     },
     {
       id: 10,
-      image: '/Terrasoverkapping5.jpg'
+      image: '/Terrasoverkapping5.jpg',
+      location: t('projects.location.netherlands')
     },
     {
       id: 11,
-      image: '/Terrasoverkapping3.jpg'
+      image: '/Terrasoverkapping3.jpg',
+      location: t('projects.location.netherlands')
     },
     {
       id: 12,
-      image: '/Terrasoverkapping4.jpg'
+      image: '/Terrasoverkapping4.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 13, 
-      image: '/Carport3.jpg'
+      image: '/Carport3.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 14, 
-      image: '/Carport5.jpg'
+      image: '/Carport5.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 15, 
-      image: '/Kozijnen5.jpg'
+      image: '/Kozijnen5.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 16, 
-      image: '/Kozijnen2.jpg'
+      image: '/Kozijnen2.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 17, 
-      image: '/Kozijnen4.jpg'
+      image: '/Kozijnen4.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 18, 
-      image: '/Schuifpui5.jpg'
+      image: '/Schuifpui5.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 19, 
-      image: '/Schuifpui2.jpg'
+      image: '/Schuifpui2.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 20, 
-      image: '/Schuifpui3.jpg'
+      image: '/Schuifpui3.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 21, 
-      image: '/Schuifpui4.jpg'
+      image: '/Schuifpui4.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 22, 
-      image: '/Zonweringen1.jpg'
+      image: '/Zonweringen1.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 24, 
-      image: '/Zonweringen3.jpg'
+      image: '/Zonweringen3.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 25, 
-      image: '/Zonweringen4.jpg'
+      image: '/Zonweringen4.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 26, 
-      image: '/Rolluiken1.jpg'
+      image: '/Rolluiken1.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 27, 
-      image: '/Rolluiken2.jpg'
+      image: '/Rolluiken2.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 28, 
-      image: '/Rolluiken3.jpg'
+      image: '/Rolluiken3.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 29, 
-      image: '/Rolluiken4.jpg'
+      image: '/Rolluiken4.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 30, 
-      image: '/KeramischeTegels1.jpg'
+      image: '/KeramischeTegels1.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 31, 
-      image: '/KeramischeTegels2.jpg'
+      image: '/KeramischeTegels2.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 32, 
-      image: '/KeramischeTegels3.jpg'
+      image: '/KeramischeTegels3.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 33, 
-      image: '/KeramischeTegels4.jpg'
+      image: '/KeramischeTegels4.jpg',
+      location: t('projects.location.netherlands')
     },
     {
       id: 34,
-      image: '/GespecialiseerdeMonteurs1.jpg'
+      image: '/GespecialiseerdeMonteurs1.jpg',
+      location: t('projects.location.team')
     },
     { 
       id: 1, 
-      image: '/Veranda1.jpg'
+      image: '/Veranda1.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 2, 
-      image: '/Veranda13.jpg'
+      image: '/Veranda13.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 3, 
-      image: '/Veranda12.jpg'
+      image: '/Veranda12.jpg',
+      location: t('projects.location.netherlands')
     },
     { 
       id: 4, 
       image: '/Veranda4.jpg',
-      objectPosition: 'center 30%'
+      objectPosition: 'center 30%',
+      location: t('projects.location.netherlands')
     }
   ]
   
@@ -229,39 +262,39 @@ export default function Projecten() {
 
       {/* Image Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={() => setSelectedImage(null)}>
-          <div className="relative w-full max-w-4xl max-h-[90vh] flex items-center justify-center" onClick={e => e.stopPropagation()}>
-            {/* Previous Button */}
-            <button
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
-              onClick={handlePrevious}
-              aria-label="Previous"
-              style={{zIndex: 2}}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            {/* Next Button */}
-            <button
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
-              onClick={handleNext}
-              aria-label="Next"
-              style={{zIndex: 2}}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-            {/* Close Button */}
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-full h-full max-w-7xl mx-auto p-4">
             <button
               className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
               onClick={() => setSelectedImage(null)}
-              aria-label="Close"
+              aria-label={t('projects.modal.close')}
               style={{zIndex: 2}}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <button
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+              onClick={handlePrevious}
+              aria-label={t('projects.modal.previous')}
+              style={{zIndex: 2}}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+              onClick={handleNext}
+              aria-label={t('projects.modal.next')}
+              style={{zIndex: 2}}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
             <div className="relative h-[80vh] w-full flex items-center justify-center">

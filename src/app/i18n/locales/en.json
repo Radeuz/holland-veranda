@@ -294,11 +294,10 @@
   },
   "projects": {
     "title": "Our Projects",
-    "subtitle": "View our recent projects and discover how we can transform your outdoor space.",
+    "subtitle": "Discover our completed projects",
     "location": {
       "netherlands": "Netherlands",
-      "belgium": "Belgium",
-      "team": "Our team at work"
+      "team": "Our Team"
     },
     "modal": {
       "close": "Close",

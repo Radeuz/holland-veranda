@@ -324,11 +324,10 @@
   },
   "projects": {
     "title": "Nos Projets",
-    "subtitle": "Découvrez nos projets récents et voyez comment nous pouvons transformer votre espace extérieur.",
+    "subtitle": "Découvrez nos projets réalisés",
     "location": {
       "netherlands": "Pays-Bas",
-      "belgium": "Belgique",
-      "team": "Notre équipe au travail"
+      "team": "Notre Équipe"
     },
     "modal": {
       "close": "Fermer",

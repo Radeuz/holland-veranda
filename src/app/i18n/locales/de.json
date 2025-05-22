@@ -294,11 +294,10 @@
   },
   "projects": {
     "title": "Unsere Projekte",
-    "subtitle": "Sehen Sie sich unsere aktuellen Projekte an und entdecken Sie, wie wir Ihren Außenbereich verwandeln können.",
+    "subtitle": "Entdecken Sie unsere abgeschlossenen Projekte",
     "location": {
       "netherlands": "Niederlande",
-      "belgium": "Belgien",
-      "team": "Unser Team bei der Arbeit"
+      "team": "Unser Team"
     },
     "modal": {
       "close": "Schließen",
