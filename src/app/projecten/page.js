@@ -39,14 +39,14 @@ export default function Projecten() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {projectImages.map((img, idx) => (
-              <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white">
+              <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white p-2">
                 <Image
                   src={`/${img}`}
                   alt={`Project ${idx + 1}`}
                   width={600}
                   height={400}
-                  className="object-cover w-full"
-                  style={{height: 'auto'}}
+                  className="w-full object-contain"
+                  style={{height: 'auto', maxHeight: '100%'}}
                   loading="lazy"
                 />
               </div>
