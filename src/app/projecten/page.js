@@ -37,19 +37,17 @@ export default function Projecten() {
       </div>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="flex flex-wrap gap-8 justify-center">
             {projectImages.map((img, idx) => (
-              <div key={img} className="rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src={`/${img}`}
-                  alt={`Project ${idx + 1}`}
-                  width={600}
-                  height={400}
-                  className="w-full"
-                  style={{height: 'auto'}}
-                  loading="lazy"
-                />
-              </div>
+              <Image
+                key={img}
+                src={`/${img}`}
+                alt={`Project ${idx + 1}`}
+                width={600}
+                height={400}
+                style={{height: 'auto'}}
+                loading="lazy"
+              />
             ))}
           </div>
         </div>
