@@ -39,7 +39,7 @@ export default function Projecten() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {projectImages.map((img, idx) => (
-              <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white flex flex-col">
+              <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white">
                 <Image
                   src={`/${img}`}
                   alt={`Project ${idx + 1}`}
