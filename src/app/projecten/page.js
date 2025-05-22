@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { useTranslation } from '../i18n';
 
 const projectImages = [
   'Veranda1.jpg', 'Veranda2.jpg', 'Veranda3.jpg', 'Veranda4.jpg', 'Veranda5.jpg', 'Veranda6.jpg', 'Veranda7.jpg', 'Veranda8.jpg', 'Veranda9.jpg', 'Veranda10.jpg', 'Veranda12.jpg', 'Veranda13.jpg',
@@ -17,6 +18,7 @@ const projectImages = [
 ];
 
 export default function Projecten() {
+  const { t } = useTranslation();
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
       <Navigation />
@@ -25,17 +27,17 @@ export default function Projecten() {
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
           <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Projecten
+              {t('projects.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
-              Bekijk hieronder een selectie van onze gerealiseerde projecten.
+              {t('projects.subtitle')}
             </p>
           </div>
         </div>
       </div>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {projectImages.map((img, idx) => (
               <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white">
                 <Image
