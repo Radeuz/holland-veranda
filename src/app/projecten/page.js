@@ -198,35 +198,47 @@ export default function Projecten() {
       if (project) {
         // Set the selected image to open the modal
         setSelectedImage(project);
-        // Clear the sessionStorage so it doesn't reopen on page refresh
-        sessionStorage.removeItem('selectedProjectId');
       }
+      // Clear the sessionStorage
+      sessionStorage.removeItem('selectedProjectId');
     }
   }, [t]);
 
+  const handleImageClick = (project) => {
+    setSelectedImage(project);
+  };
+
+  const handleClose = () => {
+    setSelectedImage(null);
+  };
+
   const handlePrevious = (e) => {
     e.stopPropagation();
-    const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
-    const previousIndex = (currentIndex - 1 + projects.length) % projects.length;
-    setSelectedImage(projects[previousIndex]);
+    if (selectedImage) {
+      const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
+      const previousIndex = (currentIndex - 1 + projects.length) % projects.length;
+      setSelectedImage(projects[previousIndex]);
+    }
   };
 
   const handleNext = (e) => {
     e.stopPropagation();
-    const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
-    const nextIndex = (currentIndex + 1) % projects.length;
-    setSelectedImage(projects[nextIndex]);
+    if (selectedImage) {
+      const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
+      const nextIndex = (currentIndex + 1) % projects.length;
+      setSelectedImage(projects[nextIndex]);
+    }
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/50 to-gray-50">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Page Header */}
       <div className="relative bg-gradient-to-br from-orange-600 via-orange-400 to-orange-100 pt-12 pb-8">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative h-full flex items-center justify-center">
-          <div className="text-center mt-8 w-full">
+          <div className="text-center mt-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               {t('projects.title')}
             </h1>
@@ -238,28 +250,29 @@ export default function Projecten() {
       </div>
 
       {/* Projects Grid */}
-      <section className="py-16 md:py-24">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="relative group cursor-pointer"
-                onClick={() => setSelectedImage(project)}
+                className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                onClick={() => handleImageClick(project)}
               >
-                <div className="relative h-[400px] rounded-xl overflow-hidden">
+                <div className="aspect-w-16 aspect-h-9">
                   <Image
                     src={project.image}
                     alt={`Project ${project.id}`}
                     fill
-                    quality={85}
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{objectFit: 'cover', objectPosition: project.objectPosition || 'center'}}
-                    className="rounded-xl transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-lg font-medium">{project.location}</p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <p className="text-white text-lg font-semibold">
+                      {project.location}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -270,50 +283,43 @@ export default function Projecten() {
 
       {/* Image Modal */}
       {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative w-full h-full max-w-7xl mx-auto p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90" onClick={handleClose}>
+          <div className="relative w-full h-full max-w-7xl max-h-[90vh] mx-4">
             <button
-              className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
-              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-orange-400 transition-colors z-10"
+              onClick={handleClose}
               aria-label={t('projects.modal.close')}
-              style={{zIndex: 2}}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors z-10"
               onClick={handlePrevious}
               aria-label={t('projects.modal.previous')}
-              style={{zIndex: 2}}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-400 transition-colors z-10"
               onClick={handleNext}
               aria-label={t('projects.modal.next')}
-              style={{zIndex: 2}}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            <div className="relative h-[80vh] w-full flex items-center justify-center">
+            <div className="relative w-full h-full">
               <Image
                 src={selectedImage.image}
                 alt={`Project ${selectedImage.id}`}
                 fill
-                quality={100}
+                className="object-contain"
                 sizes="100vw"
-                style={{objectFit: 'contain'}}
-                className="rounded-xl"
+                priority
               />
             </div>
           </div>
