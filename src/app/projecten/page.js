@@ -5,9 +5,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const projectImages = [
-  'Veranda1.jpg', 'Veranda2.jpg', 'Veranda3.jpg', 'Veranda4.jpg', 'Veranda5.jpg', 'Veranda6.jpg', 'Veranda7.jpg', 'Veranda8.jpg', 'Veranda9.jpg', 'Veranda10.jpg', 'Veranda11.jpg', 'Veranda12.jpg', 'Veranda13.jpg',
-  'Carport2.jpg', 'Carport3.jpg', 'Carport4.jpg', 'Carport5.jpg',
-  'Kozijnen1.jpg', 'Kozijnen2.jpg', 'Kozijnen3.jpg', 'Kozijnen4.jpg', 'Kozijnen5.jpg',
+  'Veranda1.jpg', 'Veranda2.jpg', 'Veranda3.jpg', 'Veranda4.jpg', 'Veranda5.jpg', 'Veranda6.jpg', 'Veranda7.jpg', 'Veranda8.jpg', 'Veranda9.jpg', 'Veranda10.jpg', 'Veranda12.jpg', 'Veranda13.jpg',
+  'Carport3.jpg', 'Carport5.jpg',
+  'Kozijnen1.jpg', 'Kozijnen2.jpg', 'Kozijnen3.jpg', 'Kozijnen4.jpg',
   'Terrasoverkapping1.jpg', 'Terrasoverkapping2.jpg', 'Terrasoverkapping3.jpg', 'Terrasoverkapping4.jpg', 'Terrasoverkapping5.jpg',
   'Schuifpui1.jpg', 'Schuifpui2.jpg', 'Schuifpui3.jpg', 'Schuifpui4.jpg', 'Schuifpui5.jpg',
   'Rolluiken1.jpg', 'Rolluiken2.jpg', 'Rolluiken3.jpg', 'Rolluiken4.jpg',
@@ -35,7 +35,7 @@ export default function Projecten() {
       </div>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {projectImages.map((img, idx) => (
               <div key={img} className="rounded-xl overflow-hidden shadow-lg bg-white">
                 <Image
