@@ -202,6 +202,19 @@
       }
     }
   },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Discover our completed projects",
+    "location": {
+      "netherlands": "Netherlands",
+      "team": "Our Team"
+    },
+    "modal": {
+      "close": "Close",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
   "about": {
     "title": "About Us",
     "subtitle": "Learn more about our company, our mission, and our commitment to quality and customer satisfaction.",
@@ -290,19 +303,6 @@
       "title": "Contact Information",
       "email": "info@hollandveranda.nl",
       "phone": "+31 (0)20 123 4567"
-    }
-  },
-  "projects": {
-    "title": "Our Projects",
-    "subtitle": "Discover our completed projects",
-    "location": {
-      "netherlands": "Netherlands",
-      "team": "Our Team"
-    },
-    "modal": {
-      "close": "Close",
-      "previous": "Previous",
-      "next": "Next"
     }
   },
   "quote": {

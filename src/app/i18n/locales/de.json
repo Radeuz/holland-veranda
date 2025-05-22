@@ -202,6 +202,19 @@
       }
     }
   },
+  "projects": {
+    "title": "Unsere Projekte",
+    "subtitle": "Entdecken Sie unsere abgeschlossenen Projekte",
+    "location": {
+      "netherlands": "Niederlande",
+      "team": "Unser Team"
+    },
+    "modal": {
+      "close": "Schließen",
+      "previous": "Zurück",
+      "next": "Weiter"
+    }
+  },
   "about": {
     "title": "Über Uns",
     "subtitle": "Erfahren Sie mehr über unser Unternehmen, unsere Mission und unser Engagement für Qualität und Kundenzufriedenheit.",
@@ -291,20 +304,6 @@
       "title": "Soziale Medien"
     },
     "copyright": "Alle Rechte vorbehalten."
-  },
-  "projects": {
-    "title": "Unsere Projekte",
-    "subtitle": "Entdecken Sie unsere abgeschlossenen Projekte",
-    "location": {
-      "netherlands": "Niederlande",
-      "team": "Unser Team"
-    },
-    "modal": {
-      "close": "Schließen",
-      "previous": "Zurück",
-      "next": "Weiter"
-    },
-    "cta": "Alle Projekte ansehen"
   },
   "languages": {
     "nl": "Nederlands",
