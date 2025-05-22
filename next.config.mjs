@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     domains: ['hollandveranda.com'],
-    unoptimized: false,
+    unoptimized: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
