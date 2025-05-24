@@ -10,6 +10,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://hollandveranda.nl'),
   title: "Holland Veranda",
   description: 'Ontdek ons assortiment hoogwaardige veranda\'s en overkappingen, perfect voor uw buitenruimte. Specialist in moderne en klassieke veranda\'s.',
   keywords: 'veranda, overkapping, tuin, buitenruimte, holland veranda, moderne veranda, klassieke veranda, carports, frames',
@@ -33,10 +34,11 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({ children }) {
