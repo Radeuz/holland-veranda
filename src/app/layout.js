@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/jpeg" sizes="16x16" href="/Tab_Logo.jpg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/Tab_Logo.jpg" />
         <link rel="shortcut icon" href="/Tab_Logo.jpg" />
+        <link rel="manifest" href="/favicon_io/site.webmanifest" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S36QBC7C7R"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
