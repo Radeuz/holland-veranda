@@ -9,66 +9,67 @@ const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'info@hollandveranda.nl';
 
 export async function POST(request) {
   try {
-    // Detailed environment logging
-    console.log('Environment Variables:', {
-      RESEND_API_KEY: process.env.RESEND_API_KEY ? 'Set (masked)' : 'Not set',
-      CONTACT_EMAIL: process.env.CONTACT_EMAIL,
-      NODE_ENV: process.env.NODE_ENV
-    });
-
     const formData = await request.json();
-    console.log('Received form data:', {
-      ...formData,
-      email: formData.email ? '***@***.***' : undefined // Mask email for privacy
-    });
+    
+    // Environment check (keep for debugging if needed)
+    // console.log('Environment Variables:', {
+    //   hasResendKey: !!process.env.RESEND_API_KEY,
+    //   nodeEnv: process.env.NODE_ENV
+    // });
+
+    // Form data logging (remove in production)
+    // console.log('Received form data:', {
+    //   name: formData.name,
+    //   email: formData.email,
+    //   phone: formData.phone,
+    //   message: formData.message?.substring(0, 50) + '...'
+    // });
 
     if (!process.env.RESEND_API_KEY) {
-      throw new Error('RESEND_API_KEY is not configured');
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
+      );
     }
 
-    const { name, email } = formData;
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // Determine if this is a contact or offerte form submission
-    const isOfferte = 'product' in formData;
-    
-    // Prepare email content based on form type
-    const emailContent = isOfferte ? prepareOfferteEmail(formData) : prepareContactEmail(formData);
+    // console.log('Attempting to send email with Resend...');
 
-    console.log('Attempting to send email with Resend...');
     const { data, error } = await resend.emails.send({
-      from: `Holland Veranda <${SENDER_EMAIL}>`,
-      to: [CONTACT_EMAIL],
-      reply_to: email,
-      subject: isOfferte 
-        ? `Nieuwe offerte aanvraag van ${name} voor ${formData.product}`
-        : `Nieuw contactformulier bericht van ${name}`,
-      text: emailContent.text,
-      html: emailContent.html,
+      from: 'Holland Veranda <noreply@hollandveranda.com>',
+      to: ['info@hollandveranda.nl'],
+      subject: `Nieuwe contactaanvraag van ${formData.name}`,
+      html: `
+        <h2>Nieuwe contactaanvraag</h2>
+        <p><strong>Naam:</strong> ${formData.name}</p>
+        <p><strong>E-mail:</strong> ${formData.email}</p>
+        <p><strong>Telefoon:</strong> ${formData.phone}</p>
+        <p><strong>Bericht:</strong></p>
+        <p>${formData.message}</p>
+      `,
     });
 
     if (error) {
       console.error('Resend API Error:', error);
-      throw new Error(`Failed to send email: ${error.message}`);
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      );
     }
 
-    console.log('Email sent successfully:', data);
-    return NextResponse.json({ 
-      success: true, 
-      message: 'Email sent successfully' 
-    });
+    // console.log('Email sent successfully:', data);
+
+    return NextResponse.json({ success: true });
+
   } catch (error) {
     console.error('Detailed error:', {
       message: error.message,
-      stack: error.stack,
-      name: error.name
+      stack: error.stack
     });
-    
     return NextResponse.json(
-      { 
-        success: false, 
-        message: 'Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het later opnieuw of neem telefonisch contact met ons op.',
-        error: error.message // Adding error message for debugging
-      },
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }
