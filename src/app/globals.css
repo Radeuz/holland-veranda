@@ -40,3 +40,8 @@ body {
     word-break: break-all;
   }
 }
+
+/* Favicon border radius - Note: This may not work in all browsers as favicons are handled differently */
+link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"] {
+  border-radius: 4px;
+}

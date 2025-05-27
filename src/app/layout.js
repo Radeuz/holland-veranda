@@ -45,14 +45,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" type="image/png" sizes="192x192" href="/hollanveranda_tab_logo.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/hollanveranda_tab_logo.png" />
-        <link rel="icon" type="image/png" sizes="64x64" href="/hollanveranda_tab_logo.png" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/hollanveranda_tab_logo.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/hollanveranda_tab_logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/hollanveranda_tab_logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/hollanveranda_tab_logo.png" />
-        <link rel="shortcut icon" href="/hollanveranda_tab_logo.png" />
+        <link rel="icon" type="image/jpeg" sizes="192x192" href="/Tab_Logo.jpg" />
+        <link rel="icon" type="image/jpeg" sizes="96x96" href="/Tab_Logo.jpg" />
+        <link rel="icon" type="image/jpeg" sizes="64x64" href="/Tab_Logo.jpg" />
+        <link rel="icon" type="image/jpeg" sizes="48x48" href="/Tab_Logo.jpg" />
+        <link rel="icon" type="image/jpeg" sizes="32x32" href="/Tab_Logo.jpg" />
+        <link rel="icon" type="image/jpeg" sizes="16x16" href="/Tab_Logo.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Tab_Logo.jpg" />
+        <link rel="shortcut icon" href="/Tab_Logo.jpg" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S36QBC7C7R"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
