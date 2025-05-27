@@ -45,7 +45,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_BURAYA" />
+        <meta name="google-site-verification" content="YOUR_ACTUAL_GOOGLE_VERIFICATION_CODE_HERE" />
+        <meta property="og:image" content="https://hollandveranda.com/Tab_Logo.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Holland Veranda Logo" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://hollandveranda.com/Tab_Logo.jpg" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/jpeg" sizes="192x192" href="/Tab_Logo.jpg" />
         <link rel="icon" type="image/jpeg" sizes="96x96" href="/Tab_Logo.jpg" />
