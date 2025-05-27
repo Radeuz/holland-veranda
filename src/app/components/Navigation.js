@@ -204,7 +204,7 @@ export default function Navigation() {
               onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
               <button
-                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-700' : 'border-orange-600'} hover:border-orange-700`}
+                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-500' : 'border-orange-400'} hover:border-orange-500`}
                 aria-haspopup="true"
                 aria-expanded={languageDropdownOpen}
                 type="button"
@@ -220,7 +220,7 @@ export default function Navigation() {
                   aria-hidden="true"
                 >
                   <path
-                    fill={languageDropdownOpen ? '#c2410c' : '#ea580c'} // orange-700 : orange-600
+                    fill={languageDropdownOpen ? '#f97316' : '#fb923c'}
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clipRule="evenodd"
                   />
@@ -262,7 +262,7 @@ export default function Navigation() {
               onMouseLeave={() => setLanguageDropdownOpen(false)}
             >
               <button
-                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-700' : 'border-orange-600'} hover:border-orange-700`}
+                className={`flex items-center px-2 py-1 bg-white rounded shadow-sm transition-colors border-2 ${languageDropdownOpen ? 'border-orange-500' : 'border-orange-400'} hover:border-orange-500`}
                 aria-haspopup="true"
                 aria-expanded={languageDropdownOpen}
                 type="button"
@@ -278,7 +278,7 @@ export default function Navigation() {
                   aria-hidden="true"
                 >
                   <path
-                    fill={languageDropdownOpen ? '#c2410c' : '#ea580c'}
+                    fill={languageDropdownOpen ? '#f97316' : '#fb923c'}
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clipRule="evenodd"
                   />
