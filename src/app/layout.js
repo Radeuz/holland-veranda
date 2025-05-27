@@ -45,10 +45,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="/hollandveranda-logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/hollandveranda-logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/hollandveranda-logo.png" />
-        <link rel="shortcut icon" href="/hollandveranda-logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/hollanveranda_tab_logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/hollanveranda_tab_logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/hollanveranda_tab_logo.png" />
+        <link rel="shortcut icon" href="/hollanveranda_tab_logo.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S36QBC7C7R"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
