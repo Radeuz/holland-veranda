@@ -32,8 +32,8 @@ export default function SchemaOrg() {
       "addressRegion": "Noord-Holland"
     },
     "sameAs": [
-      "https://www.facebook.com/hollandveranda",
-      "https://www.instagram.com/hollandveranda.nl/"
+      "https://www.instagram.com/hollandveranda.nl/",
+      "https://www.tiktok.com/@hollandveranda"
     ]
   };
 

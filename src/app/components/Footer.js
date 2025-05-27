@@ -63,15 +63,12 @@ export default function Footer() {
               <div className="h-px bg-white/20 mb-4"></div>
             </div>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.facebook.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="transition-colors duration-200"
+              <div 
+                className="transition-colors duration-200 cursor-not-allowed opacity-50"
                 aria-label="Facebook"
               >
                 <img src="/Facebook_logo.png" alt="Facebook" className="h-6 w-6 rounded-lg" />
-              </a>
+              </div>
               <a 
                 href="https://www.instagram.com/hollandveranda.nl/" 
                 target="_blank" 
@@ -82,7 +79,7 @@ export default function Footer() {
                 <img src="/instagram-logo.jpg" alt="Instagram" className="h-6 w-6 rounded-lg" />
               </a>
               <a 
-                href="https://www.tiktok.com/@hollandveranda.nl" 
+                href="https://www.tiktok.com/@hollandveranda" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-colors duration-200"
