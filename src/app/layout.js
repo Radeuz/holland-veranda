@@ -21,10 +21,10 @@ export const metadata = {
     siteName: 'Holland Veranda',
     images: [
       {
-        url: '/Tab_Logo.jpg',
+        url: '/Veranda4.jpg',
         width: 1200,
         height: 630,
-        alt: 'Holland Veranda Logo',
+        alt: 'Holland Veranda - Moderne veranda met glazen wanden',
       },
     ],
     locale: 'nl_NL',
@@ -45,12 +45,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <meta property="og:image" content="https://hollandveranda.com/Tab_Logo.jpg" />
+        <meta property="og:image" content="https://hollandveranda.com/Veranda4.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Holland Veranda Logo" />
+        <meta property="og:image:alt" content="Holland Veranda - Moderne veranda met glazen wanden" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://hollandveranda.com/Tab_Logo.jpg" />
+        <meta name="twitter:image" content="https://hollandveranda.com/Veranda4.jpg" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
