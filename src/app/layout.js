@@ -10,14 +10,14 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://hollandveranda.nl'),
+  metadataBase: new URL('https://hollandveranda.com'),
   title: "Holland Veranda",
   description: 'Ontdek ons assortiment hoogwaardige veranda\'s en overkappingen, perfect voor uw buitenruimte. Specialist in moderne en klassieke veranda\'s.',
   keywords: 'veranda, overkapping, tuin, buitenruimte, holland veranda, moderne veranda, klassieke veranda, carports, frames',
   openGraph: {
     title: "Holland Veranda",
     description: 'Ontdek ons assortiment hoogwaardige veranda\'s en overkappingen, perfect voor uw buitenruimte.',
-    url: 'https://hollandveranda.nl',
+    url: 'https://hollandveranda.com',
     siteName: 'Holland Veranda',
     images: [
       {
@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
+        <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_BURAYA" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/jpeg" sizes="192x192" href="/Tab_Logo.jpg" />
         <link rel="icon" type="image/jpeg" sizes="96x96" href="/Tab_Logo.jpg" />
