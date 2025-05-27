@@ -14,9 +14,9 @@ const productDetails = {
   "veranda": {
     title: "Veranda",
     image: "/Veranda6.jpg",
-    description: "Moderne en stijlvolle veranda's op maat gemaakt voor uw woning en tuin. Onze veranda's bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
+    description: "Moderne en stijlvolle veranda&apos;s op maat gemaakt voor uw woning en tuin. Onze veranda&apos;s bieden het hele jaar door extra leefruimte en bescherming tegen weersinvloeden.",
     longDescription: [
-      "Een veranda is een elegante uitbreiding van uw woonruimte die u langer laat genieten van uw tuin en terras. Onze veranda's zijn op maat gemaakt en passen perfect bij de architectuur van uw woning.",
+      "Een veranda is een elegante uitbreiding van uw woonruimte die u langer laat genieten van uw tuin en terras. Onze veranda&apos;s zijn op maat gemaakt en passen perfect bij de architectuur van uw woning.",
       "Met een veranda creëert u een aangename ruimte die bescherming biedt tegen regen, wind en UV-straling, maar toch de verbinding met buiten behoudt. Het is de ideale plek om te ontspannen, gasten te ontvangen of gewoon te genieten van het uitzicht op uw tuin in alle seizoenen."
     ],
     features: [
@@ -53,7 +53,7 @@ const productDetails = {
       },
       {
         question: "Kan ik mijn veranda later uitbreiden met zijwanden?",
-        answer: "Ja, onze veranda's zijn modulair ontworpen, zodat u later eenvoudig glazen schuifwanden of screens kunt toevoegen."
+        answer: "Ja, onze veranda&apos;s zijn modulair ontworpen, zodat u later eenvoudig glazen schuifwanden of screens kunt toevoegen."
       }
     ]
   },
@@ -72,7 +72,7 @@ const productDetails = {
       "Robuuste aluminium constructie",
       "Eenvoudig te installeren op diverse ondergronden",
       "Onderhoudsarm en weerbestendig",
-      "Diverse afmetingen mogelijk voor één of meerdere auto's",
+      "Diverse afmetingen mogelijk voor één of meerdere auto&apos;s",
       "Te combineren met LED-verlichting",
       "Verschillende dakopties beschikbaar",
       "Optioneel uit te breiden met zijwanden",
@@ -88,7 +88,7 @@ const productDetails = {
       { label: "Garantie", value: "10 jaar op constructie" }
     ],
     gallery: [
-      { src: "/Carport3.jpg", alt: "Moderne carport voor twee auto's" },
+      { src: "/Carport3.jpg", alt: "Moderne carport voor twee auto&apos;s" },
       { src: "/Carport4.jpg", alt: "Carport met geïntegreerde berging" },
       { src: "/Carport5.jpg", alt: "Vrijstaande carport met LED-verlichting" }
     ],
@@ -538,7 +538,7 @@ export default function ProductDetail() {
       {product.gallery.length > 0 && (
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-12 md:mb-16 text-center">Projectfoto's</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-12 md:mb-16 text-center">Projectfoto&apos;s</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {product.gallery.map((image, index) => (
                 <div 

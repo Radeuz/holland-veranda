@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { useTranslation } from '../i18n';
@@ -30,17 +30,17 @@ export default function Projecten() {
     setSelectedImageIndex(null);
   };
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     if (selectedImageIndex > 0) {
       setSelectedImageIndex(selectedImageIndex - 1);
     }
-  };
+  }, [selectedImageIndex]);
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     if (selectedImageIndex < projectImages.length - 1) {
       setSelectedImageIndex(selectedImageIndex + 1);
     }
-  };
+  }, [selectedImageIndex]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Projecten() {
 
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImageIndex]);
+  }, [selectedImageIndex, goToPrevious, goToNext]);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">

@@ -3,6 +3,7 @@
 import { useTranslation } from '../i18n';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -67,7 +68,7 @@ export default function Footer() {
                 className="transition-colors duration-200 cursor-not-allowed opacity-50"
                 aria-label="Facebook"
               >
-                <img src="/Facebook_logo.png" alt="Facebook" className="h-6 w-6 rounded-lg" />
+                <Image src="/Facebook_logo.png" alt="Facebook" width={24} height={24} className="rounded-lg" />
               </div>
               <a 
                 href="https://www.instagram.com/hollandveranda.nl/" 
@@ -76,7 +77,7 @@ export default function Footer() {
                 className="transition-colors duration-200"
                 aria-label="Instagram"
               >
-                <img src="/instagram-logo.jpg" alt="Instagram" className="h-6 w-6 rounded-lg" />
+                <Image src="/instagram-logo.jpg" alt="Instagram" width={24} height={24} className="rounded-lg" />
               </a>
               <a 
                 href="https://www.tiktok.com/@hollandveranda" 
@@ -85,7 +86,7 @@ export default function Footer() {
                 className="transition-colors duration-200"
                 aria-label="TikTok"
               >
-                <img src="/TikTok-Logo.jpg" alt="TikTok" className="h-6 w-6 rounded-lg" />
+                <Image src="/TikTok-Logo.jpg" alt="TikTok" width={24} height={24} className="rounded-lg" />
               </a>
             </div>
           </div>
