@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { useTranslation } from '../i18n';
@@ -20,15 +20,45 @@ const projectImages = [
 
 export default function Projecten() {
   const { t } = useTranslation();
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
-  const openModal = (imageSrc, imageAlt) => {
-    setSelectedImage({ src: imageSrc, alt: imageAlt });
+  const openModal = (imageIndex) => {
+    setSelectedImageIndex(imageIndex);
   };
 
   const closeModal = () => {
-    setSelectedImage(null);
+    setSelectedImageIndex(null);
   };
+
+  const goToPrevious = () => {
+    if (selectedImageIndex > 0) {
+      setSelectedImageIndex(selectedImageIndex - 1);
+    }
+  };
+
+  const goToNext = () => {
+    if (selectedImageIndex < projectImages.length - 1) {
+      setSelectedImageIndex(selectedImageIndex + 1);
+    }
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedImageIndex === null) return;
+      
+      if (e.key === 'Escape') {
+        closeModal();
+      } else if (e.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (e.key === 'ArrowRight') {
+        goToNext();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImageIndex]);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
@@ -50,68 +80,106 @@ export default function Projecten() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="flex flex-col gap-8">
-              {projectImages.filter((_, idx) => idx % 2 === 0).map((img, idx) => (
-                <div
-                  key={img}
-                  className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-                  onClick={() => openModal(`/${img}`, `Project ${idx * 2 + 1}`)}
-                >
-                  <Image
-                    src={`/${img}`}
-                    alt={`Project ${idx * 2 + 1}`}
-                    width={800}
-                    height={600}
-                    style={{width: '100%', height: 'auto'}}
-                    loading="lazy"
-                    className="rounded-xl"
-                  />
-                </div>
-              ))}
+              {projectImages.filter((_, idx) => idx % 2 === 0).map((img, idx) => {
+                const actualIndex = idx * 2;
+                return (
+                  <div
+                    key={img}
+                    className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                    onClick={() => openModal(actualIndex)}
+                  >
+                    <Image
+                      src={`/${img}`}
+                      alt={`Project ${actualIndex + 1}`}
+                      width={800}
+                      height={600}
+                      style={{width: '100%', height: 'auto'}}
+                      loading="lazy"
+                      className="rounded-xl"
+                    />
+                  </div>
+                );
+              })}
             </div>
             <div className="flex flex-col gap-8">
-              {projectImages.filter((_, idx) => idx % 2 === 1).map((img, idx) => (
-                <div
-                  key={img}
-                  className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-                  onClick={() => openModal(`/${img}`, `Project ${idx * 2 + 2}`)}
-                >
-                  <Image
-                    src={`/${img}`}
-                    alt={`Project ${idx * 2 + 2}`}
-                    width={800}
-                    height={600}
-                    style={{width: '100%', height: 'auto'}}
-                    loading="lazy"
-                    className="rounded-xl"
-                  />
-                </div>
-              ))}
+              {projectImages.filter((_, idx) => idx % 2 === 1).map((img, idx) => {
+                const actualIndex = idx * 2 + 1;
+                return (
+                  <div
+                    key={img}
+                    className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                    onClick={() => openModal(actualIndex)}
+                  >
+                    <Image
+                      src={`/${img}`}
+                      alt={`Project ${actualIndex + 1}`}
+                      width={800}
+                      height={600}
+                      style={{width: '100%', height: 'auto'}}
+                      loading="lazy"
+                      className="rounded-xl"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Modal for displaying full-size images */}
-      {selectedImage && (
+      {/* Modal for displaying full-size images with navigation */}
+      {selectedImageIndex !== null && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
           onClick={closeModal}
         >
-          <div className="relative max-w-4xl max-h-full">
+          <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
+            {/* Close button */}
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
             >
               ×
             </button>
+
+            {/* Previous button - Ana sayfadaki buton stili */}
+            {selectedImageIndex > 0 && (
+              <button
+                onClick={goToPrevious}
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200 z-10"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:brightness-110 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Next button - Ana sayfadaki buton stili */}
+            {selectedImageIndex < projectImages.length - 1 && (
+              <button
+                onClick={goToNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200 z-10"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:brightness-110 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Image */}
             <Image
-              src={selectedImage.src}
-              alt={selectedImage.alt}
+              src={`/${projectImages[selectedImageIndex]}`}
+              alt={`Project ${selectedImageIndex + 1}`}
               width={1200}
               height={900}
               style={{width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '90vh'}}
               className="rounded-lg"
             />
+
+            {/* Image counter */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+              {selectedImageIndex + 1} / {projectImages.length}
+            </div>
           </div>
         </div>
       )}
