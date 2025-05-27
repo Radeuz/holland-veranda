@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { useTranslation } from '../i18n';
@@ -19,6 +20,16 @@ const projectImages = [
 
 export default function Projecten() {
   const { t } = useTranslation();
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imageSrc, imageAlt) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt });
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-orange-50/30 to-gray-50">
       <Navigation />
@@ -40,35 +51,71 @@ export default function Projecten() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="flex flex-col gap-8">
               {projectImages.filter((_, idx) => idx % 2 === 0).map((img, idx) => (
-                <Image
+                <div
                   key={img}
-                  src={`/${img}`}
-                  alt={`Project ${idx * 2 + 1}`}
-                  width={800}
-                  height={600}
-                  style={{width: '100%', height: 'auto'}}
-                  loading="lazy"
-                  className="rounded-xl"
-                />
+                  className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                  onClick={() => openModal(`/${img}`, `Project ${idx * 2 + 1}`)}
+                >
+                  <Image
+                    src={`/${img}`}
+                    alt={`Project ${idx * 2 + 1}`}
+                    width={800}
+                    height={600}
+                    style={{width: '100%', height: 'auto'}}
+                    loading="lazy"
+                    className="rounded-xl"
+                  />
+                </div>
               ))}
             </div>
             <div className="flex flex-col gap-8">
               {projectImages.filter((_, idx) => idx % 2 === 1).map((img, idx) => (
-                <Image
+                <div
                   key={img}
-                  src={`/${img}`}
-                  alt={`Project ${idx * 2 + 2}`}
-                  width={800}
-                  height={600}
-                  style={{width: '100%', height: 'auto'}}
-                  loading="lazy"
-                  className="rounded-xl"
-                />
+                  className="cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                  onClick={() => openModal(`/${img}`, `Project ${idx * 2 + 2}`)}
+                >
+                  <Image
+                    src={`/${img}`}
+                    alt={`Project ${idx * 2 + 2}`}
+                    width={800}
+                    height={600}
+                    style={{width: '100%', height: 'auto'}}
+                    loading="lazy"
+                    className="rounded-xl"
+                  />
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* Modal for displaying full-size images */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
+            >
+              ×
+            </button>
+            <Image
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              width={1200}
+              height={900}
+              style={{width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '90vh'}}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      )}
+
       <Footer />
     </main>
   );
