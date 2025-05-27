@@ -33,7 +33,7 @@ export default function SchemaOrg() {
     },
     "sameAs": [
       "https://www.facebook.com/hollandveranda",
-      "https://www.instagram.com/hollandveranda"
+      "https://www.instagram.com/hollandveranda.nl/"
     ]
   };
 
