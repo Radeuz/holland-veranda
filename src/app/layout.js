@@ -21,10 +21,10 @@ export const metadata = {
     siteName: 'Holland Veranda',
     images: [
       {
-        url: '/banner.jpg',
+        url: '/Tab_Logo.jpg',
         width: 1200,
         height: 630,
-        alt: 'Holland Veranda Showroom',
+        alt: 'Holland Veranda Logo',
       },
     ],
     locale: 'nl_NL',

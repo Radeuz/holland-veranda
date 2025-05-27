@@ -12,8 +12,8 @@ export default function SchemaOrg() {
     "name": "Holland Veranda",
     "alternateName": ["Holland Veranda BV", "Holland Veranda B.V."],
     "image": [
-      "https://www.hollandveranda.nl/og-image.jpg",
-      "https://www.hollandveranda.nl/logo.png"
+      "https://www.hollandveranda.nl/Tab_Logo.jpg",
+      "https://www.hollandveranda.nl/Tab_Logo.jpg"
     ],
     "description": language === 'nl' 
       ? "Specialist in hoogwaardige veranda's en overkappingen. Ontdek ons assortiment moderne, klassieke en glazen veranda's voor uw tuin."
