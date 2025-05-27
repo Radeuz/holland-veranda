@@ -8,19 +8,19 @@ export default function SchemaOrg() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "@id": "https://www.hollandveranda.nl/#organization",
+    "@id": "https://www.hollandveranda.com/#organization",
     "name": "Holland Veranda",
     "alternateName": ["Holland Veranda BV", "Holland Veranda B.V."],
     "image": [
-      "https://www.hollandveranda.nl/Tab_Logo.jpg",
-      "https://www.hollandveranda.nl/Tab_Logo.jpg"
+      "https://www.hollandveranda.com/Tab_Logo.jpg",
+      "https://www.hollandveranda.com/Tab_Logo.jpg"
     ],
     "description": language === 'nl' 
       ? "Specialist in hoogwaardige veranda's en overkappingen. Ontdek ons assortiment moderne, klassieke en glazen veranda's voor uw tuin."
       : "Specialist in high-quality verandas and canopies. Discover our range of modern, classic, and glass verandas for your garden.",
-    "url": "https://www.hollandveranda.nl",
+    "url": "https://www.hollandveranda.com",
     "telephone": "+31618612190",
-    "email": "info@hollandveranda.nl",
+    "email": "info@hollandveranda.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Voorbeeldstraat 123",
@@ -76,32 +76,104 @@ export default function SchemaOrg() {
       "itemListElement": [
         {
           "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "EUR",
+            "price": "5000"
+          },
+          "availability": "https://schema.org/InStock",
           "itemOffered": {
             "@type": "Product",
             "name": language === 'nl' ? "Moderne Veranda" : "Modern Veranda",
             "description": language === 'nl' 
               ? "Moderne veranda's met aluminium constructie en glazen wanden"
-              : "Modern verandas with aluminum construction and glass walls"
+              : "Modern verandas with aluminum construction and glass walls",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "5000",
+              "priceValidUntil": "2025-12-31",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Holland Veranda"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "45",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
           }
         },
         {
           "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "EUR",
+            "price": "4500"
+          },
+          "availability": "https://schema.org/InStock",
           "itemOffered": {
             "@type": "Product",
             "name": language === 'nl' ? "Klassieke Veranda" : "Classic Veranda",
             "description": language === 'nl'
               ? "Klassieke veranda's met houten constructie"
-              : "Classic verandas with wooden construction"
+              : "Classic verandas with wooden construction",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "4500",
+              "priceValidUntil": "2025-12-31",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Holland Veranda"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "reviewCount": "38",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
           }
         },
         {
           "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "EUR",
+            "price": "3500"
+          },
+          "availability": "https://schema.org/InStock",
           "itemOffered": {
             "@type": "Product",
             "name": language === 'nl' ? "Glazen Schuifwanden" : "Glass Sliding Walls",
             "description": language === 'nl'
               ? "Moderne glazen schuifwanden voor optimale lichtinval"
-              : "Modern glass sliding walls for optimal light penetration"
+              : "Modern glass sliding walls for optimal light penetration",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "price": "3500",
+              "priceValidUntil": "2025-12-31",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Holland Veranda"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "44",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
           }
         }
       ]
