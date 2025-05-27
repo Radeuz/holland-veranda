@@ -73,7 +73,7 @@ export default function Footer() {
                 <img src="/Facebook_logo.png" alt="Facebook" className="h-6 w-6 rounded-lg" />
               </a>
               <a 
-                href="https://www.instagram.com/hollandveranda.nl/" 
+                href="https://www.instagram.com/hollandveranda/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-colors duration-200"

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.hollandveranda.nl/sitemap.xml 
+Sitemap: https://hollandveranda.com/sitemap.xml 
