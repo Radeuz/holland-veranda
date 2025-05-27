@@ -137,9 +137,11 @@ export default function Projecten() {
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
+              className="absolute top-4 right-4 w-12 h-12 flex items-center justify-center text-white hover:text-white/90 bg-orange-600/80 hover:bg-orange-700/90 rounded-full shadow-md transition-all duration-200 z-10"
             >
-              ×
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:brightness-110 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
 
             {/* Previous button - Ana sayfadaki buton stili */}
@@ -176,10 +178,7 @@ export default function Projecten() {
               className="rounded-lg"
             />
 
-            {/* Image counter */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
-              {selectedImageIndex + 1} / {projectImages.length}
-            </div>
+
           </div>
         </div>
       )}
